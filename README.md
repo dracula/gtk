@@ -17,3 +17,6 @@ gsettings set org.gnome.desktop.interface gtk-theme "Ant"
 gsettings set org.gnome.desktop.wm.preferences theme "Ant"
 ```
 or Change via distribution specific tool.
+
+### Note:
+* This theme is based on the [evopop-gtk-theme](https://github.com/solus-project/evopop-gtk-theme).

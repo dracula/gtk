@@ -1,0 +1,558 @@
+/*********
+* Budgie *
+*********/
+@function gtkalpha($c,$a) {
+    @return unquote("alpha(#{$c},#{$a})");
+}
+
+$roundness: 3px;
+$border_width: 1px;
+$pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
+
+%reset_style {
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    -gtk-icon-shadow: none;
+    opacity: 1;
+    min-width: 0;
+    min-height: 0;
+    padding: 0;
+    outline-color: transparentize($fg_color, 0.7);
+    outline-style: dashed;
+    outline-offset: -3px;
+    outline-width: 1px;
+    -gtk-outline-radius: 2px;
+    margin: 0;
+}
+
+// Used to reset all style properties set by the gtk theme
+
+// Container for both the "panel" area and the shadow. Wise to keep
+// this transparent..
+.budgie-container {
+  background-color: transparent;
+  &:backdrop { background-color: transparent; }
+}
+
+// Budgie Menu
+.budgie-menu {
+    entry.search {
+      border: none;
+      border-radius: 0px;
+      box-shadow: none;
+      background: none;
+      font-size: 120%;
+      border-bottom: 1px solid $borders_color;
+
+      image { padding-left: 0px; padding-right: 6px; }
+    }
+    .categories {
+      background-color: transparent;
+      &:dir(ltr) { border-right: 1px solid $borders_color; }
+      &:dir(rtl) { border-left: 1px solid $borders_color; }
+    }
+
+    .category-button {
+      @extend %reset_style;
+      padding: 8px;
+      border-radius: 3px 0 0 3px;
+
+      &:hover {
+        background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.95));
+        color: $fg_color;
+      }
+      &:active { box-shadow: inset 0 2px 2px -2px transparentize(black, 0.8); }
+      &:checked {
+          color: $selected_fg_color;
+          background-color: $selected_bg_color;
+      }
+    }
+
+    scrollbar {
+      background-color: transparent;
+      border-color: transparent;
+      .slider { background-color: if($variant=='dark', $base_color, $bg_color); }
+    }
+    button { box-shadow: none; }
+    list {
+      background-color: transparent;
+      label { color: if($variant=='dark', $headerbar_fg_color, $fg_color); }
+
+      row.activatable:selected,
+      row.activatable:selected button { color: inherit; }
+
+      row {
+        &.activatable {
+          &.has-open-popup, // this is for indicathing which row generated a popover see https://bugzilla.gnome.org/show_bug.cgi?id=754411
+          &:hover {
+            background-color: transparent;
+            label { color: $headerbar_fg_color; }
+          }
+
+          &:active { box-shadow: none; }
+
+          &:selected {
+            &:active { box-shadow: none; }
+
+            &.has-open-popup,
+            &:hover { background-color: transparent; }
+          }
+        }
+      }
+    }
+}
+
+// Panel
+.budgie-panel {
+    color: $headerbar_fg_color;
+    background-color: transparentize( darken($headerbar_color,10%),0.05);
+
+    .alert { color: $red; }
+
+    &:backdrop {
+      color: $headerbar_fg_color;
+      background-color: transparentize(darken($headerbar_color,10%),0.05);
+    }
+
+    .end-region {
+      background-color: rgba(0,0,0,0.3);
+      border-radius: 2px;
+      separator { background-color: transparentize($headerbar_fg_color, 0.85); }
+      label {
+        font: bold;
+        color: $headerbar_fg_color;
+      }
+    }
+}
+
+// Tasklist
+.budgie-panel #tasklist-button,
+.budgie-panel #tasklist-button:backdrop {
+
+    border-radius: 0;
+    outline-color: transparent;
+
+    &:not(:hover):not(:active):not(:checked) { color: gtkalpha(currentColor, 0.5); }
+    background: none;
+    background-clip: padding-box;
+    border: none;
+
+    @extend %underscores;
+}
+
+// Icon Tasklist
+.budgie-panel {
+
+    button.flat.launcher {
+        transition: all 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        border-radius: 0;
+        padding-left: 4px;
+        padding-right: 4px;
+        border-color: transparentize($headerbar_color,1); // fixes the transition
+        opacity: 0.75;
+
+        &:hover {
+          -gtk-image-effect: highlight;
+          opacity: 0.9;
+        }
+
+        &:backdrop { background-color: transparent; }
+    }
+    .unpinned .launcher,
+    .pinned .launcher.running { @extend %underscores; }
+}
+
+%underscores {
+    opacity: 1;
+    padding-top: 0;
+    padding-bottom: 0;
+    &:hover { background-color: transparentize(black, 0.95); }
+    &:active, &:checked { background-color: transparentize(black, 0.9); }
+
+    @each $pos, $b_pos in $pos_list {
+        .#{$pos} & {
+            border-#{$b_pos}: 2px solid transparent;
+            border-#{$pos}: 2px solid transparent;
+
+            @at-root {
+                .#{$pos} .budgie-panel .unpinned .launcher,
+                .#{$pos} .budgie-panel .pinned .launcher.running { border-#{$pos}: 2px solid transparentize(white, 0.6); }
+            }
+            &:hover {
+                border-#{$pos}: 2px solid transparentize(white, 0.75);
+            }
+            &:active, &:checked {
+                border-#{$pos}: 2px solid $selected_bg_color;
+            }
+        }
+    }
+}
+
+@each $pos, $b_pos in $pos_list {
+
+    // Panel borders
+    .#{$pos} .budgie-panel { border-#{$b_pos}: $border_width solid transparentize(darken($headerbar_color, 7%), 0.08); }
+
+    // Raven borders
+    .#{$pos} .raven-frame {
+        padding: 0;
+        background: none;
+
+        border {
+            border: none;
+            border-#{$b_pos}: $border_width solid transparentize($bg_color, 0.08);
+        }
+    }
+
+    // Shadows
+    .#{$pos} .shadow-block {
+        background-color: transparent;
+        background-image: linear-gradient(to $b_pos,
+                                          transparentize(black, 0.7),
+                                          transparent);
+    }
+}
+
+// Raven
+.raven {
+    padding: 0;
+    color: $fg_color;
+    background-color: transparentize($bg_color, 0.08);
+    transition: 170ms ease-out;
+
+    .raven-header {
+        * {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+
+        min-height: 32px;
+
+        color: $fg_color;
+        border: solid $borders_color;
+        border-width: 1px 0;
+        background-color: transparentize($bg_color, 0.8);
+
+        &.top {
+          border-top-style: none;
+          border-color: transparent;
+          margin-top: 3px;
+          min-height: 32px;
+          button.image-button {
+            &:hover {
+              color: darken($selected_bg_color,5%);
+              box-shadow: none;
+            }
+          }
+        }
+        > button.text-button {
+          border-radius: 3px;
+          color: $selected_fg_color;
+          background-color: transparentize(darken($red,5%), 0.1);
+          @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
+          &:hover {
+            border-radius: 3px;
+            color: $selected_fg_color;
+            background-color: transparentize($red, 0.1);
+            @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
+          }
+          &:active {
+            color: $selected_fg_color;
+            background-color: transparentize(lighten($red,5%), 0.1);
+            @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
+          }
+        }
+        &.bottom { border-bottom-style: none; }
+
+        button {
+          background-color: transparent;
+          color: $fg_color;
+          border-radius: 0;
+          border: none;
+          box-shadow: none;
+          margin-top: -4px;
+          margin-bottom: -4px;
+          min-height: 32px;
+
+          &:hover {
+            border-radius: 0;
+            background-color: transparent;
+            @include lines(up);
+          }
+
+          &:active,
+          &:checked {
+            border-radius: 0;
+
+            background-color: transparent;
+            @include lines(up);
+          }
+
+          &:disabled {
+            color: $insensitive_fg_color;
+          }
+        }
+
+    }
+
+    GtkScrolledWindow { background: transparent; }
+
+    list {
+      background-color: transparent;
+      &:selected { background-color: transparentize($selected_bg_color,0.1); }
+      row
+      row.activatable {
+        background-color: transparent;
+        &:selected { background-color: transparentize($selected_bg_color,0.1); }
+      }
+    }
+
+    .raven-background {
+        color: $fg_color;
+        background-color: transparent;
+        border-color: transparent;
+
+        .linked {
+          & button.text-button {
+            background-color: transparent;
+            color: $fg_color;
+            border-radius: 0;
+            border: none;
+            box-shadow: none;
+            margin-top: -4px;
+            margin-bottom: -4px;
+            min-height: 32px;
+
+            &:hover {
+              border-radius: 0;
+              background-color: transparent;
+              @include lines(up);
+            }
+
+            &:active,
+            &:checked {
+              border-radius: 0;
+
+              background-color: transparent;
+              @include lines(up);
+            }
+          }
+        }
+
+
+      &.middle { border-bottom-style: none; }  // applet background between two headers
+    }
+
+    // Calendar
+    calendar.raven-calendar {
+        padding: 6px;
+        color: $fg_color;
+        background-color: transparentize($bg_color, 0.8);
+        border-color: transparent;
+
+        &:inconsistent { color: gtkalpha(currentColor,0.3); }
+
+        &:selected {
+            color: $selected_fg_color;
+            background-color: transparent;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-size: 1.6em 1.6em;
+
+            background-image: -gtk-scaled(url("../assets/calendar-selected.png"),
+                                          url("../assets/calendar-selected@2.png"));
+        }
+        &.header {
+            color: $fg_color;
+            border: none;
+            border-radius: 0;
+            background-color: transparent;
+        }
+        & button, & button:focus {
+            color: gtkalpha(currentColor,0.5);
+            background-color: transparent;
+
+            &:hover {
+                color: $fg_color;
+                background-color: transparent;
+            }
+        }
+    }
+    .powerstrip {
+      border: none;
+      background-color: transparent;
+      border-top-color: transparent;
+    }
+    .powerstrip button.image-button {
+      border-radius:50%;
+      padding: 6px;
+      min-width: 32px;
+      margin-bottom: 3px;
+      color: $selected_fg_color;
+      background: $darkpurple;
+      border: none;
+      box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,0.2),inset 0px 1px 0px 0px rgba(255,255,255,0.2), 1px 1px transparentize(black,0.8);
+      font-size: 100%;
+
+      &:hover {
+        transition: 170ms ease all;
+        background: lighten($darkpurple, 5%);
+        color: $selected_fg_color;
+      }
+      &:active {
+        transition: 170ms ease all;
+        background: lighten($darkpurple, 10%);
+        color: $selected_fg_color;
+      }
+      &:first-child {
+        background: darken($blue,5%);
+        &:hover {
+          transition: 170ms ease all;
+          background: $blue;
+        }
+
+        &:active {
+          transition: 170ms ease all;
+          background: lighten($blue, 5%);
+        }
+      }
+      &:last-child {
+        background: $red;
+        &:hover {
+          transition: 170ms ease all;
+          background: lighten($red, 5%);
+        }
+
+        &:active {
+          transition: 170ms ease all;
+          background: lighten($red, 10%);
+        }
+      }
+    }
+    .option-subtitle { font-size: smaller; }
+}
+
+// MPRIS Applet
+.raven-mpris {
+  color: $fg_color;
+  background-color: transparentize(if($variant=='light',$base_color, darken($bg_color, 10%)), 0.1);
+  border: solid $borders_color;
+  border-width: 1px 0;
+
+  button.image-button { padding: 8px; }
+}
+
+// Notifications
+.budgie-notification-window {
+    background: none;
+    border-radius: 1px;
+    button {
+      background-color: $cyan;
+      color: $selected_fg_color;
+      border: none;
+      &:hover {
+        background-color: darken($cyan, 5%);
+        border: none;
+      }
+      &:active, &:checked { background-color: darken($cyan, 5%); }
+    }
+}
+
+.budgie-notification {
+    &.background {
+        border-radius: 1px;
+    }
+    .notification-title {
+        font-size: 110%;
+        color: $headerbar_fg_color;
+    }
+    .notification-body { color: transparentize($headerbar_fg_color, 0.3); }
+    button {
+      background-color: transparent;
+      color: $selected_fg_color;
+      &:hover {
+        background-color: transparent;
+        color: $red;
+        box-shadow: none;
+      }
+      &:active, &:checked {
+        background-color: transparent;
+        color: darken($red, 5%);
+      }
+    }
+}
+
+.drop-shadow {
+  color: $headerbar_fg_color;
+  background-color: transparentize(if($variant=='light', $headerbar_color, $bg_color), 0.05);
+  box-shadow: 0 2px 4px 0 transparentize(black, 0.7);
+  border-radius: 3px;
+}
+
+// Session Dialog
+.budgie-session-dialog {
+  color: $headerbar_fg_color;
+    &.background { @extend .drop-shadow; }
+
+    .linked.horizontal > button {
+        min-height: 32px;
+        border-bottom: none;
+        border-radius: 0;
+        color: $headerbar_fg_color;
+        background-color: transparent;
+        box-shadow: none;
+
+        label { font: bold; }
+
+        &:first-child { border-left: none; border-bottom-left-radius: 3px; }
+        &:last-child { border-right: none; border-bottom-right-radius: 3px; }
+
+        &:hover {
+          background-color: transparentize($selected_bg_color, 0.1);
+        }
+
+        @each $b_type, $b_color in (suggested-action, $cyan),
+                                   (destructive-action, $destructive_color) {
+            &.#{$b_type} {
+              background-color: transparentize($b_color, 0.1);
+              &:hover { background-color: transparentize(lighten($b_color,5%), 0.1); }
+              &:active, &:checked { background-color: transparentize(lighten($b_color,5%), 0.1); }
+            }
+        }
+    }
+    entry {
+      background-color: #505359;
+      color: $headerbar_fg_color;
+      &:focus { background-color: #505359; }
+      &:backdrop { background-color: #505359; }
+    }
+}
+
+// PolKit Dialog
+.budgie-polkit-dialog {
+  @extend .budgie-session-dialog;
+
+  .message { color: transparentize($headerbar_fg_color, 0.3); }
+  .failure { color: $red; }
+}
+
+// Run Dialog
+.budgie-run-dialog {
+  border-radius: 3px;
+  entry.search, entry.search:focus {
+    font-size: 120%;
+    padding: 8px 5px;
+    border: none;
+    box-shadow: none;
+
+    image {
+      &:dir(ltr) { padding-left: 8px; padding-right: 12px; }
+      &:dir(rtl) { padding-left: 12px; padding-right: 8px; }
+    }
+  }
+
+  list row:selected .dim-label { opacity: 1; }
+  scrolledwindow { border-top: 1px solid darken($borders_color, 5%); }
+}
