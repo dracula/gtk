@@ -1,9 +1,7 @@
-## Ant
-A flat and light theme with a modern look
 
-![](Screenshots/1.png)
+![](Art/logo.png)
 
-![](Screenshots/2.png)
+![](Art/screenshot.png)
 
 
 #### Installation
