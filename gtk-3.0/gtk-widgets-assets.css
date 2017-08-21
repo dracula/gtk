@@ -138,26 +138,24 @@
 }
 
 .radio,
+.radio:hover,
 .radio row:selected,
 .radio row:selected:focus {
-    -gtk-icon-source: -gtk-scaled(url("../assets/radio-unselected.png"),url("../assets/radio-unselected@2.png"));
-}
-
-.radio:hover {
-    -gtk-icon-source: -gtk-scaled(url("../assets/radio-unselected-hover.png"),url("../assets/radio-unselected-hover@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/radio-unchecked.png"),url("../assets/radio-unselected@2.png"));
 }
 
 .radio:insensitive,
 .radio row:selected:insensitive,
 .radio row:selected:focus:insensitive {
-    -gtk-icon-source: -gtk-scaled(url("../assets/radio-unselected-insensitive.png"),url("../assets/radio-unselected-insensitive@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/radio-selected-insensitive.png"),url("../assets/radio-unselected-insensitive@2.png"));
 }
 
 .radio:active,
+.radio:active:hover,
 .radio:checked,
 .radio row:selected:active,
 .radio row:selected:focus:active {
-    -gtk-icon-source: -gtk-scaled(url("../assets/radio-selected.png"),url("../assets/radio-unselected@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/radio-checked.png"),url("../assets/radio-unselected@2.png"));
 }
 
 .radio:active:insensitive,
