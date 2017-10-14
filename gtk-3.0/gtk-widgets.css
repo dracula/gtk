@@ -396,7 +396,7 @@ GtkBubbleWindow .toolbar {
 }
 
 .overshoot.top {
-    background-image: -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(255,93,115,0.2)), to(rgba(255,93,115, 0)));
+    background-image: -gtk-gradient(radial, center top, 0, center top, 0.6, from(rgba(55, 93, 114, 0.20)), to(rgba(255,93,115, 0)));
     background-size: 100% 60%;
     background-repeat: no-repeat;
     background-position: center top;

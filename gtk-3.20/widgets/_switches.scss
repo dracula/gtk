@@ -2,7 +2,7 @@
  * Switch *
  **********/
 switch {
-  font: 1;
+  font-size: 1;
   font-weight: bold;
   outline-offset: -4px;
   transition: all 200ms ease-in;
@@ -12,11 +12,11 @@ switch {
   color: transparent;
   padding: 2px;
 
-  background-color: transparentize(black, 0.9);
-  box-shadow: inset 0 0 0 1px transparentize(black, 0.95), 0px 1px $bottom_highlight;
+  background-color:$darkpurple;
+  box-shadow: inset 0 0 0 1px $darkpurple, 0px 1px $bottom_highlight;
 
   &:disabled {
-    background-color: $insensitive_bg_color;
+    background-color: $red;
   }
 
   &:backdrop {
@@ -29,15 +29,15 @@ switch {
 
   &:active,
   &:checked {
-    background-color: $selected_bg_color;
+    background-color: $lime;
 
     &:backdrop {
-      background-color: $backdrop_selected_bg_color;
+      background-color: $lime;
 
       slider {
         &:backdrop {
           box-shadow:none;
-          background-color:transparentize($base_color, 0.1);
+          background-color:transparentize($red, 0.1);
           border:none;
         }
       }
@@ -52,7 +52,7 @@ switch {
 
     border-radius: 50%;
     transition: $button_transition;
-    background-color: $base_color;
+    background-color: $fg_color;
 
     box-shadow: 0 2px 2px transparentize(black, 0.8),
                 0 1px 2px transparentize(black, 0.8);

@@ -1,19 +1,23 @@
 /*******
  * CSD *
  *******/
+ .titlebar{
+    border-radius:5px 5px 0 0;
+ }
 .titlebar,
 .header-bar {
-    border-radius:5px 5px 0 0;
+   
     background-image: none;
     background-color: @header_bg_color;
     color: @header_fg_color;
     text-shadow: none;
     padding: 4px 10px;
-/*atom*/
-    box-shadow: inset 0px 1px 0px 0px rgba(255,255,255,0.1);
+
 }
 
 .titlebar .button,
+.header-bar .image-button, 
+.header-bar .path-bar .button,
 .titlebar .button:active,
 .titlebar .button:checked {
     padding: 5px;
@@ -24,12 +28,18 @@
 }
 
 .titlebar .button:hover,
+.header-bar .image-button:hover, 
+.header-bar .image-button:active,
+.header-bar .image-button:checked,  
+.header-bar .path-bar .button:hover,
+.header-bar .path-bar .button:active,
+.header-bar .path-bar .button:checked,
 .titlebar .button:active:hover,
 .titlebar .button:checked,
 .titlebar .button:active {
     color: @selected_bg_color;
+    background-color: transparent;
 }
-
 .maximized .titlebar {
     border-radius: 0;
     border: none;

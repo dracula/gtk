@@ -32,11 +32,14 @@
 
 }
 .sidebar  .list-row:selected{
-  background-color: @base_color;
+  background-color: transparent;
   /*border-left: 3px  solid @selected_bg_color;*/
   color: @selected_bg_color;
   font-weight: bold;
   /*padding-left: 10px;*/
+}
+.sidebar .list-row:hover{
+    background-color: shade(@base_color,0.9);
 }
 .sidebar .cell:selected,
 .sidebar .cell:selected:focus {
@@ -46,17 +49,26 @@
 }
 
 .sidebar GtkScrolledWindow .list-row {
-    background-color: transparent;
-    color: @text_color;
+    background-color: @header_bg_color;
+    color: @header_fg_color;
 }
 
 .sidebar .frame {
     border-width: 0;
-    background-color: @base_color;
+    background-color: @header_bg_color;
 
 }
 
-/*agregado*/
+/*elementary os file manager*/
+.sidebar .source-list{
+    background: @header_bg_color;
+    color: @header_fg_color;
+    padding: 4px 0px;
+}
+.sidebar .source-list.view:not(:selected):hover{
+    background-color: rgba(30, 31, 41, 0.4);
+}
+
 /* -------------
 NEW ON GTK 3.18
 ---------------*/

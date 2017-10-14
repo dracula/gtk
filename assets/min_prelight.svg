@@ -13,8 +13,11 @@
    height="16"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
-   sodipodi:docname="min_prelight.svg">
+   inkscape:version="0.92+devel unknown"
+   sodipodi:docname="min_prelight.svg"
+   inkscape:export-filename="/home/lara/.themes/Dracula/assets/min_prelight.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,21 +27,22 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="6.331506"
+     inkscape:zoom="15.213115"
+     inkscape:cx="-9.012244"
      inkscape:cy="4.6169098"
      inkscape:document-units="px"
-     inkscape:current-layer="g4092"
+     inkscape:current-layer="g4152"
      showgrid="true"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1360"
-     inkscape:window-height="714"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
      inkscape:window-x="0"
-     inkscape:window-y="28"
-     inkscape:window-maximized="1" />
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0" />
   <metadata
      id="metadata7">
     <rdf:RDF>
@@ -47,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -77,7 +81,7 @@
              transform="matrix(1.0148899,0,0,1.0148899,-0.8432698,-5.0312058)">
             <path
                id="path4419"
-               style="fill:#fac536;fill-opacity:1;fill-rule:evenodd;stroke:none"
+               style="fill:#f1fa8c;fill-opacity:1;fill-rule:evenodd;stroke:none"
                d="m 56.283048,5.1005059 c 27.94807,0 50.604272,22.6563571 50.604272,50.6048151 0,27.947941 -22.656202,50.604269 -50.604272,50.604269 -27.947941,0 -50.6047894,-22.656328 -50.6047894,-50.604269 0,-27.948458 22.6568484,-50.6048151 50.6047894,-50.6048151"
                inkscape:connector-curvature="0" />
             <path

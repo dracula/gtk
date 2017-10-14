@@ -10,7 +10,7 @@
 
 .selection-mode.titlebar .titlebutton.minimize:backdrop,
 .titlebar .titlebutton.minimize:backdrop {
-    background-image: -gtk-scaled(url("../assets/min_unfocused.svg"));
+    background-image: -gtk-scaled(url("../assets/min_unfocused.png"));
     color: transparent;
 }
 
@@ -41,7 +41,7 @@
 
 .selection-mode.titlebar .titlebutton.maximize:backdrop,
 .titlebar .titlebutton.maximize:backdrop {
-    background-image: -gtk-scaled(url("../assets/maximize_unfocused.svg"));
+    background-image: -gtk-scaled(url("../assets/maximize_unfocused.png"));
     color: transparent;
 }
 
@@ -72,7 +72,7 @@
 
 .selection-mode.titlebar .titlebutton.close:backdrop,
 .titlebar .titlebutton.close:backdrop {
-    background-image: -gtk-scaled(url("../assets/close_unfocused.svg"));
+    background-image: -gtk-scaled(url("../assets/close_unfocused.png"));
     color: transparent;
 }
 
@@ -147,7 +147,7 @@
 .radio:insensitive,
 .radio row:selected:insensitive,
 .radio row:selected:focus:insensitive {
-    -gtk-icon-source: -gtk-scaled(url("../assets/radio-selected-insensitive.png"),url("../assets/radio-unselected-insensitive@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/radio-unchecked-insensitive.png"),url("../assets/radio-unselected-insensitive@2.png"));
 }
 
 .radio:active,
@@ -155,14 +155,14 @@
 .radio:checked,
 .radio row:selected:active,
 .radio row:selected:focus:active {
-    -gtk-icon-source: -gtk-scaled(url("../assets/radio-checked.png"),url("../assets/radio-unselected@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/radio-checked.png"),url("../assets/radio-selected@2.png"));
 }
 
 .radio:active:insensitive,
 .radio:checked:insensitive,
 .radio row:selected:active:insensitive,
 .radio row:selected:focus:active:insensitive {
-    -gtk-icon-source: -gtk-scaled(url("../assets/radio-selected-insensitive.png"),url("../assets/radio-selected-insensitive@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("../assets/radio-checked-insensitive.png"),url("../assets/radio-selected-insensitive@2.png"));
 }
 
 .radio:inconsistent,

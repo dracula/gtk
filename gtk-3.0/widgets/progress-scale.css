@@ -191,7 +191,7 @@ GtkProgressBar.trough.osd {
 .scale.slider:backdrop,
 .scale.scale-has-marks-above.scale-has-marks-below.slider:backdrop,
 .scale.vertical.scale-has-marks-above.scale-has-marks-below.slider:backdrop {
-    background-color: transparent;
+    background-color: $red;
     background-position: center;
     background-repeat: no-repeat;
 
@@ -216,10 +216,10 @@ GtkProgressBar.trough.osd {
 .scale.scale-has-marks-above.scale-has-marks-below.trough.highlight.vertical,
 .scale.vertical.scale-has-marks-above.scale-has-marks-below.trough.highlight.vertical {
     border-width: 0px;
-    background-color: @selected_bg_color;
+    background-color: @red;
     background-image: linear-gradient(to bottom,
-                                      @selected_bg_color,
-                                      @selected_bg_color
+                                      @red,
+                                      @red
                                       );
     box-shadow:none;
 }
@@ -243,10 +243,10 @@ GtkProgressBar.trough.osd {
 .scale.vertical.scale-has-marks-above.scale-has-marks-below.trough:insensitive {
     border-width: 0px;
     border-radius: 3px;
-    background-color: shade(@bg_color, 0.9);
+    background-color: shade(@bg_color, 0.5);
     background-image: linear-gradient(to bottom,
-                                      shade(@bg_color, 0.9),
-                                      shade(@bg_color, 0.9)
+                                      shade(@bg_color, 0.5),
+                                      shade(@bg_color, 0.5)
                                       );
     box-shadow: inset 0px -1px 0px 0px rgba(255,255,255,0.2),inset 0px 1px 0px 0px rgba(0,0,0,0.2);
 }

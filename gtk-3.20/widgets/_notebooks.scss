@@ -2,6 +2,12 @@
  * Notebooks *
  *************/
 notebook {
+  .frame{
+    *:selected{
+      background: transparent;
+      color: $selected_bg_color;
+    } 
+  }
   > header {
     padding: 1px;
     border-color: $borders_color;
@@ -192,7 +198,7 @@ notebook {
 
       // colors the button like the label, overridden otherwise
       button.flat {
-        &:hover { color: currentColor; }
+        &:hover {  background: transparent; box-shadow: none; color: $red;  }
 
         &, &:backdrop { color: gtkalpha(currentColor, 0.3); }
 

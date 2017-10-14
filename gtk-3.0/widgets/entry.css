@@ -25,6 +25,7 @@
 .entry:selected,
 .entry:selected:focus {
     background-color: shade(@bg_color, 0.9);
+	 color: @selected_bg_color;
 }
 
 .entry:insensitive {

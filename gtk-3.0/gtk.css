@@ -1,21 +1,21 @@
 /* Ant palet */
-@define-color lime #B3E235;
-@define-color cyan #00b0ff;
-@define-color yellow #f1c40f;
-@define-color orange #f39c12;
-@define-color purple #9b59b6;
-@define-color red #FF044A;
+@define-color lime #50fa7a;
+@define-color cyan #8be9fd;
+@define-color yellow #f1fa8c;
+@define-color orange #ffb86c;
+@define-color purple #bd93f9;
+@define-color red #ff5555;
 
 /* default color scheme */
-@define-color bg_color #EEEEEE;
-@define-color fg_color #31363D;
-@define-color base_color #f8f8f8;
-@define-color text_color #31363D;
+@define-color bg_color #1e1f29;
+@define-color fg_color #f8f8f2;
+@define-color base_color #282a36;
+@define-color text_color #f8f8f2;
 @define-color borders transparent;
-@define-color header_bg_color #EEEEEE;
-@define-color header_fg_color #31363D;
+@define-color header_bg_color #1e1f29;
+@define-color header_fg_color #f8f8f2;
 /*@define-color selected_bg_color #00b0ff;*/
-@define-color selected_bg_color #ff5d73;
+@define-color selected_bg_color #ff79c6;
 /*@define-color selected_bg_color #33CBBF;
 */@define-color selected_fg_color #f8f8f8;
 @define-color tooltip_bg_color #f8f8f8;
@@ -123,5 +123,5 @@
 @import url("apps/gala.css");
 @import url("apps/gnome-applications.css");
 @import url("apps/unity.css");
-
+@import url("apps/mate-applications.css");
 /*@import url("widgets/gnome-software.css");*/

@@ -2,24 +2,24 @@
 // it gets @if ed depending on $variant
 
 // Main definitions
-$base_color: if($variant == 'light', #f8f8f8, #1E282C);
-$text_color: if($variant == 'light', #31363D, #C3C7D1);
-$bg_color: if($variant == 'light', #EEEEEE, #1E282C);
-$fg_color: if($variant == 'light', #31363d, #C3C7D1);
+$base_color: if($variant == 'light', #282a36, #1E282C);
+$text_color: if($variant == 'light', #f8f8f2, #C3C7D1);
+$bg_color: if($variant == 'light', #1e1f29, #1E282C);
+$fg_color: if($variant == 'light', #f8f8f2, #C3C7D1);
 
 // Primary colors
-$lime: #B3E235;
-$red: #FF044A;
-$orange: #f39c12;
-$yellow: #f1c40f;
-$purple: #9b59b6;
-$darkpurple: #7b7bbd;
-$cyan: #00b0ff;
+$lime: #50fa7a;
+$red: #ff5555;
+$orange: #ffb86c;
+$yellow: #f1fa8c;
+$purple: #bd93f9;
+$darkpurple: #44475a;
+$cyan: #8be9fd;
 $blue: #13b1d5;
 $slider: #7b7bbd;
 
-$selected_fg_color: #fefefe;
-$selected_bg_color: #ff5d73;
+$selected_fg_color: #f8f8f2;
+$selected_bg_color: #ff79c6;
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: if($variant == 'light', transparentize(black,0.8), transparentize(black,0.9));
 $borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));
