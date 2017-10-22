@@ -132,12 +132,15 @@ headerbar {
   .linked > button:active,
   .linked > button:checked,
   .linked > button:backdrop { @extend %linked-header; }
-
-  /*.linked > button:hover,
   .linked > button:active,
-  .linked > button:checked {
-    @include lines(up);
-  }*/
+  .linked > button:checked{
+    &:backdrop{
+      color: $backdrop_selected_bg_color;
+      label{
+        color: $backdrop_selected_bg_color;
+      }
+    }
+  }
   // End reset style
 
   &.selection-mode {

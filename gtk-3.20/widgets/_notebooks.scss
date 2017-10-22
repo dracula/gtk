@@ -192,7 +192,7 @@ notebook {
 
         &.reorderable-page {
           border-color: $backdrop_borders_color;
-          background-color: $backdrop_bg_color;
+          background-color: $backdrop_base_color;
         }
       }
 
@@ -224,20 +224,20 @@ notebook {
     &.top,
     &.bottom {
       tabs {
-        padding-left: 4px;
-        padding-right: 4px;
+        padding-left: 0.5px;
+        padding-right: 0.5px;
 
         &:not(:only-child) {
-          margin-left: 3px;
-          margin-right: 3px;
+          margin-left: 0.5px;
+          margin-right: 0.5px;
 
-          &:first-child { margin-left: -1px; }
-          &:last-child { margin-right: -1px; }
+          &:first-child { margin-left: 0.5px; }
+          &:last-child { margin-right: 0.5px; }
         }
 
         tab {
-          margin-left: 4px;
-          margin-right: 4px;
+          margin-left: 0.5px;
+          margin-right: 0.5px;
 
           &.reorderable-page { border-style: none solid; }
         }

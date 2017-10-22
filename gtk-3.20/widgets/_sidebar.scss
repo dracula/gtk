@@ -5,6 +5,9 @@
   border-style: none;
   border-width: 0;
   background-color: mix($bg_color, $base_color, 50%);
+  .frame{
+    border: none;
+  }
 
   @at-root %sidebar_left,
   &:dir(ltr),
@@ -27,13 +30,18 @@
     transition: $backdrop_transition;
   }
 
-  list { background-color: $bg_color; }
+  list { background-color: lighten($bg_color, 0.77%); }
   row{
     &:selected{
+      &:backdrop{
+        color: $backdrop_selected_bg_color;
+        label{
+          color: $backdrop_selected_bg_color;
+        }  
+      }
       background: transparent;
       color: $selected_bg_color;
       label{
-    
         color: $selected_bg_color;
       }
     }
