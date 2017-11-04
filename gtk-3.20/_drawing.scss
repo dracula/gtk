@@ -206,7 +206,7 @@
   //
   // normal button
   //
-  font: bold;
+    font-weight: bold;
     color: $tc;
     outline-color: transparentize($tc, 0.7);
     background-color: $c;
@@ -360,7 +360,7 @@ box-shadow: none;
 
     color: white;
     border-color: $osd_borders_color;
-    background-image: linear-gradient(to bottom, $_bg);
+    background-image: linear-gradient(to bottom, $_bg, $_bg);
     background-clip: padding-box;
     box-shadow: inset 0 1px transparentize(white, 0.9);
     text-shadow: 0 1px black;
@@ -375,7 +375,7 @@ box-shadow: none;
 
     color: white;
     border-color: $osd_borders_color;
-    background-image: linear-gradient(to bottom, $_bg);
+    background-image: linear-gradient(to bottom, $_bg, $_bg);
     background-clip: padding-box;
     box-shadow: inset 0 1px transparentize(white, 0.9);
     text-shadow: none;
@@ -388,7 +388,7 @@ box-shadow: none;
   //
     color: $osd_insensitive_fg_color;
     border-color: $osd_borders_color;
-    background-image: linear-gradient(to bottom, $osd_insensitive_bg_color);
+    background-image: linear-gradient(to bottom, $osd_insensitive_bg_color, $osd_insensitive_bg_color);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -403,7 +403,7 @@ box-shadow: none;
 
     color: $osd_fg_color;
     border-color: $osd_borders_color;
-    background-image: linear-gradient(to bottom, $_bg);
+    background-image: linear-gradient(to bottom, $_bg, $_bg);
     background-clip: padding-box;
     box-shadow: none;
     text-shadow: none;
@@ -427,7 +427,7 @@ box-shadow: none;
 
 @mixin trough($flat:false, $c:$bg_color, $tc:$fg_color, $noedge:true) {
   color: mix($tc, $bg_color, 80%);
-  @if $flat { background-image: linear-gradient(to bottom, $c); }
+  @if $flat { background-image: linear-gradient(to bottom, $c, $c); }
   @else {
     background-image: linear-gradient(to bottom,
                                       mix(black,$c,15%) 5%,

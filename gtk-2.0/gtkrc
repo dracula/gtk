@@ -3,7 +3,7 @@
 #
 # Imports
 #
-include "colors.rc"
-include "common.rc"
-include "misc.rc"
-include "3rd-party.rc"
+include "colors-dark.rc"
+include "common-dark.rc"
+include "misc-dark.rc"
+include "3rd-party-dark.rc"

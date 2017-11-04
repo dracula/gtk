@@ -124,11 +124,11 @@ entry {
     &:not(:disabled) + entry:not(:disabled),
     &:not(:disabled) + %entry:not(:disabled) {
       border-top-color: mix($borders_color, $base_color, 30%);
-      background-image: linear-gradient(to bottom, $base_color);
+      background-image: linear-gradient(to bottom, $base_color, $base_color);
 
       &:backdrop {
         border-top-color: mix($backdrop_borders_color, $backdrop_base_color, 30%);
-        background-image: linear-gradient(to bottom, $backdrop_base_color);
+        background-image: linear-gradient(to bottom, $backdrop_base_color, $backdrop_base_color);
       }
     }
 

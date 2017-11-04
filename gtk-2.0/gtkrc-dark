@@ -1,9 +1,0 @@
-# Bridge | ScionicSpectre
-
-#
-# Imports
-#
-include "colors-dark.rc"
-include "common-dark.rc"
-include "misc-dark.rc"
-include "3rd-party-dark.rc"

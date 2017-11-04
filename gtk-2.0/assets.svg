@@ -14,7 +14,7 @@
    height="820"
    id="svg2"
    version="1.1"
-   inkscape:version="0.91 r13725"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="assets.svg">
   <defs
      id="defs4">
@@ -5666,14 +5666,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="8"
-     inkscape:cx="298.97628"
-     inkscape:cy="495.31153"
+     inkscape:zoom="3.3309805"
+     inkscape:cx="172.6641"
+     inkscape:cy="420.70009"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
-     inkscape:window-width="1280"
-     inkscape:window-height="740"
+     inkscape:window-width="1366"
+     inkscape:window-height="698"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -6701,7 +6701,7 @@
          style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#263238;stroke-width:2.00018144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     </g>
     <rect
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.45;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#263238;stroke-width:1.99931598;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.45;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#48455b;fill-opacity:1;fill-rule:nonzero;stroke:#48455b;stroke-width:1.99931598;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="Check-Radio_check-off"
        width="14.000685"
        height="14.000684"
@@ -6710,7 +6710,7 @@
        rx="1.0000461"
        ry="1.0000461"
        inkscape:label="#rect4505-8"
-       inkscape:export-filename="/usr/share/themes/Adapta/gtk-2.0/Check-Radio/check-off.png"
+       inkscape:export-filename="/home/lara/check-off-dark.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
     <g
@@ -7078,8 +7078,8 @@
        id="Check-Radio_check-off-hover-dark"
        inkscape:label="#g4632"
        transform="matrix(0.99998822,0,0,1.0000008,120.00117,296.99941)"
-       style="opacity:1;fill:none;stroke:#eceff1;stroke-width:2.00018144;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="/usr/share/themes/Adapta/gtk-2.0/Check-Radio/check-off-hover.png"
+       style="opacity:1;fill:none;stroke:#00ff7d;stroke-width:2.00018144;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/lara/check-off-hover-dark.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <rect
@@ -7090,10 +7090,10 @@
          height="14"
          width="14"
          id="rect4505-8-0-1-9"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#eceff1;stroke-width:2.00018144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#00ff7d;stroke-width:2.00018144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     </g>
     <rect
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.45;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#eceff1;stroke-width:1.99931598;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.94117647;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.45;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#48455b;stroke-width:1.99931598;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="Check-Radio_check-off-dark"
        width="14.000685"
        height="14.000684"
@@ -7109,11 +7109,11 @@
        inkscape:label="#g4615"
        id="Check-Radio_check-on-dark"
        transform="matrix(0.8,0,0,0.8,168,440.47244)"
-       inkscape:export-filename="/usr/share/themes/Adapta/gtk-2.0/Check-Radio/check-on.png"
+       inkscape:export-filename="/home/lara/check-on-dark.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#00bcd4;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#48455b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          d="m 7,632.36218 c -1.10801,0 -2,0.89199 -2,2 l 0,16 c 0,1.10801 0.89199,2 2,2 l 16,0 c 1.10801,0 2,-0.89199 2,-2 l 0,-16 c 0,-1.10801 -0.89199,-2 -2,-2 z"
          id="rect4138-8"
          inkscape:connector-curvature="0"
@@ -7123,7 +7123,7 @@
          id="path4-9-7"
          inkscape:connector-curvature="0"
          sodipodi:nodetypes="ccccccc"
-         style="fill:#ffffff;fill-opacity:1" />
+         style="fill:#00ff7d;fill-opacity:1" />
     </g>
     <g
        inkscape:label="#g4584"
@@ -7175,8 +7175,8 @@
        id="Check-Radio_radio-off-dark"
        inkscape:label="#g4650"
        transform="matrix(1.000026,0,0,1.0000094,79.997355,301.99367)"
-       style="opacity:0.75;stroke:#eceff1;stroke-width:1.99949372;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="/usr/share/themes/Adapta/gtk-2.0/Check-Radio/radio-off.png"
+       style="opacity:1;stroke:#48455b;stroke-width:1.99949372;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill:#48455b;fill-opacity:1"
+       inkscape:export-filename="/home/lara/radio-off-dark.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <circle
@@ -7184,14 +7184,14 @@
          cy="692.36218"
          cx="100"
          id="path4507-2-9"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#eceff1;stroke-width:1.99949372;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#48455b;fill-opacity:1;fill-rule:nonzero;stroke:#48455b;stroke-width:1.99949372;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     </g>
     <g
        id="Check-Radio_check-off-active-dark"
        inkscape:label="#g4632"
        transform="matrix(0.99998822,0,0,1.0000008,160.00117,296.99941)"
-       style="opacity:1;fill:none;stroke:#eceff1;stroke-width:2.00018144;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="/usr/share/themes/Adapta/gtk-2.0/Check-Radio/check-off-active.png"
+       style="opacity:1;fill:none;stroke:#00ff7d;stroke-width:2.00018144;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/lara/check-off-active-dark.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <rect
@@ -7202,7 +7202,7 @@
          height="14"
          width="14"
          id="rect4505-8-0-1-7-9"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#eceff1;stroke-width:2.00018144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#00ff7d;stroke-width:2.00018144;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     </g>
     <g
        id="Check-Radio_check-off-insensitive-dark"
@@ -7252,8 +7252,8 @@
        id="Check-Radio_radio-off-hover-dark"
        inkscape:label="#g4650"
        transform="matrix(1.000026,0,0,1.0000094,119.99736,301.99367)"
-       style="opacity:1;stroke:#eceff1;stroke-width:1.99949372;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       inkscape:export-filename="/usr/share/themes/Adapta/gtk-2.0/Check-Radio/radio-off-hover.png"
+       style="opacity:1;stroke:#00ff7d;stroke-width:1.99949372;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       inkscape:export-filename="/home/lara/radio-off-hover-dark.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <circle
@@ -7261,7 +7261,7 @@
          cy="692.36218"
          cx="100"
          id="path4507-2-1-0"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#eceff1;stroke-width:1.99949372;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.8;fill-rule:nonzero;stroke:#00ff7d;stroke-width:1.99949372;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     </g>
     <g
        id="Check-Radio_radio-off-active-dark"
@@ -7297,12 +7297,12 @@
        transform="translate(160,6.1140827e-7)"
        id="Check-Radio_radio-on-dark"
        inkscape:label="#g4659"
-       inkscape:export-filename="/usr/share/themes/Adapta/gtk-2.0/Check-Radio/radio-on.png"
+       inkscape:export-filename="/home/lara/radio-on.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <circle
          r="3"
-         style="fill:#00bcd4;fill-opacity:1;stroke:none"
+         style="fill:#00ff7d;fill-opacity:1;stroke:none"
          id="path4513-8"
          cx="20"
          cy="1034.3622" />
@@ -7324,7 +7324,7 @@
          inkscape:label="#g4650"
          id="radio-unchecked-6-6-0-2">
         <circle
-           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.4;fill-rule:nonzero;stroke:#00bcd4;stroke-width:1.99989164;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+           style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:none;fill-opacity:0.4;fill-rule:nonzero;stroke:#00ff7d;stroke-width:1.99989164;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
            id="path4507-2-82-3-7-0"
            cx="100"
            cy="692.36218"
@@ -7473,7 +7473,7 @@
        id="Buttons_button-dark"
        inkscape:label="#g3928"
        transform="translate(160,-80)"
-       style="fill:#455a64;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1;opacity:0.96">
       <rect
          clip-path="url(#clipPath3886-1)"
          ry="2"
@@ -7483,16 +7483,16 @@
          height="36"
          width="36"
          id="rect2987-1"
-         style="fill:#455a64;fill-opacity:1;stroke:none;filter:url(#filter3767-2)" />
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-2)" />
     </g>
     <g
        id="Buttons_button-hover-dark"
        inkscape:label="#g3931"
        transform="translate(160,-80)"
-       style="fill:#4d6570;fill-opacity:1">
+       style="fill:#46474f;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3896-3)"
-         style="fill:#4d6570;fill-opacity:1;stroke:none;filter:url(#filter4602-7)"
+         style="fill:#46474f;fill-opacity:1;stroke:none;filter:url(#filter4602-7)"
          id="rect3757-6"
          width="36"
          height="36"
@@ -7503,7 +7503,8 @@
     </g>
     <g
        id="Buttons_flat-button-hover-dark"
-       inkscape:label="#g4852">
+       inkscape:label="#g4852"
+       style="opacity:0.137">
       <rect
          y="612.36218"
          x="200"
@@ -7519,11 +7520,14 @@
          height="36"
          width="36"
          id="rect3838-8"
-         style="opacity:0.1;fill:#eceff1;fill-opacity:1;stroke:none" />
+         style="opacity:0.907;fill:#46474f;fill-opacity:1;stroke:none" />
     </g>
     <g
        id="Buttons_flat-button-active-dark"
-       inkscape:label="#g4858">
+       inkscape:label="#g4858"
+       inkscape:export-filename="/home/lara/Buttons_flat-button-active-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="612.36218"
          x="240"
@@ -7532,7 +7536,7 @@
          id="rect4203-8"
          style="fill:#000000;fill-opacity:0;stroke:none" />
       <rect
-         style="opacity:1;fill:#00bcd4;fill-opacity:1;stroke:none"
+         style="opacity:1;fill:#ff79c6;fill-opacity:1;stroke:none"
          id="rect3840-4"
          width="36"
          height="36"
@@ -7545,7 +7549,10 @@
        id="Buttons_button-active-dark"
        inkscape:label="#g3934"
        transform="translate(160,-80)"
-       style="fill:#00bcd4;fill-opacity:1">
+       style="fill:#ff79c6;fill-opacity:1"
+       inkscape:export-filename="/home/lara/Buttons_button-active-dark.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          transform="translate(40,-2.6171874e-6)"
          ry="2"
@@ -7555,10 +7562,10 @@
          height="36"
          width="36"
          id="rect3906-7"
-         style="fill:#00bcd4;fill-opacity:1;stroke:none;filter:url(#filter4602-7)"
+         style="fill:#ff79c6;fill-opacity:1;stroke:none;filter:url(#filter4602-7)"
          clip-path="url(#clipPath3896-3)" />
       <rect
-         style="opacity:0.2;fill:#00bcd4;fill-opacity:1;stroke:none"
+         style="opacity:0.2;fill:#ff79c6;fill-opacity:1;stroke:none"
          id="rect3759-1"
          width="36"
          height="36"
@@ -7591,9 +7598,9 @@
        inkscape:label="#g3928"
        id="Buttons_ltr-button-dark"
        transform="translate(160,0)"
-       style="fill:#455a64;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
-         style="fill:#455a64;fill-opacity:1;stroke:none;filter:url(#filter3767-23)"
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-23)"
          id="rect3046-0"
          width="36"
          height="36"
@@ -7607,7 +7614,7 @@
        inkscape:label="#g3931"
        id="Buttons_ltr-button-hover-dark"
        transform="translate(160,0)"
-       style="fill:#4d6570;fill-opacity:1">
+       style="fill:#46474f;fill-opacity:1">
       <rect
          ry="2"
          rx="2"
@@ -7616,17 +7623,17 @@
          height="36"
          width="36"
          id="rect3050-3"
-         style="fill:#4d6570;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
+         style="fill:#46474f;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
          clip-path="url(#clipPath3845-2)" />
     </g>
     <g
        inkscape:label="#g3934"
        id="Buttons_ltr-button-active-dark"
        transform="translate(160,0)"
-       style="fill:#00bcd4;fill-opacity:1">
+       style="fill:#ff79c6;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3855-8)"
-         style="fill:#00bcd4;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
+         style="fill:#ff79c6;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
          id="rect3054-0"
          width="36"
          height="36"
@@ -7643,14 +7650,14 @@
          height="36"
          width="36"
          id="rect3056-6"
-         style="opacity:0.2;fill:#00bcd4;fill-opacity:1;stroke:none"
+         style="opacity:0.2;fill:#ff79c6;fill-opacity:1;stroke:none"
          clip-path="url(#clipPath3851-0)" />
     </g>
     <g
        transform="matrix(-1,0,0,1,200,0)"
        id="Buttons_rtl-button-dark"
        inkscape:label="#g3928"
-       style="fill:#455a64;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3839-1)"
          ry="2"
@@ -7660,16 +7667,16 @@
          height="36"
          width="36"
          id="rect3871-9"
-         style="fill:#455a64;fill-opacity:1;stroke:none;filter:url(#filter3767-23)" />
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-23)" />
     </g>
     <g
        transform="matrix(-1,0,0,1,280,0)"
        id="Buttons_rtl-button-hover-dark"
        inkscape:label="#g3931"
-       style="fill:#4d6570;fill-opacity:1">
+       style="fill:#46474f;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3845-2)"
-         style="fill:#4d6570;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
+         style="fill:#46474f;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
          id="rect3875-2"
          width="36"
          height="36"
@@ -7682,7 +7689,7 @@
        transform="matrix(-1,0,0,1,360,0)"
        id="Buttons_rtl-button-active-dark"
        inkscape:label="#g3934"
-       style="fill:#00bcd4;fill-opacity:1">
+       style="fill:#ff79c6;fill-opacity:1">
       <rect
          transform="translate(40,-2.6171874e-6)"
          ry="2"
@@ -7692,11 +7699,11 @@
          height="36"
          width="36"
          id="rect3879-2"
-         style="fill:#00bcd4;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
+         style="fill:#ff79c6;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
          clip-path="url(#clipPath3855-8)" />
       <rect
          clip-path="url(#clipPath3851-0)"
-         style="opacity:0.2;fill:#00bcd4;fill-opacity:1;stroke:none"
+         style="opacity:0.2;fill:#ff79c6;fill-opacity:1;stroke:none"
          id="rect3881-8"
          width="36"
          height="36"
@@ -7710,7 +7717,7 @@
        id="Spin_ltr-up-dark"
        inkscape:label="#g3928"
        clip-path="url(#clipPath3959-3)"
-       style="fill:#445a63;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3839-1)"
          ry="2"
@@ -7720,17 +7727,17 @@
          height="36"
          width="36"
          id="rect3891-9"
-         style="fill:#445a63;fill-opacity:1;stroke:none;filter:url(#filter3767-23)" />
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-23)" />
     </g>
     <g
        transform="translate(160,40)"
        id="Spin_ltr-up-hover-dark"
        inkscape:label="#g3931"
        clip-path="url(#clipPath3955-3)"
-       style="fill:#445a63;fill-opacity:1">
+       style="fill:#46474f;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3845-2)"
-         style="fill:#445a63;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
+         style="fill:#46474f;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
          id="rect3895-9"
          width="36"
          height="36"
@@ -7772,9 +7779,9 @@
        id="Spin_rtl-up-dark"
        transform="matrix(-1,0,0,1,200,40)"
        clip-path="url(#clipPath3943-1)"
-       style="fill:#445a63;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
-         style="fill:#445a63;fill-opacity:1;stroke:none;filter:url(#filter3767-23)"
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-23)"
          id="rect3911-8"
          width="36"
          height="36"
@@ -7789,7 +7796,7 @@
        id="Spin_rtl-up-hover-dark"
        transform="matrix(-1,0,0,1,280,40)"
        clip-path="url(#clipPath3939-8)"
-       style="fill:#445a63;fill-opacity:1">
+       style="fill:#46474f;fill-opacity:1">
       <rect
          ry="2"
          rx="2"
@@ -7798,7 +7805,7 @@
          height="36"
          width="36"
          id="rect3915-5"
-         style="fill:#445a63;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
+         style="fill:#46474f;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
          clip-path="url(#clipPath3845-2)" />
     </g>
     <g
@@ -7834,7 +7841,7 @@
        id="Spin_ltr-down-dark"
        inkscape:label="#g3928"
        clip-path="url(#clipPath4075-0)"
-       style="fill:#445a63;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3839-1)"
          ry="2"
@@ -7844,17 +7851,17 @@
          height="36"
          width="36"
          id="rect4007-9"
-         style="fill:#445a63;fill-opacity:1;stroke:none;filter:url(#filter3767-23)" />
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-23)" />
     </g>
     <g
        transform="translate(160,40)"
        id="Spin_ltr-down-hover-dark"
        inkscape:label="#g3931"
        clip-path="url(#clipPath4071-5)"
-       style="fill:#445a63;fill-opacity:1">
+       style="fill:#46474f;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3845-2)"
-         style="fill:#445a63;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
+         style="fill:#46474f;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
          id="rect4011-8"
          width="36"
          height="36"
@@ -7896,9 +7903,9 @@
        id="Spin_rtl-down-dark"
        transform="matrix(-1,0,0,1,200,40)"
        clip-path="url(#clipPath4059-9)"
-       style="fill:#445a63;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
-         style="fill:#445a63;fill-opacity:1;stroke:none;filter:url(#filter3767-23)"
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-23)"
          id="rect4027-2"
          width="36"
          height="36"
@@ -7913,7 +7920,7 @@
        id="Spin_rtl-down-hover-dark"
        transform="matrix(-1,0,0,1,280,40)"
        clip-path="url(#clipPath4055-5)"
-       style="fill:#445a63;fill-opacity:1">
+       style="fill:#46474f;fill-opacity:1">
       <rect
          ry="2"
          rx="2"
@@ -7922,7 +7929,7 @@
          height="36"
          width="36"
          id="rect4031-4"
-         style="fill:#445a63;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
+         style="fill:#46474f;fill-opacity:1;stroke:none;filter:url(#filter4602-3)"
          clip-path="url(#clipPath3845-2)" />
     </g>
     <g
@@ -8003,7 +8010,7 @@
        id="Entry_entry-dark"
        inkscape:label="#g3928"
        transform="translate(160,79.999997)"
-       style="fill:#455a64;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3886-1-5)"
          ry="2"
@@ -8013,7 +8020,7 @@
          height="36"
          width="36"
          id="rect2987-1-3"
-         style="fill:#455a64;fill-opacity:1;stroke:none;filter:url(#filter3767-2-2)" />
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-2-2)" />
     </g>
     <g
        id="Entry_entry-active-dark"
@@ -8051,7 +8058,7 @@
        id="Entry_base_entry-dark"
        inkscape:label="#g3928"
        transform="translate(160,160)"
-       style="fill:#455a64;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
          clip-path="url(#clipPath3886-1-5-9)"
          ry="2"
@@ -8061,7 +8068,7 @@
          height="36"
          width="36"
          id="rect2987-1-3-6"
-         style="fill:#455a64;fill-opacity:1;stroke:none;filter:url(#filter3767-2-2-94)" />
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-2-2-94)" />
     </g>
     <g
        id="Entry_base_entry-active-dark"
@@ -8160,7 +8167,7 @@
          style="fill:#eeeeee;fill-opacity:0;stroke:none" />
       <rect
          transform="translate(80,89.999997)"
-         style="fill:#455a64;fill-opacity:1;stroke:none;filter:url(#filter3767-8-4)"
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-8-4)"
          id="rect4101-1-2"
          width="36"
          height="36"
@@ -8184,7 +8191,7 @@
          height="36"
          width="36"
          id="rect4137-4-8"
-         style="fill:#455a64;fill-opacity:1;stroke:none;filter:url(#filter3767-8-4)"
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-8-4)"
          transform="translate(80,89.999997)" />
       <rect
          style="fill:#eeeeee;fill-opacity:0;stroke:none"
@@ -8324,7 +8331,7 @@
          style="fill:#eeeeee;fill-opacity:0;stroke:none" />
       <rect
          transform="translate(80,89.999997)"
-         style="fill:#455a64;fill-opacity:1;stroke:none;filter:url(#filter3767-8-4-8)"
+         style="fill:#32333c;fill-opacity:1;stroke:none;filter:url(#filter3767-8-4-8)"
          id="rect4101-1-2-0"
          width="36"
          height="36"
@@ -8348,7 +8355,7 @@
          height="36"
          width="36"
          id="rect4137-4-8-5"
-         style="fill:#455a64;fill-opacity:1;stroke:none;filter:url(#filter3767-8-4-8)"
+         style="fill:#32333c;fill-opacity:0.94117647;stroke:none;filter:url(#filter3767-8-4-8)"
          transform="translate(80,89.999997)" />
       <rect
          style="fill:#eeeeee;fill-opacity:0;stroke:none"
@@ -8717,7 +8724,7 @@
          height="4"
          width="4"
          id="rect4162"
-         style="fill:#00bcd4;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         style="fill:#67686f;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
     </g>
     <g
        transform="translate(251,520.3622)"
@@ -8735,7 +8742,7 @@
          cy="22"
          cx="14"
          id="path4176"
-         style="opacity:1;fill:#1de9b6;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         style="opacity:1;fill:#00ff7d;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
     </g>
     <g
        transform="translate(227,540.3622)"
@@ -9003,22 +9010,22 @@
        id="Scrollbars_h-trough-dark"
        inkscape:label="#g4339"
        transform="translate(226,446.3622)"
-       style="fill:#455a64;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
          y="110"
          x="6"
          height="16"
          width="18"
          id="rect4224-2"
-         style="opacity:1;fill:#455a64;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         style="opacity:1;fill:#32333c;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
     </g>
     <g
        id="Scrollbars_v-trough-insensitive-dark"
        inkscape:label="#g4375"
        transform="translate(159,333.3622)"
-       style="fill:#455a64;fill-opacity:1">
+       style="fill:#56575f;fill-opacity:1">
       <rect
-         style="opacity:1;fill:#455a64;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         style="opacity:1;fill:#56575f;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
          id="use4552-3"
          width="18"
          height="16"
@@ -9030,9 +9037,9 @@
        id="Scrollbars_v-trough-dark"
        inkscape:label="#g4375"
        transform="translate(159,311.3622)"
-       style="fill:#455a64;fill-opacity:1">
+       style="fill:#32333c;fill-opacity:1">
       <rect
-         style="opacity:1;fill:#455a64;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+         style="opacity:1;fill:#32333c;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
          id="use4552-9-8"
          width="18"
          height="16"
@@ -9089,7 +9096,7 @@
          style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          transform="matrix(0,-1,1,0,0,0)" />
       <rect
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#eceff1;fill-opacity:0.33000004;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#56575f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          id="use4536-3"
          width="18"
          height="17"
@@ -9102,7 +9109,7 @@
     <g
        id="Scrollbars_v-slider-active-dark"
        inkscape:label="#g4391"
-       transform="matrix(0.31372549,0,0,0.42087532,179.72552,396.87401)">
+       transform="matrix(0.31372549,0,0,0.42087532,177.39216,394.44976)">
       <rect
          y="71"
          x="-215"
@@ -9110,7 +9117,7 @@
          width="18"
          id="use4542-1"
          style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         transform="matrix(0,-1,1,0,0,0)" />
+         transform="rotate(-90)" />
       <rect
          ry="0"
          rx="0"
@@ -9119,8 +9126,8 @@
          height="25.5"
          width="23.760006"
          id="use4544-5"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#eceff1;fill-opacity:0.74901961;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
-         transform="matrix(0,-1,1,0,0,0)" />
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff79c6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         transform="rotate(-90)" />
     </g>
     <g
        id="Scrollbars_v-slider-insensitive-dark"
@@ -9160,7 +9167,7 @@
          id="use4230-7-4"
          style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
       <rect
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.8;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#eceff1;fill-opacity:0.45098039;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.8;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#67686f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          id="use4232-0-5"
          width="18"
          height="25.5"
@@ -9188,7 +9195,7 @@
          height="17"
          width="18"
          id="rect4228-4"
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#eceff1;fill-opacity:0.32941176;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.6;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#56575f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     </g>
     <g
        id="Scrollbars_h-slider-hover-dark"
@@ -9205,7 +9212,7 @@
          y="0"
          x="0" />
       <rect
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.8;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#eceff1;fill-opacity:0.45098039;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:0.8;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#67686f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          id="use4232-03"
          width="18"
          height="25.5"
@@ -9227,7 +9234,7 @@
          y="0"
          x="0" />
       <rect
-         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#eceff1;fill-opacity:0.74901961;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+         style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ff79c6;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
          id="use4236-8"
          width="23.760006"
          height="25.5"
@@ -9262,14 +9269,17 @@
        transform="translate(170,504.3622)"
        id="ProgressBar_trough"
        inkscape:label="#g4278"
-       style="fill:#00bcd4;fill-opacity:0.2">
+       style="fill:#ff5555;fill-opacity:1"
+       inkscape:export-filename="/home/lara/k.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="4"
          x="4"
          height="4"
          width="4"
          id="rect4162-4"
-         style="fill:#00bcd4;fill-opacity:0.2;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
+         style="fill:#ff5555;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none" />
     </g>
     <g
        id="Range_v-scale-trough"
@@ -9534,7 +9544,7 @@
          height="2"
          width="2"
          id="rect3757-0-1"
-         style="fill:#455a64;fill-opacity:1;stroke:none" />
+         style="fill:#32333c;fill-opacity:1;stroke:none" />
     </g>
     <g
        transform="translate(160,-1.3134766e-5)"
@@ -9553,7 +9563,7 @@
          height="2"
          width="2"
          id="rect3757-5-1"
-         style="fill:#56707d;fill-opacity:1;stroke:none" />
+         style="fill:#46474f;fill-opacity:1;stroke:none" />
     </g>
     <g
        transform="translate(160,-1.3134766e-5)"
@@ -9572,7 +9582,7 @@
          height="2"
          width="2"
          id="rect3757-2-1"
-         style="fill:#4d6570;fill-opacity:1;stroke:none" />
+         style="fill:#46474f;fill-opacity:1;stroke:none" />
     </g>
     <g
        transform="translate(160,-1.3134766e-5)"
@@ -9616,14 +9626,17 @@
     <g
        transform="translate(156,-3.1347656e-6)"
        id="Others_bottom"
-       inkscape:label="#g5642">
+       inkscape:label="#g5642"
+       inkscape:export-filename="/home/lara/Others_bottom.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="426.36221"
          x="50"
          height="2"
          width="2"
          id="rect2987-0"
-         style="fill:#00bcd4;fill-opacity:1;stroke:none" />
+         style="fill:#ff79c6;fill-opacity:1;stroke:none" />
       <rect
          y="426.36221"
          x="50"
@@ -9654,14 +9667,17 @@
     <g
        transform="matrix(1,0,0,-1,162,856.72442)"
        id="Others_top"
-       inkscape:label="#g5642">
+       inkscape:label="#g5642"
+       inkscape:export-filename="/home/lara/Others_top.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="426.36221"
          x="50"
          height="2"
          width="2"
          id="rect2987-0-6"
-         style="fill:#00bcd4;fill-opacity:1;stroke:none" />
+         style="fill:#ff79c6;fill-opacity:1;stroke:none" />
       <rect
          y="426.36221"
          x="50"
@@ -9673,14 +9689,17 @@
     <g
        transform="matrix(0,-1,-1,0,654.36222,479.36221)"
        id="Others_left"
-       inkscape:label="#g5642">
+       inkscape:label="#g5642"
+       inkscape:export-filename="/home/lara/Others_left.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="426.36221"
          x="50"
          height="2"
          width="2"
          id="rect2987-0-7"
-         style="fill:#00bcd4;fill-opacity:1;stroke:none" />
+         style="fill:#ff79c6;fill-opacity:1;stroke:none" />
       <rect
          y="426.36221"
          x="50"
@@ -9692,14 +9711,17 @@
     <g
        transform="matrix(0,-1,1,0,-194.36221,479.36221)"
        id="Others_right"
-       inkscape:label="#g5642">
+       inkscape:label="#g5642"
+       inkscape:export-filename="/home/lara/Others_right.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <rect
          y="426.36221"
          x="50"
          height="2"
          width="2"
          id="rect2987-0-7-3"
-         style="fill:#00bcd4;fill-opacity:1;stroke:none" />
+         style="fill:#ff79c6;fill-opacity:0.94117647;stroke:none" />
       <rect
          y="426.36221"
          x="50"

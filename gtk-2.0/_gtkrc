@@ -1,0 +1,9 @@
+# Bridge | ScionicSpectre
+
+#
+# Imports
+#
+include "colors.rc"
+include "common.rc"
+include "misc.rc"
+include "3rd-party.rc"

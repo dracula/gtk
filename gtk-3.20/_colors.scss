@@ -2,10 +2,10 @@
 // it gets @if ed depending on $variant
 
 // Main definitions
-$base_color: if($variant == 'light', #282a36, #1E282C);
-$text_color: if($variant == 'light', #f8f8f2, #C3C7D1);
-$bg_color: if($variant == 'light', #1e1f29, #1E282C);
-$fg_color: if($variant == 'light', #f8f8f2, #C3C7D1);
+$base_color: #282a36;
+$text_color: #f8f8f2;
+$bg_color: #1e1f29;
+$fg_color: #f8f8f2;
 
 // Primary colors
 $lime: #50fa7a;

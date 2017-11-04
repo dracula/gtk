@@ -86,7 +86,7 @@ headerbar {
     @each $b_type, $b_color in (suggested-action, $cyan),
                                (destructive-action, $destructive_color) {
       &.#{$b_type} {
-        font: bold;
+        font-weight: bold;
         min-height: 24px;
         margin-top: 4px;
         margin-bottom: 4px;
@@ -225,7 +225,7 @@ headerbar {
     .selection-menu {
       &:backdrop, & {
         border-color: transparentize($selected_bg_color, 1);
-        background-image: linear-gradient(to bottom, transparentize($selected_bg_color, 1));
+        background-image: linear-gradient(to bottom, transparentize($selected_bg_color, 1), transparentize($selected_bg_color, 1));
         box-shadow: none;
         padding-left: 10px;
         padding-right: 10px;

@@ -1,10 +1,10 @@
 #
 # Colour scheme
 #
-gtk-color-scheme = "base_color:#455A64\nbg_color:#3E515A"
-gtk-color-scheme = "text_color:#ECEFF1\nfg_color:#ECEFF1"
-gtk-color-scheme = "selected_bg_color:#00BCD4\nselected_fg_color:#FFFFFF"
-gtk-color-scheme = "tooltip_bg_color:#2A373E\ntooltip_fg_color:#ECEFF1"
+gtk-color-scheme = "base_color:#282a36\nbg_color:#1e1f29"
+gtk-color-scheme = "text_color:#f8f8f2\nfg_color:#f8f8f2"
+gtk-color-scheme = "selected_bg_color:#ff79c6\nselected_fg_color:#f8f8f2"
+gtk-color-scheme = "tooltip_bg_color:#1e1f29\ntooltip_fg_color:#f8f8f2"
 
 
 #
