@@ -112,20 +112,6 @@ headerbar {
       }
     }
 
-    //Reset style
-    &.titlebutton {
-      color: transparent;
-      box-shadow: none;
-
-      &:hover,
-      &:active,
-      &:checked,
-      &:backdrop,
-      &:backdrop:hover,* {
-        color: transparent;
-        box-shadow: none;
-      }
-    }
   }
   .linked > button,
   .linked > button:hover,
