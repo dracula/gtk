@@ -110,6 +110,7 @@ StScrollBar {
 
 .slider {
   height: 1em;
+  color: $fg_color;
   -slider-height: 0.3em;
   -slider-background-color: lighten($base_color,7%); //background of the trough
   -slider-border-color: $borders_color; //trough border color
@@ -494,7 +495,7 @@ StScrollBar {
 
 .popup-menu {
   min-width: 15em;
-
+  background-color: transparent;
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
     background-color: darken($bg_color,2%);
@@ -1150,8 +1151,8 @@ StScrollBar {
     box-shadow: $depth;
     border-radius: 32px; /* wish we could do 50% */
     padding: 13px;
+    border: 1px solid darken($fg_color, 60%);
 
-    border: 1px solid $fg_color;
     &:hover, &:focus {
       border: 1px solid $selected_bg_color;
       color: $selected_bg_color;

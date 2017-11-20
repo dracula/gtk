@@ -5602,6 +5602,12 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   .nautilus-window notebook > stack:only-child:backdrop {
     background-color: #262833; }
 
+.nautilus-window searchbar {
+  border-top: 1px solid rgba(0, 0, 0, 0.12); }
+
+.nautilus-window .searchbar-container {
+  margin-top: -1px; }
+
 .nautilus-circular-button {
   border-radius: 20px;
   -gtk-outline-radius: 20px; }
