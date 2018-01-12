@@ -24,7 +24,7 @@ stage {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.3);
-    border: none; }
+    border: 1px solid rgba(255, 121, 198, 0.3); }
   .button:insensitive {
     color: #93949a;
     background-color: rgba(63, 65, 76, 0.66);
@@ -67,8 +67,14 @@ stage {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.3);
-    border: none;
+    border: 1px solid rgba(255, 121, 198, 0.3);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.3); }
+    .modal-dialog-linked-button:focus:hover {
+      color: #fefefe;
+      text-shadow: 0 1px black;
+      icon-shadow: 0 1px black;
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 121, 198, 0.3); }
   .modal-dialog-linked-button:hover {
     color: #ff79c6;
     background-color: transparent;
@@ -245,7 +251,8 @@ StScrollBar {
   .end-session-dialog .modal-dialog-linked-button:last-child {
     color: #ff3c3c; }
     .end-session-dialog .modal-dialog-linked-button:last-child:focus {
-      color: #ff3c3c; }
+      color: #ff3c3c;
+      border: 1px solid rgba(255, 60, 60, 0.3); }
 
 .end-session-dialog-list {
   padding-top: 20px; }
@@ -1573,7 +1580,7 @@ StScrollBar {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 2px 3px rgba(0, 0, 0, 0.3);
-    border: none; }
+    border: 1px solid rgba(255, 121, 198, 0.3); }
   .keyboard-key:hover, .keyboard-key:checked {
     color: #ff79c6;
     background-color: transparent;

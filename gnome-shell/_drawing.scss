@@ -165,7 +165,7 @@
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
     box-shadow: $depth5;
-    border: none;
+    border: 1px solid  transparentize($selected_bg_color, 0.7);
   }
 
   @else if $t==hover {
