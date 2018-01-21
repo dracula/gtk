@@ -121,16 +121,16 @@
  ********/
 
 .panel {
-  background-color: transparent;
+  background-color: rgba(30, 31, 41, 0.7);
   transition: all 100ms ease-in-out;
   color: white;
 
   &.maximized {
-    background-color: #000;
+    background-color: rgba(30, 31, 41, 1);
   }
 
   &.translucent {
-    background-color: transparentize(black, 0.5);
+    background-color: rgba(30, 31, 41, 0.5);
   }
 }
 
