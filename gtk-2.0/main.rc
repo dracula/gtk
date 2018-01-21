@@ -2400,14 +2400,14 @@ style "frame" {
     image {
       function = SHADOW
       file     = "assets/frame.png"
-      border   = {1, 1, 1, 1}
+      border   = {0, 0, 0, 0}
       stretch  = TRUE
     }
 
     image {
       function       = SHADOW_GAP
       file           = "assets/frame.png"
-      border         = {1, 1, 1, 1}
+      border         = {0, 0, 0, 0}
       stretch        = TRUE
       gap_start_file = "assets/border.png"
       gap_end_file   = "assets/border.png"

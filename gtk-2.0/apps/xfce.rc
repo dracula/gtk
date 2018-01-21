@@ -6,10 +6,10 @@ style "theme-panel" = "dark" {
 style "xfdesktop-icon-view" {
 	XfdesktopIconView::label-alpha = 0
 	XfdesktopIconView::selected-label-alpha = 80
-	XfdesktopIconView::shadow-x-offset = 1
-	XfdesktopIconView::shadow-y-offset = 1
-	XfdesktopIconView::selected-shadow-x-offset = 1
-	XfdesktopIconView::selected-shadow-y-offset = 1
+	XfdesktopIconView::shadow-x-offset = 0
+	XfdesktopIconView::shadow-y-offset = 0
+	XfdesktopIconView::selected-shadow-x-offset = 0
+	XfdesktopIconView::selected-shadow-y-offset = 0
 	XfdesktopIconView::shadow-color = @tooltip_bg_color
 	XfdesktopIconView::selected-shadow-color = @tooltip_bg_color
 	XfdesktopIconView::cell-spacing = 2
