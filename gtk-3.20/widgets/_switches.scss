@@ -30,7 +30,7 @@ switch {
   &:active,
   &:checked {
     background-color: $lime;
-
+    box-shadow: inset 0 0 0 1px $lime, 0px 1px $bottom_highlight;
     &:backdrop {
       background-color: $lime;
 
