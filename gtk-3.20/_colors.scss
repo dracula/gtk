@@ -21,7 +21,7 @@ $slider: #7b7bbd;
 $selected_fg_color: #f8f8f2;
 $selected_bg_color: #ff79c6;
 $selected_borders_color: darken($selected_bg_color, 10%);
-$borders_color: if($variant == 'light', transparentize(black,0.8), transparentize(black,0.9));
+$borders_color: if($variant == 'light', transparentize(rgb(156, 156, 156),0.8), transparentize(black,0.9));
 $borders_edge: if($variant == 'light', transparentize(white, 0.8), transparentize(white, 0.9));
 $link_color: $blue;
 $link_visited_color:transparentize($link_color,0.5);
