@@ -46,9 +46,9 @@ switch {
 
   // Handle
   slider {
-    padding:2px;
-    min-width: 16px;
-    min-height: 16px;
+    padding: 1px;
+    min-width: 14px;
+    min-height: 14px;
 
     border-radius: 50%;
     transition: $button_transition;

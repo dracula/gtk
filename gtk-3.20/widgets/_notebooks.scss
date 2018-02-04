@@ -147,7 +147,7 @@ notebook {
     }
 
     tab {
-      min-height: 30px;
+      min-height: 24px;
       min-width: 30px;
       padding: 3px 12px;
 
@@ -267,8 +267,8 @@ notebook {
       }
     }
 
-    &.top tab { padding-bottom: 4px; }
-    &.bottom tab { padding-top: 4px; }
+    &.top tab { padding-bottom: 2px; }
+    &.bottom tab { padding-top: 2px; }
   }
 
   > stack:not(:only-child) { // the :not(:only-child) is for "hidden" notebooks

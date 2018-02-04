@@ -26,9 +26,9 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 button {
   @at-root %button_basic, & {
 
-    min-height: 24px;
+    min-height: 20px;
     min-width: 16px;
-    padding: 4px 8px;
+    padding: 2px 5px;
     border: none;
     border-radius: 3px;
     transition: $button_transition;
@@ -136,7 +136,7 @@ button {
   // big standalone buttons like in Documents pager
   &.osd {
     min-width: 24px;
-    min-height: 32px;
+    min-height: 24px;
 
     &.image-button { min-width: 32px; }
 

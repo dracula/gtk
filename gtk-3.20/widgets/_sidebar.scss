@@ -32,6 +32,7 @@
 
   list { background-color: lighten($bg_color, 0.77%); }
   row{
+    padding: 7px 14px;
     &:selected{
       &:backdrop{
         color: $backdrop_selected_bg_color;

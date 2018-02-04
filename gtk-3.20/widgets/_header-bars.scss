@@ -4,7 +4,7 @@
 %titlebar,
 headerbar {
   padding: 0 6px;
-  min-height: 34px;
+  min-height: 27px;
   background-color: $headerbar_color;
   color: $headerbar_fg_color;
   border-radius: 0;
@@ -53,10 +53,10 @@ headerbar {
       border-style: solid;
     }
   }
-
+  entry { min-height: 24px;}  
   button {
     @include button(normal-header);
-    min-height: 34px;
+    min-height: 32px;
     &:hover,
     &:active,
     &:checked {
@@ -251,12 +251,12 @@ headerbar {
   } // squared corners when the window is maximized or tiled
 
   &.default-decoration {
-    padding: 4px;
-    min-height: 28px;
+    padding: 3px 4px;
+    min-height: 22px;
 
     button.titlebutton {
-      min-height: 26px;
-      min-width: 26px;
+      min-height: 22px;
+      min-width: 22px;
       margin: 0;
       padding: 0;
     }
@@ -267,10 +267,9 @@ headerbar {
   // add vertical margins to common widget on the headerbar to avoid them spanning the whole height
   entry,
   spinbutton,
-  separator,
-  button {
-    margin-top: 0;
-    margin-bottom: 0;
+  separator{
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   switch {
     margin-top: 10px;

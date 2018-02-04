@@ -259,9 +259,9 @@ assistant .sidebar label.highlight {
 
 notebook > header > tabs > arrow,
 button {
-  min-height: 24px;
+  min-height: 20px;
   min-width: 16px;
-  padding: 4px 8px;
+  padding: 2px 5px;
   border: none;
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -411,7 +411,7 @@ button.flat:not(:active):not(:checked):not(:hover):not(disabled) {
 
 button.osd {
   min-width: 24px;
-  min-height: 32px;
+  min-height: 24px;
   color: #fefefe;
   border-radius: 5px;
   outline-color: rgba(254, 254, 254, 0.3);
@@ -1744,7 +1744,7 @@ filechooserbutton:drop(active) {
  ****************/
 spinbutton:not(.vertical),
 entry {
-  min-height: 32px;
+  min-height: 26px;
   padding-left: 8px;
   padding-right: 8px;
   border: 1px solid;
@@ -2338,7 +2338,7 @@ GraniteWidgetsWelcome {
 .titlebar:not(headerbar),
 headerbar {
   padding: 0 6px;
-  min-height: 34px;
+  min-height: 27px;
   background-color: #1e1f29;
   color: #f8f8f2;
   border-radius: 0;
@@ -2390,6 +2390,9 @@ headerbar {
     headerbar .titlebar:not(headerbar) .linked > button:only-child, headerbar .linked > button:only-child {
       border-radius: 0px;
       border-style: solid; }
+  .titlebar:not(headerbar) entry,
+  headerbar entry {
+    min-height: 24px; }
   .titlebar:not(headerbar) button,
   headerbar button {
     color: #f8f8f2;
@@ -2397,7 +2400,7 @@ headerbar {
     border-radius: 0;
     text-shadow: none;
     box-shadow: none;
-    min-height: 34px; }
+    min-height: 32px; }
     .titlebar:not(headerbar) button:hover, .titlebar:not(headerbar) button:active, .titlebar:not(headerbar) button:checked,
     headerbar button:hover,
     headerbar button:active,
@@ -2744,21 +2747,20 @@ headerbar {
     border-radius: 0; }
   .default-decoration.titlebar:not(headerbar),
   headerbar.default-decoration {
-    padding: 4px;
-    min-height: 28px; }
+    padding: 3px 4px;
+    min-height: 22px; }
     .default-decoration.titlebar:not(headerbar) button.titlebutton,
     headerbar.default-decoration button.titlebutton {
-      min-height: 26px;
-      min-width: 26px;
+      min-height: 22px;
+      min-width: 22px;
       margin: 0;
       padding: 0; }
 
 headerbar entry,
 headerbar spinbutton,
-headerbar separator,
-headerbar button {
-  margin-top: 0;
-  margin-bottom: 0; }
+headerbar separator {
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 headerbar switch {
   margin-top: 10px;
@@ -2978,7 +2980,7 @@ list {
     border-color: rgba(20, 21, 28, 0.19); }
 
 row {
-  padding: 8px 14px;
+  padding: 1px 11px;
   transition: all 150ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
   row label {
     padding-left: 8px; }
@@ -3274,7 +3276,7 @@ notebook > header {
       text-shadow: none;
       -gtk-icon-shadow: none; }
   notebook > header tab {
-    min-height: 30px;
+    min-height: 24px;
     min-width: 30px;
     padding: 3px 12px;
     outline-offset: -5px;
@@ -3353,9 +3355,9 @@ notebook > header {
       notebook > header.left tabs tab.reorderable-page, notebook > header.right tabs tab.reorderable-page {
         border-style: solid none; }
   notebook > header.top tab {
-    padding-bottom: 4px; }
+    padding-bottom: 2px; }
   notebook > header.bottom tab {
-    padding-top: 4px; }
+    padding-top: 2px; }
 
 notebook > stack:not(:only-child) {
   background-color: #282a36; }
@@ -4155,18 +4157,20 @@ treeview ~ scrollbar.vertical {
     transition: 200ms ease-out; }
   .sidebar list {
     background-color: #20212b; }
-  .sidebar row:selected {
-    background: transparent;
-    color: #ff79c6; }
-    .sidebar row:selected:backdrop {
-      color: rgba(255, 121, 198, 0.6);
-      background: transparent; }
-      .sidebar row:selected:backdrop label {
-        color: rgba(255, 121, 198, 0.6); }
-    .sidebar row:selected:hover {
-      background-color: rgba(255, 121, 198, 0.2); }
-    .sidebar row:selected label {
+  .sidebar row {
+    padding: 7px 14px; }
+    .sidebar row:selected {
+      background: transparent;
       color: #ff79c6; }
+      .sidebar row:selected:backdrop {
+        color: rgba(255, 121, 198, 0.6);
+        background: transparent; }
+        .sidebar row:selected:backdrop label {
+          color: rgba(255, 121, 198, 0.6); }
+      .sidebar row:selected:hover {
+        background-color: rgba(255, 121, 198, 0.2); }
+      .sidebar row:selected label {
+        color: #ff79c6; }
   .sidebar.source-list {
     background-color: #1e1f29;
     color: #F2EFEA;
@@ -4433,9 +4437,9 @@ switch {
         background-color: rgba(255, 85, 85, 0.9);
         border: none; }
   switch slider {
-    padding: 2px;
-    min-width: 16px;
-    min-height: 16px;
+    padding: 1px;
+    min-width: 14px;
+    min-height: 14px;
     border-radius: 50%;
     transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
     background-color: #f8f8f2;
