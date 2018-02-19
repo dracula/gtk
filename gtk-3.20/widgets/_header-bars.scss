@@ -8,7 +8,6 @@ headerbar {
   background-color: $headerbar_color;
   color: $headerbar_fg_color;
   border-radius: 0;
-  -GtkPaned-handle-size: 0;
 
   &:backdrop {
     border-color: $backdrop_borders_color;
@@ -53,7 +52,7 @@ headerbar {
       border-style: solid;
     }
   }
-
+  entry { min-height: 24px; }
   button {
     @include button(normal-header);
     min-height: 34px;
@@ -253,10 +252,9 @@ headerbar {
   // add vertical margins to common widget on the headerbar to avoid them spanning the whole height
   entry,
   spinbutton,
-  separator,
-  button {
-    margin-top: 0;
-    margin-bottom: 0;
+  separator {
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   switch {
     margin-top: 10px;
