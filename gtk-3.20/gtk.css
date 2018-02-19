@@ -2348,8 +2348,7 @@ headerbar {
   min-height: 34px;
   background-color: #1e1f29;
   color: #f8f8f2;
-  border-radius: 0;
-  -GtkPaned-handle-size: 0; }
+  border-radius: 0; }
   .titlebar:backdrop:not(headerbar),
   headerbar:backdrop {
     border-color: rgba(93, 94, 99, 0.28);
@@ -2397,6 +2396,9 @@ headerbar {
     headerbar .titlebar:not(headerbar) .linked > button:only-child, headerbar .linked > button:only-child {
       border-radius: 0px;
       border-style: solid; }
+  .titlebar:not(headerbar) entry,
+  headerbar entry {
+    min-height: 24px; }
   .titlebar:not(headerbar) button,
   headerbar button {
     color: #f8f8f2;
@@ -2762,10 +2764,9 @@ headerbar {
 
 headerbar entry,
 headerbar spinbutton,
-headerbar separator,
-headerbar button {
-  margin-top: 0;
-  margin-bottom: 0; }
+headerbar separator {
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 headerbar switch {
   margin-top: 10px;
