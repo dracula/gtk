@@ -370,7 +370,7 @@ GtkViewport.frame {
 
 .view:insensitive,
 .view:insensitive:insensitive {
-    color: mix(@bg_color,@base_color, 0.3);
+    color: mix(@bg_color,@text_color, 0.4);
 }
 
 .view:selected,
