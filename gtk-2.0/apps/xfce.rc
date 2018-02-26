@@ -86,4 +86,4 @@ widget "*PanelApplet*"			style "theme-panel-text"
 # Override general panel-style with specific plugin-styles
 widget "*indicator-applet*"		style "indicator"
 widget "*indicator-button*"		style "indicator"
-widget "*XfceTasklist*"			style "dark_button"
+#widget "*XfceTasklist*"			style "dark_button"
