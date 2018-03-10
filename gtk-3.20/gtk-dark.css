@@ -5072,7 +5072,6 @@ button.raven-trigger {
     .right .budgie-panel.transparent {
       border-left-color: transparent; }
   .budgie-panel .end-region {
-    background-color: rgba(0, 0, 0, 0.3);
     border-radius: 0px; }
     .budgie-panel .end-region separator {
       background-color: rgba(248, 248, 242, 0.15); }
@@ -5304,12 +5303,11 @@ button.raven-trigger {
       .raven .raven-header button:hover {
         border-radius: 0;
         background-color: transparent;
-        box-shadow: inset 0 -3px 0 0 #ff60bb; }
+        color: #ff79c6; }
       .raven .raven-header button:active, .raven .raven-header button:checked {
-        color: #f8f8f2;
+        color: #ff79c6;
         border-radius: 0;
-        background-color: transparent;
-        box-shadow: inset 0 -3px 0 0 #ff60bb; }
+        background-color: transparent; }
       .raven .raven-header button:disabled {
         color: #8b8c8e; }
   .raven list {
@@ -5417,8 +5415,9 @@ calendar.raven-calendar {
   border-radius: 1px; }
   .budgie-notification-window button, .budgie-osd-window button, .budgie-switcher-window button {
     background-color: #8be9fd;
-    color: #f8f8f2;
-    border: none; }
+    color: #464626;
+    border: none;
+    margin: 0 3px; }
     .budgie-notification-window button:hover, .budgie-osd-window button:hover, .budgie-switcher-window button:hover {
       background-color: #72e4fd;
       border: none; }
