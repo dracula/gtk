@@ -697,6 +697,9 @@ button.suggested-action {
     text-shadow: none;
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
     
+    button.suggested-action:disabled label {
+      color: rgba(248, 248, 242, 0.8); }
+    
     button.suggested-action:disabled:active,
     button.suggested-action:disabled:checked {
       color: rgba(248, 248, 242, 0.7);
@@ -861,6 +864,9 @@ button.destructive-action {
     background-color: #ff2222;
     text-shadow: none;
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+    
+    button.destructive-action:disabled label {
+      color: rgba(248, 248, 242, 0.8); }
     
     button.destructive-action:disabled:active,
     button.destructive-action:disabled:checked {
