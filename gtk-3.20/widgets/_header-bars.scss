@@ -111,20 +111,6 @@ headerbar {
       }
     }
 
-    //Reset style
-    &.titlebutton {
-      color: transparent;
-      box-shadow: none;
-
-      &:hover,
-      &:active,
-      &:checked,
-      &:backdrop,
-      &:backdrop:hover,* {
-        color: transparent;
-        box-shadow: none;
-      }
-    }
   }
   .linked > button,
   .linked > button:hover,
@@ -266,11 +252,7 @@ headerbar {
   // add vertical margins to common widget on the headerbar to avoid them spanning the whole height
   entry,
   spinbutton,
-<<<<<<< HEAD
-  separator{
-=======
   separator {
->>>>>>> master
     margin-top: 5px;
     margin-bottom: 5px;
   }
