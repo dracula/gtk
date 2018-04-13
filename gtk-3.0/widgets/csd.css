@@ -105,33 +105,8 @@
 /******************
  * window actions *
  ******************/
-.titlebar .button.titlebutton,
-.titlebar .button.titlebutton:hover,
-.titlebar .button.titlebutton:checked {
-    border: none;
-    background-color: transparent;
-    icon-shadow: none;
-    box-shadow: none;
-}
-
 .header-bar .button.titlebutton,
 .titlebar .button.titlebutton {
-    padding: 3px;
-    padding-left: 1px;
-    padding-right: 1px;
-}
-
-.titlebar .titlebutton,
-.titlebar .titlebutton:hover,
-.titlebar .titlebutton:active,
-.titlebar .titlebutton:active:hover,
-.titlebar .titlebutton:backdrop,
-.maximized .titlebar .titlebutton,
-.maximized .titlebar .titlebutton:hover,
-.maximized .titlebar .titlebutton:active,
-.maximized .titlebar .titlebutton:active:hover,
-.maximized .titlebar .titlebutton:backdrop {
-    color: transparent;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
