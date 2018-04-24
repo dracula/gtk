@@ -1161,7 +1161,7 @@ StScrollBar {
       border: 1px solid $selected_bg_color;
       color: $selected_bg_color;
     }
-    &:active { background-color: darken($selected_bg_color, 10%); }
+    &:active { background-color: darken($selected_bg_color, 10%); color: $selected_fg_color; }
 
     & > StIcon { icon-size: 16px; }
   }
@@ -1438,7 +1438,7 @@ StScrollBar {
     background-color: $lime;
     border-radius: 10px !important;
     box-shadow: 0px 0px 5px 4px transparentize($lime,0.2);
-    margin-bottom: 2px;
+    margin-bottom: 0px;
   }
 
   %icon_tile {
