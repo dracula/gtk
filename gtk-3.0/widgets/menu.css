@@ -95,8 +95,6 @@ GtkTreeMenu .menuitem {
     background-image: none;
 }
 
-.menu .menuitem:active,
-.menu .menuitem *:active,
 .menu .menuitem:hover,
 .menu .menuitem *:hover {
     transition: 100ms linear;
