@@ -140,7 +140,7 @@ StScrollBar {
   height: 1em;
   color: #fefefe;
   -slider-height: 0.3em;
-  -slider-background-color: #373a4b;
+  -slider-background-color: #404356;
   -slider-border-color: rgba(68, 71, 90, 0.4);
   -slider-active-background-color: #ff5555;
   -slider-active-border-color: #ff46b0;
@@ -490,7 +490,7 @@ StScrollBar {
     .popup-menu .popup-menu-item:checked {
       background-color: rgba(255, 121, 198, 0.9);
       color: #fefefe;
-      box-shadow: inset 0 1px 0px rgba(79, 82, 105, 0.4);
+      box-shadow: inset 0 1px 0px #ff93d1;
       font-weight: bold; }
       .popup-menu .popup-menu-item:checked:hover {
         background-color: rgba(255, 121, 198, 0.9);

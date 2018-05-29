@@ -115,7 +115,7 @@ StScrollBar {
   height: 1em;
   color: $fg_color;
   -slider-height: 0.3em;
-  -slider-background-color: lighten($base_color,7%); //background of the trough
+  -slider-background-color: lighten($base_color, 11%); //background of the trough
   -slider-border-color: $borders_color; //trough border color
   -slider-active-background-color: $red; //active trough fill
   -slider-active-border-color: darken($selected_bg_color,10%); //active trough border
@@ -515,7 +515,7 @@ StScrollBar {
     &:checked {
       background-color: transparentize($selected_bg_color,0.1);
       color: $selected_fg_color;
-      box-shadow: inset 0 1px 0px lighten($borders_color,5%);
+      box-shadow: inset 0 1px 0px lighten($selected_bg_color,5%);
       font-weight: bold;
       &:hover{
         background-color: transparentize($selected_bg_color,0.1);
