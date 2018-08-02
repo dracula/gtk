@@ -81,9 +81,9 @@ button.titlebutton {
     }
   }
   &.maximize {
-    background-image: -gtk-scaled(url("../assets/maximize.png"),url("../assets/max@2.png"));
+    background-image: -gtk-scaled(url("../assets/maximize.png"),url("../assets/maximize@2.png"));
     &:hover,&:active {
-      background-image: -gtk-scaled(url("../assets/maximize_prelight.png"),url("../assets/max_prelight@2.png"));
+      background-image: -gtk-scaled(url("../assets/maximize_prelight.png"),url("../assets/maximize_prelight@2.png"));
     }
   }
   &.minimize {
