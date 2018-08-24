@@ -2,7 +2,17 @@
  * Nautilus *
  ************/
 .nautilus-window {
-
+  .frame{
+    *:selected, *:selected:backdrop{
+      background: transparent;
+      color: $selected_bg_color;
+    } 
+    *:selected:backdrop{
+      label {
+        color: $backdrop_selected_bg_color;
+      }
+    }
+  }
   paned {
     > separator { background-image: none; }
   }
