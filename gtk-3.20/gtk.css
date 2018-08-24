@@ -3173,10 +3173,6 @@ assistant {
 /*************
  * Notebooks *
  *************/
-notebook .frame *:selected {
-  background: transparent;
-  color: #ff79c6; }
-
 notebook > header {
   padding: 1px;
   border-color: rgba(156, 156, 156, 0.2);
@@ -5554,6 +5550,13 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 /************
  * Nautilus *
  ************/
+.nautilus-window .frame *:selected, .nautilus-window .frame *:selected:backdrop {
+  background: transparent;
+  color: #ff79c6; }
+
+.nautilus-window .frame *:selected:backdrop label {
+  color: rgba(255, 121, 198, 0.6); }
+
 .nautilus-window paned > separator {
   background-image: none; }
 
