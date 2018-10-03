@@ -5737,25 +5737,36 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
  * Panel *
  ********/
 .panel {
-  background-color: rgba(30, 31, 41, 0.7);
+  background-color: transparent;
   transition: all 100ms ease-in-out;
-  color: white; }
+  color: #fff; }
   .panel.maximized {
-    background-color: #1e1f29; }
+    background-color: #000; }
   .panel.translucent {
-    background-color: rgba(30, 31, 41, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5); }
 
-.composited-indicator > GtkRevealer,
-.composited-indicator > GtkRevealer GtkImage,
-.composited-indicator > GtkRevealer GtkLabel {
-  color: white;
+menubar.panel,
+.panel menubar {
+  box-shadow: none;
+  border: none; }
+
+.composited-indicator > revealer,
+.composited-indicator > revealer image,
+.composited-indicator > revealer label,
+.composited-indicator > revealer spinner {
+  color: #fff;
   font-weight: bold;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
-  -gtk-icon-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1); }
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.5);
+  transition: all 200ms ease-in-out;
+  -gtk-icon-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.5); }
 
-.panel.color-light .composited-indicator > GtkRevealer,
-.panel.color-light .composited-indicator > GtkRevealer GtkImage,
-.panel.color-light .composited-indicator > GtkRevealer GtkLabel {
+.composited-indicator > revealer image:first-child + label {
+  margin-left: 5px; }
+
+.panel.color-light .composited-indicator > revealer,
+.panel.color-light .composited-indicator > revealer image,
+.panel.color-light .composited-indicator > revealer label,
+.panel.color-light .composited-indicator > revealer spinner {
   color: rgba(0, 0, 0, 0.6);
   text-shadow: 0 1px rgba(255, 255, 255, 0.1);
   -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.1); }
@@ -5816,6 +5827,10 @@ LibraryWindow .the-button-in-the-combobox {
 
 .checkboard-layout .item {
   background-color: #f8f8f2; }
+
+.xfce4-panel.panel {
+  background-color: rgba(30, 31, 41, 0.7);
+  color: #f8f8f2; }
 
 /********
 * Unity *
