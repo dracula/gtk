@@ -2,7 +2,7 @@
  * Gala *
  *******/
 
-.gala-notification {
+ .gala-notification {
   border-width: 0;
   border-radius: 2px;
   color: white;
@@ -121,36 +121,48 @@
  ********/
 
 .panel {
-  background-color: rgba(30, 31, 41, 0.7);
+  background-color: transparent;
   transition: all 100ms ease-in-out;
-  color: white;
+  color: #fff;
 
   &.maximized {
-    background-color: rgba(30, 31, 41, 1);
+    background-color: #000;
   }
 
   &.translucent {
-    background-color: rgba(30, 31, 41, 0.5);
+    background-color: transparentize(black, 0.5);
   }
+}
+
+menubar.panel,
+.panel menubar {
+    box-shadow: none;
+    border: none;
 }
 
 .composited-indicator {
 
-  > GtkRevealer,
-  > GtkRevealer GtkImage,
-  > GtkRevealer GtkLabel  {
-    color: white;
+  > revealer,
+  > revealer image,
+  > revealer label,
+  > revealer spinner {
+    color: #fff;
     font-weight: bold;
-    text-shadow: 0 1px 2px transparentize(black, 0.8), 0 1px 2px transparentize(black, 0.9);
-    -gtk-icon-shadow: 0 1px 2px transparentize(black, 0.8), 0 1px 2px transparentize(black, 0.9);
+    text-shadow: 0 1px 2px transparentize(black, 0.7), 0 1px 2px transparentize(black, 0.5);
+    transition: all 200ms ease-in-out;
+    -gtk-icon-shadow: 0 1px 2px transparentize(black, 0.7), 0 1px 2px transparentize(black, 0.5);
   }
+  > revealer image:first-child + label {
+    margin-left: 5px;
+  }	  
 }
 
 .panel.color-light .composited-indicator {
 
-  > GtkRevealer,
-  > GtkRevealer GtkImage,
-  > GtkRevealer GtkLabel {
+  > revealer,
+  > revealer image,
+  > revealer label,
+  > revealer spinner {
     color: transparentize(black, 0.4);
     text-shadow: 0 1px transparentize(white, 0.9);
     -gtk-icon-shadow: 0 1px transparentize(white, 0.9);
