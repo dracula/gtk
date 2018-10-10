@@ -265,3 +265,18 @@ LibraryWindow {
 .checkboard-layout .item {
     background-color: $fg_color;
 }
+
+/*********
+* Avatar *
+*********/
+
+.avatar {
+  border: 1px solid transparentize(#000, 0.35);
+  border-radius: 50%;
+  box-shadow:
+      inset 0 0 0 1px transparentize(#fff, 0.05),
+      inset 0 1px 0 0 transparentize(#fff, 0.45),
+      inset 0 -1px 0 0 transparentize(#fff, 0.15),
+      0 1px 3px transparentize(#000, 0.12),
+      0 1px 2px transparentize(#000, 0.24);
+}
