@@ -5611,6 +5611,20 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .nautilus-window .searchbar-container {
   margin-top: -1px; }
 
+.nautilus-window .path-bar-box .dim-label, .nautilus-window .path-bar-box label.separator, .nautilus-window .path-bar-box .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-bar-box .subtitle,
+.nautilus-window .path-bar-box headerbar .subtitle, headerbar .nautilus-window .path-bar-box .subtitle {
+  color: transparent; }
+
+.nautilus-window .path-bar-box button {
+  transition: all 100ms ease-in;
+  margin-left: -5px; }
+  .nautilus-window .path-bar-box button:backdrop:hover, .nautilus-window .path-bar-box button:backdrop:active, .nautilus-window .path-bar-box button:backdrop:checked {
+    background-color: transparent;
+    color: rgba(255, 121, 198, 0.6);
+    box-shadow: none; }
+    .nautilus-window .path-bar-box button:backdrop:hover label, .nautilus-window .path-bar-box button:backdrop:active label, .nautilus-window .path-bar-box button:backdrop:checked label {
+      color: rgba(255, 121, 198, 0.6); }
+
 .nautilus-circular-button {
   border-radius: 20px;
   -gtk-outline-radius: 20px; }
