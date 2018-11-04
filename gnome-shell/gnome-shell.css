@@ -145,7 +145,17 @@ StScrollBar {
   -slider-active-background-color: #ff5555;
   -slider-active-border-color: #ff46b0;
   -slider-border-width: 0;
-  -slider-handle-radius: 6px; }
+  -slider-handle-radius: 6px;
+  -barlevel-height: 0.3em;
+  -barlevel-background-color: #404356;
+  -barlevel-border-color: rgba(68, 71, 90, 0.4);
+  -barlevel-active-background-color: #ff5555;
+  -barlevel-active-border-color: #ff46b0;
+  -barlevel-border-width: 0;
+  -barlevel-handle-radius: 6px;
+  -barlevel-overdrive-color: #ff5555;
+  -barlevel-overdrive-border-color: transparent;
+  -barlevel-overdrive-separator-width: 0px; }
 
 /* Check Boxes */
 .check-box StBoxLayout {
@@ -392,7 +402,7 @@ StScrollBar {
   padding-bottom: 8px; }
 
 .hidden {
-  color: transparent; }
+  color: rgba(0, 0, 0, 0); }
 
 .prompt-dialog-null-label {
   font-size: 10pt;
@@ -478,7 +488,7 @@ StScrollBar {
   background-color: transparent; }
   .popup-menu .popup-sub-menu {
     background-color: #242530;
-    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2); }
+    box-shadow: none; }
   .popup-menu .popup-menu-content {
     padding: 1em 0em; }
   .popup-menu .popup-menu-item {
@@ -554,8 +564,12 @@ StScrollBar {
   .osd-window .level {
     height: 0.6em;
     border-radius: 0.3em;
-    background-color: rgba(73, 76, 98, 0.45);
-    color: #fefefe; }
+    color: #fefefe;
+    -barlevel-height: 0.6em;
+    -barlevel-background-color: rgba(73, 76, 98, 0.45);
+    -barlevel-active-background-color: #fefefe;
+    -barlevel-overdrive-color: #ff5555;
+    -barlevel-overdrive-separator-width: 0.2em; }
   .osd-window .level-bar {
     background-color: #fefefe;
     border-radius: 0.3em; }
@@ -604,7 +618,7 @@ StScrollBar {
   background: rgba(68, 71, 90, 0.4); }
 
 .switcher-arrow {
-  border-color: transparent;
+  border-color: rgba(0, 0, 0, 0);
   color: rgba(254, 254, 254, 0.8); }
   .switcher-arrow:highlighted {
     color: #fefefe; }
