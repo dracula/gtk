@@ -1604,7 +1604,7 @@ StScrollBar {
     border: none;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
-    background: #2f313f; }
+    background-color: #2f313f; }
   .keyboard-key:active {
     color: white;
     background-color: rgba(29, 31, 39, 0.95);
