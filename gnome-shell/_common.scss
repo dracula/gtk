@@ -1711,7 +1711,7 @@ StScrollBar {
     border: 1px solid $borders-color;
     color: white;
     &:focus { @include button(focus); }
-    &:hover,&:checked { @include button(hover); background: lighten($bg_color, 3%)}
+    &:hover,&:checked { @include button(hover); background-color: lighten($bg_color, 3%)}
     &:active { @include button(active);}
     &:grayed { //FIXME
       background-color: $osd_bg_color;
