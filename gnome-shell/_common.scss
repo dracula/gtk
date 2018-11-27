@@ -900,7 +900,7 @@ StScrollBar {
     .datemenu-displays-box { spacing: 1em; }
 
     .datemenu-calendar-column {
-      border: 0 solid lighten($bg_color,5%);
+      border: 0 solid $borders_color;
       &:ltr { border-left-width: 1px; }
       &:rtl { border-right-width: 1px; }
     }
@@ -1173,7 +1173,7 @@ StScrollBar {
     box-shadow: $depth;
     border-radius: 32px; /* wish we could do 50% */
     padding: 13px;
-    border: 1px solid darken($fg_color, 60%);
+    border: 1px solid $borders_color;
 
     &:hover, &:focus {
       border: 1px solid $selected_bg_color;
@@ -1294,7 +1294,7 @@ StScrollBar {
     width: 320px;
     padding: 7px 9px;
     border-radius: 2px;
-    border: 1px solid lighten($bg_color, 10%);
+    border: 1px solid $borders_color;
     color: transparentize($fg_color,.3);;
     background-color: transparentize(lighten($bg_color, 2%), 0.4);
     box-shadow: $depth;

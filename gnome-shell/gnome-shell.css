@@ -93,7 +93,7 @@ stage {
 /* Entries */
 StEntry {
   background-color: #282a36;
-  border-color: rgba(68, 71, 90, 0.4);
+  border-color: rgba(25, 26, 34, 0.9);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22);
   border-radius: 2px;
   padding: 4px;
@@ -141,14 +141,14 @@ StScrollBar {
   color: #fefefe;
   -slider-height: 0.3em;
   -slider-background-color: #404356;
-  -slider-border-color: rgba(68, 71, 90, 0.4);
+  -slider-border-color: rgba(25, 26, 34, 0.9);
   -slider-active-background-color: #ff5555;
   -slider-active-border-color: #ff46b0;
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
   -barlevel-height: 0.3em;
   -barlevel-background-color: #404356;
-  -barlevel-border-color: rgba(68, 71, 90, 0.4);
+  -barlevel-border-color: rgba(25, 26, 34, 0.9);
   -barlevel-active-background-color: #ff5555;
   -barlevel-active-border-color: #ff46b0;
   -barlevel-border-width: 0;
@@ -530,7 +530,7 @@ StScrollBar {
   -arrow-border-radius: 3px;
   -arrow-background-color: #282a36;
   -arrow-border-width: 1px;
-  -arrow-border-color: rgba(68, 71, 90, 0.4);
+  -arrow-border-color: rgba(25, 26, 34, 0.9);
   -arrow-base: 24px;
   -arrow-rise: 11px;
   -arrow-box-shadow: 0 1px 3px black; }
@@ -600,7 +600,7 @@ StScrollBar {
 
 .switcher-list .item-box:outlined {
   padding: 6px;
-  border: 2px solid rgba(46, 48, 61, 0.4); }
+  border: 2px solid rgba(3, 4, 5, 0.9); }
 
 .switcher-list .item-box:selected {
   background-color: #ff79c6;
@@ -615,7 +615,7 @@ StScrollBar {
 
 .switcher-list .separator {
   width: 1px;
-  background: rgba(68, 71, 90, 0.4); }
+  background: rgba(25, 26, 34, 0.9); }
 
 .switcher-arrow {
   border-color: rgba(0, 0, 0, 0);
@@ -667,7 +667,7 @@ StScrollBar {
 .switcher-list, .workspace-switcher-container {
   color: #fefefe;
   background-color: #282a36;
-  border: 1px solid rgba(68, 71, 90, 0.4);
+  border: 1px solid rgba(25, 26, 34, 0.9);
   border-radius: 2px;
   padding: 12px; }
 
@@ -797,7 +797,7 @@ StScrollBar {
   spacing: 1em; }
 
 .datemenu-calendar-column {
-  border: 0 solid #333545; }
+  border: 0 solid rgba(25, 26, 34, 0.9); }
   .datemenu-calendar-column:ltr {
     border-left-width: 1px; }
   .datemenu-calendar-column:rtl {
@@ -910,7 +910,7 @@ StScrollBar {
 
 .calendar-today {
   font-weight: bold;
-  border: 1px solid rgba(68, 71, 90, 0); }
+  border: 1px solid rgba(25, 26, 34, 0.4); }
 
 .calendar-day-with-events {
   color: white;
@@ -1053,7 +1053,7 @@ StScrollBar {
   border-radius: 32px;
   /* wish we could do 50% */
   padding: 13px;
-  border: 1px solid #656565; }
+  border: 1px solid rgba(25, 26, 34, 0.9); }
   .system-menu-action:hover, .system-menu-action:focus {
     border: 1px solid #ff79c6;
     color: #ff79c6; }
@@ -1117,14 +1117,14 @@ StScrollBar {
   icon-size: 32px; }
 
 .nm-dialog-scroll-view {
-  border: 2px solid rgba(68, 71, 90, 0.4); }
+  border: 2px solid rgba(25, 26, 34, 0.9); }
 
 .nm-dialog-header {
   font-weight: bold; }
 
 .nm-dialog-item {
   font-size: 110%;
-  border-bottom: 1px solid rgba(68, 71, 90, 0.4);
+  border-bottom: 1px solid rgba(25, 26, 34, 0.9);
   padding: 12px;
   spacing: 20px; }
 
@@ -1174,7 +1174,7 @@ StScrollBar {
   width: 320px;
   padding: 7px 9px;
   border-radius: 2px;
-  border: 1px solid #3e4153;
+  border: 1px solid rgba(25, 26, 34, 0.9);
   color: rgba(254, 254, 254, 0.7);
   background-color: rgba(44, 47, 60, 0.6);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22);
@@ -1446,7 +1446,7 @@ StScrollBar {
   border-radius: 3px;
   color: #fefefe;
   background-color: #282a36;
-  border: 1px solid rgba(68, 71, 90, 0.4); }
+  border: 1px solid rgba(25, 26, 34, 0.9); }
   .notification-banner:hover {
     background-color: #282a36; }
   .notification-banner:focus {
@@ -1459,7 +1459,7 @@ StScrollBar {
   .notification-banner .secondary-icon {
     icon-size: 1.09em; }
   .notification-banner .notification-actions {
-    background-color: rgba(68, 71, 90, 0.4);
+    background-color: rgba(25, 26, 34, 0.9);
     padding-top: 2px;
     spacing: 1px; }
   .notification-banner .notification-button {
@@ -1589,7 +1589,7 @@ StScrollBar {
   font-size: 14pt;
   font-weight: bold;
   border-radius: 5px;
-  border: 1px solid rgba(68, 71, 90, 0.4);
+  border: 1px solid rgba(25, 26, 34, 0.9);
   color: white; }
   .keyboard-key:focus {
     color: #fefefe;
