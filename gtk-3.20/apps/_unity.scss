@@ -2,8 +2,8 @@
 * Unity *
 *********/
 
-$unity_color: #31363D; /* Unity window border color */
-$unity_text_color: #fefefe; /* Unity window text color */
+$unity_color: #eeeeee; /* Unity window border color */
+$unity_text_color: #31363D; /* Unity window text color */
 $backdrop_unity_text_color: darken($unity_text_color,10%); /* Backdrop Unity window text color */
 $unity_panel_color: darken($unity_color, 10%); /* Unity panel color #454D50 */
 

@@ -25,12 +25,11 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 %button,
 button {
   @at-root %button_basic, & {
-
-    min-height: 24px;
+    min-height: 20px;
     min-width: 16px;
-    padding: 4px 8px;
-    border: none;
-    border-radius: 3px;
+    padding: 2px 6px;
+    border: 1px solid $borders_color;
+    border-radius: 4px;
     transition: $button_transition;
 
     @include button(normal);
@@ -96,6 +95,11 @@ button {
       padding-left: 4px;
       padding-right: 4px;
     }
+    &.image-button.circular,&.image-button.sidebar-button{
+      padding: 6px 4px;
+      border-radius: 50px;
+      box-shadow: none;
+     }
 
     &.text-button {
       padding-left: 16px;
@@ -105,7 +109,7 @@ button {
     &.text-button.image-button {
       padding-left: 8px;
       padding-right: 8px;
-
+      border-radius: 2px;
       label {
         padding-left: 8px;
         padding-right: 8px;
@@ -136,7 +140,7 @@ button {
   // big standalone buttons like in Documents pager
   &.osd {
     min-width: 24px;
-    min-height: 32px;
+    min-height: 20px;
 
     &.image-button { min-width: 32px; }
 
@@ -217,15 +221,21 @@ button {
   }
 
   // Suggested and Destructive Action buttons
-  @each $b_type, $b_color in (suggested-action, $purple),
+  @each $b_type, $b_color in (suggested-action, $cyan),
                              (destructive-action, $destructive_color) {
     &.#{$b_type} {
-      @include button(normal, $b_color, white);
+      border: none;
+      
+      @if $b_type ==  suggested-action {
+        @include button(rounded, $b_color, white);
+      } @else {
+        @include button(rounded-red, $b_color, white); 
+      }
 
       &.flat {
-        @include button(undecorated);
-
-        color: $b_color; //FIXME: does it work on the dark variant?
+       // @include button(undecorated);
+        @include button(rounded, $b_color, white);
+        //color: $b_color; //FIXME: does it work on the dark variant?
       }
 
       &:hover { @include button(hover, $b_color, white); }
@@ -259,14 +269,14 @@ button {
 
       &:disabled {
         @include button(insensitive, $b_color, white);
-        label { color: transparentize($selected_fg_color, 0.2); }
+
         &:active,
         &:checked { @include button(insensitive-active, $b_color, white); }
       }
 
       .osd & {
         @include button(osd, $b_color);
-
+        
         &:hover { @include button(osd-hover, $b_color); }
 
         &:active,
@@ -533,7 +543,7 @@ button.color {
     &, overlay { border-radius: 0; }
 
     @if $variant == 'light' {
-      box-shadow: 0 1px _text_shadow_color();
+      box-shadow: none;
 
       &:disabled,
       &:backdrop { box-shadow: none; }
@@ -543,9 +553,9 @@ button.color {
 
 notebook, list, .view, popover {
   button {
-    box-shadow: inset 0px 0px 0px 1px $borders_color;
+    box-shadow: none;
     &:backdrop {
-      box-shadow: inset 0px 0px 0px 1px $borders_color;
+      box-shadow: none;
     }
   }
   .linked > button {

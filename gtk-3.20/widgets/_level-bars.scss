@@ -17,11 +17,11 @@ levelbar {
   trough {
     padding: 3px;
     border-radius: 3px;
-    background-color: if($variant == 'light' ,transparentize(white,0.2),transparentize(black,0.86));
+    background-color: if($variant == 'light' ,transparentize(white,0.2),transparentize(white,0.8));
     box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
 
     &:backdrop {
-      background-color: if($variant == 'light' ,transparentize(white,0.4),transparentize(black,0.94));
+      background-color: if($variant == 'light' ,transparentize(white,0.4),transparentize(white,0.94));
       box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1);
     }
   }
@@ -55,7 +55,7 @@ levelbar {
     }
 
     &.empty {
-      background-color: transparentize(black,0.86);
+      background-color:  if($variant == 'light' ,transparentize(black, 0.86),transparentize(black,0.65));
       box-shadow: none;
     }
   }

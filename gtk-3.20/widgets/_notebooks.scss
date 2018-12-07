@@ -1,26 +1,25 @@
 /*************
  * Notebooks *
  *************/
-notebook {
+ notebook {
   > header {
     padding: 1px;
     border-color: $borders_color;
-    border-width: 0px;
-    background-color: $bg_color;
+    border-width: 1px;
+    background-color: darken($base_color, 5%);
 
     &:backdrop {
       border-color: $backdrop_borders_color;
       background-color: $backdrop_bg_color;
     }
 
-    tabs { margin: -1px; }
+    tabs { margin: 0px; }
 
     &.top {
       border-bottom-style: solid;
       > tabs {
         margin-bottom: -2px;
         > tab {
-
 
           &:backdrop { box-shadow: none; }
 
@@ -41,7 +40,12 @@ notebook {
 
           &:backdrop { box-shadow: none; }
 
-          &:checked { background-color: $base_color; }
+          &:checked { 
+            background-color: $base_color; 
+            box-shadow: -1px 0 0 $borders_color,
+            0px 1px 0 $borders_color,
+            1px 0 0 $borders_color;
+          }
         }
       }
     }
@@ -55,7 +59,12 @@ notebook {
 
           &:backdrop { box-shadow: none; }
 
-         &:checked { background-color: $base_color; }
+         &:checked { 
+            background-color: $base_color; 
+            box-shadow: 0px 1px 0 $borders_color,
+            0px -1px 0 $borders_color,
+            0px 1px 0 $borders_color;
+          }
         }
       }
     }
@@ -69,7 +78,12 @@ notebook {
 
           &:backdrop { box-shadow: none; }
 
-          &:checked { background-color: $base_color; }
+          &:checked { 
+            background-color: $base_color; 
+            box-shadow: 0px 1px 0 $borders_color,
+            0px -1px 0 $borders_color,
+            1px 0 0 $borders_color;
+          }
         }
       }
     }
@@ -125,8 +139,8 @@ notebook {
 
       @extend %button_basic.flat;
 
-      min-height: 16px;
-      min-width: 16px;
+      min-height: 14px;
+      min-width: 14px;
       border-radius: 0;
 
       &:hover:not(:active):not(:backdrop) {
@@ -141,14 +155,14 @@ notebook {
     }
 
     tab {
-      min-height: 30px;
-      min-width: 30px;
-      padding: 3px 12px;
+      min-height: 24px;
+      min-width: 24px;
+      padding: 1px 12px;
 
       outline-offset: -5px;
 
       color: $insensitive_fg_color;
-      font-weight: bold;
+      font-weight: normal;
 
       border-width: 1px;         // for reorderable tabs
       border-color: transparent; //
@@ -173,6 +187,9 @@ notebook {
 
       &:checked {
         color: $fg_color;
+        box-shadow: -1px 0 0 $borders_color,
+        0px -1px 0 $borders_color,
+        1px 0 0 $borders_color;
         &.reorderable-page {
           border-color: transparentize($borders_color, 0.5);
           background-color: transparentize($bg_color, 0.5);
@@ -183,7 +200,6 @@ notebook {
 
       &:backdrop:checked {
         color: $backdrop_fg_color;
-
         &.reorderable-page {
           border-color: $backdrop_borders_color;
           background-color: $backdrop_base_color;
@@ -192,7 +208,7 @@ notebook {
 
       // colors the button like the label, overridden otherwise
       button.flat {
-        &:hover {  background: transparent; box-shadow: none; color: $red;  }
+        &:hover {  background: transparent; box-shadow: none; color: $red; }
 
         &, &:backdrop { color: gtkalpha(currentColor, 0.3); }
 
@@ -218,15 +234,15 @@ notebook {
     &.top,
     &.bottom {
       tabs {
-        padding-left: 0.5px;
-        padding-right: 0.5px;
+        padding-left: 0px;
+        padding-right: 0px;
 
         &:not(:only-child) {
           margin-left: 0.5px;
           margin-right: 0.5px;
 
-          &:first-child { margin-left: 0.5px; }
-          &:last-child { margin-right: 0.5px; }
+          &:first-child { margin-left: -1px; }
+          &:last-child { margin-right: -1px; }
         }
 
         tab {
@@ -261,8 +277,8 @@ notebook {
       }
     }
 
-    &.top tab { padding-bottom: 4px; }
-    &.bottom tab { padding-top: 4px; }
+    &.top tab { padding-bottom: 1px; }
+    &.bottom tab { padding-top: 1px; }
   }
 
   > stack:not(:only-child) { // the :not(:only-child) is for "hidden" notebooks

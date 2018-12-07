@@ -1,28 +1,26 @@
 /************
  * Nautilus *
  ************/
-.nautilus-window {
+ .nautilus-window {
   .frame{
     *:selected, *:selected:backdrop{
       background: transparent;
       color: $selected_bg_color;
-    } 
-    *:selected:backdrop{
       label {
-        color: $backdrop_selected_bg_color;
+        color: $selected_bg_color;
       }
-    }
+    } 
   }
   paned {
     > separator { background-image: none; }
   }
   .sidebar {
     background-color: transparent;
-    background-image: none;
+    // background-image: none;
 
     &:backdrop {
       background-color: transparent;
-      background-image: none;
+      // background-image: none;
     }
 
     .list-row {
@@ -69,29 +67,6 @@
   
  .searchbar-container {
     margin-top: -1px;
-  }
-
-  .path-bar-box {
-    .dim-label {
-      color: transparent;
-    }
-    
-    button {
-      transition: all 100ms ease-in;
-      margin-left: -5px;
-      &:backdrop {
-        &:hover,
-        &:active,
-        &:checked {
-          background-color: transparent;
-          color: $backdrop_selected_bg_color;
-          box-shadow: none;
-          label {
-            color: $backdrop_selected_bg_color;
-          }
-        }
-      }
-    }
   }
 }
 

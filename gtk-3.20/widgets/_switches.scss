@@ -1,10 +1,10 @@
 /**********
  * Switch *
  **********/
- $_switch_bg: if($variant == 'light', transparentize(black, 0.9), lighten($base_color, 10%));
- $_switch_slider_bg:$base_color;
+ $_switch_bg: if($variant == 'light', transparentize(black, 0.9), lighten($base_color, 15%));
+ $_switch_slider_bg: $base_color;
 
- switch {
+switch {
   font-size: 1px;
   font-weight: bold;
   outline-offset: -4px;
@@ -13,7 +13,7 @@
   border: none;
   border-radius: 14px;
   color: transparent;
-  padding: 2px;
+  padding: 2.3px 0px;
 
   background-color:$_switch_bg;
   box-shadow: inset 0 0 0 1px transparentize(black, 0.95), 0px 1px $bottom_highlight;
@@ -32,10 +32,10 @@
 
   &:active,
   &:checked {
-    background-color: $lime;
+    background-color: $selected_bg_color;
 
     &:backdrop {
-      background-color: $lime;
+      background-color: $backdrop_selected_bg_color;
 
       slider {
         &:backdrop {
@@ -50,8 +50,9 @@
   // Handle
   slider {
     padding:2px;
-    min-width: 16px;
-    min-height: 16px;
+    margin: 0 2.3px;
+    min-width: 12px;
+    min-height: 12px;
 
     border-radius: 100%;
     transition: $button_transition;
@@ -63,7 +64,7 @@
     &:backdrop {
       padding:2px;
       box-shadow:none;
-      background-color: $base_color;
+      background-color:$base_color;
     }
   }
 

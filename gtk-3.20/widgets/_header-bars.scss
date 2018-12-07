@@ -3,15 +3,14 @@
  ***************/
 %titlebar,
 headerbar {
-  padding: 0 6px;
+  padding: 0 13px;
   min-height: 34px;
-  background-color: $headerbar_color;
+  background: if($variant == 'light', linear-gradient(to bottom, #EAEAEA, #DBDBDB) , mix($base_color, darken($headerbar_color, 8%), 30%));
   color: $headerbar_fg_color;
   border-radius: 0;
-
   &:backdrop {
     border-color: $backdrop_borders_color;
-    background-image: none;
+   // background-image: none;
 
     transition: $backdrop_transition;
   }
@@ -29,33 +28,39 @@ headerbar {
 
     @extend .dim-label;
   }
-
-  %linked-header {
-    border: none;
-    border-radius: 0;
-    border-right-style: none;
-    box-shadow: none;
-
-    &:first-child {
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
-    }
-
-    &:last-child {
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-right-style: solid;
-    }
-
-    &:only-child {
-      border-radius: 0px;
-      border-style: solid;
-    }
-  }
-  entry { min-height: 24px; }
+ 
+  entry { min-height: 24px;}  
+  
   button {
     @include button(normal-header);
-    min-height: 34px;
+    min-height: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: none;
+    &.image-button{
+       padding: 3px 4px;
+    }
+    &.suggested-action{
+      box-shadow: none;
+      border: none;
+      background-image: $suggested_bg_color;
+        &:disabled, &:disabled:backdrop, &:backdrop {
+          border: none;
+          background-image: $suggested_bg_color;
+          &:hover,
+          &:active,
+          &:checked {
+            border: none;
+            background-image: $suggested_bg_color;
+          }
+        }
+        
+      }
+      
+    &.appmenu{
+      background: transparent;
+      &:backdrop{background: transparent;}
+    }
     &:hover,
     &:active,
     &:checked {
@@ -68,14 +73,17 @@ headerbar {
     &:backdrop,
     &:disabled,
     &:backdrop:disabled {
-      @include button(backdrop-header,transparent,transparentize(white,0.7));
+      @include button(backdrop-header,red,transparentize($fg_color,0.8));
+      background-image: linear-gradient(to bottom, $main_dark_color, $main_dark_color);
+      border: 1px solid $borders_color;
+      border-radius: 4px;
     }
 
     &:backdrop {
       &:hover,
       &:active,
       &:checked {
-         background-color: transparent;
+      background-color: transparent;
       color: $selected_bg_color;
       box-shadow: none;
        // @include button(hover-header,transparent,transparentize(white,0.7));
@@ -86,11 +94,12 @@ headerbar {
                                (destructive-action, $destructive_color) {
       &.#{$b_type} {
         font-weight: bold;
-        min-height: 24px;
-        margin-top: 4px;
-        margin-bottom: 4px;
-        border-radius: 3px;
+        min-height: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 4px;
         @include button(normal, $b_color, white);
+        box-shadow: none;
 
         &:hover { @include button(hover, $b_color, white); }
 
@@ -115,7 +124,9 @@ headerbar {
     &.titlebutton {
       color: transparent;
       box-shadow: none;
-
+      border: none;
+      background-color: transparent;
+      background-repeat: no-repeat;
       &:hover,
       &:active,
       &:checked,
@@ -123,121 +134,91 @@ headerbar {
       &:backdrop:hover,* {
         color: transparent;
         box-shadow: none;
+        background-color: transparent;
       }
     }
   }
-  .linked > button,
+  %linked-header {
+    border-radius: 0;
+    border-right-style: none;
+    box-shadow: none;
+    margin: 5px 0px;
+    min-height: 20px;
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-right-style: solid;
+    }
+
+    &:only-child {
+      border-radius: 4px;
+      border-style: solid;
+    }
+  }
+  %linked-button {
+    @extend %linked-header;
+    &:active, &:checked {
+      background: $selected_bg_color;
+      color: #fff;
+      &:backdrop{
+        color: $backdrop_selected_fg_color;
+        label{
+          color: $backdrop_selected_fg_color;
+        }
+      }
+    }
+  }
+  .linked > button {
+    @extend %linked-button;
+  }
   .linked > button:hover,
-  .linked > button:active,
-  .linked > button:checked,
   .linked > button:backdrop { @extend %linked-header; }
-  .linked > button:active,
-  .linked > button:checked{
-    &:backdrop{
-      color: $backdrop_selected_bg_color;
-      label{
-        color: $backdrop_selected_bg_color;
-      }
-    }
-  }
   // End reset style
 
-  &.selection-mode {
-    $_hc: mix($top_highlight,$selected_bg_color, 50%); // highlight color
-
-    color: $selected_fg_color;
-    text-shadow: 0 -1px transparentize(black, 0.5);
-    border-color: $selected_borders_color;
-
-    @include headerbar_fill($selected_bg_color, $_hc);
-
-    &:backdrop {
-      background-color: $selected_bg_color;
-      background-image: none;
-      box-shadow: inset 0 1px mix($top_highlight, $selected_bg_color, 60%);
+  .path-bar-box {
+    .dim-label {
+      color: transparent;
     }
-
-    .subtitle:link { @extend *:link:selected;  }
-
     button {
-      @include button(normal, $selected_bg_color, $selected_fg_color);
+      @extend %linked-button;
+      margin-left: -6px;
+      &:last-child {
+        margin-left: -6px;
+        border-radius: 0px;
+        &:active, &:checked {
+          border-radius: 0px 4px 4px 0px;
+        }
+      }
+      &:first-child {
+        border-radius: 4px 0px 0px 4px;
+        &:active, &:checked {
+          border-radius: 4px;
+        }
+      }
+    }
+  }
 
-      &.flat { @include button(undecorated); }
-
-      &:hover { @include button(hover, $selected_bg_color, $selected_fg_color); }
-
-      &:active,
-      &:checked { @include button(active, $selected_bg_color, $selected_fg_color); }
-
+  &.selection-mode {
+    button {
       &:backdrop {
         &.flat, & {
-          @include button(backdrop, $selected_bg_color, $selected_fg_color);
-
-          -gtk-icon-effect: none;
-          border-color: $selected_borders_color;
-
           &:active,
           &:checked {
-            @include button(backdrop-active, $selected_bg_color, $selected_fg_color);
-
-            border-color: $selected_borders_color;
-          }
-
-          &:disabled {
-            @include button(backdrop-insensitive, $selected_bg_color, $selected_fg_color);
-
-            border-color: $selected_borders_color;
-
-            &:active, &:checked {
-              @include button(backdrop-insensitive-active, $selected_bg_color, $selected_fg_color);
-
-              border-color: $selected_borders_color;
+            //@include button(backdrop-active, $selected_bg_color, $selected_fg_color);
+            label{
+              color:$backdrop_selected_bg_color;
             }
+            border-color: $selected_borders_color;
           }
         }
       }
-
-      &.flat { &:backdrop, &:disabled, &:backdrop:disabled { @include button(undecorated); }}
-
-      &:disabled {
-        @include button(insensitive, $selected_bg_color, $selected_fg_color);
-
-        &:active,
-        &:checked { @include button(insensitive-active, $selected_bg_color, $selected_fg_color); }
-      }
-
-      &.suggested-action {
-        @include button(normal, $cyan, white);
-
-        &:hover { @include button(hover, $cyan, white); }
-
-        &:active { @include button(active, $cyan, white); }
-
-        &:disabled { @include button(insensitive, $cyan, white); }
-
-        &:backdrop { @include button(backdrop, $cyan, white); }
-
-        &:backdrop:disabled { @include button(backdrop-insensitive, $cyan, white); }
-      }
     }
 
-    .selection-menu {
-      &:backdrop, & {
-        border-color: transparentize($selected_bg_color, 1);
-        background-image: linear-gradient(to bottom, transparentize($selected_bg_color, 1), transparentize($selected_bg_color, 1));
-        box-shadow: none;
-        padding-left: 10px;
-        padding-right: 10px;
-
-        GtkArrow { -GtkArrow-arrow-scaling: 1; }
-
-        .arrow {
-          -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
-          color: transparentize($selected_fg_color,0.5);
-          -gtk-icon-shadow: none;
-        }
-      }
-    }
   }
 
   .tiled &,
@@ -250,12 +231,12 @@ headerbar {
   } // squared corners when the window is maximized or tiled
 
   &.default-decoration {
-    padding: 4px;
-    min-height: 28px;
+    padding: 5px 4px; 
+    min-height: 20px;
 
     button.titlebutton {
-      min-height: 26px;
-      min-width: 26px;
+      min-height: 20px;
+      min-width: 20px;
       margin: 0;
       padding: 0;
     }
@@ -278,7 +259,7 @@ headerbar {
 }
 
 .background:not(.tiled):not(.maximized) .titlebar {
-  @if $variant == 'light' { box-shadow: inset 0 1px lighten($headerbar_color, 5%); }
+  @if $variant == 'light' { box-shadow: inset 0 1px $top_highlight; }
   @else { box-shadow: inset 0 1px $top_highlight,inset 0 -1px $bottom_highlight; }
 
 
@@ -310,5 +291,9 @@ headerbar {
     background: transparent;
   }
 
+  @extend %titlebar;
+}
+
+.titlebar{
   @extend %titlebar;
 }
