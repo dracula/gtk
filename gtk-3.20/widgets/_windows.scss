@@ -93,6 +93,12 @@ button.titlebutton {
     }
   }
 
+  &.close, &.minimize, &.maximize {
+    &:backdrop { 
+      background-image: -gtk-scaled(url("../assets/close_unfocused.png"),url("../assets/close_unfocused@2.png"));    
+    }
+  }
+
   .selection-mode & {
     @extend %button.flat.suggested-action;
 
@@ -100,8 +106,7 @@ button.titlebutton {
   }
 
   &:backdrop { 
-    -gtk-icon-shadow: none; 
-    background-image: -gtk-scaled(url("../assets/close_unfocused.png"),url("../assets/close_unfocused@2.png"));    
+    -gtk-icon-shadow: none;    
   }
 }
 
