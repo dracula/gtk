@@ -5620,6 +5620,11 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 .nautilus-window .path-bar-box headerbar .subtitle, headerbar .nautilus-window .path-bar-box .subtitle {
   color: transparent; }
 
+.nautilus-window .path-bar-box widget > .text-button:last-child {
+  color: #ff79c6; }
+  .nautilus-window .path-bar-box widget > .text-button:last-child:backdrop label {
+    color: rgba(255, 121, 198, 0.6); }
+
 .nautilus-window .path-bar-box button {
   transition: all 100ms ease-in;
   margin-left: -5px; }
