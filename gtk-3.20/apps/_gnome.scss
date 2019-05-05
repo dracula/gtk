@@ -75,7 +75,12 @@
     .dim-label {
       color: transparent;
     }
-    
+    widget > .text-button:last-child{
+      color: $selected_bg_color;
+      &:backdrop label{
+        color: $backdrop_selected_bg_color;
+      }
+    }
     button {
       transition: all 100ms ease-in;
       margin-left: -5px;
