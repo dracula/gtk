@@ -1588,6 +1588,7 @@ StScrollBar {
     //box-shadow: 0 1px 4px black;
     &:hover { background-color: $_bubble_bg_color; }
     &:focus { background-color: $_bubble_bg_color; }
+    *{ color: $_bubble_fg_color; }
 
     .notification-icon { padding: 5px; }
     .notification-content { padding: 5px; spacing: 5px; }
