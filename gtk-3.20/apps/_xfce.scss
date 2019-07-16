@@ -31,6 +31,7 @@
     border-radius: 0;
     border: none;
     background-color: transparentize($panel_bg_color, 1);
+    font-weight: normal;
 
     &:hover {
       border: none;
