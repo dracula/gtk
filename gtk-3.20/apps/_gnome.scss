@@ -71,6 +71,13 @@
     margin-top: -1px;
   }
 
+  .titlebar {
+    .search{
+      border: 1px solid $borders_color;
+      border-radius: 3px;
+    }
+  }
+
   .path-bar-box {
     .dim-label {
       color: transparent;
