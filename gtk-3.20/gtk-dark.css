@@ -5758,6 +5758,8 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     background-color: #000; }
   .panel.translucent {
     background-color: rgba(0, 0, 0, 0.5); }
+  .panel.color-light.translucent {
+    background-color: rgba(255, 255, 255, 0.85); }
 
 menubar.panel,
 .panel menubar {
