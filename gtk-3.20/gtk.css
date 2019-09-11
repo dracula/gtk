@@ -4177,7 +4177,7 @@ treeview ~ scrollbar.vertical {
     .sidebar.source-list.view:selected.has-open-popup, iconview.sidebar.source-list:selected.has-open-popup, .sidebar.source-list.view:selected:hover, iconview.sidebar.source-list:selected:hover {
       background-color: rgba(255, 121, 198, 0.2); }
     .sidebar.source-list.view:selected:backdrop, iconview.sidebar.source-list:selected:backdrop {
-      background-color: transparent; }
+      background-color: rgba(255, 121, 198, 0.6); }
     .sidebar.source-list.view:hover, iconview.sidebar.source-list:hover, .sidebar.source-list.view iconview.source-list:hover, iconview.sidebar.source-list iconview.source-list:hover {
       background-color: rgba(40, 42, 54, 0.6); }
   paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar {
