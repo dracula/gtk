@@ -64,7 +64,7 @@
         &.has-open-popup,
         &:hover { background-color: transparentize($selected_bg_color, 0.8); }
   
-        &:backdrop { background-color: transparent; }
+        &:backdrop { background-color: $backdrop_selected_bg_color; }
       }
         &:hover, iconview.source-list:hover { 
             background-color: if(variant == light, transparentize($base_color, 0.4), transparentize($base_color, 0.4)); 
