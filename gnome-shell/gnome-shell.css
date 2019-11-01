@@ -966,7 +966,8 @@ StScrollBar {
 
 .message {
   border-radius: 1px;
-  background: transparent; }
+  background: transparent;
+  border: none; }
   .message:hover, .message:focus {
     background-color: #333545;
     box-shadow: 3px 0px 0px 0px #ff79c6 inset; }
