@@ -56,8 +56,9 @@
 //
 
   @if $t==normal {
-    background-color: $base_color;
+    background-color: $gray;
     border-color: $borders_color;
+ 
     @include _shadows($depth);
 
   }
@@ -147,10 +148,10 @@
   // normal button
   //
 
-    color: $osd_fg_color;
-    background-color: $base_color;
-    box-shadow: $depth4;
-    border: none;
+    color: $fg_color;
+    background-color: $main_dark;
+    box-shadow: none;
+    border: 1px solid $borders_color;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
   }
@@ -161,11 +162,11 @@
     $_bg: if($c!=$osd_bg_color, transparentize($c, 0.5),
                           $osd_bg_color);
 
-    color: $osd_fg_color;
+    color: $selected_bg_color;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
-    box-shadow: $depth5;
-    border: 1px solid  transparentize($selected_bg_color, 0.7);
+    box-shadow: none;
+    border: 1px solid $borders_color;
   }
 
   @else if $t==hover {
@@ -173,12 +174,11 @@
   // active osd button
   //
     $_bg: if($c!=$osd_bg_color, transparentize($c, 0.3),
-                            lighten($osd_bg_color,10%));
+                            lighten($main_dark, 2%));
 
     color: $selected_bg_color;
-    background-color: transparent;
-    box-shadow: $depth5;
-    border: none;
+    background-color: $_bg;
+    border: 1px solid $borders_color;
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black;
 
@@ -189,13 +189,12 @@
   //
     $_bg: if($c!=$bg_color, $c, $selected_bg_color);
 
-    color: white;
-    background-color: darken($_bg,5%);
+    color: $selected_bg_color;
+    background-color: $_bg;
     // This should be none, but it's creating some issues with borders, so to
     // workaround it for now, use inset wich goes through a different code path.
     // see https://bugzilla.gnome.org/show_bug.cgi?id=752934
-    box-shadow: $depth5;
-    border: none;
+    border: 1px solid $borders_color;
     text-shadow: none;
     icon-shadow: none;
   }
@@ -226,4 +225,10 @@
     text-shadow: none;
     icon-shadow: none;
   }
+}
+
+@mixin gradient($c1: $g1, $c2: $g2, $dir: horizontal) {
+  background-gradient-start: $c1;
+  background-gradient-end: $c2;
+  background-gradient-direction: $dir;
 }
