@@ -5015,7 +5015,7 @@ button.raven-trigger {
     color: #f8f8f2;
     font-weight: 700; }
   .budgie-panel.transparent {
-    background-color: transparent; }
+    background-color: rgba(8, 9, 12, 0.2); }
     .top .budgie-panel.transparent {
       border-bottom-color: transparent; }
     .bottom .budgie-panel.transparent {

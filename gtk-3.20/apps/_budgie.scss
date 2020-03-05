@@ -403,7 +403,7 @@ button.raven-trigger {
     }
 
     &.transparent {
-        background-color: transparent;
+        background-color: transparentize($panel_bg, 0.75);
 
         .top & {
             border-bottom-color: transparent;
