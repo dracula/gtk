@@ -23,7 +23,7 @@
   }
 
   &:backdrop {
-    background-color: $backdrop_bg_color;
+    background-color: darken($_switch_bg, 7%);
     transition: $backdrop_transition;
 
     &:disabled { background-color: $insensitive_bg_color; }

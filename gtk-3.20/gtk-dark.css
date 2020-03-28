@@ -4435,7 +4435,7 @@ switch {
   switch:disabled {
     background-color: #22232e; }
   switch:backdrop {
-    background-color: #1e1f29;
+    background-color: #2f313f;
     transition: 200ms ease-out; }
     switch:backdrop:disabled {
       background-color: #22232e; }
