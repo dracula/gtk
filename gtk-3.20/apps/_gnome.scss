@@ -83,7 +83,7 @@
       color: transparent;
     }
     widget > .text-button:last-child{
-      color: $selected_bg_color;
+      @include button(active-header);
       &:backdrop label{
         color: $backdrop_selected_bg_color;
       }
@@ -95,9 +95,7 @@
         &:hover,
         &:active,
         &:checked {
-          background-color: transparent;
-          color: $backdrop_selected_bg_color;
-          box-shadow: none;
+          @include button(active-header);
           label {
             color: $backdrop_selected_bg_color;
           }
