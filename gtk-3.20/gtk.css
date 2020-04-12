@@ -267,7 +267,7 @@ button {
   border: none;
   border-radius: 3px;
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  font-weight: bold;
+  font-weight: normal;
   color: #f8f8f2;
   outline-color: rgba(248, 248, 242, 0.3);
   background-color: #282a36;
@@ -600,7 +600,7 @@ button {
 
 
 button.suggested-action {
-  font-weight: bold;
+  font-weight: normal;
   color: white;
   outline-color: rgba(255, 255, 255, 0.3);
   background-color: #bd93f9;
@@ -768,7 +768,7 @@ button.suggested-action {
 
 
 button.destructive-action {
-  font-weight: bold;
+  font-weight: normal;
   color: white;
   outline-color: rgba(255, 255, 255, 0.3);
   background-color: #ff2222;
@@ -990,7 +990,7 @@ button {
     background-position: left 3px, left 2px; }
 
 toolbar button:hover {
-  font-weight: bold;
+  font-weight: normal;
   color: #f8f8f2;
   outline-color: rgba(248, 248, 242, 0.3);
   background-color: #0f0f14;
@@ -998,7 +998,7 @@ toolbar button:hover {
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
 
 toolbar button:active {
-  font-weight: bold;
+  font-weight: normal;
   color: #f8f8f2;
   outline-color: rgba(248, 248, 242, 0.3);
   background-color: #040406;
@@ -1641,7 +1641,7 @@ colorswatch#add-color-button {
   colorswatch#add-color-button:only-child {
     border-radius: 5px; }
   colorswatch#add-color-button overlay {
-    font-weight: bold;
+    font-weight: normal;
     color: #f8f8f2;
     outline-color: rgba(248, 248, 242, 0.3);
     background-color: #282a36;
@@ -2403,13 +2403,21 @@ headerbar {
     text-shadow: none;
     box-shadow: none;
     min-height: 34px; }
-    .titlebar:not(headerbar) button:hover, .titlebar:not(headerbar) button:active, .titlebar:not(headerbar) button:checked,
-    headerbar button:hover,
+    .titlebar:not(headerbar) button:hover,
+    headerbar button:hover {
+      color: #ff79c6;
+      background-color: transparent;
+      border-radius: 0;
+      text-shadow: none;
+      box-shadow: none; }
+    .titlebar:not(headerbar) button:active, .titlebar:not(headerbar) button:checked,
     headerbar button:active,
     headerbar button:checked {
-      background-color: transparent;
       color: #ff79c6;
-      box-shadow: none; }
+      background-color: transparent;
+      border-radius: 0;
+      text-shadow: none;
+      font-weight: bold; }
     .titlebar:not(headerbar) button:backdrop, .titlebar:not(headerbar) button:disabled, .titlebar:not(headerbar) button:backdrop:disabled,
     headerbar button:backdrop,
     headerbar button:disabled,
@@ -2433,7 +2441,7 @@ headerbar {
       margin-top: 4px;
       margin-bottom: 4px;
       border-radius: 3px;
-      font-weight: bold;
+      font-weight: normal;
       color: white;
       outline-color: rgba(255, 255, 255, 0.3);
       background-color: #72BFD0;
@@ -2485,7 +2493,7 @@ headerbar {
       margin-top: 4px;
       margin-bottom: 4px;
       border-radius: 3px;
-      font-weight: bold;
+      font-weight: normal;
       color: white;
       outline-color: rgba(255, 255, 255, 0.3);
       background-color: #ff2222;
@@ -2554,7 +2562,7 @@ headerbar {
       box-shadow: inset 0 1px rgba(255, 131, 202, 0.46); }
     .selection-mode.titlebar:not(headerbar) button,
     headerbar.selection-mode button {
-      font-weight: bold;
+      font-weight: normal;
       color: #f8f8f2;
       outline-color: rgba(248, 248, 242, 0.3);
       background-color: #ff79c6;
@@ -2661,7 +2669,7 @@ headerbar {
             color: rgba(248, 248, 242, 0.7); }
       .selection-mode.titlebar:not(headerbar) button.suggested-action,
       headerbar.selection-mode button.suggested-action {
-        font-weight: bold;
+        font-weight: normal;
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
         background-color: #72BFD0;
@@ -5656,7 +5664,11 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   color: transparent; }
 
 .nautilus-window .path-bar-box widget > .text-button:last-child {
-  color: #ff79c6; }
+  color: #ff79c6;
+  background-color: transparent;
+  border-radius: 0;
+  text-shadow: none;
+  font-weight: bold; }
   .nautilus-window .path-bar-box widget > .text-button:last-child:backdrop label {
     color: rgba(255, 121, 198, 0.6); }
 
@@ -5664,9 +5676,11 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   transition: all 100ms ease-in;
   margin-left: -5px; }
   .nautilus-window .path-bar-box button:backdrop:hover, .nautilus-window .path-bar-box button:backdrop:active, .nautilus-window .path-bar-box button:backdrop:checked {
+    color: #ff79c6;
     background-color: transparent;
-    color: rgba(255, 121, 198, 0.6);
-    box-shadow: none; }
+    border-radius: 0;
+    text-shadow: none;
+    font-weight: bold; }
     .nautilus-window .path-bar-box button:backdrop:hover label, .nautilus-window .path-bar-box button:backdrop:active label, .nautilus-window .path-bar-box button:backdrop:checked label {
       color: rgba(255, 121, 198, 0.6); }
 
@@ -6162,7 +6176,7 @@ ConversationListView {
   border-width: 1px 1px 0 1px; }
 
 #content_frame button {
-  font-weight: bold;
+  font-weight: normal;
   color: #f8f8f2;
   outline-color: rgba(248, 248, 242, 0.3);
   background-color: #282a36;
