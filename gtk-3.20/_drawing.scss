@@ -206,7 +206,7 @@
   //
   // normal button
   //
-    font-weight: bold;
+    font-weight: normal;
     color: $tc;
     outline-color: transparentize($tc, 0.7);
     background-color: $c;
@@ -244,7 +244,18 @@
   background-color: transparent;
   border-radius: 0;
   text-shadow: none;
-  @include lines(up);
+  box-shadow: none;
+}
+
+@else if $t==active-header {
+  //
+  // active button headerbar look
+  //
+  color: if($tc==$text_color, $selected_bg_color, $tc);
+  background-color: transparent;
+  border-radius: 0;
+  text-shadow: none;
+  font-weight: bold;
 }
 
 @else if $t==backdrop-header {
