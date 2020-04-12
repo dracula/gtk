@@ -55,14 +55,13 @@ headerbar {
   entry { min-height: 24px; }
   button {
     @include button(normal-header);
-    min-height: 32px;
-    &:hover,
+    min-height: 34px;
+    &:hover {
+      @include button(hover-header, transparent, $selected_bg_color);
+    }
     &:active,
     &:checked {
-      background-color: transparent;
-      color: $selected_bg_color;
-      box-shadow: none;
-      //@include button(hover-header);
+      @include button(active-header);
     }
 
     &:backdrop,
