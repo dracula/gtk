@@ -1057,7 +1057,7 @@ StScrollBar {
         .message-title{
           color: darken($fg_color,3%);
         }
-        .message-content{
+        .message-content, .message-body {
           color: darken($fg_color,4%);
         }
       }

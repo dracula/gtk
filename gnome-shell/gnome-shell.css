@@ -962,7 +962,7 @@ StScrollBar {
   width: 31.5em; }
   .message-list .message-title {
     color: #babfca; }
-  .message-list .message-content {
+  .message-list .message-content, .message-list .message-body {
     color: #b7bcc8; }
 
 .message-list-clear-button.button {
