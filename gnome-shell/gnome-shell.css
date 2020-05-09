@@ -685,7 +685,8 @@ StScrollBar {
 .switcher-list, .workspace-switcher-container {
   color: #C3C7D1;
   background-color: rgba(40, 42, 54, 0.95);
-  border: none;
+  border: 1px solid #21232d;
+  box-shadow: 0px 0px 5px #21232d;
   border-radius: 2px;
   padding: 12px; }
 
