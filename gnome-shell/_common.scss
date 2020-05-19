@@ -8,7 +8,7 @@ $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
 $_bubble_transparent: transparentize($osd_bg_color, 0.17);
-$topbar_bg_color: transparentize($dracula,0.35);
+$topbar_bg_color: transparentize($dracula, 0.05);
 
 stage {
   font-family: $font-family;
@@ -808,7 +808,6 @@ StScrollBar {
     -minimum-hpadding: 6px;
     font-weight: bold;
     color: $topbar_color;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
     transition-duration: 100ms;
 
     .app-menu-icon {
@@ -821,7 +820,7 @@ StScrollBar {
     .system-status-icon,
     .app-menu-icon > StIcon,
     .popup-menu-arrow {
-      icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
+      icon-shadow: none;
     }
 
     &:hover {
@@ -836,13 +835,8 @@ StScrollBar {
       box-shadow: none;
       @include gradient();
       color: $selected_fg_color;
-      text-shadow: 0px 0px 2px rgba(92, 92, 92, 0.9);
       transition-duration: 200ms;
-      .system-status-icon,
-      .app-menu-icon > StIcon,
-      .popup-menu-arrow {
-        icon-shadow: 0px 0px 2px rgba(0, 0, 0, 0.9);
-      }
+
       & > .system-status-icon { icon-shadow: red 0 2px 2px; }
     }
 
@@ -1180,6 +1174,54 @@ StScrollBar {
               padding: 8px; }
           }
 
+   /* World clocks */
+.world-clocks-button {
+  
+  // city label
+  .world-clocks-city {
+    color: $fg_color;
+    font-weight: normal;
+  }
+
+  // timezone time
+  .world-clocks-time {
+    font-weight: bold;
+    color: $fg_color;
+    font-feature-settings: "lnum";
+    text-align: right;
+  }
+
+  // timezone offset label
+  .world-clocks-timezone {
+    color: darken($fg_color, 20%);
+    font-feature-settings: "tnum";
+  }
+}
+
+/* Weather */
+.weather-button {
+
+  .weather-header {
+    color: darken($fg_color, 10%);
+    font-weight: bold;
+
+    &.location {
+      font-weight: normal;
+    }
+  }
+
+  .weather-forecast-time {
+    color: darken($fg_color, 10%);
+    font-feature-settings: "tnum";
+    font-weight: normal;
+    padding-top: 0.2em;
+    padding-bottom: 0.4em;
+  }
+
+  .weather-forecast-temp {
+    font-weight: bold;
+  }
+}
 
   // a little unstructured mess:
 
