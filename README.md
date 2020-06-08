@@ -1,20 +1,23 @@
+# Dracula for [GTK](https://www.gtk.org/)
 
-![](Art/logo.png)
+> A dark theme for [GTK](https://www.gtk.org/).
 
-![](Art/Dracula.png)
+![Screenshot](./screenshot.png)
 
+This theme provides support for GTK-3 and GTK-2 based desktop environments like Gnome, Unity, Budgie, Pantheon, XFCE, Mate, etc. Also provides support for KDE plasma.
 
-#### Installation
+## Install
 
-Extract the zip file to the themes directory i.e. `/usr/share/themes/` or `~/.themes/` (create it  if necessary).
+All instructions can be found at [draculatheme.com/gtk](https://draculatheme.com/gtk).
 
-To set the theme in Gnome, run the following commands in Terminal,
+## Team
 
-```
-gsettings set org.gnome.desktop.interface gtk-theme "Ant-Dracula"
-gsettings set org.gnome.desktop.wm.preferences theme "Ant-Dracula"
-```
-or Change via distribution specific tool.
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/gtk/graphs/contributors).
 
-### Note:
-* This theme is based on the [evopop-gtk-theme](https://github.com/solus-project/evopop-gtk-theme).
+[![Eliver Lara](https://avatars0.githubusercontent.com/u/9838260?v=3&s=70)](https://github.com/EliverLara) | 
+--- | 
+[Eliver Lara](https://github.com/EliverLara) | 
+
+## License
+
+[GPL-3.0 License](./LICENSE)
