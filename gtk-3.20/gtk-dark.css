@@ -4031,8 +4031,7 @@ treeview ~ scrollbar.vertical {
     border-right-style: none; }
   .sidebar:backdrop {
     background-color: #242631;
-    border-color: #191a22;
-    transition: 200ms ease-out; }
+    border-color: #191a22; }
   .sidebar row {
     padding: 8px 12px;
     transition: all .12s ease-in; }
