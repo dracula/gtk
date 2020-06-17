@@ -57,11 +57,11 @@ headerbar {
     @include button(normal-header);
     min-height: 34px;
     &:hover {
-      @include button(hover-header, transparent, $selected_bg_color);
+      @include button(hover-header, transparent, $purple);
     }
     &:active,
     &:checked {
-      @include button(active-header);
+      @include button(active-header, transparent, $purple);
     }
 
     &:backdrop,
@@ -74,9 +74,9 @@ headerbar {
       &:hover,
       &:active,
       &:checked {
-         background-color: transparent;
-      color: $selected_bg_color;
-      box-shadow: none;
+        background-color: transparent;
+        color: $selected_bg_color;
+        box-shadow: none;
        // @include button(hover-header,transparent,transparentize(white,0.7));
       }
     }
