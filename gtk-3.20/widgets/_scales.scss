@@ -75,7 +75,7 @@ scale {
     transition-property: background, border, box-shadow;
 
     &:active {
-      background-color: $selected_bg_color;
+      background-color: $purple;
 
       &:disabled {
         background-color: $insensitive_bg_color;
