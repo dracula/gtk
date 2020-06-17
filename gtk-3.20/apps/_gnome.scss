@@ -83,7 +83,7 @@
       color: transparent;
     }
     widget > .text-button:last-child{
-      @include button(active-header);
+      @include button(active-header, transparent, $purple);
       &:backdrop label{
         color: $backdrop_selected_bg_color;
       }
