@@ -234,6 +234,8 @@ StScrollBar {
     font-weight: bold;
     color: #a6acbb;
     padding-bottom: .4em; }
+  .modal-dialog .run-dialog-description {
+    color: #C3C7D1; }
 
 .mount-dialog-subject,
 .end-session-dialog-subject {
