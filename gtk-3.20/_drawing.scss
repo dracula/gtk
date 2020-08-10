@@ -249,7 +249,7 @@
   text-shadow: none;
   box-shadow: none;
   border: 1px solid $borders_color;
-  background: linear-gradient(to bottom, $main_dark_color, $main_dark_color);       
+  background: $main_dark_color;       
 }
 
   @else if $t==hover-header {
@@ -283,7 +283,7 @@ box-shadow: none;
   //
   color: $tc;
   outline-color: transparentize($tc, 0.7);
-  background: if($c==$base_color, $selected_bg_color, $c);
+  background-color: if($c==$base_color, $selected_bg_color, $c);
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
 }

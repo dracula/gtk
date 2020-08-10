@@ -64,10 +64,7 @@ headerbar {
     &:hover,
     &:active,
     &:checked {
-      background-color: transparent;
-      color: $selected_bg_color;
-      box-shadow: none;
-      //@include button(hover-header);
+      @include button(active, $selected_bg_color, #fff);
     }
 
     &:backdrop,
@@ -203,11 +200,11 @@ headerbar {
     }
     widget > .text-button:last-child{
       border-radius: 0px 4px 4px 0px;
-      border-color: $selected_bg_color;
+      border-color: transparentize($selected_bg_color, 0.4);
       @include button(active, $selected_bg_color, #fff);
       &:backdrop {
         background: $backdrop_selected_bg_color;
-        border-color: $backdrop_selected_bg_color;
+        border-color: transparentize($selected_bg_color, 0.4);
         &, & label {
           color: $backdrop_selected_fg_color;
         }
