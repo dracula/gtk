@@ -5476,16 +5476,16 @@ calendar.raven-calendar {
     color: #f8f8f2; }
   .budgie-switcher-window flowboxchild:selected {
     color: #f8f8f2;
-    background-color: rgba(189, 147, 249, 0); }
+    background-color: rgba(189, 147, 249, 0.5); }
     .budgie-switcher-window flowboxchild:selected:active {
       color: #f8f8f2; }
     .budgie-switcher-window flowboxchild:selected:hover {
       background-color: rgba(142, 110, 187, 0.55); }
     .budgie-switcher-window flowboxchild:selected:disabled {
       color: rgba(248, 248, 242, 0.7);
-      background-color: rgba(189, 147, 249, 0.2); }
+      background-color: rgba(189, 147, 249, 0.3); }
       .budgie-switcher-window flowboxchild:selected:disabled label {
-        color: rgba(248, 248, 242, 0.7); }
+        color: rgba(248, 248, 242, 0.8); }
 
 .budgie-session-dialog, .budgie-polkit-dialog, .budgie-run-dialog {
   color: #f8f8f2;
