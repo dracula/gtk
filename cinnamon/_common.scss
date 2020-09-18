@@ -1400,7 +1400,7 @@ StScrollBar {
                                         (left, 2px 0),
                                         (right, -2px 0) {
           .panel-#{$position} & {
-            box-shadow: inset #{$_indicator} $purple;
+            box-shadow: inset #{$_indicator} $selected_bg_color;
           }
         }
     }
