@@ -18,7 +18,10 @@ or Change via distribution specific tweak tool.
 
 ## Icon Theme
 
-`mkdir ~/.icons` if not exists or use `/usr/share/icons/` instead
+Download using the [GitHub .zip download](https://github.com/dracula/gtk/files/5214870/Dracula.zip) option and extract the `.zip` file to the icons directory i.e. `/usr/share/icons/` or `~/.icons/` (create it if necessary).
 
-Download and extract [this link](https://github.com/dracula/gtk/files/5214870/Dracula.zip) on `~/.icons` folder
+ 
+```
+gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 
+```
