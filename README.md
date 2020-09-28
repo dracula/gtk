@@ -10,20 +10,13 @@ This theme provides support for GTK-3 and GTK-2 based desktop environments like 
 
 All instructions can be found at [draculatheme.com/gtk](https://draculatheme.com/gtk).
 
-## Icon Theme
-
-`mkdir ~/.icons` if not exists
-
-Download and extract [this link](https://github.com/dracula/gtk/files/5214870/Dracula.zip) on `~/.icons` folder
-
-
 ## Team
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/gtk/graphs/contributors).
 
-[![Eliver Lara](https://avatars0.githubusercontent.com/u/9838260?v=3&s=70)](https://github.com/EliverLara) | 
---- | 
-[Eliver Lara](https://github.com/EliverLara) | 
+| [![Eliver Lara](https://avatars0.githubusercontent.com/u/9838260?v=3&s=70)](https://github.com/EliverLara) |
+| ---------------------------------------------------------------------------------------------------------- |
+| [Eliver Lara](https://github.com/EliverLara)                                                               |
 
 ## License
 
