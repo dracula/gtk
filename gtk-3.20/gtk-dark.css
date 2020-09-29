@@ -202,7 +202,7 @@ flowbox rubberband,
 .content-view rubberband,
 treeview.view rubberband {
   border: 1px solid rgba(159, 99, 246, 0.5);
-  background-color: rgba(159, 99, 246, 0); }
+  background-color: rgba(159, 99, 246, 0.2); }
 
 flowbox flowboxchild {
   padding: 3px;
