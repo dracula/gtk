@@ -82,7 +82,7 @@ iconview { @extend .view; }
 .rubberband,
 rubberband {
   border: 1px solid darken($selected_bg_color, 10%);
-  background-color: transparentize(darken($selected_bg_color, 10%), 0.8);
+  background-color: transparentize(darken($selected_bg_color, 10%), 0.3);
 }
 
 flowbox {
