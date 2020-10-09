@@ -1,5 +1,5 @@
-.xfce4-panel.panel {
-    background-color: rgba(30, 31, 41, 0.7);
+.xfce4-panel.background {
+    background-color: $panel_bg_color;
     color: $fg_color;
 
     text-shadow: none;
