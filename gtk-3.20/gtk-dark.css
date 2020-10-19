@@ -5783,9 +5783,16 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 /*********
  * Gnucash *
 *********/
-.GncMainWindow entry.register-foreground {
+#gnc-id-main-window entry.gnc-class-register-foreground {
   background: transparent;
-  border: none; }
+  border: none;
+  box-shadow: none; }
+
+#gnc-id-main-window .arrow.button.toggle {
+  transition: none;
+  box-shadow: none; }
+  #gnc-id-main-window .arrow.button.toggle:hover {
+    border-color: rgba(189, 147, 249, 0.5); }
 
 /********
  * Gala *
