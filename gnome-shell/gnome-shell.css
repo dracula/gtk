@@ -665,6 +665,7 @@ StScrollBar {
   height: 50px;
   background-color: rgba(189, 147, 249, 0.5);
   color: #f8f8f2;
+  border: none;
   background-size: 32px;
   border-radius: 8px; }
 
@@ -939,7 +940,18 @@ StScrollBar {
 
 .calendar-today {
   font-weight: bold;
-  border: 1px solid rgba(33, 35, 45, 0.5); }
+  border: 1px solid rgba(189, 147, 249, 0.5);
+  background-color: transparent;
+  color: #f8f8f2; }
+  .calendar-today:hover, .calendar-today:focus {
+    background-color: rgba(198, 161, 250, 0.5);
+    color: #f8f8f2; }
+  .calendar-today:active, .calendar-today:selected {
+    background-color: rgba(189, 147, 249, 0.5);
+    color: #f8f8f2; }
+    .calendar-today:active:hover, .calendar-today:active:focus, .calendar-today:selected:hover, .calendar-today:selected:focus {
+      background-color: rgba(198, 161, 250, 0.5);
+      color: #f8f8f2; }
 
 .calendar-day-with-events {
   color: #e0e2e7;
