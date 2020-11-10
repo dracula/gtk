@@ -28,7 +28,7 @@ stage {
   .button:insensitive {
     color: #767984;
     background-color: rgba(57, 59, 71, 0.66);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.22);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
@@ -56,7 +56,7 @@ stage {
   .modal-dialog-linked-button:insensitive {
     color: #767984;
     background-color: rgba(57, 59, 71, 0.66);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.22);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
@@ -95,7 +95,7 @@ stage {
 StEntry {
   background-color: #373a4b;
   border-color: #21232d;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 2px;
   padding: 4px;
   border-width: 0;
@@ -103,10 +103,10 @@ StEntry {
   selection-background-color: rgba(189, 147, 249, 0.5);
   selected-color: #f8f8f2; }
   StEntry:focus {
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   StEntry:insensitive {
     color: #767984;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   StEntry StIcon.capslock-warning {
     icon-size: 16px;
     warning-color: #ff9f39;
@@ -1262,12 +1262,12 @@ StScrollBar {
   border: none;
   color: #C3C7D1;
   background-color: rgba(40, 42, 54, 0.6);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
   .search-entry:focus {
     border-width: 0;
     color: #C3C7D1;
     background-color: rgba(40, 42, 54, 0.8);
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.3); }
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); }
   .search-entry .search-entry-icon {
     icon-size: 1em;
     padding: 0 4px;
@@ -1410,7 +1410,7 @@ StScrollBar {
   .grid-search-result:active .overview-icon,
   .grid-search-result:checked .overview-icon {
     background-color: rgba(25, 26, 33, 0.85);
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
     color: #C3C7D1; }
   .app-well-app:hover .overview-icon,
   .app-well-app:focus .overview-icon,
@@ -1448,7 +1448,7 @@ StScrollBar {
   border: none;
   transition-duration: 100ms;
   text-align: center;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22); }
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
 
 .app-well-app.app-folder > .overview-icon {
   background-color: rgba(40, 42, 54, 0.35); }
@@ -1513,7 +1513,7 @@ StScrollBar {
 
 .workspace-thumbnail-indicator {
   border: 4px solid rgba(189, 147, 249, 0.4);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 3px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   padding: 0; }
 
 .search-display > StBoxLayout,
@@ -1803,7 +1803,7 @@ StScrollBar {
       .login-dialog .modal-dialog-button:default:insensitive {
         color: #767984;
         background-color: rgba(57, 59, 71, 0.66);
-        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 2px 3px rgba(0, 0, 0, 0.22);
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
         border: none;
         text-shadow: none;
         icon-shadow: none; }
