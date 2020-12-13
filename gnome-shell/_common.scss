@@ -1417,12 +1417,11 @@ StScrollBar {
     width: 320px;
     padding: 9px;
     border-radius: 100px;
-    border: none;
+    border: 1px solid $borders_color;
     color: $fg_color;
     background-color: transparentize($bg_color, 0.4);
     box-shadow: $depth;
     &:focus {
-      border-width: 0;
       color: $fg_color;
       background-color: transparentize($bg_color, 0.2);
       box-shadow: $depth2;
@@ -1432,6 +1431,7 @@ StScrollBar {
 
     &:hover, &:focus {
       background-color: transparentize($bg_color, 0.2);
+      border-color: transparentize($selected_bg_color, 0.2);
       .search-entry-icon { color: $fg_color; }
     }
   }
