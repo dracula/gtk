@@ -1268,7 +1268,7 @@ StScrollBar {
     color: rgba(195, 199, 209, 0.7); }
   .search-entry:hover, .search-entry:focus {
     background-color: rgba(40, 42, 54, 0.8);
-    border-color: rgba(189, 147, 249, 0.3); }
+    border-color: rgba(255, 121, 198, 0.5); }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #C3C7D1; }
 
