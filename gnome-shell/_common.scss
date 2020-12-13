@@ -1414,7 +1414,7 @@ StScrollBar {
 
     &:hover, &:focus {
       background-color: transparentize($bg_color, 0.2);
-      border-color: transparentize($selected_bg_color, 0.2);
+      border-color: transparentize($selected_bg_color, 0.5);
       .search-entry-icon { color: $fg_color; }
     }
   }
