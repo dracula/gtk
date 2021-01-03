@@ -1,0 +1,38 @@
+
+/* thunar */
+.thunar toolbar {
+    background-color: $headerbar_color; 
+  }
+  
+  /* buttons in toolbar */
+  .thunar toolbar.horizontal button image {
+    -gtk-icon-transform:scale(0.72);
+  }
+  
+  scrolledwindow.sidebar treeview.view {
+    background: $base_color;
+    padding: 1.5px;
+    border: none;
+    box-shadow: none;
+  }
+  
+  /* path-bar of thunar */
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, window.thunar paned > scrolledwindow treeview.view {
+    &:hover, &:checked, &:selected{ 
+        background-color: none;
+        color: $purple; 
+        box-shadow: none;
+    }
+
+    &:checked:backdrop, &:selected:backdrop {
+        label { color: $backdrop_selected_bg_color; }
+    }
+  }
+  
+  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button {
+    background: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  
