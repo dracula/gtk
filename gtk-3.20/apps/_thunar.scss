@@ -20,7 +20,7 @@
   window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, window.thunar paned > scrolledwindow treeview.view {
     &:hover, &:checked, &:selected{ 
         background-color: none;
-        color: $purple; 
+        color: $selected_bg_color; 
         box-shadow: none;
     }
 
