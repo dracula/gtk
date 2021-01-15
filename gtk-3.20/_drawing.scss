@@ -254,6 +254,7 @@
   color: if($tc==$text_color, $selected_bg_color, $tc);
   background-color: transparent;
   border-radius: 0;
+  box-shadow: none;
   text-shadow: none;
   font-weight: bold;
 }
