@@ -2429,6 +2429,7 @@ headerbar {
       color: #bd93f9;
       background-color: transparent;
       border-radius: 0;
+      box-shadow: none;
       text-shadow: none;
       font-weight: bold; }
     .titlebar:not(headerbar) button:backdrop, .titlebar:not(headerbar) button:disabled, .titlebar:not(headerbar) button:backdrop:disabled,
@@ -5718,6 +5719,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
   color: #bd93f9;
   background-color: transparent;
   border-radius: 0;
+  box-shadow: none;
   text-shadow: none;
   font-weight: bold; }
   .nautilus-window .path-bar-box widget > .text-button:last-child:backdrop label {
@@ -5730,6 +5732,7 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     color: rgba(189, 147, 249, 0.5);
     background-color: transparent;
     border-radius: 0;
+    box-shadow: none;
     text-shadow: none;
     font-weight: bold; }
     .nautilus-window .path-bar-box button:backdrop:hover label, .nautilus-window .path-bar-box button:backdrop:active label, .nautilus-window .path-bar-box button:backdrop:checked label {
