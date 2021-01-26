@@ -234,6 +234,7 @@
   border-radius: 0;
   text-shadow: none;
   box-shadow: none;
+  border: none;
 }
 
   @else if $t==hover-header {
