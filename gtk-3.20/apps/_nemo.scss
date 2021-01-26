@@ -6,7 +6,7 @@
         .view.cell,
         iconview.cell {
             &:hover,
-            &:selected {  @include button(active-header, transparent, $purple); }
+            &:selected {  @include button(active-header, transparent, $selected_bg_color); }
         }
     }
 
@@ -45,12 +45,12 @@
             @include button(normal-header);
             min-height: 24px;
             padding: 3px;
-            &:hover { @include button(hover-header, transparent, $purple); }
+            &:hover { @include button(hover-header, transparent, $selected_bg_color); }
 
             &:selected,
             &:active,
             &:checked { 
-                @include button(active-header, transparent, $purple); 
+                @include button(active-header, transparent, $selected_bg_color); 
                 &:backdrop {
                     &, & label {
                         color: $backdrop_selected_bg_color;
