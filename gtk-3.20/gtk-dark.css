@@ -6378,7 +6378,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover, .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
   .nemo-window .places-treeview iconview.cell:hover,
   .nemo-window .places-treeview iconview.cell:selected {
-    color: #bd93f9;
+    color: #ff79c6;
     background-color: transparent;
     border-radius: 0;
     box-shadow: none;
@@ -6400,7 +6400,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   border-radius: 3px;
   box-shadow: inset 0 1px rgba(0, 0, 0, 0.9), inset 1px 0 rgba(0, 0, 0, 0.96), inset -1px 0 rgba(0, 0, 0, 0.96), inset 0 -1px rgba(0, 0, 0, 0.98), 0 1px rgba(255, 255, 255, 0.6); }
   .nemo-window .nemo-window-pane widget.entry:selected {
-    background-color: rgba(189, 147, 249, 0.5);
+    background-color: #ff79c6;
     color: #f8f8f2; }
 
 .nemo-window toolbar.primary-toolbar {
@@ -6416,17 +6416,17 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     min-height: 24px;
     padding: 3px; }
     .nemo-window toolbar.primary-toolbar button:hover {
-      color: #bd93f9;
+      color: #ff79c6;
       background-color: transparent;
       border-radius: 0;
       text-shadow: none;
       box-shadow: none; }
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
-      color: #bd93f9;
+      color: #ff79c6;
       background-color: transparent;
       border-radius: 0;
       box-shadow: none;
       text-shadow: none;
       font-weight: bold; }
       .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:selected:backdrop label, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop label, .nemo-window toolbar.primary-toolbar button:checked:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop label {
-        color: rgba(189, 147, 249, 0.4); }
+        color: rgba(255, 121, 198, 0.6); }
