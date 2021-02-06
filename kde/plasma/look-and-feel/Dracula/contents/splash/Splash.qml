@@ -60,31 +60,40 @@ Image {
             }
         }
 
-        Rectangle {
-            radius: 4
-            color: "#282a36"
-            opacity: 0.9
+        Image {
+            id: busyIndicator
+            //in the middle of the remaining space
             y: parent.height - (parent.height - logo.y) / 3 - height/2
             anchors.horizontalCenter: parent.horizontalCenter
-            height: 6
-            width: height*32
-            Rectangle {
-                radius: 3
-                anchors {
-                    left: parent.left
-                    top: parent.top
-                    bottom: parent.bottom
-                }
-                width: (parent.width / 6) * (stage - 1)
-                color: "#bd93f9"
-                Behavior on width { 
-                    PropertyAnimation {
-                        duration: 250
-                        easing.type: Easing.InOutQuad
-                    }
-                }
+            source: "images/busy02.svg"
+            sourceSize.height: units.gridUnit * 2
+            sourceSize.width: units.gridUnit * 2
+            RotationAnimator on rotation {
+                id: rotationAnimator
+                from: 0
+                to: 360
+                duration: 800
+                loops: Animation.Infinite
             }
         }
+
+        Image {
+            id: busyIndicator2
+            //in the middle of the remaining space
+            y: parent.height - (parent.height - logo.y) / 3 - height/2
+            anchors.horizontalCenter: parent.horizontalCenter
+            source: "images/busy02.svg"
+            sourceSize.height: units.gridUnit * 3
+            sourceSize.width: units.gridUnit * 3
+            RotationAnimator on rotation {
+                id: rotationAnimator2
+                from: 360
+                to: 0 
+                duration: 800
+                loops: Animation.Infinite
+            }
+        }
+
 
     }
 
