@@ -196,3 +196,13 @@
     &:hover { border-color: $selected_bg_color; }
   } 
 }
+
+/*******************
+ * Calendar events *
+********************/
+.color-light{
+  & label, &.timed label {
+    color: $bg_color;
+    opacity:1;
+  }
+}
