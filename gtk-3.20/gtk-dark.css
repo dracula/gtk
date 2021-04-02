@@ -6396,3 +6396,9 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
       font-weight: bold; }
       .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:selected:backdrop label, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop label, .nemo-window toolbar.primary-toolbar button:checked:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop label {
         color: rgba(255, 121, 198, 0.6); }
+
+.caja-notebook .entry {
+  background: #1e1f29;
+  color: #f8f8f2; }
+  .caja-notebook .entry:selected {
+    background: #ff79c6; }
