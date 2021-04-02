@@ -6041,14 +6041,14 @@ SheetStyleDialog.unity-force-quit {
 
 MsdOsdWindow.background.osd {
   border-radius: 2px;
-  border: 1px solid rgba(25, 26, 34, 0.9); }
+  border: 1px solid #181a21; }
   MsdOsdWindow.background.osd .progressbar {
     background-color: rgba(189, 147, 249, 0.5);
     border: none;
     border-color: rgba(189, 147, 249, 0.5);
     border-radius: 5px; }
   MsdOsdWindow.background.osd .trough {
-    background-color: rgba(9, 10, 12, 0.8);
+    background-color: rgba(18, 19, 24, 0.93);
     border: none;
     border-radius: 5px; }
 
@@ -6227,3 +6227,9 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   outline: none;
   border: none;
   box-shadow: none; }
+
+.caja-notebook .entry {
+  background: #1e1f29;
+  color: #f8f8f2; }
+  .caja-notebook .entry:selected {
+    background: rgba(189, 147, 249, 0.5); }
