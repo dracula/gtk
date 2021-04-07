@@ -1236,8 +1236,11 @@ StScrollBar {
   spacing: 12px; }
 
 /* OVERVIEW */
-#overview {
+.controls-manager, .secondary-monitor-workspaces {
   spacing: 24px; }
+
+#overviewGroup {
+  background-color: rgba(40, 42, 54, 0.95); }
 
 .overview-controls {
   padding-bottom: 32px; }
@@ -1335,7 +1338,6 @@ StScrollBar {
   color: #f8f8f2;
   background-color: rgba(40, 42, 54, 0.95);
   padding: 6px 0;
-  border: 1px solid #21232d;
   border-left: 0px;
   border-radius: 0px 5px 5px 0px; }
   #dash:rtl {
@@ -1348,8 +1350,8 @@ StScrollBar {
     width: 24px;
     height: 24px; }
 
-.dash-item-container > StWidget {
-  padding: 4px 8px; }
+.dash-background {
+  background-color: rgba(29, 31, 39, 0.95); }
 
 .dash-label {
   border-radius: 7px;
