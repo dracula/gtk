@@ -6433,8 +6433,78 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
       .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:selected:backdrop label, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop label, .nemo-window toolbar.primary-toolbar button:checked:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop label {
         color: rgba(189, 147, 249, 0.4); }
 
+.caja-notebook .frame {
+  border-width: 0 0 1px; }
+
 .caja-notebook .entry {
   background: #1e1f29;
-  color: #f8f8f2; }
+  color: #f8f8f2;
+  border-color: rgba(25, 26, 34, 0.9); }
   .caja-notebook .entry:selected {
-    background: rgba(189, 147, 249, 0.5); }
+    background: rgba(189, 147, 249, 0.5);
+    color: #f8f8f2; }
+
+/**************
+* Caja sidebar *
+**************/
+.caja-side-pane {
+  background: #1e1f29; }
+  .caja-side-pane .frame {
+    border-width: 1px 0 0; }
+  .caja-side-pane treeview.view,
+  .caja-side-pane textview.view text,
+  .caja-side-pane viewport.frame,
+  .caja-side-pane widget .vertical {
+    background: #1e1f29;
+    padding: 3px 2px; }
+    .caja-side-pane treeview.view:hover,
+    .caja-side-pane textview.view text:hover,
+    .caja-side-pane viewport.frame:hover,
+    .caja-side-pane widget .vertical:hover {
+      background-color: rgba(40, 42, 54, 0.6); }
+    .caja-side-pane treeview.view:selected,
+    .caja-side-pane textview.view text:selected,
+    .caja-side-pane viewport.frame:selected,
+    .caja-side-pane widget .vertical:selected {
+      color: #bd93f9;
+      background: #1e1f29; }
+      .caja-side-pane treeview.view:selected:hover,
+      .caja-side-pane textview.view text:selected:hover,
+      .caja-side-pane viewport.frame:selected:hover,
+      .caja-side-pane widget .vertical:selected:hover {
+        background-color: rgba(189, 147, 249, 0); }
+
+/**************
+* Caja pathbar *
+**************/
+.caja-navigation-window paned {
+  background: #282a36; }
+
+.caja-navigation-window .primary-toolbar {
+  background: #1e1f29; }
+  .caja-navigation-window .primary-toolbar button, .caja-navigation-window .primary-toolbar button:backdrop {
+    color: #f8f8f2;
+    background-color: transparent;
+    border-radius: 0;
+    text-shadow: none;
+    box-shadow: none;
+    border: none; }
+  .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:checked {
+    background: rgba(189, 147, 249, 0.5);
+    box-shadow: none; }
+    .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:hover label, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:active label, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:active label, .caja-navigation-window .primary-toolbar button:backdrop:checked, .caja-navigation-window .primary-toolbar button:backdrop:checked label {
+      color: #f8f8f2; }
+
+.caja-pathbar button, .caja-pathbar button:backdrop {
+  color: #f8f8f2;
+  background-color: transparent;
+  border-radius: 0;
+  text-shadow: none;
+  box-shadow: none;
+  border: none; }
+
+.caja-pathbar button:hover, .caja-pathbar button:active, .caja-pathbar button:checked, .caja-pathbar button:backdrop:active, .caja-pathbar button:backdrop:checked {
+  background: transparent;
+  box-shadow: none; }
+  .caja-pathbar button:hover, .caja-pathbar button:hover label, .caja-pathbar button:active, .caja-pathbar button:active label, .caja-pathbar button:checked, .caja-pathbar button:checked label, .caja-pathbar button:backdrop:active, .caja-pathbar button:backdrop:active label, .caja-pathbar button:backdrop:checked, .caja-pathbar button:backdrop:checked label {
+    color: #bd93f9; }
