@@ -34,7 +34,7 @@
         background-color: transparentize($base_color, 0.4);
     }
     &:selected {
-        color: $purple;
+        color: $selected_bg_color;
         background: $headerbar_color;
         &:hover {
             background-color: transparentize($selected_bg_color, 0.8);
@@ -79,7 +79,7 @@
     background: transparent;
     box-shadow: none;
     &, & label {
-        color: $purple;
+        color: $selected_bg_color;
     }
   }
 }
