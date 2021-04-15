@@ -6466,7 +6466,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     .caja-side-pane textview.view text:selected,
     .caja-side-pane viewport.frame:selected,
     .caja-side-pane widget .vertical:selected {
-      color: #bd93f9;
+      color: #ff79c6;
       background: #1e1f29; }
       .caja-side-pane treeview.view:selected:hover,
       .caja-side-pane textview.view text:selected:hover,
@@ -6507,4 +6507,4 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   background: transparent;
   box-shadow: none; }
   .caja-pathbar button:hover, .caja-pathbar button:hover label, .caja-pathbar button:active, .caja-pathbar button:active label, .caja-pathbar button:checked, .caja-pathbar button:checked label, .caja-pathbar button:backdrop:active, .caja-pathbar button:backdrop:active label, .caja-pathbar button:backdrop:checked, .caja-pathbar button:backdrop:checked label {
-    color: #bd93f9; }
+    color: #ff79c6; }
