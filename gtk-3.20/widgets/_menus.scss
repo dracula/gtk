@@ -31,7 +31,8 @@ menu,
   padding: 2px 0px;
   background-color: $menu_color;
   border: 1px solid $borders_color; // adds borders in a non composited env
-
+  font: initial;
+  
   .csd & { border: none; }  // axes borders in a composited env
 
   &:backdrop { background-color: $backdrop_menu_color; }
