@@ -2924,7 +2924,8 @@ menu,
   margin: 4px;
   padding: 2px 0px;
   background: #232530;
-  border: 1px solid #181a21; }
+  border: 1px solid #181a21;
+  font: initial; }
   .csd menu, .csd
   .menu, .csd
   .context-menu {
