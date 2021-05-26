@@ -6432,6 +6432,10 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
       .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:selected:backdrop label, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop label, .nemo-window toolbar.primary-toolbar button:checked:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop label {
         color: rgba(255, 121, 198, 0.6); }
 
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
+.nemo-window .nemo-inactive-pane iconview {
+  background-color: #242530; }
+
 .caja-notebook .frame {
   border-width: 0 0 1px; }
 
