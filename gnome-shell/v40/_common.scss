@@ -1418,8 +1418,8 @@ StScrollBar {
   .window-caption {
     spacing: 20px;
     color: $topbar_color;
-    background-color: transparentize($osd_bg_color,.3);
-    border-radius: 2px;
+    background-color: $main_dark;
+    border: 1px solid $borders_color;
     padding: 4px 8px;
   }
 
