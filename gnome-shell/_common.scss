@@ -1378,8 +1378,12 @@ StScrollBar {
 
 /* OVERVIEW */
 
-#overview {
-  spacing: 24px; //
+.controls-manager, .secondary-monitor-workspaces {
+  spacing: 24px;
+}
+
+#overviewGroup {
+  background-color: $_bubble_bg_color;
 }
 
 .overview-controls {
@@ -1477,7 +1481,6 @@ StScrollBar {
     color: $topbar_color;
     background-color: $topbar_bg_color;
     padding: 6px 0;
-    border: 1px solid $borders_color;
     border-left: 0px;
     border-radius: 0px 5px 5px 0px;
 
@@ -1497,9 +1500,9 @@ StScrollBar {
     }
 
   }
-
-  .dash-item-container > StWidget {
-    padding: 4px 8px;
+  
+  .dash-background {
+    background-color: darken($topbar_bg_color, 5);
   }
 
   .dash-label { //osd tooltip
