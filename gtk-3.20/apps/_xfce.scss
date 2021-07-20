@@ -1,5 +1,5 @@
 .xfce4-panel
-    .background {
+    &.background {
         background-color: $panel_bg_color;
         color: $fg_color;
 
@@ -8,7 +8,7 @@
 
         button.flat { @extend %panelbutton; }
     }
-    #XfcePanelWindow, #XfcePanelWindow.marching-ants {transition: none;}
+    &#XfcePanelWindow, &#XfcePanelWindow.marching-ants {transition: none;}
 }
 
 #tasklist-button {
