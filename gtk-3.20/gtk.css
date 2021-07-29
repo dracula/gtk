@@ -5890,9 +5890,43 @@ LibraryWindow .the-button-in-the-combobox {
   .sidebar.source-list.view.fill-block, iconview.sidebar.source-list.fill-block, .sidebar.source-list.view.fill-block:hover, iconview.sidebar.source-list.fill-block:hover, .sidebar.source-list.view.fill-block:selected, iconview.sidebar.source-list.fill-block:selected, .sidebar.source-list.view.fill-block:selected:focus, iconview.sidebar.source-list.fill-block:selected:focus {
     background: linear-gradient(rgba(189, 147, 249, 0.5), rgba(189, 147, 249, 0.5)); }
 
-.xfce4-panel.panel {
-  background-color: #282a36;
-  color: #f8f8f2; }
+.xfce4-panel.background {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #f8f8f2;
+  text-shadow: none;
+  -gtk-icon-shadow: none; }
+
+.xfce4-panel#XfcePanelWindow, .xfce4-panel#XfcePanelWindow.marching-ants {
+  transition: none; }
+
+#tasklist-button {
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0); }
+  #tasklist-button:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.17); }
+  #tasklist-button:checked {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 -2px rgba(189, 147, 249, 0.5); }
+
+.xfce4-panel.background button.flat {
+  color: white;
+  border-radius: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  font-weight: normal; }
+  .xfce4-panel.background button.flat:hover {
+    border: none;
+    background-color: rgba(26, 26, 26, 0.7); }
+  .xfce4-panel.background button.flat:active, .xfce4-panel.background button.flat:checked {
+    color: white;
+    border-bottom: 2px solid rgba(189, 147, 249, 0.5);
+    background-color: rgba(0, 0, 0, 0.7); }
+    .xfce4-panel.background button.flat:active label, .xfce4-panel.background button.flat:active image, .xfce4-panel.background button.flat:checked label, .xfce4-panel.background button.flat:checked image {
+      color: inherit; }
 
 /********
 * Unity *
@@ -6208,22 +6242,25 @@ ConversationListView {
 .thunar toolbar.horizontal button image {
   -gtk-icon-transform: scale(0.72); }
 
-scrolledwindow.sidebar treeview.view {
-  background: #282a36;
+scrolledwindow.sidebar treeview.view, scrollbar.right {
+  background: #232530;
   padding: 1.5px;
   border: none;
   box-shadow: none; }
 
+scrolledwindow.standard-view scrollbar.right {
+  background-color: #282a36; }
+
 /* path-bar of thunar */
-window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:hover, window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked, window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected, window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > scrolledwindow treeview.view:checked, window.thunar paned > scrolledwindow treeview.view:selected {
+window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:hover, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected, window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > scrolledwindow treeview.view:checked, window.thunar paned > scrolledwindow treeview.view:selected {
   background-color: transparent;
   color: #bd93f9;
   box-shadow: none; }
 
-window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:backdrop label, window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected:backdrop label, window.thunar paned > scrolledwindow treeview.view:checked:backdrop label, window.thunar paned > scrolledwindow treeview.view:selected:backdrop label {
+window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:backdrop label, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected:backdrop label, window.thunar paned > scrolledwindow treeview.view:checked:backdrop label, window.thunar paned > scrolledwindow treeview.view:selected:backdrop label {
   color: rgba(189, 147, 249, 0.4); }
 
-window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button {
+window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button {
   background: none;
   outline: none;
   border: none;
