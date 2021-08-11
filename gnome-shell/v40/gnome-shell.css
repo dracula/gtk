@@ -805,7 +805,8 @@ StScrollBar {
 .calendar, .world-clocks-button, .weather-button, .events-button {
   background: transparent;
   border: none;
-  color: #C3C7D1; }
+  color: #C3C7D1;
+  box-shadow: none; }
 
 .calendar,
 .datemenu-today-button,
@@ -1438,11 +1439,11 @@ StScrollBar {
 .show-apps .overview-icon,
 .grid-search-result .overview-icon {
   color: #f8f8f2;
-  padding: 7px 6px;
+  padding: 6px;
   border: none;
   transition-duration: 100ms;
   text-align: center;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); }
+  box-shadow: none; }
 
 /* App Folders */
 .app-well-app.app-folder {
