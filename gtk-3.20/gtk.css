@@ -145,6 +145,8 @@ read if you used those and something break with a version upgrade you're on your
     background-color: #1e1f29;
     text-shadow: none;
     -gtk-icon-shadow: none; }
+  .background.chromium {
+    background-color: #2f313f; }
 
 /*
    These wildcard seems unavoidable, need to investigate.
