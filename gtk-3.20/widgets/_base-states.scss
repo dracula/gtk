@@ -11,6 +11,8 @@
     text-shadow: none;
     -gtk-icon-shadow: none;
   }
+
+  &.chromium { background-color: lighten($base_color, 3%); }
 }
 
 /*
