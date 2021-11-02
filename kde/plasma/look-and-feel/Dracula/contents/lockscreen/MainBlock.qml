@@ -71,7 +71,7 @@ SessionManagementScreen {
                 color: "#272834"
                 opacity: 0.9
                 border.width: 1
-                border.color: "#16171d"
+                border.color: "#9283BB"
                 radius: parent.width / 2
                 height: 30
                 anchors.fill: parent
