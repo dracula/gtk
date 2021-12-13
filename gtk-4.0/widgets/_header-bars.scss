@@ -172,7 +172,7 @@ headerbar {
         &.flat, & {
           @include button(backdrop, $selected_bg_color, $selected_fg_color);
 
-          -gtk-icon-effect: none;
+          -gtk-icon-filter: none;
           border-color: $selected_borders_color;
 
           &:active,
@@ -227,8 +227,6 @@ headerbar {
         box-shadow: none;
         padding-left: 10px;
         padding-right: 10px;
-
-        GtkArrow { -GtkArrow-arrow-scaling: 1; }
 
         .arrow {
           -gtk-icon-source: -gtk-icontheme('pan-down-symbolic');
