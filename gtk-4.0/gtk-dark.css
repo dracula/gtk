@@ -149,7 +149,7 @@ read if you used those and something break with a version upgrade you're on your
   outline-color: rgba(248, 248, 242, 0.3);
   outline-style: dashed;
   outline-offset: -3px;
-  outline-width: 1px;
+  outline-width: 0px;
   -gtk-outline-radius: 2px;
   -gtk-secondary-caret-color: rgba(189, 147, 249, 0.5); }
 
