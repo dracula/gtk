@@ -1,8 +1,5 @@
 .nemo-window {
     .places-treeview {
-        -NemoPlacesTreeView-disk-full-bg-color: darken($base_color, 15%);
-        -NemoPlacesTreeView-disk-full-fg-color: $yellow;
-        -GtkTreeView-vertical-separator: 7; 
         .view.cell,
         iconview.cell {
             &:hover,
