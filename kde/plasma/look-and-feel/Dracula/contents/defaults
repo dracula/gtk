@@ -8,7 +8,7 @@ ColorScheme=Dracula
 Theme=candy-icons
 
 [kcminputrc][Mouse]
-cursorTheme=breeze_cursors
+cursorTheme=Dracula-cursors
 
 [plasmarc][Theme]
 name=Dracula
