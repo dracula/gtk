@@ -63,16 +63,16 @@ Image {
         Image {
             id: busyIndicator
             //in the middle of the remaining space
-            y: parent.height - (parent.height - logo.y) / 3 - height/2
+            y: parent.height / 2 - height/2
             anchors.horizontalCenter: parent.horizontalCenter
             source: "images/busy02.svg"
-            sourceSize.height: units.gridUnit * 2
-            sourceSize.width: units.gridUnit * 2
+            sourceSize.height: logo.height + 60
+            sourceSize.width: logo.width + 60
             RotationAnimator on rotation {
                 id: rotationAnimator
                 from: 0
                 to: 360
-                duration: 800
+                duration: 1200
                 loops: Animation.Infinite
             }
         }
@@ -80,16 +80,16 @@ Image {
         Image {
             id: busyIndicator2
             //in the middle of the remaining space
-            y: parent.height - (parent.height - logo.y) / 3 - height/2
+            y: parent.height / 2 - height /2
             anchors.horizontalCenter: parent.horizontalCenter
             source: "images/busy02.svg"
-            sourceSize.height: units.gridUnit * 3
-            sourceSize.width: units.gridUnit * 3
+            sourceSize.height: logo.height + 100
+            sourceSize.width: logo.width + 100
             RotationAnimator on rotation {
                 id: rotationAnimator2
                 from: 360
                 to: 0 
-                duration: 800
+                duration: 1200
                 loops: Animation.Infinite
             }
         }
