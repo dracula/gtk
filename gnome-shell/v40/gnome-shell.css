@@ -981,8 +981,7 @@ StScrollBar {
 
 .message-list-clear-button.button {
   background: #262834;
-  border: 1px solid transparent;
-  margin: 1.5em 1.5em 0; }
+  border: 1px solid transparent; }
   .message-list-clear-button.button:hover, .message-list-clear-button.button:focus {
     color: #ff79c6;
     background-color: #21232d;
