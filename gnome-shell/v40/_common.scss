@@ -1116,7 +1116,6 @@ StScrollBar {
           background: darken($bg_color, 0.7%);
           border: 1px solid transparent;
           &:hover,&:focus { @include button(hover); }
-          margin: 1.5em 1.5em 0;
         }
 
         .message-list-sections {
