@@ -2653,6 +2653,10 @@ headerbar switch {
   margin-bottom: 10px; }
 headerbar separator {
   background: transparent; }
+headerbar viewswitcher > box.horizontal > button.radio, headerbar switcher > box.horizontal > button.radio {
+  margin: 0;
+  padding: 0;
+  border-radius: 0; }
 
 .background:not(.tiled):not(.maximized) .titlebar {
   box-shadow: inset 0 1px rgba(255, 255, 255, 0.1), inset 0 -1px rgba(0, 0, 0, 0.1); }
