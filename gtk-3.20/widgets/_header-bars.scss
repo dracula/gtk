@@ -260,6 +260,16 @@ headerbar {
     margin-bottom: 10px;
   }
   separator { background: transparent; }
+
+  viewswitcher, switcher {
+    > box.horizontal {
+      > button.radio {
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+      }
+    }
+  } 
 }
 
 .background:not(.tiled):not(.maximized) .titlebar {
