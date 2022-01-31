@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="380.00266"
    height="635.00043"
    version="1.1"
    viewBox="0 0 380.00266 635.00043"
    id="svg1764"
    sodipodi:docname="Dracula-purple.svg"
-   inkscape:version="1.0.2 (e86c870879, 2021-01-15)">
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <metadata
      id="metadata1768">
     <rdf:RDF>
@@ -36,18 +36,19 @@
      guidetolerance="10"
      inkscape:pageopacity="0.98823529"
      inkscape:pageshadow="2"
-     inkscape:window-width="1366"
-     inkscape:window-height="674"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
      id="namedview1766"
      showgrid="false"
      inkscape:zoom="8.6180913"
-     inkscape:cx="143.49165"
-     inkscape:cy="136.59538"
+     inkscape:cx="143.59328"
+     inkscape:cy="201.61077"
      inkscape:window-x="0"
-     inkscape:window-y="30"
+     inkscape:window-y="36"
      inkscape:window-maximized="1"
-     inkscape:current-layer="checkbox-checked-focused"
-     inkscape:document-rotation="0" />
+     inkscape:current-layer="slidercursor-pressed"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="0" />
   <defs
      id="defs116">
     <linearGradient
@@ -642,9 +643,9 @@
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter2077"
-       x="-0.096"
+       x="-0.095999998"
        width="1.192"
-       y="-0.096"
+       y="-0.095999998"
        height="1.192">
       <feGaussianBlur
          inkscape:collect="always"
@@ -3353,7 +3354,7 @@
          cx="69"
          cy="319"
          r="9"
-         style="fill:#252a3f;fill-opacity:1"
+         style="fill:#7c60a3;fill-opacity:1"
          id="circle721" />
     </g>
     <g
@@ -5247,7 +5248,7 @@
       <path
          transform="translate(-60)"
          d="m 147,125 c -1.108,0 -2,0.892 -2,2 v 12 c 0,1.108 0.892,2 2,2 h 12 c 1.108,0 2,-0.892 2,-2 v -12 c 0,-1.108 -0.892,-2 -2,-2 z"
-         style="opacity:0.17999998;fill:#ffffff"
+         style="opacity:0.18;fill:#ffffff"
          id="path1281"
          inkscape:connector-curvature="0" />
       <path
