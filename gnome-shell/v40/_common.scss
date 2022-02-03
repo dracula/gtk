@@ -1430,7 +1430,7 @@ StScrollBar {
   .search-entry {
     width: 320px;
     padding: 9px;
-    border-radius: 100px;
+    border-radius: 6px;
     border: 1px solid $borders_color;
     color: $fg_color;
     background-color: $main_dark;
@@ -1440,7 +1440,7 @@ StScrollBar {
 
     &:hover, &:focus {
       background-color: lighten($main_dark, 2%);
-      border-color: transparentize($selected_bg_color, 0.1);
+      border-color: $selected_bg_color;
       .search-entry-icon { color: $fg_color; }
     }
   }
