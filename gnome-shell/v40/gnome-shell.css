@@ -1252,7 +1252,7 @@ StScrollBar {
 .search-entry {
   width: 320px;
   padding: 9px;
-  border-radius: 100px;
+  border-radius: 6px;
   border: 1px solid #21232d;
   color: #C3C7D1;
   background-color: #1d1f27;
@@ -1263,7 +1263,7 @@ StScrollBar {
     color: rgba(195, 199, 209, 0.7); }
   .search-entry:hover, .search-entry:focus {
     background-color: #21232d;
-    border-color: rgba(255, 121, 198, 0.9); }
+    border-color: #ff79c6; }
     .search-entry:hover .search-entry-icon, .search-entry:focus .search-entry-icon {
       color: #C3C7D1; }
 
