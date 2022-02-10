@@ -526,6 +526,7 @@ StScrollBar {
   .popup-sub-menu {
     background-color:  transparentize(darken($main_dark,57%), 0.8);
     box-shadow: $depth6;
+    border: none;
   }
 
   .popup-menu-content { padding: 16px 0; }
