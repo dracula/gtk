@@ -581,22 +581,20 @@ StScrollBar {
     -arrow-box-shadow: 0 1px 3px black; //dreaming. bug #689995
   }
 
-  .popup-separator-menu-item {
-    background: transparent;
-    &-separator {
-      //-margin-horizontal: 24px;
-      height: 1px; //not really the whole box
-      margin: 6px 64px;
-      background-color: transparent;
-      border-color: transparent;
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-    }
-    .popup-sub-menu & &-separator { //submenu separators
+// separator
+.popup-separator-menu-item {
+  padding: 0 !important;
+  .popup-separator-menu-item-separator {
+    //-margin-horizontal: 24px;
+    height: 1px; //not really the whole box
+    margin: 1px 64px;
+    background-color: lighten($gray, 3%);
+    .popup-sub-menu & { //submenu separators
       margin: 0 64px 0 32px;
-      background: transparent;
+      background-color: lighten($bg_color, 10%);
     }
   }
+}
 
 
 // Background menu
