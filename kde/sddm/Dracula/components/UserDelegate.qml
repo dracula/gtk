@@ -57,7 +57,10 @@ Item {
         width: imageSource.width + 2 // Subtract to prevent fringing
         height: width
         radius: width / 2
-        color: "#232831"
+        gradient: Gradient {
+            GradientStop { position: 0.0; color: "#A67CF3" }
+            GradientStop { position: 1.0; color: "#9B79CC" }
+        }
     }
 
     Item {
