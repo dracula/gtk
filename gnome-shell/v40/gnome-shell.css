@@ -141,8 +141,9 @@ StScrollBar {
 /* Slider */
 .slider {
   height: 1em;
-  color: #cbcb9f;
+  color: #C3C7D1;
   border-color: black;
+  box-shadow: none;
   -slider-height: 0.1em;
   -slider-background-color: #373a4b;
   -slider-border-color: black;
@@ -150,7 +151,9 @@ StScrollBar {
   -slider-active-border-color: #50fa7a;
   -slider-border-width: 0;
   -slider-handle-radius: 6px;
-  -barlevel-height: 0.1em;
+  -slider-handle-border-width: 1px;
+  -slider-handle-border-color: #C3C7D1;
+  -barlevel-height: 0.2em;
   -barlevel-background-color: #373a4b;
   -barlevel-border-color: black;
   -barlevel-active-background-color: #bd93f9;
