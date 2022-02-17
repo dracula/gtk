@@ -961,12 +961,8 @@ StScrollBar {
   color: #282a36; }
 
 /* Message list */
-.message-list {
-  width: 31.5em; }
-  .message-list .message-title {
-    color: #babfca; }
-  .message-list .message-content, .message-list .message-body {
-    color: #b7bcc8; }
+.message-list .message-title, .message-list .message-content, .message-list .message-body {
+  color: #bdc2cd; }
 
 .message-list-sections {
   spacing: 1em; }
@@ -987,14 +983,14 @@ StScrollBar {
   background: transparent; }
 
 .message {
-  background: #262834;
+  background: #282a36;
   border: 1px solid #1b1c24;
-  border-radius: 5px;
+  border-radius: 7px;
   box-shadow: none; }
   .message:hover, .message:focus {
-    background-color: #21232d;
+    background-color: #2f313f;
     box-shadow: 2px 0px 0px 0px #bd93f9 inset;
-    border-radius: 1px 5px 5px 1px; }
+    border-radius: 1px 7px 7px 1px; }
 
 .message-close-button {
   color: #C3C7D1; }
@@ -1502,15 +1498,13 @@ StScrollBar {
   font-size: 11pt;
   width: 34em;
   margin: 5px;
-  border-radius: 3px;
+  border-radius: 7px;
   color: #f8f8f2;
-  background-color: #282a36;
+  background-color: #2c2f3c;
   border: 1px solid #1b1c24;
-  box-shadow: 0 1px 4px black; }
-  .notification-banner:hover {
-    background-color: rgba(40, 42, 54, 0.96); }
-  .notification-banner:focus {
-    background-color: rgba(40, 42, 54, 0.96); }
+  box-shadow: 0 1px 4px #1b1c24; }
+  .notification-banner:hover, .notification-banner:focus {
+    background-color: #313342; }
   .notification-banner * {
     color: #fefefe; }
   .notification-banner .notification-icon {
