@@ -1094,12 +1094,8 @@ StScrollBar {
 
       /* Message list */
       .message-list {
-        width: 31.5em;
-        .message-title{
-          color: darken($fg_color,3%);
-        }
-        .message-content, .message-body {
-          color: darken($fg_color,4%);
+        .message-title, .message-content, .message-body {
+          color: darken($fg_color, 2%);
         }
       }
 
@@ -1129,13 +1125,13 @@ StScrollBar {
 
         .message {
           &:hover,&:focus { 
-            background-color: darken($bg_color, 3%);
+            background-color: lighten($base_color, 3%);
             box-shadow: 2px 0px 0px 0px $teal inset;
-            border-radius: 1px 5px 5px 1px;
+            border-radius: 1px 7px 7px 1px;
           }
-          background: darken($bg_color, 0.7%);
+          background: $base_color;
           border: 1px solid $borders_color;
-          border-radius: 5px;
+          border-radius: 7px; 
           box-shadow: none;
         }
 
@@ -1712,13 +1708,12 @@ StScrollBar {
     font-size: 11pt;
     width: 34em;
     margin: 5px;
-    border-radius: 3px;
+    border-radius: 7px;
     color: $topbar_color;
-    background-color: $bg_color;
+    background-color: lighten($base_color, 2%);
     border: 1px solid $borders_color;
-    box-shadow: 0 1px 4px black;
-    &:hover { background-color: transparentize($bg_color, 0.04); }
-    &:focus { background-color: transparentize($bg_color, 0.04); }
+    box-shadow: 0 1px 4px $borders_color;
+    &:hover, &:focus { background-color: lighten($base_color, 4%); }
     *{ color: #fefefe; }
 
     .notification-icon { padding: 5px; }
