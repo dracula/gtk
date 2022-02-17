@@ -19,8 +19,7 @@ stage {
 /* Buttons */
 .button, %button {
   @include button(normal);
-  border-radius: 4px;
-  border-width: 0;
+  border-radius: 5px;
   padding: 4px 32px;
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
@@ -1103,12 +1102,6 @@ StScrollBar {
           color: darken($fg_color,4%);
         }
       }
-
-        .message-list-clear-button.button {
-          background: darken($bg_color, 0.7%);
-          border: 1px solid transparent;
-          &:hover,&:focus { @include button(hover); }
-        }
 
         .message-list-sections {
           spacing: 1em;
