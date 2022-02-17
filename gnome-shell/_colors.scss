@@ -1,6 +1,6 @@
 $base_color:#282a36;
 $bg_color:#282a36; //252b2f
-$main_dark: darken($bg_color, 5%);
+$main_dark: darken($bg_color, 3%);
 $gray: lighten($bg_color, 7%);
 $fg_color: #C3C7D1;
 $dracula: $bg_color;
@@ -21,7 +21,7 @@ $g2: transparentize($purple, 0.5);
 $selected_fg_color: #f8f8f2;
 $selected_bg_color: transparentize($purple, 0.5);
 $selected_borders_color: darken($selected_bg_color, 10%);
-$borders_color: darken($bg_color, 3%);
+$borders_color: darken($bg_color, 6%);
 $borders_edge: transparentize(white, 0.9);
 $link_color: #A0C1B9;
 $link_visited_color: transparentize($link_color,0.5);
