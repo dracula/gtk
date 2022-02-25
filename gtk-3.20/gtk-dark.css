@@ -341,7 +341,7 @@ button {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   font-weight: normal;
   color: #f8f8f2;
-  background-color: #272834;
+  background-color: #303140;
   text-shadow: none; }
   notebook > header > tabs > arrow,
   button.flat {
@@ -890,12 +890,12 @@ button.destructive-action {
 toolbar button:hover {
   font-weight: normal;
   color: #f8f8f2;
-  background-color: #272834;
+  background-color: #303140;
   text-shadow: none; }
 toolbar button:active {
   font-weight: normal;
   color: #f8f8f2;
-  background-color: #272834;
+  background-color: #303140;
   text-shadow: none; }
 
 .inline-toolbar toolbutton > button {
@@ -1528,7 +1528,7 @@ colorswatch#add-color-button {
   colorswatch#add-color-button overlay {
     font-weight: normal;
     color: #f8f8f2;
-    background-color: #272834;
+    background-color: #303140;
     text-shadow: none; }
     colorswatch#add-color-button overlay:hover {
       color: #f8f8f2;
@@ -1625,7 +1625,7 @@ spinbutton:not(.vertical), entry {
   transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
   color: #f8f8f2;
   border-color: #181a21;
-  background-color: #282a36; }
+  background-color: #313342; }
   spinbutton:not(.vertical) image.left,
   entry image.left {
     padding-left: 0;
@@ -1691,7 +1691,7 @@ spinbutton:not(.vertical), entry {
   entry.error {
     color: #f8f8f2;
     border-color: #181a21;
-    background-color: #282a36;
+    background-color: #313342;
     color: #ff3c3c;
     border-color: #880000; }
     spinbutton.error:focus:not(.vertical),
@@ -1705,7 +1705,7 @@ spinbutton:not(.vertical), entry {
   entry.warning {
     color: #f8f8f2;
     border-color: #181a21;
-    background-color: #282a36;
+    background-color: #313342;
     color: #ff9f39;
     border-color: #864500; }
     spinbutton.warning:focus:not(.vertical),
@@ -2280,7 +2280,7 @@ GraniteWidgetsWelcome {
       border-radius: 4px;
       font-weight: normal;
       color: white;
-      background-color: #272834;
+      background-color: #303140;
       text-shadow: none;
       box-shadow: none; }
       .titlebar button.suggested-action:hover,
@@ -2326,7 +2326,7 @@ GraniteWidgetsWelcome {
       border-radius: 4px;
       font-weight: normal;
       color: white;
-      background-color: #272834;
+      background-color: #303140;
       text-shadow: none;
       box-shadow: none; }
       .titlebar button.destructive-action:hover,
@@ -6033,7 +6033,7 @@ ConversationListView {
 #content_frame button {
   font-weight: normal;
   color: #f8f8f2;
-  background-color: #272834;
+  background-color: #303140;
   text-shadow: none; }
   #content_frame button:hover {
     color: #f8f8f2;
