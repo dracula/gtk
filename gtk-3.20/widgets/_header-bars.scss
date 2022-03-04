@@ -32,36 +32,38 @@ headerbar {
 
   %linked-header {
     border: none;
-    border-radius: 0;
+    border-radius: 7px;
     border-right-style: none;
     box-shadow: none;
 
-    &:first-child {
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px;
-    }
+    // &:first-child {
+    //   border-top-left-radius: 7px;
+    //   border-bottom-left-radius: 0px;
+    // }
 
-    &:last-child {
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-right-style: solid;
-    }
+    // &:last-child {
+    //   border-top-right-radius: 0px;
+    //   border-bottom-right-radius: 0px;
+    //   border-right-style: solid;
+    // }
 
-    &:only-child {
-      border-radius: 0px;
-      border-style: solid;
-    }
+    // &:only-child {
+    //   border-radius: 0px;
+    //   border-style: solid;
+    // }
   }
   entry { min-height: 24px; }
   button {
     @include button(normal-header);
-    min-height: 34px;
+    min-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     &:hover {
       @include button(hover-header, transparent, $purple);
     }
     &:active,
     &:checked {
-      @include button(active-header, transparent, $purple);
+      @include button(active-header, red, $purple);
     }
 
     &:backdrop,
