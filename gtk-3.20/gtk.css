@@ -2269,28 +2269,9 @@ GraniteWidgetsWelcome {
   headerbar .linked > button:checked,
   headerbar .linked > button:backdrop {
     border: none;
-    border-radius: 0;
+    border-radius: 7px;
     border-right-style: none;
     box-shadow: none; }
-    .titlebar:not(headerbar) .linked > button:first-child,
-    .titlebar:not(headerbar) headerbar .linked > button:first-child,
-    headerbar .titlebar:not(headerbar) .linked > button:first-child,
-    headerbar .linked > button:first-child {
-      border-top-left-radius: 0px;
-      border-bottom-left-radius: 0px; }
-    .titlebar:not(headerbar) .linked > button:last-child,
-    .titlebar:not(headerbar) headerbar .linked > button:last-child,
-    headerbar .titlebar:not(headerbar) .linked > button:last-child,
-    headerbar .linked > button:last-child {
-      border-top-right-radius: 0px;
-      border-bottom-right-radius: 0px;
-      border-right-style: solid; }
-    .titlebar:not(headerbar) .linked > button:only-child,
-    .titlebar:not(headerbar) headerbar .linked > button:only-child,
-    headerbar .titlebar:not(headerbar) .linked > button:only-child,
-    headerbar .linked > button:only-child {
-      border-radius: 0px;
-      border-style: solid; }
   .titlebar:not(headerbar) entry,
   headerbar entry {
     min-height: 24px; }
@@ -2302,7 +2283,9 @@ GraniteWidgetsWelcome {
     text-shadow: none;
     box-shadow: none;
     border: none;
-    min-height: 34px; }
+    min-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
     .titlebar:not(headerbar) button:hover,
     headerbar button:hover {
       color: #ff79c6;
@@ -2314,8 +2297,8 @@ GraniteWidgetsWelcome {
     headerbar button:active,
     headerbar button:checked {
       color: #ff79c6;
-      background-color: transparent;
-      border-radius: 0;
+      background-color: rgba(255, 121, 198, 0.1);
+      border-radius: 7px;
       box-shadow: none;
       text-shadow: none;
       font-weight: bold; }
@@ -3969,7 +3952,7 @@ treeview ~ scrollbar.vertical {
 .sidebar {
   border-style: none;
   border-width: 0;
-  background-color: #232530; }
+  background-color: #20212b; }
   .sidebar .frame {
     border: none; }
   stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl) {
@@ -3986,18 +3969,20 @@ treeview ~ scrollbar.vertical {
     transition: 200ms ease-out; }
   .sidebar list {
     background-color: #20212b; }
-  .sidebar row:selected {
-    background: transparent;
-    color: #ff79c6; }
-    .sidebar row:selected:backdrop {
-      color: rgba(255, 121, 198, 0.6);
-      background: transparent; }
-      .sidebar row:selected:backdrop label {
-        color: rgba(255, 121, 198, 0.6); }
-    .sidebar row:selected:hover {
-      background-color: rgba(255, 121, 198, 0.2); }
-    .sidebar row:selected label {
-      color: #ff79c6; }
+  .sidebar row {
+    margin: 0 10px;
+    padding: 10px 12px;
+    border-radius: 10px; }
+    .sidebar row:selected {
+      background: rgba(255, 121, 198, 0.1); }
+      .sidebar row:selected:backdrop {
+        background: rgba(255, 121, 198, 0.2); }
+        .sidebar row:selected:backdrop, .sidebar row:selected:backdrop label {
+          color: rgba(255, 121, 198, 0.6); }
+      .sidebar row:selected:hover {
+        background-color: rgba(255, 121, 198, 0.2); }
+      .sidebar row:selected, .sidebar row:selected label {
+        color: #ff79c6; }
   .sidebar.source-list {
     background-color: #1e1f29;
     color: #F2EFEA;
@@ -5417,11 +5402,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
 /************
  * Nautilus *
  ************/
-.nautilus-window .frame *:selected, .nautilus-window .frame *:selected:backdrop {
-  background: transparent;
-  color: #ff79c6; }
-.nautilus-window .frame *:selected:backdrop label {
-  color: rgba(255, 121, 198, 0.6); }
 .nautilus-window paned > separator {
   background-image: none; }
 .nautilus-window .sidebar {
@@ -5464,8 +5444,8 @@ headerbar .nautilus-window .path-bar-box .subtitle {
   color: transparent; }
 .nautilus-window .path-bar-box widget > .text-button:last-child {
   color: #ff79c6;
-  background-color: transparent;
-  border-radius: 0;
+  background-color: rgba(255, 121, 198, 0.1);
+  border-radius: 7px;
   box-shadow: none;
   text-shadow: none;
   font-weight: bold; }
@@ -5476,8 +5456,8 @@ headerbar .nautilus-window .path-bar-box .subtitle {
   margin-left: -5px; }
   .nautilus-window .path-bar-box button:backdrop:hover, .nautilus-window .path-bar-box button:backdrop:active, .nautilus-window .path-bar-box button:backdrop:checked {
     color: #ff79c6;
-    background-color: transparent;
-    border-radius: 0;
+    background-color: rgba(255, 121, 198, 0.1);
+    border-radius: 7px;
     box-shadow: none;
     text-shadow: none;
     font-weight: bold; }
@@ -6202,8 +6182,8 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
   .nemo-window .places-treeview iconview.cell:hover,
   .nemo-window .places-treeview iconview.cell:selected {
     color: #ff79c6;
-    background-color: transparent;
-    border-radius: 0;
+    background-color: rgba(255, 121, 198, 0.1);
+    border-radius: 7px;
     box-shadow: none;
     text-shadow: none;
     font-weight: bold; }
@@ -6243,8 +6223,8 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
       box-shadow: none; }
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       color: #ff79c6;
-      background-color: transparent;
-      border-radius: 0;
+      background-color: rgba(255, 121, 198, 0.1);
+      border-radius: 7px;
       box-shadow: none;
       text-shadow: none;
       font-weight: bold; }
