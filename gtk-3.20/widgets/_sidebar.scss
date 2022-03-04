@@ -4,7 +4,7 @@
 .sidebar {
   border-style: none;
   border-width: 0;
-  background-color: mix($bg_color, $base_color, 50%);
+  background-color: lighten($bg_color, 0.77%);
   .frame{
     border: none;
   }
@@ -32,10 +32,12 @@
 
   list { background-color: lighten($bg_color, 0.77%); }
   row{
-    &:selected{
+    margin: 0 10px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    &:selected {
       &:backdrop{
-        color: $backdrop_selected_bg_color;
-        background: transparent;
+        background: transparentize($backdrop_selected_bg_color, 0.3);
         label{
           color: $backdrop_selected_bg_color;
         }  
@@ -43,7 +45,7 @@
       &:hover{
         background-color: transparentize($selected_bg_color, 0.2);
       }
-      background: transparent;
+      background: transparentize($selected_bg_color, 0.4);
       color: $purple;
       label{
         color: $purple;
