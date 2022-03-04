@@ -1142,7 +1142,7 @@ StScrollBar {
   .window-close StIcon {
     icon-size: 23px; }
   .window-close:hover {
-    border-color: rgba(189, 147, 249, 0.5); }
+    border-color: #ff79c6; }
   .window-close:active {
     color: #bd93f9;
     background-color: rgba(29, 31, 39, 0.95); }
