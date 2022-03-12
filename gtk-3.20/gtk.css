@@ -2652,6 +2652,9 @@ window:not(.tiled):not(.maximized) separator:first-child + headerbar:backdrop, w
 window:not(.tiled):not(.maximized) headerbar:last-child:backdrop, window:not(.tiled):not(.maximized) headerbar:last-child {
   border-top-right-radius: 4px; }
 
+window {
+  border-radius: 6px; }
+
 window.csd > .titlebar:not(headerbar) {
   padding: 0;
   background-color: transparent;
