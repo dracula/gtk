@@ -6,7 +6,7 @@
    viewBox="0 0 380.00266 635.00043"
    id="svg1764"
    sodipodi:docname="Dracula.svg"
-   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -40,13 +40,13 @@
      inkscape:window-height="1019"
      id="namedview1766"
      showgrid="false"
-     inkscape:zoom="6.5561609"
-     inkscape:cx="122.86154"
-     inkscape:cy="209.65013"
+     inkscape:zoom="0.81952011"
+     inkscape:cx="280.04194"
+     inkscape:cy="50.639392"
      inkscape:window-x="0"
      inkscape:window-y="36"
      inkscape:window-maximized="1"
-     inkscape:current-layer="slidercursor-pressed"
+     inkscape:current-layer="lineedit-focused-left"
      inkscape:document-rotation="0"
      inkscape:pagecheckerboard="0" />
   <defs
@@ -5492,7 +5492,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
          id="path1362"
          inkscape:connector-curvature="0" />
     </g>
@@ -5507,7 +5507,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
          id="path1367"
          inkscape:connector-curvature="0" />
     </g>
@@ -5522,7 +5522,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
          id="path1372"
          inkscape:connector-curvature="0" />
     </g>
@@ -5537,7 +5537,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
          id="path1377"
          inkscape:connector-curvature="0" />
     </g>
@@ -5552,7 +5552,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
          id="path1382"
          inkscape:connector-curvature="0" />
     </g>
@@ -5567,7 +5567,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
          id="path1387"
          inkscape:connector-curvature="0" />
     </g>
@@ -5582,7 +5582,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
          id="path1392"
          inkscape:connector-curvature="0" />
     </g>
@@ -5597,7 +5597,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
          id="path1397"
          inkscape:connector-curvature="0" />
     </g>
