@@ -1,6 +1,4 @@
 stage {
-  font-family: Futura Bk bt, sans, Sans-Serif;
-  font-size: 9pt;
   color: #f8f8f2; }
 
 .label-shadow {
@@ -338,7 +336,6 @@ StScrollBar {
   spacing: .5em; }
 
 #panel {
-  font-size: 10pt;
   height: 28px;
   width: 32px;
   font-weight: 700;
