@@ -1054,7 +1054,7 @@ StScrollBar {
     background-color: rgba(248, 248, 242, 0.1); }
   .window-list-item-box:active, .window-list-item-box:checked, .window-list-item-box:focus, .window-list-item-box:running {
     color: #f8f8f2;
-    border-color: rgba(189, 147, 249, 0.5); }
+    border-color: #bd93f9; }
   .window-list-item-box .progress {
     background-color: rgba(189, 147, 249, 0.3); }
 .window-list-item-demands-attention {
@@ -1104,7 +1104,7 @@ StScrollBar {
     border-color: rgba(73, 76, 100, 0.7); }
   .grouped-window-list-item-box:hover, .grouped-window-list-item-box:active:hover, .grouped-window-list-item-box:focus, .grouped-window-list-item-box:active:focus, .grouped-window-list-item-box:focus:hover, .grouped-window-list-item-box:active:focus:hover {
     color: #f8f8f2;
-    border-color: rgba(189, 147, 249, 0.5); }
+    border-color: #bd93f9; }
   .grouped-window-list-item-box .progress {
     background-color: rgba(189, 147, 249, 0.3); }
 .grouped-window-list-item-demands-attention {
