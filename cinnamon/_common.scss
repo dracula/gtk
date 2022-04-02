@@ -1317,7 +1317,7 @@ StScrollBar {
     &:focus,
     &:running {
       color: $selected_fg_color;
-      border-color: $selected_bg_color;
+      border-color: $purple;
     }
 
     & .progress {
@@ -1400,7 +1400,7 @@ StScrollBar {
     &:focus:hover,
     &:active:focus:hover {
       color: $selected_fg_color;
-      border-color: $selected_bg_color;
+      border-color: $purple;
     }
 
     & .progress {
