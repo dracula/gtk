@@ -2,7 +2,7 @@
 
 #### Install manually
 
-Download using the [GitHub .zip download](https://github.com/dracula/gtk/archive/master.zip) option and extract the `.zip` file to the themes directory i.e. `/usr/share/themes/` or `~/.themes/` (create it if necessary).
+Download using the [GitHub .zip download](https://github.com/dracula/gtk/archive/master.zip) option and extract the `.zip` file to the themes directory i.e. `/usr/share/themes/` or `~/.themes/` (create it if necessary). Some apps require to have the theme in `/usr/share/themes`, if your app isn't changing colors from `~/.themes/`, try moving to `/usr/share/themes`.
 
 #### Activating theme
 
@@ -30,3 +30,8 @@ gsettings set org.gnome.desktop.interface icon-theme "Dracula"
 ```
 
 or Change via distribution specific tweak tool.
+
+## System context
+
+The Calendar, Notifications, Right-click menu and some other context require the installation of `User Themes` extension https://extensions.gnome.org/extension/19/user-themes/  
+
