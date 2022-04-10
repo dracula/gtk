@@ -153,14 +153,14 @@ StScrollBar {
   height: 1em; }
 
 .popup-slider-menu-item, .slider {
-  -slider-height: 4px;
-  -slider-background-color: rgba(25, 26, 34, 0.9);
-  -slider-border-color: rgba(0, 0, 0, 0);
+  -slider-height: 0.3em;
+  -slider-background-color: #333545;
+  -slider-border-color: rgba(30, 31, 41, 0.3);
   -slider-active-background-color: #ff79c6;
-  -slider-active-border-color: rgba(0, 0, 0, 0);
-  -slider-border-width: 0;
-  -slider-handle-radius: 4px;
-  height: 18px;
+  -slider-active-border-color: rgba(30, 31, 41, 0.3);
+  -slider-border-width: 1px;
+  -slider-handle-radius: 0.5em;
+  height: 1em;
   min-width: 15em;
   border: 0 solid transparent;
   border-right-width: 1px;
@@ -238,16 +238,33 @@ StScrollBar {
 .popup-menu,
 .popup-combo-menu {
   color: #f8f8f2;
-  border-image: url("dark-assets/menu/menu.svg") 9 9 9 9; }
+  border: 1px solid rgba(25, 26, 34, 0.9);
+  border-radius: 6px;
+  background-color: rgba(30, 31, 41, 0.99); }
+  .menu.top,
+  .popup-menu.top,
+  .top.popup-combo-menu {
+    border-radius: 0 0 6px 6px; }
+  .menu.bottom,
+  .popup-menu.bottom,
+  .bottom.popup-combo-menu {
+    border-radius: 6px 6px 0 0; }
+  .menu.left,
+  .popup-menu.left,
+  .left.popup-combo-menu {
+    border-radius: 0 6px 6px 0; }
+  .menu.right,
+  .popup-menu.right,
+  .right.popup-combo-menu {
+    border-radius: 6px 0 0 6px; }
   .menu-arrow,
   .popup-menu-arrow {
     icon-size: 16px; }
   .menu .popup-sub-menu,
   .popup-menu .popup-sub-menu,
   .popup-combo-menu .popup-sub-menu {
-    background-gradient-direction: none;
     box-shadow: none;
-    border-image: url("dark-assets/menu/submenu.svg") 9 9 9 9; }
+    background-color: #282a36; }
     .menu .popup-sub-menu .popup-menu-item:ltr,
     .popup-menu .popup-sub-menu .popup-menu-item:ltr,
     .popup-combo-menu .popup-sub-menu .popup-menu-item:ltr {
@@ -274,13 +291,14 @@ StScrollBar {
   .popup-menu .popup-menu-item,
   .popup-combo-menu .popup-menu-item {
     padding: .4em 1.75em;
-    spacing: 1em; }
+    spacing: 1em;
+    border-left-width: 0;
+    border-right-width: 0; }
     .menu .popup-menu-item:active,
     .popup-menu .popup-menu-item:active,
     .popup-combo-menu .popup-menu-item:active {
       color: #f8f8f2;
-      background-color: transparent;
-      border-image: url("common-assets/menu/menu-hover.svg") 9 9 1 1; }
+      background-color: #ff79c6; }
     .menu .popup-menu-item:insensitive,
     .popup-menu .popup-menu-item:insensitive,
     .popup-combo-menu .popup-menu-item:insensitive {
