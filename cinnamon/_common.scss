@@ -145,14 +145,14 @@ StScrollBar {
 //
 .popup-slider-menu-item,
 .slider {
-  -slider-height: 4px;
-  -slider-background-color: $button_border;                   //background of the trough
-  -slider-border-color: transparentize(black, 1);             //trough border color
-  -slider-active-background-color: $selected_bg_color;        //active trough fill
-  -slider-active-border-color: transparentize(black, 1);      //active trough border
-  -slider-border-width: 0;
-  -slider-handle-radius: 4px;
-  height: 18px;
+  -slider-height: 0.3em;
+  -slider-background-color: lighten($base_color, 5%);               //background of the trough
+  -slider-border-color: transparentize($bg_color, 0.7);             //trough border color
+  -slider-active-background-color: $selected_bg_color;              //active trough fill
+  -slider-active-border-color: transparentize($bg_color, 0.7);      //active trough border
+  -slider-border-width: 1px;
+  -slider-handle-radius: 0.5em;
+  height: 1em;
   min-width: 15em;
   border: 0 solid transparent;
   border-right-width: 1px;
@@ -269,14 +269,30 @@ StScrollBar {
 .popup-menu,
 %menu {
   color: $fg_color;
-  border-image: url("#{$asset_path}/menu/menu.svg") 9 9 9 9;
+  border: 1px solid $borders_color;
+  border-radius: 6px;
+	background-color: transparentize($bg_color, 0.01);
 
+  &.top {
+    border-radius: 0 0 6px 6px;
+  }
+
+  &.bottom {
+    border-radius: 6px 6px 0 0;
+  }
+
+  &.left {
+    border-radius: 0 6px 6px 0;
+  }
+
+  &.right {
+    border-radius: 6px 0 0 6px;
+  }
   &-arrow { icon-size: 16px; }
 
   .popup-sub-menu {
-    background-gradient-direction: none;
     box-shadow: none;
-    border-image: url("#{$asset_path}/menu/submenu.svg") 9 9 9 9;
+    background-color: $base_color;
 
     .popup-menu-item:ltr { padding-right: 0em; }
     .popup-menu-item:rtl { padding-left: 0em; }
@@ -291,11 +307,14 @@ StScrollBar {
   .popup-menu-item {
     padding: .4em 1.75em;
     spacing: 1em;
-
+    // border: 1px solid transparent;
+    border-left-width: 0;
+    border-right-width: 0;
+  
     &:active {
       color: $selected_fg_color;
-      background-color: transparent;
-      border-image: url("common-assets/menu/menu-hover.svg") 9 9 1 1;
+      // border-color: transparentize($fg_color, 0.89);
+      background-color: $selected_bg_color;
     }
     &:insensitive {
       color: transparentize($fg_color, 0.5);
