@@ -57,6 +57,7 @@ StEntry {
   border-radius: 6px;
   padding: 4px;
   color: $fg_color;
+  border-width: 1px;
   &:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
   &:insensitive { @include entry(insensitive);}
@@ -1422,13 +1423,10 @@ StScrollBar {
     padding: 9px;
     border-radius: 10px;
     color: $fg_color;
+    border-color: transparent;
 
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
-    &:hover, &:focus {
-      border-color: $selected_bg_color;
-      .search-entry-icon { color: $fg_color; }
-    }
   }
 
   //search results
