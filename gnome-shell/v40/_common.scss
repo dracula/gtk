@@ -1035,6 +1035,7 @@ StScrollBar {
         color: $selected_fg_color;
         background-color: $selected_bg_color;
         border-color: transparent; //avoid jumparound due to today
+        box-shadow: none;
       }
       &.calendar-day-heading {  //day of week heading
         color: darken($fg_color, 10%);
