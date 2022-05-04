@@ -1592,9 +1592,10 @@ StScrollBar {
     box-shadow: none;
   }
 
-      /* App Folders */
+/* App Folders */
 .app-well-app.app-folder {
   background-color: lighten($bg_color, 7%);
+  border-radius: 10px;
 }
 // expanded folder
 .app-folder-dialog { //style like the dash
