@@ -971,8 +971,10 @@ StScrollBar {
   color: #282a36; }
 
 /* Message list */
-.message-list .message-title, .message-list .message-content, .message-list .message-body {
-  color: #bdc2cd; }
+.message-list {
+  border: none; }
+  .message-list .message-title, .message-list .message-content, .message-list .message-body {
+    color: #bdc2cd; }
 
 .message-list-sections {
   spacing: 1em; }
