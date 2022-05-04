@@ -526,19 +526,25 @@ StScrollBar {
     border: none;
   }
 
-  .popup-menu-content { padding: 16px 0; }
+  .popup-menu-content { 
+    background-color: $main_dark;
+    border-radius: 7px;
+    border: none;
+    padding: 16px 0; 
+  }
   .popup-menu-item {
     spacing: 6px;
-    padding: 6px;
+    padding: 6px 12px !important;
+    border-radius: 0px;
 
     &:ltr { padding-right: 1.75em; padding-left: 0; }
     &:rtl { padding-right: 0; padding-left: 1.75em; }
 
     &:checked,
     &:active,
-    &.selected { background-color: lighten($base_color, 3%); color: $fg_color; }
+    &.selected { background-color: lighten($base_color, 3%) !important; color: $fg_color; }
 
-    &:checked { box-shadow: inset 1px 0px 0px lighten($selected_bg_color,5%); }
+    &:checked { box-shadow: inset 1px 0px 0px lighten($selected_bg_color,5%) !important; }
     &:insensitive { color: transparentize($fg_color,.5); }
     
   }
