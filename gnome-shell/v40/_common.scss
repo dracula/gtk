@@ -1099,6 +1099,8 @@ StScrollBar {
 
       /* Message list */
       .message-list {
+        border: none;
+        
         .message-title, .message-content, .message-body {
           color: darken($fg_color, 2%);
         }
