@@ -497,29 +497,31 @@ StScrollBar {
   background-color: transparent;
   color: #C3C7D1; }
   .popup-menu .popup-sub-menu {
-    background-color: #1c1d26;
+    background-color: #2c2f3c;
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
-    border: none; }
+    border: none;
+    border-radius: 0px 0px 6px 6px; }
   .popup-menu .popup-menu-content {
     background-color: #21232d;
-    border-radius: 7px;
+    border-radius: 10px;
     border: none;
-    padding: 16px 0; }
+    padding: 6px; }
   .popup-menu .popup-menu-item {
     spacing: 6px;
-    padding: 6px 12px !important;
-    border-radius: 0px; }
+    border-radius: 6px; }
     .popup-menu .popup-menu-item:ltr {
       padding-right: 1.75em;
       padding-left: 0; }
     .popup-menu .popup-menu-item:rtl {
       padding-right: 0;
       padding-left: 1.75em; }
-    .popup-menu .popup-menu-item:checked, .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
+    .popup-menu .popup-menu-item:active, .popup-menu .popup-menu-item.selected {
       background-color: #2f313f !important;
       color: #C3C7D1; }
     .popup-menu .popup-menu-item:checked {
-      box-shadow: inset 1px 0px 0px #ff93d1 !important; }
+      background-color: #373a4b !important;
+      border-radius: 6px 6px 0px 0px;
+      box-shadow: none; }
     .popup-menu .popup-menu-item:insensitive {
       color: rgba(195, 199, 209, 0.5); }
   .popup-menu .popup-inactive-menu-item {
@@ -536,7 +538,7 @@ StScrollBar {
 
 .popup-menu-boxpointer,
 .candidate-popup-boxpointer {
-  -arrow-border-radius: 7px;
+  -arrow-border-radius: 10px;
   -arrow-background-color: #21232d;
   -arrow-border-width: 1px;
   -arrow-border-color: #1b1c24;
@@ -545,14 +547,25 @@ StScrollBar {
   -arrow-box-shadow: 0 1px 3px black; }
 
 .popup-separator-menu-item {
+  margin: 6px 0;
   padding: 0 !important; }
+  .popup-separator-menu-item:ltr {
+    margin-right: 6px; }
+  .popup-separator-menu-item:rtl {
+    margin-left: 6px; }
   .popup-separator-menu-item .popup-separator-menu-item-separator {
     height: 1px;
-    margin: 1px 64px;
-    background-color: #3e4153; }
+    background-color: #373a4b; }
+  .popup-separator-menu-item .popup-menu-ornament {
+    width: 0 !important; }
+  .popup-sub-menu .popup-separator-menu-item {
+    background-color: transparent; }
+    .popup-sub-menu .popup-separator-menu-item:ltr {
+      margin-right: 2.5em; }
+    .popup-sub-menu .popup-separator-menu-item:rtl {
+      margin-left: 2.5em; }
     .popup-sub-menu .popup-separator-menu-item .popup-separator-menu-item-separator {
-      margin: 0 64px 0 32px;
-      background-color: #3e4153; }
+      background-color: #464a5f; }
 
 .background-menu {
   -boxpointer-gap: 4px;
