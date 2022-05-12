@@ -521,30 +521,33 @@ StScrollBar {
   color: $fg_color;
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
-    background-color: darken($main_dark, 2.5%);
+    background-color: lighten($bg_color, 2%);
     box-shadow: $depth6;
     border: none;
+    border-radius: 0px 0px 6px 6px;
   }
 
   .popup-menu-content { 
     background-color: $main_dark;
-    border-radius: 7px;
+    border-radius: 10px;
     border: none;
-    padding: 16px 0; 
+    padding: 6px; 
   }
   .popup-menu-item {
     spacing: 6px;
-    padding: 6px 12px !important;
-    border-radius: 0px;
+    border-radius: 6px;
 
     &:ltr { padding-right: 1.75em; padding-left: 0; }
     &:rtl { padding-right: 0; padding-left: 1.75em; }
 
-    &:checked,
     &:active,
     &.selected { background-color: lighten($base_color, 3%) !important; color: $fg_color; }
 
-    &:checked { box-shadow: inset 1px 0px 0px lighten($selected_bg_color,5%) !important; }
+    &:checked { 
+      background-color: lighten($base_color, 7%) !important;
+      border-radius: 6px 6px 0px 0px;
+      box-shadow: none;
+    }
     &:insensitive { color: transparentize($fg_color,.5); }
     
   }
@@ -569,7 +572,7 @@ StScrollBar {
   }
   .popup-menu-boxpointer,
   .candidate-popup-boxpointer {
-    -arrow-border-radius: 7px;
+    -arrow-border-radius: 10px;
     -arrow-background-color:$main_dark;
     -arrow-border-width: 1px;
     -arrow-border-color: $borders_color;
@@ -580,15 +583,30 @@ StScrollBar {
 
 // separator
 .popup-separator-menu-item {
-  padding: 0 !important;
+  margin: 6px 0;
+  padding:0 !important;
+  &:ltr { margin-right: 6px;}
+  &:rtl { margin-left: 6px;}
+
   .popup-separator-menu-item-separator {
-    //-margin-horizontal: 24px;
     height: 1px; //not really the whole box
-    margin: 1px 64px;
-    background-color: lighten($gray, 3%);
-    .popup-sub-menu & { //submenu separators
-      margin: 0 64px 0 32px;
-      background-color: lighten($bg_color, 10%);
+    background-color: $gray;
+  }
+
+  .popup-menu-ornament {
+    width: 0 !important;
+  }
+
+  // separators in submenus
+  .popup-sub-menu & {
+    background-color: transparent;
+
+    // account for ornament
+    &:ltr { margin-right: 2.5em;}
+    &:rtl { margin-left: 2.5em;}
+
+    .popup-separator-menu-item-separator {
+      background-color: lighten($gray, 7%);
     }
   }
 }
