@@ -1350,6 +1350,13 @@ StScrollBar {
   background-color: rgba(40, 42, 54, 0.95);
   text-align: center;
   -x-offset: 8px; }
+  
+/* Dash to Dock */
+/* Disable conflicting styles */
+#dashtodockContainer #dash {
+    background-color: inherit;
+    border: 0;
+}
 
 /* App Vault/Grid */
 .icon-grid {
