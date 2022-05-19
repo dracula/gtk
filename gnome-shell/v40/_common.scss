@@ -519,44 +519,7 @@ StScrollBar {
   min-width: 15em;
   background-color: transparent;
   color: $fg_color;
-  .popup-menu-arrow { } //defined globally in the TOP BAR
-  .popup-sub-menu {
-    background-color: lighten($bg_color, 2%);
-    box-shadow: $depth6;
-    border: none;
-    border-radius: 0px 0px 6px 6px;
-  }
 
-  .popup-menu-content { 
-    background-color: $main_dark;
-    border-radius: 10px;
-    border: none;
-    padding: 6px; 
-  }
-  .popup-menu-item {
-    spacing: 6px;
-    border-radius: 6px;
-
-    &:ltr { padding-right: 1.75em; padding-left: 0; }
-    &:rtl { padding-right: 0; padding-left: 1.75em; }
-
-    &:active,
-    &.selected { background-color: lighten($base_color, 3%) !important; color: $fg_color; }
-
-    &:checked { 
-      background-color: lighten($base_color, 7%) !important;
-      border-radius: 6px 6px 0px 0px;
-      box-shadow: none;
-    }
-    &:insensitive { color: transparentize($fg_color,.5); }
-    
-  }
-
-  .popup-inactive-menu-item { //all icons and other graphical elements
-    color: $fg_color;
-
-    &:insensitive { color: transparentize($fg_color,0.5); }
-  }
   //.popup-status-menu-item { font-weight: normal;  color: pink; } //dunno what that is
   &.panel-menu {
     -boxpointer-gap: 4px;
@@ -564,22 +527,73 @@ StScrollBar {
   }
 }
 
+.popup-menu-arrow { } //defined globally in the TOP BAR
+.popup-sub-menu {
+  background-color: lighten($bg_color, 2%);
+  box-shadow: $depth6;
+  border: none;
+  border-radius: 0px 0px 6px 6px;
+  .popup-menu-item {
+    border-radius: 0;
+    margin: 0;
+
+    &:last-child {
+      border-radius: 0 0 6px 6px;
+    }
+
+    &:active,
+    &.selected,
+    &:hover,
+    &:focus { background-color: lighten($bg_color, 9%) !important; color: $fg_color; }
+  }
+
+}
+
+.popup-menu-content { 
+  padding: 6px; 
+  background: $main_dark;
+  border-radius: 12px;
+  border: 1px solid $borders_color;
+}
+
+.popup-menu-item {
+  spacing: 6px;
+  border-radius: 6px;
+
+  &:ltr {padding-left: 6px;}
+  &:rtl {padding-right: 6px;}
+
+  &:active,
+  &.selected,
+  &:hover,
+  &:focus { background-color: lighten($bg_color, 3%) !important; color: $fg_color; }
+
+  &:checked { 
+    background-color: lighten($bg_color, 7%) !important;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: none;
+  }
+  
+  &:insensitive { color: transparentize($fg_color,.5); }
+}
+
+.popup-inactive-menu-item { //all icons and other graphical elements
+  color: $fg_color;
+
+  &:insensitive { color: transparentize($fg_color,0.5); }
+}
+
+// symbolic icons in popover
+.popup-menu-arrow,
+.popup-menu-icon {
+  icon-size: 16px !important; // for some reason the variable doesn't work here
+}
 
 
-  .popup-menu-ornament {
-    text-align: right;
-    width: 1.2em;
-  }
-  .popup-menu-boxpointer,
-  .candidate-popup-boxpointer {
-    -arrow-border-radius: 10px;
-    -arrow-background-color:$main_dark;
-    -arrow-border-width: 1px;
-    -arrow-border-color: $borders_color;
-    -arrow-base: 24px;
-    -arrow-rise: 11px;
-    -arrow-box-shadow: 0 1px 3px black; //dreaming. bug #689995
-  }
+.popup-menu-ornament {
+  text-align: right;
+  width: 1.2em;
+}
 
 // separator
 .popup-separator-menu-item {
