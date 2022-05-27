@@ -930,36 +930,20 @@ StScrollBar {
   }
 }
 
-  .calendar, .world-clocks-button, .weather-button, .events-button {
-    background: transparent;
-    border: none;
-    color: $fg_color;
-    box-shadow: none;
+  .world-clocks-button, .weather-button, .events-button {
+    background: darken($bg_color, 0.7%);
+    border-radius: 7px;
+    box-shadow: 0px 0px 1px 1px $borders_color inset;
   }
-
-    .calendar,
-    .datemenu-today-button,
-    .datemenu-displays-box {
-      margin: 0 1.5em;
-    }
-
-    .datemenu-calendar-column { spacing: 0.5em; }
-    .datemenu-displays-section { padding-bottom: 3em; }
-    .datemenu-displays-box { spacing: 1em; }
 
     .datemenu-calendar-column {
       border: none;
-      background: darken($bg_color, 0.7%);
-      border-radius: 7px;
-      box-shadow: 0px 0px 1px 1px $borders_color inset;
     }
 
     .datemenu-today-button,
-    .world-clocks-button,
-    .weather-button,
+
     .events-section-title,
-    .message-list-section-title,
-    .events-button {
+    .message-list-section-title{
       border-radius: 4px;
       color: $fg_color;
       padding: .4em;
@@ -1043,17 +1027,17 @@ StScrollBar {
       width: 2.4em; height: 2.4em;
       padding: 0.1em;
       margin: 2px;
-      border-radius: 1.4em;
+      border-radius: 99px;
       color: $fg_color;
       &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active,&:selected {
-        color: $selected_fg_color;
+        color: lighten($selected_fg_color,5%);
         background-color: $selected_bg_color;
         border-color: transparent; //avoid jumparound due to today
         box-shadow: none;
       }
       &.calendar-day-heading {  //day of week heading
-        color: darken($fg_color, 10%);
+        color: $fg_color;
         margin-top: 1em;
         font-size: 70%;
       }
@@ -1114,8 +1098,7 @@ StScrollBar {
 
       /* Message list */
       .message-list {
-        border: none;
-        
+        border-color: $gray;
         .message-title, .message-content, .message-body {
           color: darken($fg_color, 2%);
         }
