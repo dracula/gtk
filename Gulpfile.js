@@ -16,7 +16,7 @@ gulp.task('styles-gtk4', function(done) {
         .pipe(exec(' gsettings set org.gnome.desktop.interface gtk-theme "Dracula"'))
     done();
 });
-gulp.task('shell-style', function(done) {
+gulp.task('shell-styles', function(done) {
     gulp.src('gnome-shell/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./gnome-shell/'))
@@ -24,8 +24,15 @@ gulp.task('shell-style', function(done) {
         .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Dracula"'))
     done();
 });
-
-gulp.task('cinnamon-style', function(done) {
+gulp.task('shell40-styles', function(done) {
+    gulp.src('gnome-shell/v40/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./gnome-shell/v40'))
+        .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Ant"'))
+        .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Dracula"'))
+    done();
+});
+gulp.task('cinnamon-styles', function(done) {
     gulp.src('cinnamon/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./cinnamon/'))
@@ -41,9 +48,9 @@ gulp.task('default',function() {
 });
 
 gulp.task('shell',function() {
-    gulp.watch('gnome-shell/**/*.scss', gulp.series('shell-style'));
+    gulp.watch('gnome-shell/**/*.scss', gulp.series(gulp.parallel('shell-styles', 'shell40-styles')));
 });
 
 gulp.task('cinnamon',function() {
-    gulp.watch('cinnamon/**/*.scss', gulp.series('cinnamon-style'));
+    gulp.watch('cinnamon/**/*.scss', gulp.series('cinnamon-styles'));
 });
