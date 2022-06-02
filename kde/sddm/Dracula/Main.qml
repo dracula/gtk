@@ -370,7 +370,7 @@ PlasmaCore.ColorScope {
             height: mainStack.height
             x: root.width / 2 - width / 2
             y: root.height / 2 - height / 3
-            radius: 7
+            radius: 12
             color: "#21232D"
             opacity: 0.5
             z:-1
