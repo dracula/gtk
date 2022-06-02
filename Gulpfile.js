@@ -24,7 +24,6 @@ gulp.task('shell-style', function(done) {
         .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Dracula"'))
     done();
 });
-
 gulp.task('cinnamon-style', function(done) {
     gulp.src('cinnamon/**/*.scss')
         .pipe(sass().on('error', sass.logError))
