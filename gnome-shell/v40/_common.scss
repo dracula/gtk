@@ -572,6 +572,7 @@ StScrollBar {
     background-color: lighten($bg_color, 7%) !important;
     border-radius: 6px 6px 0px 0px;
     box-shadow: none;
+    color: $selected_fg_color !important;
   }
   
   &:insensitive { color: transparentize($fg_color,.5); }
@@ -881,8 +882,6 @@ StScrollBar {
       color: $selected_fg_color;
       transition-duration: 200ms;
 
-      & > .system-status-icon { icon-shadow: red 0 2px 2px; }
-
       &.clock-display {
         box-shadow: none;
 
@@ -930,10 +929,17 @@ StScrollBar {
   }
 }
 
+  .calendar {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
   .world-clocks-button, .weather-button, .events-button {
     background: darken($bg_color, 0.7%);
     border-radius: 7px;
     box-shadow: 0px 0px 1px 1px $borders_color inset;
+    color: $fg_color;
   }
 
     .datemenu-calendar-column {
@@ -941,7 +947,6 @@ StScrollBar {
     }
 
     .datemenu-today-button,
-
     .events-section-title,
     .message-list-section-title{
       border-radius: 4px;
@@ -1059,7 +1064,7 @@ StScrollBar {
         font-weight: bold;
         border: 1px solid $selected_bg_color;
         background-color: transparent;
-        color: $selected_fg_color;
+        color: $selected_fg_color !important;
 
         &:hover,&:focus {
           background-color:lighten($selected_bg_color, 3%);
