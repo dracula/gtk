@@ -2041,6 +2041,15 @@ StScrollBar {
 .openweather-current-databox-captions, .openweather-forecast-day {
   color: #ff79c6; }
 
+#dashtodockContainer #dash {
+  background: transparent !important; }
+  #dashtodockContainer #dash .dash-background {
+    background: #21232d !important;
+    border: none; }
+  #dashtodockContainer #dash .dash-item-container .app-well-app .overview-icon.focused .overview-icon,
+  #dashtodockContainer #dash .dash-item-container .show-apps .overview-icon.focused .overview-icon {
+    background-color: #373a4b !important; }
+
 /* Pop_OS COSMIC Dock styling, append !important to any changed rules */
 .cosmic-dock #dock {
   border-radius: 12px 12px 12px 12px !important;
