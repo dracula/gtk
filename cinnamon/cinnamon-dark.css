@@ -356,7 +356,7 @@ StScrollBar {
   height: 28px;
   width: 32px;
   font-weight: 700;
-  background-color: rgba(30, 31, 41, 0.7);
+  background-color: rgba(26, 27, 35, 0.95);
   color: #f8f8f2; }
   #panel:highlight {
     border-image: none;
@@ -1118,7 +1118,7 @@ StScrollBar {
       padding-left: 1px; }
   .grouped-window-list-item-box:active, .grouped-window-list-item-box:checked {
     color: #f8f8f2;
-    border-color: rgba(73, 76, 100, 0.7); }
+    border-color: rgba(90, 93, 123, 0.95); }
   .grouped-window-list-item-box:hover, .grouped-window-list-item-box:active:hover, .grouped-window-list-item-box:focus, .grouped-window-list-item-box:active:focus, .grouped-window-list-item-box:focus:hover, .grouped-window-list-item-box:active:focus:hover {
     color: #f8f8f2;
     border-color: #bd93f9; }
@@ -1135,7 +1135,7 @@ StScrollBar {
   color: #f8f8f2; }
 .grouped-window-list-badge {
   border-radius: 256px;
-  background-color: rgba(30, 31, 41, 0.7); }
+  background-color: rgba(26, 27, 35, 0.95); }
 .grouped-window-list-button-label {
   padding-left: 4px; }
 .grouped-window-list-thumbnail-alert {
@@ -1300,15 +1300,15 @@ StScrollBar {
   background-gradient-direction: none; }
 
 .workspace-graph .workspace .windows {
-  -active-window-background: rgba(62, 64, 85, 0.7);
+  -active-window-background: rgba(58, 60, 79, 0.95);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(62, 64, 85, 0.7);
+  -inactive-window-background: rgba(58, 60, 79, 0.95);
   -inactive-window-border: rgba(0, 0, 0, 0.8); }
 
 .workspace-graph .workspace:active .windows {
-  -active-window-background: rgba(73, 76, 100, 0.7);
+  -active-window-background: rgba(69, 71, 94, 0.95);
   -active-window-border: rgba(0, 0, 0, 0.8);
-  -inactive-window-background: rgba(41, 42, 56, 0.7);
+  -inactive-window-background: rgba(36, 38, 50, 0.95);
   -inactive-window-border: rgba(0, 0, 0, 0.8); }
 
 #panel-launchers-box {
