@@ -71,7 +71,7 @@ $osd_insensitive_bg_color: darken($osd_bg_color, 3%);
 $osd_insensitive_fg_color: mix($osd_fg_color, opacify($osd_bg_color, 1), 30%);
 $osd_borders_color: transparentize(black, 0.3);
 
-$panel_bg:  transparentize(rgb(30, 31, 41), 0.3);
+$panel_bg:  transparentize(darken($bg_color, 2%), 0.05);
 $panel_fg: $dark_sidebar_fg;
 
 $entry_bg: if($variant=='light', $base_color, lighten($base_color, 0%));
