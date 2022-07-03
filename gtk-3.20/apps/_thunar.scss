@@ -11,7 +11,7 @@
   
   scrolledwindow.sidebar treeview.view, scrollbar.right {
     background: $sidebar_bg_color;
-    padding: 1.5px;
+    padding: 6px 1.5px;
     border: none;
     box-shadow: none;
   }
@@ -20,11 +20,10 @@
     background-color: $base_color;
   }
   /* path-bar of thunar */
-  window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, window.thunar paned > scrolledwindow treeview.view {
+  window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, window.thunar paned > scrolledwindow treeview.view,  .thunar toolbar.horizontal button {
     &:hover, &:checked, &:selected{ 
-        background-color: transparent;
-        color: $purple; 
-        box-shadow: none;
+        @include button(active-header, $tc: $purple);
+        font-weight: normal;
     }
 
     &:checked:backdrop, &:selected:backdrop {
