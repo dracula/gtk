@@ -367,12 +367,12 @@ PlasmaCore.ColorScope {
         Rectangle {
             id: formBg
             width: mainStack.width
-            height: mainStack.height
+            height: mainStack.height + footerBg.height
             x: root.width / 2 - width / 2
-            y: root.height / 2 - height / 3
-            radius: 12
+            y: root.height / 2 - height / 2 + footerBg.height
+            radius: 14
             color: "#21232D"
-            opacity: 0.5
+            opacity: 1
             z:-1
         }
 
@@ -384,7 +384,7 @@ PlasmaCore.ColorScope {
             anchors.top: parent.top
             radius: 7
             color: "#21232D"
-            opacity: 0.4
+            opacity: 1
             z:-1
         }
 
