@@ -211,6 +211,7 @@
     outline-color: transparentize($tc, 0.7);
     background-color: $c;
     text-shadow: none;
+    border: 1px solid $c;
     @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
   }
 
