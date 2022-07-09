@@ -343,6 +343,7 @@ button {
   outline-color: rgba(248, 248, 242, 0.3);
   background-color: #282a36;
   text-shadow: none;
+  border: 1px solid #282a36;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
   notebook > header > tabs > arrow,
   button.flat {
@@ -648,6 +649,7 @@ button.suggested-action {
   outline-color: rgba(255, 255, 255, 0.3);
   background-color: #bd93f9;
   text-shadow: none;
+  border: 1px solid #bd93f9;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
   .selection-mode button.titlebutton, button.suggested-action.flat {
     border-color: transparent;
@@ -772,6 +774,7 @@ button.destructive-action {
   outline-color: rgba(255, 255, 255, 0.3);
   background-color: #ff2222;
   text-shadow: none;
+  border: 1px solid #ff2222;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
   button.destructive-action.flat {
     border-color: transparent;
@@ -937,6 +940,7 @@ toolbar button:hover {
   outline-color: rgba(248, 248, 242, 0.3);
   background-color: #0f0f14;
   text-shadow: none;
+  border: 1px solid #0f0f14;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
 toolbar button:active {
   font-weight: normal;
@@ -944,6 +948,7 @@ toolbar button:active {
   outline-color: rgba(248, 248, 242, 0.3);
   background-color: #040406;
   text-shadow: none;
+  border: 1px solid #040406;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
 
 .inline-toolbar toolbutton > button {
@@ -1579,6 +1584,7 @@ colorswatch#add-color-button {
     outline-color: rgba(248, 248, 242, 0.3);
     background-color: #282a36;
     text-shadow: none;
+    border: 1px solid #282a36;
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
     colorswatch#add-color-button overlay:hover {
       color: #f8f8f2;
@@ -2330,6 +2336,7 @@ GraniteWidgetsWelcome {
       outline-color: rgba(255, 255, 255, 0.3);
       background-color: #72BFD0;
       text-shadow: none;
+      border: 1px solid #72BFD0;
       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
       .titlebar:not(headerbar) button.suggested-action:hover,
       headerbar button.suggested-action:hover {
@@ -2382,6 +2389,7 @@ GraniteWidgetsWelcome {
       outline-color: rgba(255, 255, 255, 0.3);
       background-color: #ff2222;
       text-shadow: none;
+      border: 1px solid #ff2222;
       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
       .titlebar:not(headerbar) button.destructive-action:hover,
       headerbar button.destructive-action:hover {
@@ -2464,6 +2472,7 @@ GraniteWidgetsWelcome {
       outline-color: rgba(248, 248, 242, 0.3);
       background-color: rgba(189, 147, 249, 0.5);
       text-shadow: none;
+      border: 1px solid rgba(189, 147, 249, 0.5);
       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
       .selection-mode.titlebar:not(headerbar) button.flat,
       headerbar.selection-mode button.flat {
@@ -2571,6 +2580,7 @@ GraniteWidgetsWelcome {
         outline-color: rgba(255, 255, 255, 0.3);
         background-color: #72BFD0;
         text-shadow: none;
+        border: 1px solid #72BFD0;
         box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
         .selection-mode.titlebar:not(headerbar) button.suggested-action:hover,
         headerbar.selection-mode button.suggested-action:hover {
@@ -6106,6 +6116,7 @@ ConversationListView {
   outline-color: rgba(248, 248, 242, 0.3);
   background-color: #282a36;
   text-shadow: none;
+  border: 1px solid #282a36;
   box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
   #content_frame button:hover {
     color: #f8f8f2;
