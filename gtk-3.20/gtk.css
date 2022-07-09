@@ -342,7 +342,8 @@ button {
   font-weight: normal;
   color: #f8f8f2;
   background-color: #303140;
-  text-shadow: none; }
+  text-shadow: none;
+  border: 1px solid #282a36; }
   notebook > header > tabs > arrow,
   button.flat {
     background-color: transparent;
@@ -891,12 +892,14 @@ toolbar button:hover {
   font-weight: normal;
   color: #f8f8f2;
   background-color: #303140;
-  text-shadow: none; }
+  text-shadow: none;
+  border: 1px solid #0f0f14; }
 toolbar button:active {
   font-weight: normal;
   color: #f8f8f2;
   background-color: #303140;
-  text-shadow: none; }
+  text-shadow: none;
+  border: 1px solid #040406; }
 
 .inline-toolbar toolbutton > button {
   background-color: transparent;
@@ -1529,7 +1532,8 @@ colorswatch#add-color-button {
     font-weight: normal;
     color: #f8f8f2;
     background-color: #303140;
-    text-shadow: none; }
+    text-shadow: none;
+    border: 1px solid #282a36; }
     colorswatch#add-color-button overlay:hover {
       color: #f8f8f2;
       outline-color: rgba(248, 248, 242, 0.3);
@@ -2282,6 +2286,7 @@ GraniteWidgetsWelcome {
       color: white;
       background-color: #303140;
       text-shadow: none;
+      border: 1px solid #72BFD0;
       box-shadow: none; }
       .titlebar button.suggested-action:hover,
       headerbar button.suggested-action:hover {
@@ -2328,6 +2333,7 @@ GraniteWidgetsWelcome {
       color: white;
       background-color: #303140;
       text-shadow: none;
+      border: 1px solid #ff2222;
       box-shadow: none; }
       .titlebar button.destructive-action:hover,
       headerbar button.destructive-action:hover {
@@ -6041,7 +6047,8 @@ ConversationListView {
   font-weight: normal;
   color: #f8f8f2;
   background-color: #303140;
-  text-shadow: none; }
+  text-shadow: none;
+  border: 1px solid #282a36; }
   #content_frame button:hover {
     color: #f8f8f2;
     outline-color: rgba(248, 248, 242, 0.3);
@@ -6135,12 +6142,6 @@ scrolledwindow.standard-view scrollbar.right {
 
 /* path-bar of thunar */
 window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:hover, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected, window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > scrolledwindow treeview.view:checked, window.thunar paned > scrolledwindow treeview.view:selected, .thunar toolbar.horizontal button:hover, .thunar toolbar.horizontal button:checked, .thunar toolbar.horizontal button:selected {
-  color: #bd93f9;
-  background-color: rgba(189, 147, 249, 0.1);
-  border-radius: 7px;
-  box-shadow: none;
-  text-shadow: none;
-  font-weight: bold;
   font-weight: normal; }
 window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:backdrop label, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected:backdrop label, window.thunar paned > scrolledwindow treeview.view:checked:backdrop label, window.thunar paned > scrolledwindow treeview.view:selected:backdrop label, .thunar toolbar.horizontal button:checked:backdrop label, .thunar toolbar.horizontal button:selected:backdrop label {
   color: rgba(189, 147, 249, 0.4); }
