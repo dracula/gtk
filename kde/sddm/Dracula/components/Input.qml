@@ -13,9 +13,9 @@ TextField {
         radius: 10
         width: parent.width
         height: width / 9
-        opacity: 0.7
+        opacity: 1
         border.width: 1
-        border.color: "#16171d"
+        border.color: parent.focus ? config.selected_color : "#16171d"
         anchors.centerIn: parent
     }
 }
