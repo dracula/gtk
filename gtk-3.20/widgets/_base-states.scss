@@ -124,7 +124,7 @@ label {
   &:disabled {
     color: $insensitive_fg_color;
 
-    selection { @extend %selected_items:disabled; }
+    selection { @extend %selected_items, :disabled; }
 
     &:backdrop { color: $backdrop_insensitive_color; }
   }
@@ -132,7 +132,7 @@ label {
   &:backdrop {
     color: $backdrop_fg_color;
 
-    selection { @extend %selected_items:backdrop; }
+    selection { @extend %selected_items, :backdrop; }
   }
 }
 

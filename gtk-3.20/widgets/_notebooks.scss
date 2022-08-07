@@ -123,7 +123,7 @@ notebook {
     > tabs > arrow {
       @extend %button_basic;
 
-      @extend %button_basic.flat;
+      @extend %button_basic, .flat;
 
       min-height: 16px;
       min-width: 16px;

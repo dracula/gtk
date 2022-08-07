@@ -1,25 +1,22 @@
 {
-  "name": "Ant",
-  "version": "1.0.0",
-  "description": "A flat and light theme with a modern look",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "dracula-gtk",
+  "version": "3.0.0",
+  "description": "Dark theme for GTK, KDE, Cinnamon, Unity, XFWM4, and Metacity",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EliverLara/Ant.git"
+    "url": "git+https://github.com/dracula/gtk.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Eliver Lara",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/EliverLara/Ant/issues"
+    "url": "https://github.com/dracula/gtk/issues"
   },
-  "homepage": "https://github.com/EliverLara/Ant#readme",
-  "dependencies": {
-    "gulp": "^4.0.0",
-    "gulp-exec": "^2.1.3",
-    "gulp-sass": "^4.0.2"
+  "homepage": "https://draculatheme.com/gtk",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-exec": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.53.0"
   }
 }

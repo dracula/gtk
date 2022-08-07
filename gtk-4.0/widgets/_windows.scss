@@ -115,7 +115,7 @@ windowcontrols {
     }
   
     .selection-mode & {
-      @extend %button.flat.suggested-action;
+      @extend %button, .flat, .suggested-action;
   
       @extend %nobg_selected_items;
     }
