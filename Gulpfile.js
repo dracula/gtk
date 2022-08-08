@@ -1,15 +1,22 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-sass')(require('sass'));
 var exec = require('gulp-exec');
 
-gulp.task('styles', function(done) {
+gulp.task('styles-gtk3', function(done) {
     gulp.src('gtk-3.20/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./gtk-3.20/'))
         .pipe(exec(' gsettings set org.gnome.desktop.interface gtk-theme "Dracula"'))
     done();
 });
-gulp.task('shell-style', function(done) {
+gulp.task('styles-gtk4', function(done) {
+    gulp.src('gtk-4.0/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./gtk-4.0/'))
+        .pipe(exec(' gsettings set org.gnome.desktop.interface gtk-theme "Dracula"'))
+    done();
+});
+gulp.task('shell-styles', function(done) {
     gulp.src('gnome-shell/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./gnome-shell/'))
@@ -17,8 +24,15 @@ gulp.task('shell-style', function(done) {
         .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Dracula"'))
     done();
 });
-
-gulp.task('cinnamon-style', function(done) {
+gulp.task('shell40-styles', function(done) {
+    gulp.src('gnome-shell/v40/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./gnome-shell/v40'))
+        .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Ant"'))
+        .pipe(exec('gsettings set org.gnome.shell.extensions.user-theme name "Dracula"'))
+    done();
+});
+gulp.task('cinnamon-styles', function(done) {
     gulp.src('cinnamon/**/*.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./cinnamon/'))
@@ -28,15 +42,15 @@ gulp.task('cinnamon-style', function(done) {
     done();
 });
 
-//Watch task
+//Watch tasks
 gulp.task('default',function() {
-    gulp.watch('gtk-3.20/**/*.scss', gulp.series('styles'));
+    gulp.watch(['gtk-4.0/**/*.scss', 'gtk-3.20/**/*.scss'], gulp.series(gulp.parallel('styles-gtk4', 'styles-gtk3')));
 });
 
 gulp.task('shell',function() {
-    gulp.watch('gnome-shell/**/*.scss', gulp.series('shell-style'));
+    gulp.watch('gnome-shell/**/*.scss', gulp.series(gulp.parallel('shell-styles', 'shell40-styles')));
 });
 
 gulp.task('cinnamon',function() {
-    gulp.watch('cinnamon/**/*.scss', gulp.series('cinnamon-style'));
+    gulp.watch('cinnamon/**/*.scss', gulp.series('cinnamon-styles'));
 });

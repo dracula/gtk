@@ -33,7 +33,7 @@ button:link,
 button:visited {
   @extend %undecorated_button;
 
-  @extend *:link;
+  @extend *, :link;
 
   text-shadow: none;
 
