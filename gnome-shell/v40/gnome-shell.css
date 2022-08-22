@@ -986,12 +986,10 @@ StScrollBar {
 .message {
   background: #282a36;
   border: 1px solid #1b1c24;
-  border-radius: 7px;
+  border-radius: 8px;
   box-shadow: none; }
   .message:hover, .message:focus {
-    background-color: #2f313f;
-    box-shadow: 2px 0px 0px 0px #bd93f9 inset;
-    border-radius: 1px 7px 7px 1px; }
+    background-color: #313342; }
 
 .message-close-button {
   color: #C3C7D1; }
