@@ -215,7 +215,7 @@ read if you used those and something break with a version upgrade you're on your
    Everytime a wildcard is used a kitten dies, painfully.
 */
 selection {
-  background-color: rgba(189, 147, 249, 0.5);
+  background-color: #ff79c6;
   color: #f8f8f2; }
 
 *:disabled {
@@ -2476,7 +2476,7 @@ GraniteWidgetsWelcome {
       outline-color: rgba(248, 248, 242, 0.3);
       background-color: #ff79c6;
       text-shadow: none;
-      border: 1px solid rgba(189, 147, 249, 0.5);
+      border: 1px solid #ff79c6;
       box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
       .selection-mode.titlebar:not(headerbar) button.flat,
       headerbar.selection-mode button.flat {
