@@ -74,7 +74,7 @@ stage {
     background-color: rgba(67, 69, 91, 0.25); }
 
 .menu #notification StEntry, .popup-menu #notification StEntry, #menu-search-entry {
-  padding: 7px;
+  padding: 5px;
   caret-size: 1px;
   selection-background-color: rgba(189, 147, 249, 0.5);
   selected-color: #f8f8f2;
@@ -985,7 +985,7 @@ StScrollBar {
 
 #menu-search-entry {
   width: 250px;
-  height: 15px;
+  min-height: 15px;
   font-weight: normal;
   caret-color: #f8f8f2; }
 
