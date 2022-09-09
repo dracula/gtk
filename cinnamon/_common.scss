@@ -64,7 +64,7 @@ stage {
 // Entries
 //
 %entry {
-  padding: 7px;
+  padding: 5px;
   caret-size: 1px;
   selection-background-color: $selected_bg_color;
   selected-color: $selected_fg_color;
@@ -1207,7 +1207,7 @@ StScrollBar {
 
 #menu-search-entry {
   width: 250px;
-  height: 15px;
+  min-height: 15px;
   font-weight: normal;
   caret-color: $fg_color;
 
