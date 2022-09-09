@@ -1281,9 +1281,9 @@ StScrollBar {
   padding-top: 4px;
   transition-duration: 300; }
   .workspace-button:outlined, .workspace-button:outlined:hover {
-    color: rgba(189, 147, 249, 0.5); }
+    color: #bd93f9; }
   .workspace-button:hover {
-    color: rgba(189, 147, 249, 0); }
+    color: rgba(189, 147, 249, 0.5); }
 
 /* Controls the style when using the "Visual representation" option */
 .workspace-graph {
