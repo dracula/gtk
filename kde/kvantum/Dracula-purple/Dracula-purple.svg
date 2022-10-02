@@ -6,7 +6,7 @@
    viewBox="0 0 380.00266 635.00043"
    id="svg1764"
    sodipodi:docname="Dracula-purple.svg"
-   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -40,15 +40,17 @@
      inkscape:window-height="1019"
      id="namedview1766"
      showgrid="false"
-     inkscape:zoom="1.5234777"
-     inkscape:cx="282.57716"
-     inkscape:cy="52.839631"
+     inkscape:zoom="8.6180913"
+     inkscape:cx="207.93467"
+     inkscape:cy="185.48191"
      inkscape:window-x="0"
      inkscape:window-y="36"
      inkscape:window-maximized="1"
-     inkscape:current-layer="lineedit-focused-topleft"
+     inkscape:current-layer="g2039"
      inkscape:document-rotation="0"
-     inkscape:pagecheckerboard="0" />
+     inkscape:pagecheckerboard="0"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#001419" />
   <defs
      id="defs116">
     <linearGradient
@@ -3171,8 +3173,9 @@
       <path
          inkscape:connector-curvature="0"
          style="text-transform:none;opacity:0.7;fill:#8be9fd;fill-opacity:1;fill-rule:evenodd"
-         d="m 235,165 h -5 v 5 h 5 z"
-         id="progress-pattern-normal-topleft" />
+         d="m 235,170 h -5 v -5 h 5 z"
+         id="progress-pattern-normal-topleft"
+         sodipodi:nodetypes="ccccc" />
       <path
          inkscape:connector-curvature="0"
          style="opacity:0.7;fill:#8be9fd;fill-opacity:1;fill-rule:evenodd"
@@ -3328,7 +3331,7 @@
          cx="69"
          cy="319"
          r="8"
-         style="fill:#272834;fill-opacity:1"
+         style="fill:#44475a;fill-opacity:1"
          id="circle713" />
     </g>
     <g
@@ -3354,7 +3357,7 @@
          cx="69"
          cy="319"
          r="9"
-         style="fill:#7c60a3;fill-opacity:1"
+         style="fill:#252a3f;fill-opacity:1"
          id="circle721" />
     </g>
     <g
@@ -3385,7 +3388,7 @@
     <path
        id="slider-toggled-left"
        d="m 30,177 v 16.5003 h 12 v -16.5 H 30 Z"
-       style="opacity:0.7;fill:#ff79c6;fill-opacity:1;fill-rule:evenodd"
+       style="opacity:1;fill:#bd93f9;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <path
        id="slider-toggled-topright"
@@ -3395,7 +3398,7 @@
     <path
        id="slider-toggled-right"
        d="m 42,177 v 16.5003 h 12 v -16.5 H 42 Z"
-       style="opacity:0.7;fill:#ff79c6;fill-opacity:1;fill-rule:evenodd"
+       style="opacity:1;fill:#bd93f9;fill-opacity:1;fill-rule:evenodd"
        inkscape:connector-curvature="0" />
     <use
        id="slider-toggled-bottomleft"
@@ -5492,7 +5495,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
          id="path1362"
          inkscape:connector-curvature="0" />
     </g>
@@ -5507,7 +5510,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
          id="path1367"
          inkscape:connector-curvature="0" />
     </g>
@@ -5522,7 +5525,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
          id="path1372"
          inkscape:connector-curvature="0" />
     </g>
@@ -5537,7 +5540,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
          id="path1377"
          inkscape:connector-curvature="0" />
     </g>
@@ -5552,7 +5555,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
          id="path1382"
          inkscape:connector-curvature="0" />
     </g>
@@ -5567,7 +5570,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
          id="path1387"
          inkscape:connector-curvature="0" />
     </g>
@@ -5582,7 +5585,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 21.25,48.7516 v 32.5 h 2.5 v -32.5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
          id="path1392"
          inkscape:connector-curvature="0" />
     </g>
@@ -5597,7 +5600,7 @@
          inkscape:connector-curvature="0" />
       <path
          d="m 28.75,41.2516 c -4.125,-5.1e-5 -7.50003,3.37497 -7.5,7.5 h 2.5 c 0,-3.125 1.875,-5 5,-5 z"
-         style="color:#000000;text-indent:0;text-transform:none;opacity:0.65;fill:#bd93f9;fill-opacity:1"
+         style="color:#000000;text-indent:0;text-transform:none;opacity:1;fill:#16171d;fill-opacity:1"
          id="path1397"
          inkscape:connector-curvature="0" />
     </g>
