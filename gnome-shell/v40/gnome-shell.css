@@ -1392,7 +1392,10 @@ StScrollBar {
   border-radius: 10px; }
 
 .app-folder-dialog {
-  background-color: #21232d; }
+  background-color: #21232d;
+  border: none; }
+  .app-folder-dialog .folder-name-label {
+    color: #C3C7D1; }
   .app-folder-dialog .edit-folder-button {
     padding: 0;
     width: 36px;
