@@ -6,13 +6,16 @@
         .view.cell,
         iconview.cell {
             &:hover,
-            &:selected {  @include button(active-header, transparent, $purple); }
+            &:selected {  
+                @include button(active-header, transparent, $purple);
+                border-radius: 0;
+            }
         }
     }
 
     .sidebar {
         color: $fg_color;
-        background-color: $base_color; 
+        background-color: $sidebar_bg_color; 
         .view, .iconview, row {
             background-color: transparent;
         }
