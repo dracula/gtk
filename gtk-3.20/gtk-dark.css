@@ -6212,10 +6212,11 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
     border-radius: 7px;
     box-shadow: none;
     text-shadow: none;
-    font-weight: bold; }
+    font-weight: bold;
+    border-radius: 0; }
 .nemo-window .sidebar {
   color: #f8f8f2;
-  background-color: #282a36; }
+  background-color: #232530; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
