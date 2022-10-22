@@ -6212,7 +6212,7 @@ ConversationListView {
 
 scrolledwindow.sidebar treeview.view, scrollbar.right {
   background: #232530;
-  padding: 6px 1.5px;
+  padding: 2.5px 1.5px;
   border: none;
   box-shadow: none; }
 
