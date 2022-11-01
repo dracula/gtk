@@ -5484,6 +5484,16 @@ headerbar .nautilus-window .path-bar-box .subtitle {
     font-weight: bold; }
     .nautilus-window .path-bar-box button:backdrop:hover label, .nautilus-window .path-bar-box button:backdrop:active label, .nautilus-window .path-bar-box button:backdrop:checked label {
       color: rgba(255, 121, 198, 0.6); }
+.nautilus-window .path-buttons-box .current-dir label {
+  padding: 0px 12px;
+  color: #ff79c6;
+  background-color: rgba(255, 121, 198, 0.1);
+  border-radius: 7px;
+  box-shadow: none;
+  text-shadow: none;
+  font-weight: bold; }
+  .nautilus-window .path-buttons-box .current-dir label:backdrop {
+    color: rgba(255, 121, 198, 0.6); }
 
 .nautilus-circular-button {
   border-radius: 20px;
