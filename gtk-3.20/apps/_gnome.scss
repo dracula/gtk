@@ -103,6 +103,14 @@
       }
     }
   }
+
+  .path-buttons-box {
+    .current-dir label {
+      padding: 0px 12px;
+      @include button(active-header, transparent, $purple);
+      &:backdrop { color: $backdrop_selected_bg_color; }
+    }
+  }
 }
 
 .nautilus-circular-button {
