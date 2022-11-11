@@ -5520,6 +5520,20 @@ headerbar .nautilus-window .path-bar-box .subtitle {
     font-weight: bold; }
     .nautilus-window .path-bar-box button:backdrop:hover label, .nautilus-window .path-bar-box button:backdrop:active label, .nautilus-window .path-bar-box button:backdrop:checked label {
       color: rgba(255, 121, 198, 0.6); }
+.nautilus-window .path-buttons-box .dim-label, .nautilus-window .path-buttons-box label.separator, .nautilus-window .path-buttons-box .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box .subtitle,
+.nautilus-window .path-buttons-box headerbar .subtitle,
+headerbar .nautilus-window .path-buttons-box .subtitle {
+  color: transparent; }
+.nautilus-window .path-buttons-box button .horizontal .dim-label, .nautilus-window .path-buttons-box button .horizontal label.separator, .nautilus-window .path-buttons-box button .horizontal .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box button .horizontal .subtitle,
+.nautilus-window .path-buttons-box button .horizontal headerbar .subtitle,
+headerbar .nautilus-window .path-buttons-box button .horizontal .subtitle {
+  color: #f8f8f2; }
+.nautilus-window .path-buttons-box button:hover .dim-label, .nautilus-window .path-buttons-box button:hover label.separator, .nautilus-window .path-buttons-box button:hover .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box button:hover .subtitle,
+.nautilus-window .path-buttons-box button:hover headerbar .subtitle,
+headerbar .nautilus-window .path-buttons-box button:hover .subtitle, .nautilus-window .path-buttons-box button:focus .dim-label, .nautilus-window .path-buttons-box button:focus label.separator, .nautilus-window .path-buttons-box button:focus .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box button:focus .subtitle,
+.nautilus-window .path-buttons-box button:focus headerbar .subtitle,
+headerbar .nautilus-window .path-buttons-box button:focus .subtitle {
+  color: #bd93f9; }
 .nautilus-window .path-buttons-box .current-dir label {
   padding: 0px 12px;
   color: #ff79c6;
