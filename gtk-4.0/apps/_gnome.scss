@@ -83,7 +83,7 @@
       color: transparent;
     }
     widget > .text-button:last-child{
-      @include button(active-header, transparent, $purple);
+      @include button(active-header, transparent, $selected_bg_color);
       &:backdrop label{
         color: $backdrop_selected_bg_color;
       }
@@ -101,6 +101,34 @@
           }
         }
       }
+    }
+  }
+
+  .path-buttons-box, #NautilusPathBar {
+    background: transparent;
+
+
+    .dim-label { 
+      color: transparent; 
+      margin-right: -7px;
+    }
+  
+    //Buttons before current path
+    button {
+      margin-top: 0;
+      margin-bottom: 0;
+      .horizontal  .dim-label { color: $headerbar_fg_color; }
+      &:hover, &:focus {
+        .dim-label { color: $selected_bg_color; }
+      }
+    }
+    button > .horizontal > image.dim-label { 
+      margin-right: 10px;
+    }
+    .current-dir label {
+      padding: 3px 12px;
+      @include button(active-header, transparent, $selected_bg_color);
+      &:backdrop { color: $backdrop_selected_bg_color; }
     }
   }
 }
