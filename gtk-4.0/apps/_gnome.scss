@@ -106,8 +106,7 @@
 
   .path-buttons-box, #NautilusPathBar {
     background: transparent;
-
-
+    
     .dim-label { 
       color: transparent; 
       margin-right: -7px;
@@ -121,6 +120,7 @@
       &:hover, &:focus {
         .dim-label { color: $purple; }
       }
+      &:active { background-color: transparent; }
     }
     button > .horizontal > image.dim-label { 
       margin-right: 10px;
