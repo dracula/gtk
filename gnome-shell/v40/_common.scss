@@ -1718,7 +1718,7 @@ StScrollBar {
     }
   
     &:insensitive > StIcon { @include button(undecorated, $osd_fg_color, transparentize($osd_bg_color, 0.5));}
-    &:hover > StIcon { background-color: transparentize($selected_bg_color, 0.2);}
+    &:hover > StIcon { background-color: transparentize($selected_bg_color, 0.6);}
     &:active > StIcon {background-color: $selected_bg_color;}
   }
 

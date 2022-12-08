@@ -1489,9 +1489,9 @@ StScrollBar {
   text-shadow: none;
   icon-shadow: none; }
 .page-navigation-arrow:hover > StIcon {
-  background-color: rgba(189, 147, 249, 0.3); }
+  background-color: rgba(255, 121, 198, 0.4); }
 .page-navigation-arrow:active > StIcon {
-  background-color: rgba(189, 147, 249, 0.5); }
+  background-color: #ff79c6; }
 
 .workspace-thumbnails {
   color: #C3C7D1;
