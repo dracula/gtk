@@ -271,3 +271,13 @@ notebook {
     &:backdrop { background-color: $backdrop_base_color; }
   }
 }
+
+tabbox {
+  background-color: $bg_color;
+  padding: 0px;
+
+  > tab,
+  > tabboxchild > tab {
+    &:checked, &:selected { background-color: $base_color; }
+  }
+}
