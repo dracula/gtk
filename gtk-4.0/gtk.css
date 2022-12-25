@@ -151,19 +151,19 @@ read if you used those and something break with a version upgrade you're on your
 /***************
 * Action bars *
 ***************/
-.action-bar {
-  background-color: #08090c;
+.action-bar, actionbar > revealer > box {
+  background-color: #1a1b23;
   border: solid #181a21;
   border-width: 1px 0 0 0;
   color: #f8f8f2;
   box-shadow: none; }
-  .action-bar:backdrop {
+  .action-bar:backdrop, actionbar > revealer > box:backdrop {
     background-color: #08090c;
     box-shadow: none; }
-  .action-bar:first-child {
+  .action-bar:first-child, actionbar > revealer > box:first-child {
     border-radius: 6px 6px 0px 0px;
     border-width: 1px 1px 0px 1px; }
-  .action-bar:last-child {
+  .action-bar:last-child, actionbar > revealer > box:last-child {
     border-radius: 0 0 6px 6px;
     border-width: 0px 1px 1px 1px; }
 
@@ -3064,6 +3064,14 @@ notebook > stack:not(:only-child) {
   background-color: #282a36; }
   notebook > stack:not(:only-child):backdrop {
     background-color: #2a2c39; }
+
+tabbox {
+  background-color: #1e1f29;
+  padding: 0px; }
+  tabbox > tab:checked, tabbox > tab:selected,
+  tabbox > tabboxchild > tab:checked,
+  tabbox > tabboxchild > tab:selected {
+    background-color: #282a36; }
 
 /*********
  * Paned *
