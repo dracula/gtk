@@ -20,7 +20,7 @@
     background-color: $base_color;
   }
   /* path-bar of thunar */
-  window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, window.thunar paned > scrolledwindow treeview.view,  .thunar toolbar.horizontal button {
+  window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, .thunar  scrolledwindow.sidebar treeview.view,  .thunar toolbar.horizontal button {
     &:hover, &:checked, &:selected{ 
         @include button(active-header, $tc: $purple);
         font-weight: normal;

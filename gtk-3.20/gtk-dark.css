@@ -6244,7 +6244,7 @@ scrolledwindow.standard-view scrollbar.right {
   background-color: #282a36; }
 
 /* path-bar of thunar */
-window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:hover, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected, window.thunar paned > scrolledwindow treeview.view:hover, window.thunar paned > scrolledwindow treeview.view:checked, window.thunar paned > scrolledwindow treeview.view:selected, .thunar toolbar.horizontal button:hover, .thunar toolbar.horizontal button:checked, .thunar toolbar.horizontal button:selected {
+window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:hover, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected, .thunar scrolledwindow.sidebar treeview.view:hover, .thunar scrolledwindow.sidebar treeview.view:checked, .thunar scrolledwindow.sidebar treeview.view:selected, .thunar toolbar.horizontal button:hover, .thunar toolbar.horizontal button:checked, .thunar toolbar.horizontal button:selected {
   color: #bd93f9;
   background-color: rgba(189, 147, 249, 0.1);
   border-radius: 7px;
@@ -6252,7 +6252,7 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.togg
   text-shadow: none;
   font-weight: bold;
   font-weight: normal; }
-window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:backdrop label, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected:backdrop label, window.thunar paned > scrolledwindow treeview.view:checked:backdrop label, window.thunar paned > scrolledwindow treeview.view:selected:backdrop label, .thunar toolbar.horizontal button:checked:backdrop label, .thunar toolbar.horizontal button:selected:backdrop label {
+window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked:backdrop label, window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:selected:backdrop label, .thunar scrolledwindow.sidebar treeview.view:checked:backdrop label, .thunar scrolledwindow.sidebar treeview.view:selected:backdrop label, .thunar toolbar.horizontal button:checked:backdrop label, .thunar toolbar.horizontal button:selected:backdrop label {
   color: rgba(189, 147, 249, 0.4); }
 
 window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button {
