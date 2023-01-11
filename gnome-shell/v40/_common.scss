@@ -116,7 +116,7 @@ $slider_size: 16px;
   -barlevel-border-width: 2px; 
   -barlevel-border-color: transparent; // trough border color
   // fill style
-  -barlevel-active-background-color: $purple;
+  -barlevel-active-background-color: $selected_bg_color;
   -barlevel-active-border-color: transparent;
   // overfill style (red in this case)
   -barlevel-overdrive-color: $destructive_color;
