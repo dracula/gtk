@@ -5846,7 +5846,7 @@ radiobutton.color-button:active > radio {
   background-size: calc(100% + 2px); }
 
 .xfce4-panel.background {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #1e1f29;
   color: #f8f8f2;
   text-shadow: none;
   -gtk-icon-shadow: none; }
@@ -5857,7 +5857,7 @@ radiobutton.color-button:active > radio {
   color: rgba(255, 255, 255, 0.8);
   border-radius: 0;
   border: none;
-  background-color: rgba(0, 0, 0, 0); }
+  background-color: #1e1f29; }
   #tasklist-button:hover {
     color: white;
     background-color: rgba(0, 0, 0, 0.17); }
@@ -5870,15 +5870,15 @@ radiobutton.color-button:active > radio {
   color: white;
   border-radius: 0;
   border: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #1e1f29;
   font-weight: normal; }
   .xfce4-panel.background button.flat:hover {
     border: none;
-    background-color: rgba(26, 26, 26, 0.7); }
+    background-color: #343546; }
   .xfce4-panel.background button.flat:active, .xfce4-panel.background button.flat:checked {
     color: white;
-    border-bottom: 2px solid rgba(189, 147, 249, 0.5);
-    background-color: rgba(0, 0, 0, 0.7); }
+    border-bottom: 2px solid #bd93f9;
+    background-color: #1a1b23; }
     .xfce4-panel.background button.flat:active label, .xfce4-panel.background button.flat:active image, .xfce4-panel.background button.flat:checked label, .xfce4-panel.background button.flat:checked image {
       color: inherit; }
 
@@ -6069,10 +6069,10 @@ ConversationListView {
  * LightDm *
  ***********/
 #panel_window {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #1e1f29;
   color: white;
   font-weight: bold;
-  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.7); }
+  box-shadow: inset 0 -1px #0f0f14; }
   #panel_window .menubar,
   #panel_window .menubar > .menuitem
   menubar,
