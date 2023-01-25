@@ -5568,23 +5568,28 @@ headerbar .nautilus-window .path-bar-box .subtitle {
     .nautilus-window .path-bar-box button:backdrop:hover label, .nautilus-window .path-bar-box button:backdrop:active label, .nautilus-window .path-bar-box button:backdrop:checked label {
       color: rgba(189, 147, 249, 0.4); }
 .nautilus-window .path-buttons-box, .nautilus-window #NautilusPathBar {
-  background: transparent; }
+  background: transparent;
+  height: 20px;
+  margin-top: 7px;
+  margin-bottom: 7px; }
   .nautilus-window .path-buttons-box .dim-label, .nautilus-window .path-buttons-box label.separator, .nautilus-window .path-buttons-box .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box .subtitle,
   .nautilus-window .path-buttons-box headerbar .subtitle,
   headerbar .nautilus-window .path-buttons-box .subtitle, .nautilus-window #NautilusPathBar .dim-label, .nautilus-window #NautilusPathBar label.separator, .nautilus-window #NautilusPathBar .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window #NautilusPathBar .subtitle,
   .nautilus-window #NautilusPathBar headerbar .subtitle,
   headerbar .nautilus-window #NautilusPathBar .subtitle {
     color: transparent;
-    margin-right: -7px; }
-  .nautilus-window .path-buttons-box button, .nautilus-window #NautilusPathBar button {
-    margin-top: 0;
-    margin-bottom: 0; }
-    .nautilus-window .path-buttons-box button .horizontal .dim-label, .nautilus-window .path-buttons-box button .horizontal label.separator, .nautilus-window .path-buttons-box button .horizontal .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box button .horizontal .subtitle,
-    .nautilus-window .path-buttons-box button .horizontal headerbar .subtitle,
-    headerbar .nautilus-window .path-buttons-box button .horizontal .subtitle, .nautilus-window #NautilusPathBar button .horizontal .dim-label, .nautilus-window #NautilusPathBar button .horizontal label.separator, .nautilus-window #NautilusPathBar button .horizontal .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window #NautilusPathBar button .horizontal .subtitle,
-    .nautilus-window #NautilusPathBar button .horizontal headerbar .subtitle,
-    headerbar .nautilus-window #NautilusPathBar button .horizontal .subtitle {
-      color: #f8f8f2; }
+    margin-right: -5px; }
+  .nautilus-window .path-buttons-box button .horizontal .dim-label, .nautilus-window .path-buttons-box button .horizontal label.separator, .nautilus-window .path-buttons-box button .horizontal .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box button .horizontal .subtitle,
+  .nautilus-window .path-buttons-box button .horizontal headerbar .subtitle,
+  headerbar .nautilus-window .path-buttons-box button .horizontal .subtitle, .nautilus-window #NautilusPathBar button .horizontal .dim-label, .nautilus-window #NautilusPathBar button .horizontal label.separator, .nautilus-window #NautilusPathBar button .horizontal .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window #NautilusPathBar button .horizontal .subtitle,
+  .nautilus-window #NautilusPathBar button .horizontal headerbar .subtitle,
+  headerbar .nautilus-window #NautilusPathBar button .horizontal .subtitle {
+    color: #f8f8f2;
+    padding: 3px 12px;
+    margin: 0; }
+  .nautilus-window .path-buttons-box button:hover, .nautilus-window .path-buttons-box button:focus, .nautilus-window #NautilusPathBar button:hover, .nautilus-window #NautilusPathBar button:focus {
+    background-color: transparent;
+    box-shadow: none; }
     .nautilus-window .path-buttons-box button:hover .dim-label, .nautilus-window .path-buttons-box button:hover label.separator, .nautilus-window .path-buttons-box button:hover .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box button:hover .subtitle,
     .nautilus-window .path-buttons-box button:hover headerbar .subtitle,
     headerbar .nautilus-window .path-buttons-box button:hover .subtitle, .nautilus-window .path-buttons-box button:focus .dim-label, .nautilus-window .path-buttons-box button:focus label.separator, .nautilus-window .path-buttons-box button:focus .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box button:focus .subtitle,
@@ -5595,24 +5600,37 @@ headerbar .nautilus-window .path-bar-box .subtitle {
     .nautilus-window #NautilusPathBar button:focus headerbar .subtitle,
     headerbar .nautilus-window #NautilusPathBar button:focus .subtitle {
       color: #bd93f9; }
-    .nautilus-window .path-buttons-box button:active, .nautilus-window #NautilusPathBar button:active {
-      background-color: transparent; }
+  .nautilus-window .path-buttons-box button:active, .nautilus-window #NautilusPathBar button:active {
+    background-color: transparent; }
   .nautilus-window .path-buttons-box button > .horizontal > image.dim-label, .nautilus-window .path-buttons-box .titlebar:not(headerbar) button > .horizontal > image.subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box button > .horizontal > image.subtitle,
   .nautilus-window .path-buttons-box headerbar button > .horizontal > image.subtitle,
   headerbar .nautilus-window .path-buttons-box button > .horizontal > image.subtitle, .nautilus-window #NautilusPathBar button > .horizontal > image.dim-label, .nautilus-window #NautilusPathBar .titlebar:not(headerbar) button > .horizontal > image.subtitle, .titlebar:not(headerbar) .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle,
   .nautilus-window #NautilusPathBar headerbar button > .horizontal > image.subtitle,
   headerbar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle {
-    margin-right: 10px; }
+    padding: 3px 0px 3px 12px;
+    border-right: none;
+    margin-right: -6px; }
+  .nautilus-window .path-buttons-box button, .nautilus-window #NautilusPathBar button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0; }
   .nautilus-window .path-buttons-box .current-dir label, .nautilus-window #NautilusPathBar .current-dir label {
-    padding: 3px 12px;
+    border-radius: 4px;
+    padding: 1px 12px; }
+  .nautilus-window .path-buttons-box .current-dir label, .nautilus-window .path-buttons-box .current-dir image, .nautilus-window #NautilusPathBar .current-dir label, .nautilus-window #NautilusPathBar .current-dir image {
     color: #bd93f9;
     background-color: rgba(189, 147, 249, 0.1);
     border-radius: 7px;
     box-shadow: none;
     text-shadow: none;
     font-weight: bold; }
-    .nautilus-window .path-buttons-box .current-dir label:backdrop, .nautilus-window #NautilusPathBar .current-dir label:backdrop {
-      color: rgba(189, 147, 249, 0.4); }
+  .nautilus-window .path-buttons-box button.current-dir:only-child image, .nautilus-window #NautilusPathBar button.current-dir:only-child image {
+    margin-right: -6px;
+    padding: 0px 0px 0px 12px;
+    border-radius: 4px 0px 0px 4px; }
+  .nautilus-window .path-buttons-box button.current-dir:only-child label, .nautilus-window #NautilusPathBar button.current-dir:only-child label {
+    border-radius: 0px 4px 4px 0px; }
 
 .nautilus-circular-button {
   border-radius: 20px; }
