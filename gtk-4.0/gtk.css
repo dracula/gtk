@@ -2862,6 +2862,68 @@ row {
   row.activatable:selected:backdrop {
     background-color: rgba(189, 147, 249, 0.4); }
 
+columnview > listview > row {
+  padding: 0; }
+  columnview > listview > row > cell {
+    padding: 8px 6px; }
+    columnview > listview > row > cell:not(:first-child) {
+      border-left: 1px solid transparent; }
+columnview.column-separators > listview > row > cell {
+  border-left-color: rgba(25, 26, 34, 0.9); }
+columnview.data-table > listview > row > cell {
+  padding-top: 2px;
+  padding-bottom: 2px; }
+
+treeexpander {
+  border-spacing: 4px; }
+
+/********************************************************
+ * Data Tables                                          *
+ * treeview like tables with individual focusable cells *
+ * https://gitlab.gnome.org/GNOME/gtk/-/issues/2929     *
+ ********************************************************/
+columnview row:not(:selected) cell editablelabel:not(.editing):focus-within {
+  outline: 2px solid rgba(25, 26, 34, 0.9); }
+
+columnview row:not(:selected) cell editablelabel.editing:focus-within {
+  outline: 2px solid rgba(189, 147, 249, 0.5); }
+
+columnview row:not(:selected) cell editablelabel.editing text selection {
+  background-color: rgba(189, 147, 249, 0.4);
+  color: transparent; }
+  columnview row:not(:selected) cell editablelabel.editing text selection:focus-within {
+    background-color: rgba(189, 147, 249, 0.5);
+    color: #f8f8f2; }
+
+/*******************************************************
+ * Rich Lists                                          *
+ * Large list usually containing lots of widgets       *
+ * https://gitlab.gnome.org/GNOME/gtk/-/issues/3073    *
+ *******************************************************/
+.rich-list {
+  /* rich lists usually containing other widgets than just labels/text */ }
+  .rich-list > row {
+    padding: 8px 12px;
+    min-height: 32px;
+    /* should be tall even when only containing a label */ }
+    .rich-list > row > box {
+      border-spacing: 12px; }
+
+/********************************************************
+ * Complex Lists                                        *
+ * Put padding on the cell content so event controllers *
+ * can cover the whole area.                            *
+ ********************************************************/
+columnview.complex > listview > row > cell {
+  padding: 0; }
+  columnview.complex > listview > row > cell > * {
+    padding: 8px 6px; }
+columnview.complex.data-table > listview > row > cell {
+  padding: 0; }
+  columnview.complex.data-table > listview > row > cell > * {
+    padding-top: 2px;
+    padding-bottom: 2px; }
+
 /*********
  * Menus *
  *********/
@@ -5880,7 +5942,7 @@ radiobutton.color-button:active > radio {
   background-size: calc(100% + 2px); }
 
 .xfce4-panel.background {
-  background-color: rgba(30, 31, 41, 0.7);
+  background-color: #1e1f29;
   color: #f8f8f2;
   text-shadow: none;
   -gtk-icon-shadow: none; }
@@ -5908,11 +5970,11 @@ radiobutton.color-button:active > radio {
   font-weight: normal; }
   .xfce4-panel.background button.flat:hover {
     border: none;
-    background-color: rgba(52, 53, 70, 0.7); }
+    background-color: #343546; }
   .xfce4-panel.background button.flat:active, .xfce4-panel.background button.flat:checked {
     color: white;
     border-bottom: 2px solid rgba(189, 147, 249, 0.5);
-    background-color: rgba(26, 27, 35, 0.7); }
+    background-color: #1a1b23; }
     .xfce4-panel.background button.flat:active label, .xfce4-panel.background button.flat:active image, .xfce4-panel.background button.flat:checked label, .xfce4-panel.background button.flat:checked image {
       color: inherit; }
 
@@ -6071,10 +6133,10 @@ ConversationListView .view .cell, ConversationListView iconview .cell {
  * LightDm *
  ***********/
 #panel_window {
-  background-color: rgba(30, 31, 41, 0.7);
+  background-color: #1e1f29;
   color: white;
   font-weight: bold;
-  box-shadow: inset 0 -1px rgba(15, 15, 20, 0.7); }
+  box-shadow: inset 0 -1px #0f0f14; }
   #panel_window .menubar,
   #panel_window .menubar > .menuitem
   menubar,
