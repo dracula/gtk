@@ -106,29 +106,63 @@
 
   .path-buttons-box, #NautilusPathBar {
     background: transparent;
-    
+    height: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+
     .dim-label { 
       color: transparent; 
-      margin-right: -7px;
+      margin-right: -5px;
     }
   
     //Buttons before current path
     button {
-      margin-top: 0;
-      margin-bottom: 0;
-      .horizontal  .dim-label { color: $headerbar_fg_color; }
+      .horizontal  .dim-label { 
+        color: $headerbar_fg_color;
+        padding: 3px 12px;
+        margin: 0;
+      }
       &:hover, &:focus {
         .dim-label { color: $selected_bg_color; }
+        background-color: transparent;
+        box-shadow: none;
       }
       &:active { background-color: transparent; }
     }
-    button > .horizontal > image.dim-label { 
-      margin-right: 10px;
+     // Home icon
+     button > .horizontal > image.dim-label { 
+      padding: 3px 0px 3px 12px; 
+      border-right: none;
+      margin-right: -6px;
     }
-    .current-dir label {
-      padding: 3px 12px;
-      @include button(active-header, transparent, $selected_bg_color);
-      &:backdrop { color: $backdrop_selected_bg_color; }
+
+   // Reset path buttons appearance
+    button {
+      background: transparent;
+      border: none;
+      margin: 0;
+      padding: 0;
+    }
+
+   // Selected dir
+    .current-dir  {
+      label { 
+        border-radius: 4px;
+        padding: 1px 12px;
+      }
+
+      label, image { 
+        @include button(active-header, transparent, $selected_bg_color); 
+      }
+    }
+    
+    button.current-dir:only-child {
+      image {
+        margin-right: -6px;
+        padding: 0px 0px 0px 12px;
+        border-radius: 4px 0px 0px 4px;
+      }
+      label { border-radius:0px 4px 4px 0px; }
     }
   }
 }
