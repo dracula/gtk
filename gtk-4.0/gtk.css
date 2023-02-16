@@ -3332,7 +3332,8 @@ popover.background {
     background-color: #242530;
     background-clip: padding-box;
     border: 1px solid rgba(25, 26, 34, 0.9);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    color: #f8f8f2; }
   popover.background:backdrop {
     background-color: transparent;
     box-shadow: none; }
