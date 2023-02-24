@@ -2299,3 +2299,6 @@ $slider_size: 16px;
       border-radius: 50px;
     }
   }
+
+.quick-slider .icon-button:hover { @include button(hover); }
+  
