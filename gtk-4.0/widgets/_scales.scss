@@ -1,6 +1,8 @@
 /************
  * GtkScale *
  ************/
+ $scale_slider_bg: if($variant == 'light', $base_color, lighten($base_color, 45%));
+ $scale_trough_bg: if($variant == 'light', transparentize(black,0.86), lighten(transparentize($bg_color,0.86), 47%));
 %scale_trough {
   background-color: $scale_bg;
   border: none;
@@ -145,21 +147,19 @@ scale {
     }
   }
 
-  $_scale_bg: if($variant == 'light', $base_color, lighten($main_dark_color, 20%));
-  $_scale_disabled_bg: lighten($_scale_bg, 15%);
   slider {
-    border-color: $_scale_bg;
+    border-color: $scale_slider_bg;
     border: none;
     border-radius: 12px;
 
-    background-color: $_scale_bg;
+    background-color: $scale_slider_bg;
 
     &:hover { @include button(hover-alt, $edge: $shadow_color); }
 
     &:active { border-color: $selected_borders_color; }
 
     &:disabled {
-      background-color: $_scale_disabled_bg;
+      background-color: darken($scale_slider_bg, 30%);
       box-shadow: inset 0 1px $top_highlight,
                   0px 0px 1px 1px rgba(0,0,0,0.1);
       }
@@ -168,7 +168,7 @@ scale {
     &:backdrop:disabled {
       transition: $backdrop_transition;
 
-      background-color: $_scale_disabled_bg;
+      background-color: darken($scale_slider_bg, 20%);
       box-shadow: inset 0 1px $top_highlight,
                   0px 0px 1px 1px rgba(0,0,0,0.1);
     }
@@ -282,7 +282,7 @@ scale {
               border: none;
               border-radius: 50%;
 
-              background-color: $_scale_bg;
+              background-color: $scale_slider_bg;
               box-shadow: inset 0 1px darken(white, 60%),
                           0px 0px 1px 1px darken(white, 60%);
               }
