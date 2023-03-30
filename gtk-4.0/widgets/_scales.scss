@@ -1,7 +1,7 @@
 /************
  * GtkScale *
  ************/
- $scale_slider_bg: if($variant == 'light', $base_color, lighten($base_color, 10%));
+ $scale_slider_bg: if($variant == 'light', $base_color, lighten($base_color, 45%));
  $scale_trough_bg: if($variant == 'light', transparentize(black,0.86), lighten(transparentize($bg_color,0.86), 47%));
 %scale_trough {
   background-color: $scale_trough_bg;
@@ -170,7 +170,7 @@ scale {
     &:backdrop:disabled {
       transition: $backdrop_transition;
 
-      background-color: $insensitive_bg_color;
+      background-color: darken($scale_slider_bg, 20%);
       box-shadow: inset 0 1px $top_highlight,
                   0px 0px 1px 1px rgba(0,0,0,0.1);
     }
