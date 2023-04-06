@@ -2736,9 +2736,10 @@ infobar {
       box-shadow: none; }
 
 .info {
-  background-color: #50fa7a; }
+  background-color: rgba(80, 250, 122, 0.85);
+  color: #1e1f29; }
   .info:backdrop {
-    background-color: #82fba0;
+    background-color: rgba(130, 251, 160, 0.85);
     color: rgba(248, 248, 242, 0.5); }
 
 .warning {
