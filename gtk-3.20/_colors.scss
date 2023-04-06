@@ -66,7 +66,7 @@ $icon_shadow_color: $text_shadow_color;
 $drop_target_color: $lime;
 
 // Infobar colors
-$info_color: $lime;
+$info_color: transparentize($lime, 0.15);
 $question_color: $cyan;
 
 // Panel colors
