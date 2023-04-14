@@ -2601,7 +2601,7 @@ infobar {
       box-shadow: none; }
 
 .info, .info:backdrop {
-  color: #50fa7a;
+  color: rgba(80, 250, 122, 0.85);
   background-color: transparent; }
 
 .warning, .warning:backdrop {
@@ -4065,7 +4065,7 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
       padding-right: 12px;
       color: #98abb2; }
   placessidebar.sidebar row.sidebar-row:hover, .nautilus-window .navigation-sidebar row.sidebar-row:hover {
-    background: rgba(0, 0, 0, 0.12);
+    background-image: linear-gradient(to right, #1f202a 40px, #2c2e3c 35px, #2c2e3c 36px, #2c2e3c 36px, #2c2e3c 99%, #2c2e3c 100%);
     color: inherit; }
   placessidebar.sidebar row.sidebar-row:selected, .nautilus-window .navigation-sidebar row.sidebar-row:selected {
     background-color: transparent;
@@ -4074,7 +4074,7 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
       color: #bd93f9; }
     placessidebar.sidebar row.sidebar-row:selected:hover, .nautilus-window .navigation-sidebar row.sidebar-row:selected:hover {
       color: #ffffff;
-      background-color: rgba(0, 0, 0, 0.24); }
+      background-color: rgba(189, 147, 249, 0.1); }
       placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row:selected:hover .sidebar-icon {
         color: #ffffff; }
     placessidebar.sidebar row.sidebar-row:selected:backdrop, .nautilus-window .navigation-sidebar row.sidebar-row:selected:backdrop {

@@ -138,7 +138,13 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
 					}
 				}
 				&:hover{
-					background: rgba(0,0,0,0.12);
+					background-image:linear-gradient(to right,
+                        darken($main_dark_color, 2%) 40px,
+												lighten($_sidebar_color, 7%) 35px,
+                        lighten($_sidebar_color, 7%) 36px,
+												lighten($_sidebar_color, 7%) 36px,
+                        lighten($_sidebar_color, 7%) 99%, 
+												lighten($_sidebar_color, 7%) 100%);
           color: inherit;
 				}
 
@@ -151,7 +157,7 @@ placessidebar.sidebar, .nautilus-window .navigation-sidebar {
 																rgba(65,67,75,0) 36px, rgba(13, 55, 224, 0)97%);
 					&:hover{
 						color: #ffffff;
-						background-color: rgba(0,0,0,0.24);
+						background-color: transparentize($selected_bg_color, 0.4);
 						.sidebar-icon {
 							color: #ffffff;
 						}
