@@ -954,8 +954,9 @@ StScrollBar {
 /* Message list */
 .message-list {
   border-color: #373a4b; }
-  .message-list .message-title, .message-list .message-content, .message-list .message-body {
-    color: #bdc2cd; }
+
+.message-title, .message-list .message-title, .message-content, .message-list .message-content, .message-body, .message-list .message-body {
+  color: #bdc2cd; }
 
 .message-list-sections {
   spacing: 1em; }
@@ -2014,11 +2015,11 @@ StScrollBar {
   padding: 14px;
   border-radius: 12px; }
   .quick-settings .icon-button, .quick-settings .button {
+    color: #C3C7D1;
     padding: 10.5px; }
 
 .quick-toggle {
   border-radius: 99px;
-  min-height: 40px;
   /* Move padding into the box; this is to allow menu arrows
      to extend to the border */ }
   .quick-toggle:checked {
@@ -2028,6 +2029,8 @@ StScrollBar {
     text-shadow: none;
     icon-shadow: none;
     color: #bd93f9; }
+  .quick-toggle, .quick-toggle:hover, .quick-toggle:checked {
+    border: none; }
   .quick-toggle > StBoxLayout {
     spacing: 6px; }
   .quick-toggle.button {
@@ -2045,9 +2048,30 @@ StScrollBar {
   padding-right: 0; }
 .quick-menu-toggle:rtl > StBoxLayout {
   padding-left: 0; }
+.quick-menu-toggle .quick-toggle {
+  min-width: auto;
+  max-width: auto; }
+  .quick-menu-toggle .quick-toggle:ltr {
+    border-radius: 99px 0 0 99px; }
+  .quick-menu-toggle .quick-toggle:rtl {
+    border-radius: 0 99px 99px 0; }
+  .quick-menu-toggle .quick-toggle:ltr:last-child {
+    border-radius: 99px; }
+  .quick-menu-toggle .quick-toggle:rtl:last-child {
+    border-radius: 99px; }
 .quick-menu-toggle .quick-toggle-arrow {
-  background-color: rgba(195, 199, 209, 0.1);
-  padding: 6px 10.5px; }
+  background-color: #2a2c39;
+  padding: 6px 10.5px;
+  border-width: 0;
+  color: #C3C7D1; }
+  .quick-menu-toggle .quick-toggle-arrow:checked {
+    color: #bd93f9;
+    background-color: rgba(189, 147, 249, 0.25);
+    border: 1px solid #1b1c24;
+    text-shadow: none;
+    icon-shadow: none;
+    color: #bd93f9;
+    border-width: 0; }
   .quick-menu-toggle .quick-toggle-arrow:ltr {
     border-radius: 0 99px 99px 0; }
   .quick-menu-toggle .quick-toggle-arrow:rtl {
@@ -2057,7 +2081,8 @@ StScrollBar {
   background-color: #282a36;
   border-radius: 12px;
   padding: 12px;
-  margin: 12px 18px 0; }
+  margin: 12px 18px 0;
+  color: #C3C7D1; }
   .quick-toggle-menu .popup-menu-item > StIcon {
     -st-icon-style: symbolic; }
   .quick-toggle-menu .header {
@@ -2069,7 +2094,8 @@ StScrollBar {
       padding: 9px;
       background-color: #3e4153; }
       .quick-toggle-menu .header .icon.active {
-        background-color: rgba(189, 147, 249, 0.5); }
+        background-color: rgba(189, 147, 249, 0.5);
+        color: #f8f8f2; }
 
 .quick-settings-system-item > StBoxLayout {
   spacing: 12px; }
