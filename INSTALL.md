@@ -1,10 +1,10 @@
-### [GTK](https://www.gtk.org/)
+## [GTK](https://www.gtk.org/)
 
-#### Install manually
+### Install manually
 
 Download using the [GitHub .zip download](https://github.com/dracula/gtk/archive/master.zip) option and extract the `.zip` file to the themes directory i.e. `/usr/share/themes/` or `~/.themes/` (create it if necessary).
 
-#### Activating theme
+### Activating theme
 
 To activate the theme in Gnome, run the following commands in Terminal:
 
@@ -16,7 +16,7 @@ gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 or Change via distribution specific tweak tool.
 
 
-### KDE
+## KDE
 
 ### Install manually
 Pull the source code using git (or alternatively [Download the Latest ZIP File](https://github.com/dracula/gtk/archive/refs/heads/master.zip)):
@@ -36,11 +36,11 @@ After installation is complete, open the appearance settings and choose the Drac
 
 ## Icon Theme (optional)
 
-#### Install manually
+### Install manually
 
 Download using the [GitHub .zip download](https://github.com/dracula/gtk/files/5214870/Dracula.zip) option and extract the `.zip` file to the icons directory i.e. `/usr/share/icons/` or `~/.icons/` (create it if necessary).
 
-#### Activating icon theme
+### Activating icon theme
 
 To activate the theme in Gnome, run the following commands in Terminal: 
 
