@@ -34,6 +34,20 @@ make install PLATFORM=KDE
 
 After installation is complete, open the appearance settings and choose the Dracula theme in the `Global Theme` section.
 
+### Uninstall manually
+To uninstall the manually installed KDE theme, pull the source code using git (or alternatively [Download the Latest ZIP File](https://github.com/dracula/gtk/archive/refs/heads/master.zip)):
+
+```bash
+git clone https://github.com/dracula/gtk.git
+```
+
+In a terminal, enter the directory containing the source code and run the `clean` make target
+
+```bash
+cd gtk
+make clean
+```
+
 ## Icon Theme (optional)
 
 ### Install manually
