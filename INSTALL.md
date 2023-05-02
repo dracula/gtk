@@ -15,6 +15,25 @@ gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 
 or Change via distribution specific tweak tool.
 
+
+### KDE
+
+### Install manually
+Pull the source code using git (or alternatively [Download the Latest ZIP File](https://github.com/dracula/gtk/archive/refs/heads/master.zip)):
+
+```bash
+git clone https://github.com/dracula/gtk.git
+```
+
+In a terminal, enter the directory containing the source code and run the `install` make target with the `PLATFORM` variable set to `KDE`:
+
+```bash
+cd gtk
+make install PLATFORM=KDE
+```
+
+After installation is complete, open the appearance settings and choose the Dracula theme in the `Global Theme` section.
+
 ## Icon Theme (optional)
 
 #### Install manually
