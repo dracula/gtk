@@ -2078,7 +2078,7 @@ StScrollBar {
     border-radius: 99px 0 0 99px; }
 
 .quick-toggle-menu {
-  background-color: #282a36;
+  background-color: #282a36 !important;
   border-radius: 12px;
   padding: 12px;
   margin: 12px 18px 0;
