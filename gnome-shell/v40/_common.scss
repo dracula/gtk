@@ -2292,7 +2292,8 @@ $slider_size: 16px;
   }
   
   .quick-toggle-menu {
-    background-color: $base_color;
+    background-color: $base_color !important;
+    
     border-radius: 12px;
     padding: $base_padding*2;
     margin: $base_padding*2 $base_padding*3 0;
