@@ -1,4 +1,5 @@
 .xfce4-panel {
+  border-radius: 0;
     &.background {
         background-color: $panel_bg_color;
         color: $fg_color;
