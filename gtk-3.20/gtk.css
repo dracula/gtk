@@ -5798,13 +5798,15 @@ radiobutton.color-button:active > radio {
   background-repeat: no-repeat;
   background-size: calc(100% + 2px); }
 
-.xfce4-panel.background {
-  background-color: #1e1f29;
-  color: #f8f8f2;
-  text-shadow: none;
-  -gtk-icon-shadow: none; }
-.xfce4-panel#XfcePanelWindow, .xfce4-panel#XfcePanelWindow.marching-ants {
-  transition: none; }
+.xfce4-panel {
+  border-radius: 0; }
+  .xfce4-panel.background {
+    background-color: #1e1f29;
+    color: #f8f8f2;
+    text-shadow: none;
+    -gtk-icon-shadow: none; }
+  .xfce4-panel#XfcePanelWindow, .xfce4-panel#XfcePanelWindow.marching-ants {
+    transition: none; }
 
 #tasklist-button {
   color: rgba(255, 255, 255, 0.8);
