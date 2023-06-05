@@ -1377,16 +1377,19 @@ StScrollBar {
   border: none;
   transition-duration: 100ms;
   text-align: center;
-  box-shadow: none; }
+  box-shadow: none;
+  border-radius: 18px; }
 
 /* App Folders */
 .app-well-app.app-folder {
   background-color: #373a4b;
-  border-radius: 10px; }
+  border-radius: 18px; }
 
 .app-folder-dialog {
   background-color: #21232d;
-  border: none; }
+  border: none;
+  border-radius: 30px;
+  box-shadow: none; }
   .app-folder-dialog .folder-name-label {
     color: #C3C7D1; }
   .app-folder-dialog .edit-folder-button {
