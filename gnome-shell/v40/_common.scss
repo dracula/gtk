@@ -2244,8 +2244,8 @@ $slider_size: 16px;
     border-radius: 99px;
   
     &:checked { 
-      @include button(active, transparentize($selected_bg_color, 0.9));
-      color: $selected_bg_color;
+      @include button(active, lighten($base_color, 8%));
+      color: $selected_fg_color;
     }
 
     &, &:hover, &:checked { border: none; }
@@ -2285,8 +2285,8 @@ $slider_size: 16px;
       border-width: 0;
       color: $fg_color;
       &:checked { 
-        @include button(active, transparentize($selected_bg_color, 0.75));
-        color: $selected_bg_color;
+        @include button(active, lighten($base_color, 8%));
+        color: $selected_fg_color;
         border-width: 0;
       }
     

@@ -19,7 +19,7 @@ $g1: darken(#ff79c6, 1%);
 $g2: darken(#ff79c6, 1%);
 
 $selected_fg_color: #fefefe;
-$selected_bg_color: #ff79c6;
+$selected_bg_color: transparentize(#ff79c6, 0.2);
 $selected_borders_color: darken($selected_bg_color, 10%);
 $borders_color: darken($bg_color, 6%);
 $borders_edge: transparentize(white, 0.9);
