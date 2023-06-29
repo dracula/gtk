@@ -2245,10 +2245,12 @@ $slider_size: 16px;
   
     &:checked { 
       @include button(active, lighten($base_color, 8%));
-      color: $selected_fg_color;
+      &:hover { @include button(active, lighten($base_color, 11%)); }
+
+      &, &:hover { color: $selected_fg_color; }
     }
 
-    &, &:hover, &:checked { border: none; }
+    &, &:hover, &:checked, &:checked:hover { border: none; }
   
     & > StBoxLayout { spacing: $base_padding; }
   
@@ -2286,8 +2288,14 @@ $slider_size: 16px;
       color: $fg_color;
       &:checked { 
         @include button(active, lighten($base_color, 8%));
-        color: $selected_fg_color;
-        border-width: 0;
+        &:hover { @include button(active, lighten($base_color, 11%)); }
+        &, &:hover {
+          color: $selected_fg_color;
+          border-width: 0;
+        }
+      }
+      &:hover {
+        background-color: lighten($base_color, 7%);
       }
     
       &:ltr { border-radius: 0 99px 99px 0; }
