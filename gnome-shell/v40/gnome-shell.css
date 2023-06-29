@@ -2032,9 +2032,16 @@ StScrollBar {
     background-color: rgba(189, 147, 249, 0.15);
     border: 1px solid #1b1c24;
     text-shadow: none;
-    icon-shadow: none;
-    color: #bd93f9; }
-  .quick-toggle, .quick-toggle:hover, .quick-toggle:checked {
+    icon-shadow: none; }
+    .quick-toggle:checked:hover {
+      color: #bd93f9;
+      background-color: rgba(219, 195, 252, 0.15);
+      border: 1px solid #1b1c24;
+      text-shadow: none;
+      icon-shadow: none; }
+    .quick-toggle:checked, .quick-toggle:checked:hover {
+      color: #bd93f9; }
+  .quick-toggle, .quick-toggle:hover, .quick-toggle:checked, .quick-toggle:checked:hover {
     border: none; }
   .quick-toggle > StBoxLayout {
     spacing: 6px; }
@@ -2074,9 +2081,18 @@ StScrollBar {
     background-color: rgba(189, 147, 249, 0.25);
     border: 1px solid #1b1c24;
     text-shadow: none;
-    icon-shadow: none;
-    color: #bd93f9;
-    border-width: 0; }
+    icon-shadow: none; }
+    .quick-menu-toggle .quick-toggle-arrow:checked:hover {
+      color: #bd93f9;
+      background-color: rgba(219, 195, 252, 0.25);
+      border: 1px solid #1b1c24;
+      text-shadow: none;
+      icon-shadow: none; }
+    .quick-menu-toggle .quick-toggle-arrow:checked, .quick-menu-toggle .quick-toggle-arrow:checked:hover {
+      color: #bd93f9;
+      border-width: 0; }
+  .quick-menu-toggle .quick-toggle-arrow:hover {
+    background-color: #373a4b; }
   .quick-menu-toggle .quick-toggle-arrow:ltr {
     border-radius: 0 99px 99px 0; }
   .quick-menu-toggle .quick-toggle-arrow:rtl {
