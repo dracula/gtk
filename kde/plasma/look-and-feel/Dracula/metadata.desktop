@@ -10,4 +10,4 @@ X-KDE-PluginInfo-Version=0.1
 X-KDE-PluginInfo-Website=https://github.com/EliverLara/Ant-Dracula/tree/master/kde
 X-KDE-ServiceTypes=Plasma/LookAndFeel
 
-X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1370679,kns://plasma-themes.knsrc/api.kde-look.org/1370687,kns://plasma-themes.knsrc/api.kde-look.org/1420691,kns://aurorae.knsrc/api.kde-look.org/1370682,kns://sddmtheme.knsrc/api.kde-look.org/1374247,kns://wallpaper.knsrc/api.kde-look.org/1378234,kns://xcursor.knsrc/api.kde-look.org/1669262
+X-KPackage-Dependencies=kns://colorschemes.knsrc/api.kde-look.org/1370679,kns://plasma-themes.knsrc/api.kde-look.org/1370687,kns://plasma-themes.knsrc/api.kde-look.org/1420691,kns://aurorae.knsrc/api.kde-look.org/1370682,kns://sddmtheme.knsrc/api.kde-look.org/1374247,kns://wallpaper.knsrc/api.kde-look.org/1378234,kns://xcursor.knsrc/api.kde-look.org/1669262,kns://plasmoids.knsrc/api.kde-look.org/2048016
