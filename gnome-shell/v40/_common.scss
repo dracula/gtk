@@ -178,7 +178,12 @@ $slider_size: 16px;
   background-color: darken($osd_bg_color,5%);
   box-shadow: $depth6;
 
-  .modal-dialog-content-box { padding: 24px; }
+  .modal-dialog-content-box { 
+    margin: 32px 40px;
+    spacing: 32px;
+    max-width: 28em;
+  }
+
   .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px;
