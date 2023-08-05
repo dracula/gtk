@@ -5,7 +5,7 @@
   .entry {
       background: $bg_color;
       color: $fg_color;
-      border-color: $borders_color;
+      border-color: $selected_borders_color;
       &:selected {
         background: $selected_bg_color;
         color: $selected_fg_color;
@@ -34,8 +34,7 @@
         background-color: transparentize($base_color, 0.4);
     }
     &:selected {
-        color: $purple;
-        background: $headerbar_color;
+      @include button(active-header, $tc: $purple);
         &:hover {
             background-color: transparentize($selected_bg_color, 0.8);
         }
