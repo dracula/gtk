@@ -6236,7 +6236,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
 .caja-notebook .entry {
   background: #1e1f29;
   color: #f8f8f2;
-  border-color: rgba(25, 26, 34, 0.9); }
+  border-color: rgba(159, 99, 246, 0.5); }
   .caja-notebook .entry:selected {
     background: rgba(189, 147, 249, 0.5);
     color: #f8f8f2; }
@@ -6264,7 +6264,11 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
     .caja-side-pane viewport.frame:selected,
     .caja-side-pane widget .vertical:selected {
       color: #bd93f9;
-      background: #1e1f29; }
+      background-color: rgba(189, 147, 249, 0.1);
+      border-radius: 7px;
+      box-shadow: none;
+      text-shadow: none;
+      font-weight: bold; }
       .caja-side-pane treeview.view:selected:hover,
       .caja-side-pane textview.view text:selected:hover,
       .caja-side-pane viewport.frame:selected:hover,
