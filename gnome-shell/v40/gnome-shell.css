@@ -258,7 +258,6 @@ StScrollBar {
 
 /* End Session Dialog */
 .end-session-dialog {
-  spacing: 42px;
   border: none; }
   .end-session-dialog .modal-dialog-linked-button:last-child {
     background-color: #ff5555;
@@ -376,7 +375,7 @@ StScrollBar {
 
 /* Password or Authentication Dialog */
 .prompt-dialog {
-  width: 34em;
+  width: 28em;
   border: none;
   border-radius: 10px; }
   .prompt-dialog .message-dialog-main-layout {

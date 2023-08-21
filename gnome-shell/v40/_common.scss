@@ -239,7 +239,6 @@ $slider_size: 16px;
 
 /* End Session Dialog */
 .end-session-dialog {
-  spacing: 42px;
   border: none;
   & .modal-dialog-linked-button:last-child {
     background-color: $red;
@@ -385,7 +384,7 @@ $slider_size: 16px;
 
 .prompt-dialog {
   //this is the width of the entire modal popup
-  width: 34em;
+  width: 28em;
   border: none;
   border-radius: 10px;
 
