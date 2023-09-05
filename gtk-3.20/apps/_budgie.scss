@@ -8,7 +8,7 @@ $entry_border: transparent;
 $mpris_overlay_fg: $fg_color;
 $mpris_overlay_bg: transparentize(if($variant=='light',$base_color, darken($bg_color, 10%)), 0.1);
 $mpris_overlay_border: $top_highlight;
-$panel_bg: transparentize( darken($headerbar_color,10%),0.05);
+$panel_bg: $bg_color;
 $panel_color: $headerbar_fg_color;
 $panel_border: transparentize(darken($headerbar_color, 7%), 0.08);
 $panel_shadow: transparentize(black, 0.7);
@@ -85,11 +85,9 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
     }
     button {
       color: $panel_color;
-      border: none;
-      background: transparent;
-        // @include button(normal-header);
         &:hover {
-          color: $selected_bg_color;
+          background-color: lighten($base_color, 10%);
+          color: $selected_fg_color;
         }
     }
 }
@@ -133,13 +131,13 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
         border-radius: 2px 0 0 2px;
 
         &:hover {
-          background-color: if(variant == light, transparentize($fg_color, 0.9), transparentize($fg_color, 0.85));
+          background-color: if(variant == light, transparentize($fg_color, 0.9), lighten($base_color, 6%));
           color: $fg_color;
         }
         &:active { box-shadow: inset 0 2px 2px -2px transparentize(black, 0.8); }
         &:checked {
           color: $selected_fg_color;
-          background: $suggested_bg_color;
+          background: $selected_bg_color;
         }
         &:checked:disabled {
             opacity: 0.5;
@@ -159,7 +157,6 @@ $pos_list: ((top, bottom),(bottom,top),(left,right),(right,left));
       padding-bottom: 5px;
       border-radius: 0;
       box-shadow: none;
-      background:yellow;    
     }
     button{
         border: none;
@@ -385,8 +382,8 @@ button.raven-trigger {
           background: transparent;
           border: none;
           &:hover, &:active, &:checked {
-            background: transparent;
-            color: $selected_bg_color;
+            background: transparentize($selected_bg_color, 0.1);
+            color: $selected_fg_color;
           }
       }
     }
@@ -403,7 +400,7 @@ button.raven-trigger {
     }
 
     &.transparent {
-        background-color: transparentize($panel_bg, 0.55);
+        background-color: transparentize($panel_bg, 0.25);
 
         .top & {
             border-bottom-color: transparent;
