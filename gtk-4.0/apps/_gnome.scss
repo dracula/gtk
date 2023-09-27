@@ -165,6 +165,13 @@
       label { border-radius:0px 4px 4px 0px; }
     }
   }
+
+  // search entry
+  #NautilusQueryEditor > menubutton > button { 
+    &:hover, &:active, &:checked {
+      image { color: $selected_fg_color; }
+    }
+  }
 }
 
 .nautilus-circular-button {
