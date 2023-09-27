@@ -2720,7 +2720,7 @@ infobar {
       box-shadow: none; }
 
 .info, .info:backdrop {
-  color: #50fa7a;
+  color: rgba(80, 250, 122, 0.85);
   background-color: transparent; }
 
 .warning, .warning:backdrop {
@@ -5748,6 +5748,8 @@ headerbar .nautilus-window .path-bar-box .subtitle {
     border-radius: 4px 0px 0px 4px; }
   .nautilus-window .path-buttons-box button.current-dir:only-child label, .nautilus-window #NautilusPathBar button.current-dir:only-child label {
     border-radius: 0px 4px 4px 0px; }
+.nautilus-window #NautilusQueryEditor > menubutton > button:hover image, .nautilus-window #NautilusQueryEditor > menubutton > button:active image, .nautilus-window #NautilusQueryEditor > menubutton > button:checked image {
+  color: #f8f8f2; }
 
 .nautilus-circular-button {
   border-radius: 20px; }
