@@ -916,7 +916,7 @@ StScrollBar {
 
 .calendar-today {
   color: $fg_color;
-  background-color: if($variant == 'light', transparentize($selected_bg_color, 0.6), transparentize($selected_bg_color, 0.6));
+  background-color: if($variant == 'light', transparentize($selected_bg_color, 0.1), transparentize($selected_bg_color, 0.1));
   border-width: 0;
 
   &:selected {
@@ -1533,7 +1533,7 @@ StScrollBar {
     }
 
     & .progress {
-      background-color: transparentize($selected_bg_color, 0.2);
+      background-color: transparentize($selected_bg_color, 0.1);
     }
   }
 
@@ -2016,7 +2016,7 @@ StScrollBar {
   }
   &-drag-placeholder { 
     border: 2px solid $selected_bg_color;
-    background-color: transparentize($selected_bg_color, 0.7);
+    background-color: transparentize($selected_bg_color, 0.2);
   }
 }
 
@@ -2050,7 +2050,7 @@ StScrollBar {
 //
 .tile-preview, .tile-preview.snap,
 .tile-hud, .tile-hud.snap {
-  background-color: transparentize($selected_bg_color, 0.7);
+  background-color: transparentize($selected_bg_color, 0.2);
   border: 1px solid $selected_bg_color;
 }
 

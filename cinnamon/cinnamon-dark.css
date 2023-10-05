@@ -752,7 +752,7 @@ StScrollBar {
 
 .calendar-today {
   color: #f8f8f2;
-  background-color: rgba(189, 147, 249, 0);
+  background-color: rgba(189, 147, 249, 0.4);
   border-width: 0; }
   .calendar-today:selected {
     font-weight: bold; }
@@ -1207,7 +1207,7 @@ StScrollBar {
     border-color: #bd93f9;
     background-color: rgba(186, 195, 207, 0.1); }
   .window-list-item-box .progress {
-    background-color: rgba(189, 147, 249, 0.3); }
+    background-color: rgba(189, 147, 249, 0.4); }
 .window-list-item-demands-attention {
   background-gradient-direction: vertical;
   background-gradient-start: #F04A50;
@@ -1545,7 +1545,7 @@ StScrollBar {
     padding-bottom: 6px; }
   .desklet-drag-placeholder {
     border: 2px solid rgba(189, 147, 249, 0.5);
-    background-color: rgba(189, 147, 249, 0); }
+    background-color: rgba(189, 147, 249, 0.3); }
 
 .photoframe-box {
   border-image: url("common-assets/misc/bg.svg") 9 9 9 9;
@@ -1568,7 +1568,7 @@ StScrollBar {
 
 .tile-preview, .tile-preview.snap,
 .tile-hud, .tile-hud.snap {
-  background-color: rgba(189, 147, 249, 0);
+  background-color: rgba(189, 147, 249, 0.3);
   border: 1px solid rgba(189, 147, 249, 0.5); }
 
 .xkcd-box {
