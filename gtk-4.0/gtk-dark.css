@@ -6015,6 +6015,16 @@ radiobutton.color-button:active > radio {
 .-vala-panel-appmenu-private > menuitem:first-child > label {
   color: white; }
 
+#whiskermenu-window button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  font-weight: normal;
+  padding: 3px;
+  margin: 1px 2px; }
+  #whiskermenu-window button:hover, #whiskermenu-window button:checked {
+    background-color: rgba(189, 147, 249, 0.5); }
+
 /********
 * Unity *
 *********/
