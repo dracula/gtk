@@ -6,9 +6,9 @@
 
     text-shadow: none;
     -gtk-icon-shadow: none;
+    button.flat:not(.open_group) { @extend %panelbutton; }
+    &#XfcePanelWindow, &#XfcePanelWindow.marching-ants {transition: none;}
   }
-
-  button.flat { @extend %panelbutton; }
 }
 
 #tasklist-button {
