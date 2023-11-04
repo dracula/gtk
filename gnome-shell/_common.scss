@@ -1489,11 +1489,11 @@ StScrollBar {
   #dash {
     font-size: 9pt;
     color: $topbar_color;
-    background-color: $topbar_bg_color;
+    // background-color: $topbar_bg_color;
     padding: 6px 0;
-    border: 1px solid $borders_color;
-    border-left: 0px;
-    border-radius: 0px 5px 5px 0px;
+    // border: 1px solid $borders_color;
+    // border-left: 0px;
+    // border-radius: 0px 5px 5px 0px;
 
     &:rtl {
       border-radius: 9px 0 0 9px;
@@ -1559,62 +1559,62 @@ StScrollBar {
   }
 
   //Icon tile
-  .search-provider-icon,
-  .list-search-result {
-    @extend %icon_tile;
-    &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
-    &:focus, &:selected, &:hover {
-      background-color: transparentize($bg_color,.7);
-      transition-duration: 200ms;
-    }
-  }
-  .app-well-app,
-  .app-well-app.app-folder,
-  .show-apps,
-  .grid-search-result {
+  // .search-provider-icon,
+  // .list-search-result {
+  //   @extend %icon_tile;
+  //   &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
+  //   &:focus, &:selected, &:hover {
+  //     background-color: transparentize($bg_color,.7);
+  //     transition-duration: 200ms;
+  //   }
+  // }
+  // .app-well-app,
+  // .app-well-app.app-folder,
+  // .show-apps,
+  // .grid-search-result {
     
-    border: none;
-    & .overview-icon {
-      @extend %icon_tile;
-    }
-    &:active .overview-icon,
-    &:checked .overview-icon {
-      background-color: transparentize(darken($osd_bg_color,7%),.1);
-      box-shadow: inset $depth2;
-      color: $fg_color;
-    }
-    &:hover .overview-icon,
-    &:focus .overview-icon,
-    &:selected .overview-icon {
-      background-color: transparentize($bg_color,.5);
-      transition-duration: 0ms;
-      border-image: none;
-      background-image: none;
-    }
+  //   border: none;
+  //   & .overview-icon {
+  //     @extend %icon_tile;
+  //   }
+  //   &:active .overview-icon,
+  //   &:checked .overview-icon {
+  //     background-color: transparentize(darken($osd_bg_color,7%),.1);
+  //     box-shadow: inset $depth2;
+  //     color: $fg_color;
+  //   }
+  //   &:hover .overview-icon,
+  //   &:focus .overview-icon,
+  //   &:selected .overview-icon {
+  //     background-color: transparentize($bg_color,.5);
+  //     transition-duration: 0ms;
+  //     border-image: none;
+  //     background-image: none;
+  //   }
 
-  }
+  // }
 
-  .app-well-app-running-dot { //running apps indicator
-    width: 4px; height: 4px;
-    background-color: $selected_bg_color;
-    border-radius: 10px !important;
-    box-shadow: 0px 0px 5px 4px transparentize($purple, 0.2);
-    margin-bottom: 0px;
-  }
+  // .app-well-app-running-dot { //running apps indicator
+  //   width: 4px; height: 4px;
+  //   background-color: $selected_bg_color;
+  //   border-radius: 10px !important;
+  //   box-shadow: 0px 0px 5px 4px transparentize($purple, 0.2);
+  //   margin-bottom: 0px;
+  // }
 
-  %icon_tile {
-    color: $selected_fg_color;
-    border-radius: 2px;
-    padding: 7px 6px;
-    border: none;
-    transition-duration: 100ms;
-    text-align: center;
-    box-shadow: $depth;
-  }
+  // %icon_tile {
+  //   color: $selected_fg_color;
+  //   border-radius: 2px;
+  //   padding: 7px 6px;
+  //   border: none;
+  //   transition-duration: 100ms;
+  //   text-align: center;
+  //   box-shadow: $depth;
+  // }
 
-  .app-well-app.app-folder > .overview-icon {
-    background-color: transparentize($osd_bg_color,.6);
-  }
+  // .app-well-app.app-folder > .overview-icon {
+  //   background-color: transparentize($osd_bg_color,.6);
+  // }
   .show-apps .show-apps-icon {
     color: $topbar_color;
   }
