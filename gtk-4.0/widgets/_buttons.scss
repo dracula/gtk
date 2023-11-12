@@ -519,7 +519,7 @@ button.color {
   }
 }
 
-notebook, list, .view, popover {
+notebook, list, popover {
   button {
     box-shadow: inset 0px 0px 0px 1px $borders_color;
     &:backdrop {
