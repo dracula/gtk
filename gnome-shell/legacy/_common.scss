@@ -2,12 +2,12 @@ $corner-radius: 2px;
 
 
 /* GLOBALS */
-$font-size: 11;
+$font-size: 10;
 $_bubble_bg_color: $osd_bg_color;
 $_bubble_fg_color: $fg_color;
 $_bubble_borders_color: $fg_color;
 $_bubble_transparent: transparentize($osd_bg_color, 0.17);
-$topbar_bg_color: transparentize($main_dark, 0.05);
+$topbar_bg_color: transparentize($dracula, 0.05);
 
 stage {
   @include fontsize($font-size);
@@ -17,9 +17,10 @@ stage {
 /* WIDGETS */
 
 /* Buttons */
-.button, %button {
+.button {
   @include button(normal);
-  border-radius: 5px;
+  border-radius: 4px;
+  border-width: 0;
   padding: 4px 32px;
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
@@ -31,7 +32,12 @@ stage {
 
 .modal-dialog-linked-button {
   padding: 10px;
-  @include button(normal);
+  border: 1px solid $borders_color;
+  color: $fg_color;
+  background: $main_dark;
+  text-shadow: none;
+  icon-shadow: none;
+  box-shadow: none;
   &:insensitive { @include button(insensitive); }
   &:active {
     @include button(active);
@@ -46,19 +52,19 @@ stage {
     @include button(hover);
   }
 
-  &:first-child { border-radius: 0px 0px 0px 10px; }
-  &:last-child { border-radius: 0px 0px 10px 0px; }
-  &:first-child:last-child { border-radius: 0px 0px 10px 10px; }
+  &:first-child { border-radius: 0px 0px 0px 2px; }
+  &:last-child { border-radius: 0px 0px 2px 0px; }
+  &:first-child:last-child { border-radius: 0px 0px 2px 2px; }
 }
 
 /* Entries */
 StEntry {
   @include entry(normal);
-  border-radius: 6px;
+  border-radius: 2px;
   padding: 4px;
+  border-width: 0;
   color: $fg_color;
-  border-width: 1px;
-  &:hover { @include entry(hover);}
+  //&:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
   &:insensitive { @include entry(insensitive);}
   selection-background-color: $selected_bg_color;
@@ -106,26 +112,28 @@ StScrollBar {
 
 /* Slider */
 
-$slider_size: 16px;
-
 .slider {
-  color: $fg_color;
-  // slider trough
-  -barlevel-height: 3px;
-  -barlevel-background-color: transparentize($fg_color, 0.6); //background of the trough
-  -barlevel-border-width: 2px; 
-  -barlevel-border-color: transparent; // trough border color
-  // fill style
-  -barlevel-active-background-color: $purple;
-  -barlevel-active-border-color: transparent;
-  // overfill style (red in this case)
-  -barlevel-overdrive-color: $destructive_color;
-  -barlevel-overdrive-border-color: transparent; //trough border when red;
+  height: 1em;
+  color: darken($selected_fg_color, 25%);
+  border-color: black;
+  -slider-height: 0.1em;
+  -slider-background-color: $gray; //background of the trough
+  -slider-border-color: black; //trough border color
+  -slider-active-background-color: $teal; //active trough fill
+  -slider-active-border-color: $lime; //active trough border
+  -slider-border-width: 0;
+  -slider-handle-radius: 6px;
+
+  -barlevel-height: 0.1em;
+  -barlevel-background-color: $gray;
+  -barlevel-border-color: black;
+  -barlevel-active-background-color: $teal;
+  -barlevel-active-border-color: $lime;
+  -barlevel-border-width: 0;
+  -barlevel-handle-radius: 6px; 
+  -barlevel-overdrive-color: $teal;
+  -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 0px;
-  // slider handler
-  -slider-handle-radius: $slider_size * 0.5; // half the size of the size
-  -slider-handle-border-width: 0;
-  -slider-handle-border-color: transparent; // because 0 width
 }
 
 /* Check Boxes */
@@ -172,18 +180,13 @@ $slider_size: 16px;
 .flashspot { background-color: white; }
 
 .modal-dialog {
-  border: 1px solid $borders_color;
-  border-radius: 10px;
+  border: none;
+  border-radius: 2px;
   color: $osd_fg_color;
   background-color: darken($osd_bg_color,5%);
   box-shadow: $depth6;
 
-  .modal-dialog-content-box { 
-    margin: 32px 40px;
-    spacing: 32px;
-    max-width: 28em;
-  }
-
+  .modal-dialog-content-box { padding: 24px; }
   .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px;
@@ -239,6 +242,7 @@ $slider_size: 16px;
 
 /* End Session Dialog */
 .end-session-dialog {
+  spacing: 42px;
   border: none;
   & .modal-dialog-linked-button:last-child {
     background-color: $red;
@@ -384,9 +388,9 @@ $slider_size: 16px;
 
 .prompt-dialog {
   //this is the width of the entire modal popup
-  width: 28em;
+  width: 34em;
   border: none;
-  border-radius: 10px;
+  border-radius: 2px;
 
   .message-dialog-main-layout { spacing: 24px; padding: 10px; }
   .message-dialog-content { spacing: 16px; }
@@ -518,7 +522,44 @@ $slider_size: 16px;
   min-width: 15em;
   background-color: transparent;
   color: $fg_color;
+  .popup-menu-arrow { } //defined globally in the TOP BAR
+  .popup-sub-menu {
+    background-color:  transparentize(darken($main_dark,57%), 0.8);
+    box-shadow: $depth6;
+  }
 
+  .popup-menu-content {
+    padding: 16px 0; 
+    background-color: $bg_color;
+    border-radius: 7px;
+  }
+  .popup-menu-item {
+    spacing: 6px;
+    padding: 6px;
+
+    &:ltr { padding-right: 1.75em; padding-left: 0; }
+    &:rtl { padding-right: 0; padding-left: 1.75em; }
+
+    &:checked {
+      background-color: transparentize(darken($bg_color, 4%), 0.07);
+      color: $selected_fg_color;
+      box-shadow: inset 1px 0px 0px lighten($selected_bg_color,5%);
+      font-weight: normal;
+      &:hover{
+        background-color: transparentize(darken($bg_color, 4%), 0.07);
+        color: $selected_bg_color;
+      }
+    }
+    &.selected { background-color: transparentize($fg_color,0.9); color: $fg_color; }
+    &:active { background-color: $selected_bg_color; color: $selected_fg_color; }
+    &:insensitive { color: transparentize($fg_color,.5); }
+  }
+
+  .popup-inactive-menu-item { //all icons and other graphical elements
+    color: $fg_color;
+
+    &:insensitive { color: transparentize($fg_color,0.5); }
+  }
   //.popup-status-menu-item { font-weight: normal;  color: pink; } //dunno what that is
   &.panel-menu {
     -boxpointer-gap: 4px;
@@ -526,107 +567,39 @@ $slider_size: 16px;
   }
 }
 
-.popup-menu-arrow { } //defined globally in the TOP BAR
-.popup-sub-menu {
-  background-color: lighten($bg_color, 2%);
-  box-shadow: $depth6;
-  border: none;
-  border-radius: 0px 0px 6px 6px;
-  .popup-menu-item {
-    border-radius: 0;
-    margin: 0;
-    background-color: lighten($bg_color, 2%) !important;
 
-    &:last-child {
-      border-radius: 0 0 6px 6px;
-    }
-
-    &:active,
-    &.selected,
-    &:hover,
-    &:focus { background-color: lighten($bg_color, 9%) !important; color: $fg_color; }
-  }
-
-}
-
-.popup-menu-content { 
-  padding: 6px; 
-  background: $main_dark;
-  border-radius: 12px;
-  border: 1px solid $borders_color;
-}
-
-.popup-menu-item {
-  spacing: 6px;
-  border-radius: 6px;
-  background-gradient-direction: none;
-  color: $fg_color !important;
-
-  &:ltr {padding-left: 6px;}
-  &:rtl {padding-right: 6px;}
-
-  &:active,
-  &.selected,
-  &:hover,
-  &:focus { background-color: lighten($bg_color, 3%) !important; color: $fg_color !important; }
-
-  &:checked { 
-    background-color: lighten($bg_color, 7%) !important;
-    border-radius: 6px 6px 0px 0px;
-    box-shadow: none;
-    color: $selected_fg_color !important;
-  }
-  
-  &:insensitive { color: transparentize($fg_color,.5); }
-}
-
-.popup-inactive-menu-item { //all icons and other graphical elements
-  color: $fg_color;
-
-  &:insensitive { color: transparentize($fg_color,0.5); }
-}
-
-// symbolic icons in popover
-.popup-menu-arrow,
-.popup-menu-icon {
-  icon-size: 16px !important; // for some reason the variable doesn't work here
-}
-
-
-.popup-menu-ornament {
-  text-align: right;
-  width: 1.2em;
-}
-
-// separator
-.popup-separator-menu-item {
-  margin: 6px 0;
-  padding:0 !important;
-  &:ltr { margin-right: 6px;}
-  &:rtl { margin-left: 6px;}
-
-  .popup-separator-menu-item-separator {
-    height: 1px; //not really the whole box
-    background-color: $gray;
-  }
 
   .popup-menu-ornament {
-    width: 0 !important;
+    text-align: right;
+    width: 1.2em;
+  }
+  .popup-menu-boxpointer,
+  .candidate-popup-boxpointer {
+    -arrow-border-radius: 7px;
+    -arrow-background-color: $bg_color;
+    -arrow-border-width: 1px;
+    -arrow-border-color: $borders_color;
+    -arrow-base: 24px;
+    -arrow-rise: 11px;
+    -arrow-box-shadow: 0 1px 3px black; //dreaming. bug #689995
   }
 
-  // separators in submenus
-  .popup-sub-menu & {
-    background-color: transparent;
-
-    // account for ornament
-    &:ltr { margin-right: 2.5em;}
-    &:rtl { margin-left: 2.5em;}
-
-    .popup-separator-menu-item-separator {
-      background-color: lighten($gray, 7%);
+  .popup-separator-menu-item {
+    background: transparent;
+    &-separator {
+      //-margin-horizontal: 24px;
+      height: 1px; //not really the whole box
+      margin: 6px 64px;
+      background-color: transparent;
+      border-color: transparent;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+    }
+    .popup-sub-menu & &-separator { //submenu separators
+      margin: 0 64px 0 32px;
+      background: transparent;
     }
   }
-}
 
 
 // Background menu
@@ -655,7 +628,7 @@ $slider_size: 16px;
     border: 1px solid $borders_color;
 
     -barlevel-height: 0.4em;
-    -barlevel-background-color: $gray;
+    -barlevel-background-color: transparentize(darken($main_dark,15%),0.5);
     -barlevel-active-background-color: $selected_bg_color;
     -barlevel-overdrive-color: $red;
     -barlevel-overdrive-separator-width: 0.2em; 
@@ -813,7 +786,7 @@ $slider_size: 16px;
   /* transition from solid to transparent */
   transition-duration: 500ms;
   font-weight: bold;
-  height: 2.1em;
+  height: 1.86em;
   padding: 0px 0px;
 
   &.unlock-screen,
@@ -864,33 +837,20 @@ $slider_size: 16px;
     }
 
     &:hover {
-      box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
+      background: lighten($topbar_bg_color, 10%);
       color: lighten($topbar_color, 10%);
       transition-duration: 200ms;
-
-      &.clock-display {
-        box-shadow: none;
-
-        .clock {
-          box-shadow: inset 0 0 0 100px lighten($topbar_bg_color, 10%);
-        }
-      }
     }
 
     &:active, &:overview, &:focus, &:checked {
       // Trick due to St limitations. It needs a background to draw
       // a box-shadow
-      box-shadow: inset 0 0 0 100px $selected_bg_color;
+      box-shadow: none;
+      @include gradient();
       color: $selected_fg_color;
       transition-duration: 200ms;
 
-      &.clock-display {
-        box-shadow: none;
-
-        .clock {
-          box-shadow: inset 0 0 0 100px $selected_bg_color;
-        }
-      }
+      & > .system-status-icon { icon-shadow: red 0 2px 2px; }
     }
 
     .system-status-icon { icon-size: 1.09em; padding: 0 5px; }
@@ -901,6 +861,15 @@ $slider_size: 16px;
       &:focus, &:hover, &:active { color: lighten($fg_color, 10%); }
     }
 
+    // Remove default bottom border
+    &.clock-display {
+      &:active, &:overview, &:focus, &:checked {
+        box-shadow: none;
+        .clock {
+          box-shadow: none;
+        }
+      }
+    }
   }
 
   .panel-status-indicators-box,
@@ -931,31 +900,57 @@ $slider_size: 16px;
   }
 }
 
+  // calendar popover
+  #calendarArea {
+    padding: 0.75em 1.0em;
+  }
+
   .calendar {
+    margin-bottom: 1em;
+  }
+
+  .calendar, .world-clocks-button, .weather-button, .events-button {
     background: transparent;
     border: none;
-    box-shadow: none;
   }
 
-  .world-clocks-button, .weather-button, .events-button {
-    background: darken($bg_color, 0.7%);
-    border-radius: 7px;
-    box-shadow: 0px 0px 1px 1px $borders_color inset;
-    color: $fg_color;
-  }
+    .calendar,
+    .datemenu-today-button,
+    .datemenu-displays-box,
+    .message-list-sections {
+      margin: 0 1.5em;
+    }
+
+    .datemenu-calendar-column { spacing: 0.5em; }
+    .datemenu-displays-section { padding-bottom: 3em; }
+    .datemenu-displays-box { spacing: 1em; }
 
     .datemenu-calendar-column {
-      border: none;
+      border: 0 solid transparent;
+      &:ltr { border-left-width: 1px; }
+      &:rtl { border-right-width: 1px; }
+      background: darken($bg_color, 0.7%);
+     //@include gradient();
     }
 
     .datemenu-today-button,
+    .world-clocks-button,
+    .weather-button,
     .events-section-title,
-    .message-list-section-title{
+    .message-list-section-title,
+    .events-button {
       border-radius: 4px;
       color: $fg_color;
       padding: .4em;
     }
 
+    .message-list-section-list:ltr {
+      padding-left: .4em;
+    }
+
+    .message-list-section-list:rtl {
+      padding-right: .4em;
+    }
 
     .datemenu-today-button,
     .world-clocks-button,
@@ -1034,22 +1029,16 @@ $slider_size: 16px;
       width: 2.4em; height: 2.4em;
       padding: 0.1em;
       margin: 2px;
-      border-radius: 99px;
+      border-radius: 1.4em;
       color: $fg_color;
-      background-gradient-direction: none;
-      
-      &:hover,&:focus { 
-        background-color: lighten($bg_color, 7%); 
-        box-shadow: none;
-      }
+      &:hover,&:focus { background-color: lighten($bg_color,5%); }
       &:active,&:selected {
-        color: lighten($selected_fg_color,5%);
+        color: $selected_fg_color;
         background-color: $selected_bg_color;
         border-color: transparent; //avoid jumparound due to today
-        box-shadow: none;
       }
       &.calendar-day-heading {  //day of week heading
-        color: $fg_color;
+        color: darken($fg_color, 10%);
         margin-top: 1em;
         font-size: 70%;
       }
@@ -1071,7 +1060,7 @@ $slider_size: 16px;
         font-weight: bold;
         border: 1px solid $selected_bg_color;
         background-color: transparent;
-        color: $selected_fg_color !important;
+        color: $selected_fg_color;
 
         &:hover,&:focus {
           background-color:lighten($selected_bg_color, 3%);
@@ -1110,14 +1099,21 @@ $slider_size: 16px;
 
       /* Message list */
       .message-list {
-        border-color: $gray;
-      }
-
-      .message-title, .message-content, .message-body {
-        &, .message-list & {
-          color: darken($fg_color, 2%);
+        width: 31.5em;
+        .message-title{
+          color: darken($fg_color,3%);
+        }
+        .message-content, .message-body {
+          color: darken($fg_color,4%);
         }
       }
+
+        .message-list-clear-button.button {
+          background: darken($bg_color, 0.7%);
+          border: 1px solid transparent;
+          &:hover,&:focus { @include button(hover); }
+          margin: 1.5em 1.5em 0;
+        }
 
         .message-list-sections {
           spacing: 1em;
@@ -1138,30 +1134,40 @@ $slider_size: 16px;
           &:hover > StIcon,
           &:focus > StIcon
           &:active > StIcon{
-            color: $selected_fg_color;
+            color: $red;
             background: transparent;
           }
         }
 
         .message {
           &:hover,&:focus { 
-            background-color: lighten($base_color, 4%);
+            background-color: darken($bg_color, 3%);
+            box-shadow: 2px 0px 0px 0px $teal inset;
+            border-radius: 1px 5px 5px 1px;
           }
-          background: $base_color;
+          background: darken($bg_color, 0.7%);
           border: 1px solid $borders_color;
-          border-radius: 8px; 
+          border-radius: 5px;
           box-shadow: none;
         }
 
         .message-close-button {
           color: $fg_color;
-          &:hover > StIcon,
-          &:focus > StIcon
-          &:active > StIcon{
-            color: $selected_fg_color;
-            background: transparent;
-          }
         }
+          .message-icon-bin {
+            padding: 10px 3px 10px 10px;
+            &:rtl { padding: 10px 10px 10px 3px; }
+          }
+
+          .message-icon-bin > StIcon {
+            icon-size: 16px;
+            -st-icon-style: symbolic;
+          }
+
+          .message-secondary-bin {
+            padding: 0 12px;
+          }
+
           .message-secondary-bin > .event-time {
             color: darken($fg_color, 15%);
             font-size: 0.7em;
@@ -1183,27 +1189,22 @@ $slider_size: 16px;
           .message-content {
           //  color: darken($fg_color,20%);
             padding: 10px;
+            *:hover > StIcon,
+            *:focus > StIcon, {
+              color: $red;
+            }
           }
 
-/* Media Controls */
-.message-media-control {
+          .message-media-control {
+            padding: 12px;
+            color: darken($fg_color, 20%);
 
-  color: $fg_color;
+            &:last-child:ltr { padding-right: 18px; }
+            &:last-child:rtl { padding-left: 18px; }
+            &:hover { color: $fg_color; }
+            &:insensitive { color: darken($fg_color,40%); }
+          }
 
-  // colors are lightened since the media controls are in a card
-  &:hover {
-    background-color: lighten($base_color, 8%);
-    color: $selected_fg_color;
-  }
-
-  &:active { 
-    background-color: lighten($base_color, 12%);
-    color: $selected_fg_color;
-  }
-
-  &:insensitive { color: lighten($insensitive_fg_color, 5%); }
-  
-}
           .media-message-cover-icon {
             icon-size: 48px !important;
             &.fallback {
@@ -1329,26 +1330,14 @@ $slider_size: 16px;
 //close buttons
 
 .window-close {
-  background-color: $main_dark;
-  color: lighten($fg_color, 4%);
-  border-radius: 30px * 0.5 + 3px * 2;
-  border: 2px solid $borders_color;
-  padding: 3px;
-  height: 28px;
-  width: 28px;
-  box-shadow: -1px 1px 5px 0px rgba(0,0,0,0.5);
-  transition-duration: 300ms;
-
-  & StIcon { icon-size: 23px; }
-
-  &:hover {
-    border-color: $selected_bg_color;
-  }
-
-  &:active {
-    color: $purple;
-    background-color: darken($osd_bg_color, 5%);
-  }
+  background-color: transparent;
+  background-image: url("assets/close-window.svg");
+  background-size: 32px;
+  border: none;
+  box-shadow: none;
+  color: transparent;
+  height: 32px;
+  width: 32px;
 }
   .window-close {
     -shell-close-overlap: 16px;
@@ -1377,7 +1366,7 @@ $slider_size: 16px;
 
   .nm-dialog-airplane-text { color: $fg_color; }
   .nm-dialog-header-icon { icon-size: 32px; }
-  .nm-dialog-scroll-view { border: 2px solid $borders_color; background: $bg_color; }
+  .nm-dialog-scroll-view { border: 2px solid $borders_color; background: transparent; }
   .nm-dialog-header { font-weight: bold; }
 
   .nm-dialog-item {
@@ -1399,12 +1388,12 @@ $slider_size: 16px;
 
 /* OVERVIEW */
 
-#overview,.controls-manager, .secondary-monitor-workspaces {
+#overview {
   spacing: 24px; //
 }
 
-#overviewGroup {
-  background-color: $base_color;
+#overview.cosmic-solid-bg {
+  background-color: $base_color !important;
 }
 
 .overview-controls {
@@ -1414,6 +1403,7 @@ $slider_size: 16px;
   .window-picker { //container around window thumbnails
     -horizontal-spacing: 16px;
     -vertical-spacing: 16px;
+    padding: 0 16px 16px;
 
     &.external-monitor { padding: 16px; }
   }
@@ -1429,8 +1419,8 @@ $slider_size: 16px;
   .window-caption {
     spacing: 20px;
     color: $topbar_color;
-    background-color: $main_dark;
-    border: 1px solid $borders_color;
+    background-color: transparentize($osd_bg_color,.3);
+    border-radius: 2px;
     padding: 4px 8px;
   }
 
@@ -1438,29 +1428,27 @@ $slider_size: 16px;
   .search-entry {
     width: 320px;
     padding: 9px;
-    border-radius: 10px;
+    border-radius: 100px;
+    border: 1px solid $borders_color;
     color: $fg_color;
-    border-color: transparent;
+    background-color: transparentize($bg_color, 0.4);
+    box-shadow: $depth;
+    &:focus {
+      color: $fg_color;
+      background-color: transparentize($bg_color, 0.2);
+      box-shadow: $depth2;
+    }
 
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
 
+    &:hover, &:focus {
+      background-color: transparentize($bg_color, 0.2);
+      border-color: transparentize($selected_bg_color, 0.2);
+      .search-entry-icon { color: $fg_color; }
+    }
   }
 
   //search results
-
-  %search-section-content-item {  
-    &:focus,
-    &:hover,
-    &:selected {
-      background-color: transparentize($osd_fg_color, .9);
-      transition-duration: 200ms;
-    }
-
-    &:active,
-    &:checked {
-      background-color: transparentize(darken($osd_bg_color, 10%), .1);
-    }
-  }
 
   #searchResultsBin {
     max-width: 1000px;
@@ -1486,7 +1474,7 @@ $slider_size: 16px;
   }
   .list-search-results { spacing: 3px; }
 
-  .search-section-separator { height: 2px; background-color: $gray; }
+  .search-section-separator { height: 2px; background-color: rgba(255, 255, 255, 0.2); }
 
   .list-search-result-content { spacing: 30px; }
   .list-search-result-title { color: lighten($topbar_color,5%); spacing: 12px; }
@@ -1495,22 +1483,37 @@ $slider_size: 16px;
   .list-search-provider-content { spacing: 20px; }
   .search-provider-icon { padding: 15px; }
 
-  //Icon tile
-  .search-provider-icon,
-  .list-search-result {
-    @extend %search-section-content-item;
-  }
-
 
   /* DASHBOARD */
 
-  .dash-background {
-    background-color: $main_dark;
+  #dash {
+    font-size: 9pt;
+    color: $topbar_color;
+    background-color: $topbar_bg_color;
+    padding: 6px 0;
+    border: 1px solid $borders_color;
+    border-left: 0px;
+    border-radius: 0px 5px 5px 0px;
+
+    &:rtl {
+      border-radius: 9px 0 0 9px;
+    }
+
+    .placeholder {
+      background-image: url("assets/dash-placeholder.svg");
+      background-size: contain;
+      height: 24px;
+    }
+
+    .empty-dash-drop-target {
+      width: 24px;
+      height: 24px;
+    }
+
   }
 
-  .dash-separator {
-    width: 1px;
-    background-color: $gray;
+  .dash-item-container > StWidget {
+    padding: 4px 8px;
   }
 
   .dash-label { //osd tooltip
@@ -1555,6 +1558,16 @@ $slider_size: 16px;
     }
   }
 
+  //Icon tile
+  .search-provider-icon,
+  .list-search-result {
+    @extend %icon_tile;
+    &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
+    &:focus, &:selected, &:hover {
+      background-color: transparentize($bg_color,.7);
+      transition-duration: 200ms;
+    }
+  }
   .app-well-app,
   .app-well-app.app-folder,
   .show-apps,
@@ -1564,21 +1577,19 @@ $slider_size: 16px;
     & .overview-icon {
       @extend %icon_tile;
     }
-    
+    &:active .overview-icon,
+    &:checked .overview-icon {
+      background-color: transparentize(darken($osd_bg_color,7%),.1);
+      box-shadow: inset $depth2;
+      color: $fg_color;
+    }
     &:hover .overview-icon,
     &:focus .overview-icon,
     &:selected .overview-icon {
-      background-color: lighten($bg_color, 7%);
+      background-color: transparentize($bg_color,.5);
       transition-duration: 0ms;
       border-image: none;
       background-image: none;
-    }
-
-    &:active .overview-icon,
-    &:checked .overview-icon {
-      background-color: lighten($bg_color, 7%);
-      box-shadow: inset $depth2;
-      color: $fg_color;
     }
 
   }
@@ -1593,39 +1604,13 @@ $slider_size: 16px;
 
   %icon_tile {
     color: $selected_fg_color;
-    padding: 6px;
+    border-radius: 2px;
+    padding: 7px 6px;
     border: none;
     transition-duration: 100ms;
     text-align: center;
-    box-shadow: none;
-    border-radius: 18px;
+    box-shadow: $depth;
   }
-
-/* App Folders */
-.app-well-app.app-folder {
-  background-color: lighten($bg_color, 7%);
-  border-radius: 18px;
-}
-// expanded folder
-.app-folder-dialog { //style like the dash
-  background-color:  $main_dark;
-  border: none;
-  border-radius: 30px;
-  box-shadow: none;
-
-  & .folder-name-label { color: $fg_color; }
-  
-  .edit-folder-button {
-    @extend %button;
-
-    padding: 0;
-    width: 36px;
-    height: 36px;
-    border-radius: 18px;
-
-    & > StIcon { icon-size: 16px }
-  }
-}
 
   .app-well-app.app-folder > .overview-icon {
     background-color: transparentize($osd_bg_color,.6);
@@ -1655,15 +1640,15 @@ $slider_size: 16px;
   }
 
   .page-indicator {
-    padding: 6px 12px;
+    padding: 15px 20px;
 
     .page-indicator-icon {
       width: 12px;
       height: 12px;
       border-radius: 12px;
       background-image: none;
-      background-color: lighten($base_color, 30%);
-      border: 1px solid $borders_color;
+      background-color: rgba(255, 255, 255, 0.3);
+      border: none;
     }
 
     &:hover .page-indicator-icon {  
@@ -1715,19 +1700,6 @@ $slider_size: 16px;
     padding: 0px 88px 10px 88px;
   }
 
-  .page-navigation-arrow {
-
-    margin: 6px;
-    padding: 18px;
-    width: 24px;
-    height: 24px;
-    border-radius: 99px;
-  
-    &:insensitive { @include button(undecorated, $osd_fg_color, transparentize($osd_bg_color, 0.5));}
-    &:hover { background-color: transparentize($selected_bg_color, 0.2);}
-    &:active {background-color: $selected_bg_color;}
-  }
-
 %overview-panel {
   color:  $_bubble_fg_color;
   background-color: transparent;
@@ -1749,16 +1721,13 @@ $slider_size: 16px;
     font-size: 11pt;
     width: 34em;
     margin: 5px;
-    border-radius: 12px;
+    border-radius: 3px;
     color: $topbar_color;
-    background-color: lighten($base_color, 2%);
+    background-color: $bg_color;
     border: 1px solid $borders_color;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
-    &:hover, &:focus { 
-      background-color: lighten($base_color, 4%); 
-      border-radius: 12px;
-      box-shadow: none;
-    }
+    box-shadow: 0 1px 4px black;
+    &:hover { background-color: transparentize($bg_color, 0.04); }
+    &:focus { background-color: transparentize($bg_color, 0.04); }
     *{ color: #fefefe; }
 
     .notification-icon { padding: 5px; }
@@ -1768,15 +1737,14 @@ $slider_size: 16px;
       background-color: darken($bg_color, 2%);
       padding-top: 2px;
       spacing: 1px;
-      border-radius: 0px 0px 12px 12px;
     }
     .notification-button {
-      padding: 7px;
+      padding: 5px;
       background-color: transparentize($bg_color, 0.1);
       box-shadow: none;
-      &:first-child { border-radius: 0 0 0 12px; }
-      &:last-child { border-radius: 0 0 12px 0; }
-      &:hover, &focus { background-color: $selected_bg_color; color: $selected_fg_color;}
+      &:first-child { border-radius: 0 0 0 3px; }
+      &:last-child { border-radius: 0 0 3px 0; }
+      &:hover, &focus { background-color: darken($bg_color,2%); color: $selected_bg_color;}
     }
   }
   .summary-source-counter {
@@ -2229,121 +2197,3 @@ $slider_size: 16px;
     border-radius: 4px;
     padding: 6px;
   }
-
-// Gnome 43 quick settings menu
-
-  .quick-settings {
-    padding: 14px;
-    border-radius: 12px;
-  
-    .icon-button, .button {
-      color: $fg_color;
-      padding: 6px*1.75;
-    }
-  }
-  
-  $base_padding: 6px;
-  
-  .quick-toggle {
-    border-radius: 99px;
-  
-    &:checked { 
-      @include button(active, transparentize($selected_bg_color, 0.35));
-      &:hover { @include button(active, transparentize(lighten($selected_bg_color, 10%), 0.35)); }
-
-      &, &:hover { color: $purple; }
-    }
-
-    &, &:hover, &:checked, &:checked:hover { border: none; }
-  
-    & > StBoxLayout { spacing: $base_padding; }
-  
-    /* Move padding into the box; this is to allow menu arrows
-       to extend to the border */
-    &.button { padding: 0; }
-    & > StBoxLayout { padding: 0 6px*2; }
-    &:ltr > StBoxLayout { padding-left: $base_padding*2.5; }
-    &:rtl > StBoxLayout { padding-right: $base_padding*2.5; }
-  
-    .quick-toggle-label { font-weight: bold; }
-    //.quick-toggle-icon, .quick-toggle-arrow { icon-size: $base_icon_size; }
-  }
-  
-  .quick-menu-toggle {
-    &:ltr > StBoxLayout { padding-right: 0; }
-    &:rtl > StBoxLayout { padding-left: 0; }
-
-    & .quick-toggle {
-      min-width: auto;
-      max-width: auto;
-  
-      &:ltr { border-radius: 99px 0 0 99px; }
-      &:rtl { border-radius: 0 99px 99px 0; }
-  
-      &:ltr:last-child { border-radius: 99px; }
-      &:rtl:last-child { border-radius: 99px; }
-    }
-  
-  
-    & .quick-toggle-arrow {
-      background-color: lighten($base_color, 1%);
-      padding: $base_padding $base_padding*1.75;
-      border-width: 0;
-      color: $fg_color;
-      &:checked { 
-        @include button(active, transparentize($selected_bg_color, 0.25));
-        &:hover { @include button(active, transparentize(lighten($selected_bg_color, 10%), 0.25)); }
-        &, &:hover {
-          color: $purple;
-          border-width: 0;
-        }
-      }
-      &:hover {
-        background-color: lighten($base_color, 7%);
-      }
-    
-      &:ltr { border-radius: 0 99px 99px 0; }
-      &:rtl { border-radius: 99px 0 0 99px; }
-    }
-  }
-  
-  .quick-toggle-menu {
-    background-color: $base_color !important;
-    
-    border-radius: 12px;
-    padding: $base_padding*2;
-    margin: $base_padding*2 $base_padding*3 0;
-    color: $fg_color;
-  
-    .popup-menu-item > StIcon { -st-icon-style: symbolic; }
-  
-    & .header {
-      spacing-rows: 0.5 * $base_padding;
-      spacing-columns: $base_padding*2;
-      padding-bottom: 2 * $base_padding;
-  
-      & .icon {
-        // icon-size: $base_icon_size*1.5; // a non-standard symbolic size but ok
-        border-radius: 999px;
-        padding: 1.5 * $base_padding;
-        background-color: lighten($bg_color, 10%);
-  
-        &.active { 
-          background-color: $selected_bg_color; 
-          color: $selected_fg_color;
-        }
-      }
-    }
-  }
-  
-  .quick-settings-system-item {
-    & > StBoxLayout { spacing: 2 * $base_padding; }
-
-    .icon-button {
-      @extend %button;
-      border-radius: 50px;
-    }
-  }
-
-.quick-slider .icon-button:hover { @include button(hover); }
-  
