@@ -1028,7 +1028,7 @@ $slider_size: 16px;
       color: darken($fg_color, 5%);
     }
 
-    .calendar-day-base {
+    .calendar-day-base, .calendar-day {
       font-size: 80%;
       text-align: center;
       width: 2.4em; height: 2.4em;
@@ -1046,7 +1046,7 @@ $slider_size: 16px;
         color: lighten($selected_fg_color,5%);
         background-color: $selected_bg_color;
         border-color: transparent; //avoid jumparound due to today
-        box-shadow: none;
+        box-shadow: none !important;
       }
       &.calendar-day-heading {  //day of week heading
         color: $fg_color;
