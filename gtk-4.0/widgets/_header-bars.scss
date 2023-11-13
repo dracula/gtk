@@ -333,8 +333,8 @@ headerbar {
     headerbar {
       background-color: $headerbar_color;
       border-top-right-radius: 0;
-      padding-top: 3px;
-      padding-bottom: 3px;
+      padding-top: 1px;
+      padding-bottom: 1px;
     }
     &:backdrop {  background-color: $headerbar_color; }
   }
