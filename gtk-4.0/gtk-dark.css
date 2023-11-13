@@ -2674,8 +2674,8 @@ window.csd > .titlebar:not(headerbar) {
   .nautilus-window .sidebar-pane .top-bar headerbar {
     background-color: #1e1f29;
     border-top-right-radius: 0;
-    padding-top: 3px;
-    padding-bottom: 3px; }
+    padding-top: 1px;
+    padding-bottom: 1px; }
   .nautilus-window .sidebar-pane .top-bar:backdrop {
     background-color: #1e1f29; }
 .nautilus-window .content-pane .top-bar {
@@ -5699,9 +5699,7 @@ headerbar .nautilus-window .path-bar-box .subtitle {
       color: rgba(255, 121, 198, 0.6); }
 .nautilus-window .path-buttons-box, .nautilus-window #NautilusPathBar {
   background: transparent;
-  height: 20px;
-  margin-top: 7px;
-  margin-bottom: 7px; }
+  height: 20px; }
   .nautilus-window .path-buttons-box .dim-label, .nautilus-window .path-buttons-box label.separator, .nautilus-window .path-buttons-box .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box .subtitle,
   .nautilus-window .path-buttons-box headerbar .subtitle,
   headerbar .nautilus-window .path-buttons-box .subtitle, .nautilus-window #NautilusPathBar .dim-label, .nautilus-window #NautilusPathBar label.separator, .nautilus-window #NautilusPathBar .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window #NautilusPathBar .subtitle,
