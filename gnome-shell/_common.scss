@@ -1040,7 +1040,7 @@ $slider_size: 16px;
       
       &:hover,&:focus { 
         background-color: lighten($bg_color, 7%); 
-        box-shadow: none;
+        box-shadow: none !important;
       }
       &:active,&:selected {
         color: lighten($selected_fg_color,5%);
