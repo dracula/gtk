@@ -18,3 +18,22 @@ MsdOsdWindow.background.osd {
       border-radius: 5px;
     }
   }
+
+//
+// Mate Panel
+//
+
+.mate-panel-menu-bar {
+  border-radius: 0;
+  button {
+    border-radius: 0;
+    &, &:hover {
+      background-color: transparent;
+      color: $fg_color;
+    }
+    &:active, &:checked {
+      box-shadow: 0 -2px 0 $selected_bg_color inset;
+      color: $fg_color;
+    }
+  }
+}
