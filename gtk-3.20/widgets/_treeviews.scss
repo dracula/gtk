@@ -224,6 +224,7 @@ treeview.view {
     color: mix($backdrop_fg_color, $backdrop_bg_color, 50%);
     background-image: none;
     background-color: $backdrop_base_color;
+    box-shadow: none;
 
     &:disabled {
       border-color: $backdrop_bg_color;
