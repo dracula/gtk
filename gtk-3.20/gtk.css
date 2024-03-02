@@ -5435,16 +5435,24 @@ headerbar .nautilus-window .path-buttons-box button:hover .subtitle, .nautilus-w
 .nautilus-window .path-buttons-box button:focus headerbar .subtitle,
 headerbar .nautilus-window .path-buttons-box button:focus .subtitle {
   color: #bd93f9; }
+.nautilus-window .path-buttons-box button > .horizontal > image {
+  padding: 0px 6px;
+  border-right: none; }
 .nautilus-window .path-buttons-box .current-dir label {
-  padding: 0px 12px;
+  padding: 0px 12px; }
+.nautilus-window .path-buttons-box .current-dir label, .nautilus-window .path-buttons-box .current-dir image {
   color: #bd93f9;
   background-color: rgba(189, 147, 249, 0.1);
   border-radius: 7px;
   box-shadow: none;
   text-shadow: none;
   font-weight: bold; }
-  .nautilus-window .path-buttons-box .current-dir label:backdrop {
-    color: rgba(189, 147, 249, 0.4); }
+.nautilus-window .path-buttons-box button.current-dir:only-child image {
+  margin-right: -6px;
+  padding: 0px 0px 0px 6px;
+  border-radius: 7px 0px 0px 7px; }
+.nautilus-window .path-buttons-box button.current-dir:only-child label {
+  border-radius: 0px 7px 7px 0px; }
 
 .nautilus-circular-button {
   border-radius: 20px;
