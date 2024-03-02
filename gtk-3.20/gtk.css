@@ -4460,7 +4460,8 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
     border-style: none solid solid none;
     color: #55565c;
     background-image: none;
-    background-color: #2a2c39; }
+    background-color: #2a2c39;
+    box-shadow: none; }
     treeview.view header button:backdrop:disabled {
       border-color: #1e1f29;
       background-image: none; }
