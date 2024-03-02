@@ -4459,7 +4459,8 @@ treeview.view header button, treeview.view header button:hover, treeview.view he
     border-style: none solid solid none;
     color: #55565c;
     background-image: none;
-    background-color: #2a2c39; }
+    background-color: #2a2c39;
+    box-shadow: none; }
     treeview.view header button:backdrop:disabled {
       border-color: #1e1f29;
       background-image: none; }
@@ -5434,16 +5435,24 @@ headerbar .nautilus-window .path-buttons-box button:hover .subtitle, .nautilus-w
 .nautilus-window .path-buttons-box button:focus headerbar .subtitle,
 headerbar .nautilus-window .path-buttons-box button:focus .subtitle {
   color: #bd93f9; }
+.nautilus-window .path-buttons-box button > .horizontal > image {
+  padding: 0px 6px;
+  border-right: none; }
 .nautilus-window .path-buttons-box .current-dir label {
-  padding: 0px 12px;
+  padding: 0px 12px; }
+.nautilus-window .path-buttons-box .current-dir label, .nautilus-window .path-buttons-box .current-dir image {
   color: #ff79c6;
   background-color: rgba(255, 121, 198, 0.1);
   border-radius: 7px;
   box-shadow: none;
   text-shadow: none;
   font-weight: bold; }
-  .nautilus-window .path-buttons-box .current-dir label:backdrop {
-    color: rgba(255, 121, 198, 0.6); }
+.nautilus-window .path-buttons-box button.current-dir:only-child image {
+  margin-right: -6px;
+  padding: 0px 0px 0px 6px;
+  border-radius: 7px 0px 0px 7px; }
+.nautilus-window .path-buttons-box button.current-dir:only-child label {
+  border-radius: 0px 7px 7px 0px; }
 
 .nautilus-circular-button {
   border-radius: 20px;
