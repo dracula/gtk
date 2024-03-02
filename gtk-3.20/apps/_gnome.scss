@@ -1,7 +1,7 @@
 /************
  * Nautilus *
  ************/
-.nautilus-window {
+ .nautilus-window {
   // .frame{
   //   *:selected, *:selected:backdrop{
   //     background: transparent;
@@ -105,10 +105,33 @@
   }
 
   .path-buttons-box {
-    .current-dir label {
-      padding: 0px 12px;
-      @include button(active-header, transparent, $selected_bg_color);
-      &:backdrop { color: $backdrop_selected_bg_color; }
+
+    .dim-label { color: transparent; }
+  
+    //Buttons before current path
+    button {
+      .horizontal  .dim-label { color: $headerbar_fg_color; }
+      &:hover, &:focus {
+        .dim-label { color: $purple; }
+      }
+    }
+    button > .horizontal > image { 
+      padding: 0px 6px; 
+      border-right: none;
+    }
+    .current-dir  {
+      label { padding: 0px 12px; }
+
+      label, image { @include button(active-header, transparent, $selected_bg_color); }
+    }
+
+    button.current-dir:only-child {
+      image {
+        margin-right: -6px;
+        padding: 0px 0px 0px 6px;
+        border-radius: 7px 0px 0px 7px;
+      }
+      label { border-radius: 0px 7px 7px 0px; }
     }
   }
 }
