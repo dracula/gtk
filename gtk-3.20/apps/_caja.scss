@@ -75,8 +75,7 @@
   &:checked,
   &:backdrop:active,
   &:backdrop:checked {
-    background: transparent;
-    box-shadow: none;
+    @include button(active-header);
     &, & label {
         color: $selected_bg_color;
     }
