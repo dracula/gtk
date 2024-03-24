@@ -6270,8 +6270,8 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
   box-shadow: none;
   border: none; }
 .caja-pathbar button:hover, .caja-pathbar button:active, .caja-pathbar button:checked, .caja-pathbar button:backdrop:active, .caja-pathbar button:backdrop:checked {
-  color: rgba(189, 147, 249, 0.5);
-  background-color: rgba(189, 147, 249, 0.1);
+  color: #ff79c6;
+  background-color: rgba(255, 121, 198, 0.1);
   border-radius: 7px;
   box-shadow: none;
   text-shadow: none;
