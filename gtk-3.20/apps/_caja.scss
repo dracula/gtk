@@ -1,7 +1,93 @@
-.caja-notebook .entry {
-    background: $bg_color;
+.caja-notebook {
+
+  .frame { border-width: 0 0 0px; }
+
+  .entry {
+    background: lighten($base_color, 5%);
     color: $fg_color;
+    border-color: $selected_bg_color;
     &:selected {
       background: $selected_bg_color;
+      color: $selected_fg_color;
     }
+  }
+}
+
+/**************
+* Caja sidebar *
+**************/
+
+.caja-side-pane {
+
+  .frame{ border: none; }
+
+  background: $headerbar_color;
+  treeview.view,
+  textview.view text,
+  viewport.frame,
+  widget .vertical {
+    background: $_sidebar_color;
+    padding: 3px 2px;
+    &:hover {
+      background-color: transparentize(lighten($_sidebar_color, 7%), 0.05);
+    }
+    &:selected {
+      @include button(active, transparentize($selected_bg_color, 0.3), #fff); 
+
+    }
+  }
+}
+
+/**************
+* Caja pathbar *
+**************/
+
+.caja-navigation-window paned {
+
+  background: $headerbar_color;
+
+  button.image-button, //Edit pathbar button
+  .caja-pathbar button { 
+    @include button(normal-header);
+    &:hover, &:checked{ @include button(active, transparentize($selected_bg_color, 0.3), #fff);  } 
+  }
+
+  // Real path bar buttons
+  .caja-pathbar button {
+    border-right: 1px solid $borders_color;
+    border-left: none;
+    box-shadow: none;
+    min-height: 20px;
+    margin-right: -3px;
+    &.image-button, &.text-button, &.toggle { border-radius: 0; }
+    &:first-child { border-left: 1px solid $borders_color; }
+  
+    &.slider-button {
+      &:first-child { border-radius: 6px 0px 0px 6px; }
+      &:nth-child(2) { border-radius: 0px 6px 6px 0px; }
+    }
+
+    &:checked { @include button(active, transparentize($selected_bg_color, 0.3), #fff); }
+  }
+}
+
+.caja-navigation-window .primary-toolbar, .caja-side-pane {
+  background: $headerbar_color;
+  button {
+    &, &:backdrop { 
+      background-color: transparent; 
+      border: none;
+      box-shadow: none;
+    }
+    &:hover,
+    &:active,
+    &:backdrop:active,
+    &:backdrop:checked {
+      background: $selected_bg_color;
+      box-shadow: none;
+      &, & label {
+          color: $selected_fg_color;  
+      }
+    }
+  }
 }

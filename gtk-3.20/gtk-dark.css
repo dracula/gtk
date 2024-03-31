@@ -2188,7 +2188,7 @@ GraniteWidgetsWelcome {
 .titlebar:not(headerbar), .titlebar, headerbar {
   padding: 0 13px;
   min-height: 34px;
-  background: #15161c;
+  background: #0f0f14;
   color: #f8f8f2;
   border-radius: 0; }
   .titlebar:backdrop,
@@ -2650,7 +2650,7 @@ window.csd > .titlebar:not(headerbar) {
   border-color: transparent;
   box-shadow: none; }
 .titlebar:not(headerbar) > separator, .titlebar:not(headerbar) > separator:backdrop {
-  background: #1e1f29; }
+  background: #15161c; }
 
 /**************
  * GtkInfoBar *
@@ -2854,7 +2854,7 @@ row {
  *********/
 menubar,
 .menubar {
-  background-color: #1e1f29;
+  background-color: #15161c;
   color: #f8f8f2;
   -GtkWidget-window-dragging: true;
   padding: 0px;
@@ -5019,7 +5019,7 @@ button.raven-trigger {
     border-right: 2px solid rgba(189, 147, 249, 0.5); }
 
 .top .budgie-panel {
-  border-bottom: 1px solid rgba(15, 15, 20, 0.92); }
+  border-bottom: 1px solid rgba(6, 6, 8, 0.92); }
 
 .top .raven-frame {
   padding: 0;
@@ -5033,7 +5033,7 @@ button.raven-trigger {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), transparent); }
 
 .bottom .budgie-panel {
-  border-top: 1px solid rgba(15, 15, 20, 0.92); }
+  border-top: 1px solid rgba(6, 6, 8, 0.92); }
 
 .bottom .raven-frame {
   padding: 0;
@@ -5047,7 +5047,7 @@ button.raven-trigger {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent); }
 
 .left .budgie-panel {
-  border-right: 1px solid rgba(15, 15, 20, 0.92); }
+  border-right: 1px solid rgba(6, 6, 8, 0.92); }
 
 .left .raven-frame {
   padding: 0;
@@ -5061,7 +5061,7 @@ button.raven-trigger {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent); }
 
 .right .budgie-panel {
-  border-left: 1px solid rgba(15, 15, 20, 0.92); }
+  border-left: 1px solid rgba(6, 6, 8, 0.92); }
 
 .right .raven-frame {
   padding: 0;
@@ -5329,10 +5329,10 @@ headerbar .budgie-run-dialog list row:selected .subtitle {
   min-height: 16px; }
   .budgie-menubar arrow.top {
     -gtk-icon-source: -gtk-icontheme("pan-up-symbolic");
-    border-bottom: 1px solid rgba(55, 56, 64, 0.928); }
+    border-bottom: 1px solid rgba(47, 48, 53, 0.928); }
   .budgie-menubar arrow.bottom {
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
-    border-top: 1px solid rgba(55, 56, 64, 0.928); }
+    border-top: 1px solid rgba(47, 48, 53, 0.928); }
 .budgie-menubar menuitem accelerator {
   color: rgba(248, 248, 242, 0.35); }
 .budgie-menubar menuitem check, .budgie-menubar menuitem radio {
@@ -6049,7 +6049,7 @@ ConversationListView {
   padding-top: 20px;
   padding-bottom: 0px;
   border-style: none;
-  background-color: #1e1f29;
+  background-color: #15161c;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   border: solid rgba(0, 0, 0, 0.1);
@@ -6105,7 +6105,7 @@ ConversationListView {
 
 /* thunar */
 .thunar toolbar {
-  background-color: #1e1f29; }
+  background-color: #15161c; }
 
 /* buttons in toolbar */
 .thunar toolbar.horizontal button image {
@@ -6132,10 +6132,93 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
   border: none;
   box-shadow: none; }
 
+.caja-notebook .frame {
+  border-width: 0 0 0px; }
 .caja-notebook .entry {
-  background: #1e1f29;
-  color: #f8f8f2; }
+  background: #333545;
+  color: #f8f8f2;
+  border-color: rgba(189, 147, 249, 0.5); }
   .caja-notebook .entry:selected {
-    background: rgba(189, 147, 249, 0.5); }
+    background: rgba(189, 147, 249, 0.5);
+    color: #f8f8f2; }
+
+/**************
+* Caja sidebar *
+**************/
+.caja-side-pane {
+  background: #15161c; }
+  .caja-side-pane .frame {
+    border: none; }
+  .caja-side-pane treeview.view,
+  .caja-side-pane textview.view text,
+  .caja-side-pane viewport.frame,
+  .caja-side-pane widget .vertical {
+    background: #1d1e27;
+    padding: 3px 2px; }
+    .caja-side-pane treeview.view:hover,
+    .caja-side-pane textview.view text:hover,
+    .caja-side-pane viewport.frame:hover,
+    .caja-side-pane widget .vertical:hover {
+      background-color: rgba(44, 46, 60, 0.95); }
+    .caja-side-pane treeview.view:selected,
+    .caja-side-pane textview.view text:selected,
+    .caja-side-pane viewport.frame:selected,
+    .caja-side-pane widget .vertical:selected {
+      color: #fff;
+      outline-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(189, 147, 249, 0.2);
+      text-shadow: none; }
+
+/**************
+* Caja pathbar *
+**************/
+.caja-navigation-window paned {
+  background: #15161c; }
+  .caja-navigation-window paned button.image-button,
+  .caja-navigation-window paned .caja-pathbar button {
+    color: #f8f8f2;
+    border-radius: 4px;
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid #181a21;
+    background: #232530; }
+    .caja-navigation-window paned button.image-button:hover, .caja-navigation-window paned button.image-button:checked,
+    .caja-navigation-window paned .caja-pathbar button:hover,
+    .caja-navigation-window paned .caja-pathbar button:checked {
+      color: #fff;
+      outline-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(189, 147, 249, 0.2);
+      text-shadow: none; }
+  .caja-navigation-window paned .caja-pathbar button {
+    border-right: 1px solid #181a21;
+    border-left: none;
+    box-shadow: none;
+    min-height: 20px;
+    margin-right: -3px; }
+    .caja-navigation-window paned .caja-pathbar button.image-button, .caja-navigation-window paned .caja-pathbar button.text-button, .caja-navigation-window paned .caja-pathbar button.toggle {
+      border-radius: 0; }
+    .caja-navigation-window paned .caja-pathbar button:first-child {
+      border-left: 1px solid #181a21; }
+    .caja-navigation-window paned .caja-pathbar button.slider-button:first-child {
+      border-radius: 6px 0px 0px 6px; }
+    .caja-navigation-window paned .caja-pathbar button.slider-button:nth-child(2) {
+      border-radius: 0px 6px 6px 0px; }
+    .caja-navigation-window paned .caja-pathbar button:checked {
+      color: #fff;
+      outline-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(189, 147, 249, 0.2);
+      text-shadow: none; }
+
+.caja-navigation-window .primary-toolbar, .caja-side-pane {
+  background: #15161c; }
+  .caja-navigation-window .primary-toolbar button, .caja-navigation-window .primary-toolbar button:backdrop, .caja-side-pane button, .caja-side-pane button:backdrop {
+    background-color: transparent;
+    border: none;
+    box-shadow: none; }
+  .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:checked, .caja-side-pane button:hover, .caja-side-pane button:active, .caja-side-pane button:backdrop:active, .caja-side-pane button:backdrop:checked {
+    background: rgba(189, 147, 249, 0.5);
+    box-shadow: none; }
+    .caja-navigation-window .primary-toolbar button:hover, .caja-navigation-window .primary-toolbar button:hover label, .caja-navigation-window .primary-toolbar button:active, .caja-navigation-window .primary-toolbar button:active label, .caja-navigation-window .primary-toolbar button:backdrop:active, .caja-navigation-window .primary-toolbar button:backdrop:active label, .caja-navigation-window .primary-toolbar button:backdrop:checked, .caja-navigation-window .primary-toolbar button:backdrop:checked label, .caja-side-pane button:hover, .caja-side-pane button:hover label, .caja-side-pane button:active, .caja-side-pane button:active label, .caja-side-pane button:backdrop:active, .caja-side-pane button:backdrop:active label, .caja-side-pane button:backdrop:checked, .caja-side-pane button:backdrop:checked label {
+      color: #f8f8f2; }
 
 /*# sourceMappingURL=gtk-dark.css.map */
