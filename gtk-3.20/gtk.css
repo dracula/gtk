@@ -5954,6 +5954,56 @@ MsdOsdWindow.background.osd {
       box-shadow: 0 -2px 0 rgba(189, 147, 249, 0.5) inset;
       color: #f8f8f2; }
 
+.nemo-window .places-treeview {
+  -NemoPlacesTreeView-disk-full-bg-color: #3d4053;
+  -NemoPlacesTreeView-disk-full-fg-color: #f1fa8c;
+  -GtkTreeView-vertical-separator: 10; }
+  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover,
+  .nemo-window .places-treeview iconview.cell:hover {
+    background: rgba(44, 46, 60, 0.93);
+    color: #f8f8f2; }
+  .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
+  .nemo-window .places-treeview iconview.cell:selected {
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(189, 147, 249, 0.2);
+    text-shadow: none; }
+.nemo-window .sidebar {
+  background-color: #1d1e27; }
+  .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
+    color: #f8f8f2;
+    background-color: transparent; }
+.nemo-window .nemo-window-pane widget.entry {
+  background-clip: padding-box;
+  min-height: 28px;
+  padding: 5px;
+  color: #f8f8f2;
+  border: 1px solid rgba(189, 147, 249, 0.5);
+  border-radius: 3px; }
+  .nemo-window .nemo-window-pane widget.entry:selected {
+    background-color: rgba(189, 147, 249, 0.5);
+    color: #f8f8f2; }
+.nemo-window toolbar.primary-toolbar {
+  margin-bottom: -1px;
+  background: #15161c; }
+  .nemo-window toolbar.primary-toolbar button {
+    color: #f8f8f2;
+    border-radius: 4px;
+    text-shadow: none;
+    box-shadow: none;
+    border: 1px solid #181a21;
+    background: #232530;
+    min-height: 24px;
+    padding: 3px; }
+    .nemo-window toolbar.primary-toolbar button:hover, .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
+      color: #fff;
+      outline-color: rgba(255, 255, 255, 0.3);
+      background-color: rgba(189, 147, 249, 0.2);
+      text-shadow: none; }
+.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
+.nemo-window .nemo-inactive-pane iconview {
+  background-color: #21232d; }
+
 /***********************
  * App-Specific Styles *
  ***********************/
