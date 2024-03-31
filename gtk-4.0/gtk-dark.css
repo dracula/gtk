@@ -5648,8 +5648,7 @@ headerbar .nautilus-window .path-bar-box .subtitle {
     .nautilus-window .path-bar-box button:backdrop:hover label, .nautilus-window .path-bar-box button:backdrop:active label, .nautilus-window .path-bar-box button:backdrop:checked label {
       color: rgba(189, 147, 249, 0.4); }
 .nautilus-window .path-buttons-box, .nautilus-window #NautilusPathBar {
-  background: transparent;
-  height: 20px; }
+  background: transparent; }
   .nautilus-window .path-buttons-box .dim-label, .nautilus-window .path-buttons-box label.separator, .nautilus-window .path-buttons-box .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-buttons-box .subtitle,
   .nautilus-window .path-buttons-box headerbar .subtitle,
   headerbar .nautilus-window .path-buttons-box .subtitle, .nautilus-window #NautilusPathBar .dim-label, .nautilus-window #NautilusPathBar label.separator, .nautilus-window #NautilusPathBar .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window #NautilusPathBar .subtitle,
