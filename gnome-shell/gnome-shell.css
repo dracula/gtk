@@ -107,7 +107,7 @@ StEntry {
   StEntry:hover {
     background-color: #393c4d; }
   StEntry:focus {
-    box-shadow: inset 0px 0px 1px 1px rgba(189, 147, 249, 0.5);
+    box-shadow: inset 0px 0px 1px 1px rgba(189, 147, 249, 0.5) !important;
     border-color: rgba(189, 147, 249, 0.5); }
   StEntry:insensitive {
     color: #767984;
@@ -1388,8 +1388,7 @@ StScrollBar {
   width: 10px;
   height: 3px;
   background-color: #bd93f9;
-  border-radius: 5px !important;
-  margin-bottom: 0px !important; }
+  border-radius: 5px !important; }
 
 .app-well-app .overview-icon,
 .app-well-app.app-folder .overview-icon,
