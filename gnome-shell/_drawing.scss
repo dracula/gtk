@@ -60,7 +60,7 @@
     border-color: $borders_color;
   }
   @if $t==focus { 
-    box-shadow: inset 0px 0px 1px 1px $selected_bg_color; 
+    box-shadow: inset 0px 0px 1px 1px $selected_bg_color !important; 
     border-color: $selected_bg_color;
   }
   @if $t==hover {  
