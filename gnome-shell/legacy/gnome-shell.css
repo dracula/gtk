@@ -104,7 +104,7 @@ StEntry {
   selection-background-color: rgba(255, 121, 198, 0.8);
   selected-color: #fefefe; }
   StEntry:focus {
-    box-shadow: inset 0px 0px 1px 1px rgba(255, 121, 198, 0.8);
+    box-shadow: inset 0px 0px 1px 1px rgba(255, 121, 198, 0.8) !important;
     border-color: rgba(255, 121, 198, 0.8); }
   StEntry:insensitive {
     color: #767984;
