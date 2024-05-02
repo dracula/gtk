@@ -88,10 +88,11 @@ windowcontrols {
       background-size: 16px 16px;
   
       &, &:hover, &:focus, &:active, &:backdrop, &:backdrop:hover {
-       background-color: transparent;
-       border: none;
-       box-shadow: none;
-        color: transparent;
+        &, image {
+          background-color: transparent;
+          border: none;
+          box-shadow: none;
+        }
       }
   
     }
