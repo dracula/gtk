@@ -114,15 +114,19 @@ entry {
   .linked:not(.vertical) > &:drop(active) + combobox > box > button.combo { border-left-color: $drop_target_color; }
 
  
-   .linked:not(.vertical) > & { 
+  .linked:not(.vertical) > & { 
+    border-right-style: solid;
+    border-right-color: transparent;
     &:focus-within {
-      border-color: entry_focus_border(); 
-      box-shadow: 0px 0px 1px 1px $selected_bg_color inset;
+      @include entry(focus); 
+      + .popup button {
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: $selected_bg_color;
+      }
     }
-    + .popup button {
-      border-radius: 0px 4px 4px 0px;
-      margin-left: 1px;
-    }
+
+    + .popup button { border-radius: 0px 6px 6px 0px; }
   }
 
   // Vertically linked entries
