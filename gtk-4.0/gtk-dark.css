@@ -1542,39 +1542,38 @@ combobox:drop(active) {
 /***********
  * Dialogs *
  ***********/
-messagedialog .titlebar:not(headerbar) {
-  background-color: rgba(30, 31, 41, 0.95); }
-messagedialog .titlebar {
-  min-height: 20px;
-  background-image: none;
-  background-color: rgba(30, 31, 41, 0.95);
-  border-style: none;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px; }
-messagedialog.csd.background {
-  background-color: rgba(30, 31, 41, 0.95);
-  color: #f8f8f2;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px; }
-messagedialog.csd .dialog-action-area button {
-  padding: 10px 14px;
-  border-radius: 0;
-  border-left-style: solid;
-  border-right-style: none;
-  border-bottom-style: none;
-  background-color: transparent;
-  color: #f8f8f2;
-  box-shadow: none; }
-  messagedialog.csd .dialog-action-area button:hover {
-    background-color: rgba(189, 147, 249, 0.4);
-    color: white; }
-  messagedialog.csd .dialog-action-area button:first-child {
-    border-left-style: none;
-    border-bottom-left-radius: 4px; }
-  messagedialog.csd .dialog-action-area button:last-child {
-    border-bottom-right-radius: 4px; }
-  messagedialog.csd .dialog-action-area button.destructive-action, messagedialog.csd .dialog-action-area button.suggested-action {
-    color: white; }
+messagedialog, .messagedialog, .dialog {
+  background-color: #282a36;
+  border-radius: 10px; }
+  messagedialog .titlebar:not(headerbar), .messagedialog .titlebar:not(headerbar), .dialog .titlebar:not(headerbar) {
+    background-color: rgba(30, 31, 41, 0.95); }
+  messagedialog .titlebar, .messagedialog .titlebar, .dialog .titlebar {
+    min-height: 20px;
+    background-image: none;
+    background-color: rgba(30, 31, 41, 0.95);
+    border-style: none;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  messagedialog.csd, .messagedialog.csd, .dialog.csd {
+    border-radius: 10px; }
+    messagedialog.csd.background, .messagedialog.csd.background, .dialog.csd.background {
+      background-color: #1a1b23;
+      color: #f8f8f2;
+      border-radius: 10px; }
+    messagedialog.csd .dialog-action-area button, messagedialog.csd .response-area button, .messagedialog.csd .dialog-action-area button, .messagedialog.csd .response-area button, .dialog.csd .dialog-action-area button, .dialog.csd .response-area button {
+      padding: 7px 11px;
+      border-radius: 0;
+      color: #f8f8f2;
+      box-shadow: none;
+      border: none; }
+      messagedialog.csd .dialog-action-area button:not(.destructive-action):hover, messagedialog.csd .response-area button:not(.destructive-action):hover, .messagedialog.csd .dialog-action-area button:not(.destructive-action):hover, .messagedialog.csd .response-area button:not(.destructive-action):hover, .dialog.csd .dialog-action-area button:not(.destructive-action):hover, .dialog.csd .response-area button:not(.destructive-action):hover {
+        background-color: rgba(189, 147, 249, 0.5);
+        color: #f8f8f2; }
+      messagedialog.csd .dialog-action-area button.destructive-action, messagedialog.csd .dialog-action-area button.suggested-action, messagedialog.csd .response-area button.destructive-action, messagedialog.csd .response-area button.suggested-action, .messagedialog.csd .dialog-action-area button.destructive-action, .messagedialog.csd .dialog-action-area button.suggested-action, .messagedialog.csd .response-area button.destructive-action, .messagedialog.csd .response-area button.suggested-action, .dialog.csd .dialog-action-area button.destructive-action, .dialog.csd .dialog-action-area button.suggested-action, .dialog.csd .response-area button.destructive-action, .dialog.csd .response-area button.suggested-action {
+        color: white; }
+
+.messagedialog .message-area {
+  padding: 26px; }
 
 filechooser .dialog-action-box {
   border-top: 1px solid #181a21; }
@@ -1586,9 +1585,6 @@ filechooser #pathbarbox {
 filechooserbutton:drop(active) {
   box-shadow: none;
   border-color: transparent; }
-
-.messagedialog .message-area {
-  padding: 26px; }
 
 /****************
  * Text Entries *
