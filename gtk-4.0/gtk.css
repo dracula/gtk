@@ -5754,6 +5754,16 @@ headerbar .nautilus-window .path-bar-box .subtitle {
   #gnc-id-main-window .arrow.button.toggle:hover {
     border-color: #ff79c6; }
 
+/*******************
+ * Calendar events *
+********************/
+.color-light.timed label, .color-light .event-popover label {
+  color: #f8f8f2;
+  opacity: 1; }
+.color-light label {
+  color: #1e1f29;
+  opacity: 1; }
+
 /********
  * Gala *
  *******/
