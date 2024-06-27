@@ -3042,10 +3042,9 @@ notebook > header {
       margin-bottom: -2px; }
       notebook > header.top > tabs > tab:backdrop {
         box-shadow: none; }
-      notebook > header.top > tabs > tab:checked {
-        background-color: #282a36; }
-        notebook > header.top > tabs > tab:checked:hover {
-          background-color: #282a36; }
+      notebook > header.top > tabs > tab:checked, notebook > header.top > tabs > tab:hover {
+        background-color: #282a36;
+        box-shadow: none; }
   notebook > header.bottom {
     border-top-style: solid; }
     notebook > header.bottom > tabs {
