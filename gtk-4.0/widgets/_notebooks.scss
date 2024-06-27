@@ -23,9 +23,9 @@
 
           &:backdrop { box-shadow: none; }
 
-          &:checked {
+          &:checked, &:hover {
               background-color: $base_color;
-              &:hover{background-color: $base_color;}
+              box-shadow: none;
           }
         }
       }
