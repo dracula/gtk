@@ -5810,8 +5810,8 @@ radiobutton.color-button:active > radio {
     background-color: #343546; }
   .xfce4-panel.background button.flat:active:not(.open_group), .xfce4-panel.background button.flat:checked:not(.open_group) {
     color: white;
-    border-bottom: 2px solid #ff79c6;
-    background-color: #1a1b23; }
+    box-shadow: 0px -2px #ff79c6 inset;
+    background-color: rgba(255, 121, 198, 0.07); }
     .xfce4-panel.background button.flat:active:not(.open_group) label, .xfce4-panel.background button.flat:active:not(.open_group) image, .xfce4-panel.background button.flat:checked:not(.open_group) label, .xfce4-panel.background button.flat:checked:not(.open_group) image {
       color: inherit; }
 
