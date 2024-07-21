@@ -1,0 +1,31 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "eliverlara@gmail.com",
+                "Name": "EliverLara"
+            }
+        ],
+        "Category": "Plasma Look And Feel",
+        "EnabledByDefault": true,
+        "Id": "Dracula",
+        "License": "GPL 3+",
+        "Name": "Dracula",
+        "ServiceTypes": [
+            "Plasma/LookAndFeel"
+        ],
+        "Version": "0.1",
+        "Website": "https://github.com/EliverLara/Ant-Dracula/tree/master/kde"
+    },
+    "X-KPackage-Dependencies": [
+        "kns://colorschemes.knsrc/api.kde-look.org/1370679",
+        "kns://plasma-themes.knsrc/api.kde-look.org/1370687",
+        "kns://plasma-themes.knsrc/api.kde-look.org/1420691",
+        "kns://aurorae.knsrc/api.kde-look.org/1370682",
+        "kns://sddmtheme.knsrc/api.kde-look.org/2150918",
+        "kns://wallpaper.knsrc/api.kde-look.org/1378234",
+        "kns://xcursor.knsrc/api.kde-look.org/1669262",
+        "kns://plasmoids.knsrc/api.kde-look.org/2144212"
+    ]
+}
