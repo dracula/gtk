@@ -6010,9 +6010,9 @@ MsdOsdWindow.background.osd {
       outline-color: rgba(255, 255, 255, 0.3);
       background-color: rgba(189, 147, 249, 0.2);
       text-shadow: none; }
-.nemo-window .nemo-inactive-pane .view, .nemo-window .nemo-inactive-pane iconview,
+.nemo-window .nemo-inactive-pane .view:not(:selected), .nemo-window .nemo-inactive-pane iconview:not(:selected),
 .nemo-window .nemo-inactive-pane iconview {
-  background-color: #21232d; }
+  background-color: #1d1f27; }
 
 /***********************
  * App-Specific Styles *
