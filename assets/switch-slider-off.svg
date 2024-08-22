@@ -1,1 +1,50 @@
-<?xml version="1.0" standalone="no"?><!-- Generator: Gravit.io --><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 20 20" width="20" height="20"><path d=" M 2 10 C 2 5.033 6.033 1 11 1 C 15.967 1 20 5.033 20 10 C 20 14.967 15.967 19 11 19 C 6.033 19 2 14.967 2 10 Z " fill="rgb(248,248,242)"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generator: Gravit.io -->
+
+<svg
+   style="isolation:isolate"
+   viewBox="0 0 23 20"
+   width="23"
+   height="20"
+   version="1.1"
+   id="svg11992"
+   sodipodi:docname="switch-slider-off.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs11996" />
+  <sodipodi:namedview
+     id="namedview11994"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="25.475"
+     inkscape:cx="-8.2630029"
+     inkscape:cy="7.9685967"
+     inkscape:window-width="2560"
+     inkscape:window-height="1285"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg11992"
+     showguides="true">
+    <sodipodi:guide
+       position="1.9984961,21.915225"
+       orientation="1,0"
+       id="guide36934"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <path
+     d="m 1.9999995,9.9999989 c 0,-5.2429433 4.257056,-9.49999887 9.5000025,-9.49999887 5.242942,0 9.499999,4.25705557 9.499999,9.49999887 C 21,15.242944 16.742944,19.5 11.500001,19.5 6.2570555,19.5 1.9999995,15.242944 1.9999995,9.9999989 Z"
+     fill="#f8f8f2"
+     id="path11990"
+     style="fill:#282a36;fill-opacity:1;stroke-width:1.05556" />
+</svg>
