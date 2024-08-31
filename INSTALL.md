@@ -2,7 +2,11 @@
 
 #### Install manually
 
-Download using the [GitHub .zip download](https://github.com/dracula/gtk/archive/master.zip) option and extract the `.zip` file to the themes directory i.e. `/usr/share/themes/` or `~/.themes/` (create it if necessary).
+1.- Two options for download:
+ - Download using the [GitHub .zip download](https://github.com/dracula/gtk/archive/master.zip) (Once extracted it must be renamed from `gtk-master` to `Dracula`)
+ - Download from [gnome-look](https://www.gnome-look.org/p/1687249/) - You can check the other theme variants there
+ 
+2.- Extract the `.zip` file to the themes directory i.e. `/usr/share/themes/` or `~/.themes/` (create it if necessary).
 
 #### Activating theme
 
@@ -13,7 +17,15 @@ gsettings set org.gnome.desktop.interface gtk-theme "Dracula"
 gsettings set org.gnome.desktop.wm.preferences theme "Dracula"
 ```
 
-or Change via distribution specific tweak tool.
+or Change via distribution specific tweak-tool.
+
+**For the latest versions of Gnome using Gtk4(libadwaita) some extra steps should be done in order to get it working properly, you could do it in two ways:**
+
+1.- Manual way
+  - Copy the `assets` folder to the `~/.config` directory
+  - Copy the `gtk-4.0/gtk.css` and `gtk-4.0/gtk-dark.css` files to `~/.config/gtk-4.0/`
+
+2.- Using [this script](https://github.com/odziom91/libadwaita-theme-changer) which will copy the needed folders to the right directories
 
 ## Icon Theme (optional)
 
