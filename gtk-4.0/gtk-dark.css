@@ -4373,6 +4373,7 @@ switch {
   min-width: 45px;
   min-height: 27px;
   background-size: 45px 27px;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: -gtk-scaled(url("../assets/switch-off.svg"), url("../assets/switch-off.svg")); }
@@ -4386,18 +4387,14 @@ switch {
   switch:checked {
     background-image: -gtk-scaled(url("../assets/switch-on.svg"), url("../assets/switch-on.svg")); }
     switch:checked slider {
-      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"), url("../assets/switch-slider-on.svg")); }
+      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"), url("../assets/switch-slider-on@2.png")); }
   switch slider {
     min-width: 1px;
     min-height: 1px;
     background-repeat: no-repeat;
     background-position: left center;
     background-color: transparent;
-    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"), url("../assets/switch-slider-off.svg")); }
-  switch trough:active, switch trough:checked {
-    background-color: rgba(189, 147, 249, 0.5); }
-    switch trough:active:backdrop, switch trough:checked:backdrop {
-      background-color: rgba(189, 147, 249, 0.4); }
+    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"), url("../assets/switch-slider-off@2.png")); }
 
 /************
  * Toolbars *
