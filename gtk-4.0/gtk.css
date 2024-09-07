@@ -4372,15 +4372,13 @@ spinner {
  **********/
 switch {
   font-size: 1px;
-  font-weight: bold;
-  outline-offset: -4px;
-  transition: all 200ms ease-in;
-  border: none;
-  border-radius: 14px;
-  color: transparent;
-  padding: 2px;
-  background-color: #3e4153;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05), 0px 1px rgba(0, 0, 0, 0.1); }
+  min-width: 45px;
+  min-height: 27px;
+  background-size: 45px 27px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: -gtk-scaled(url("../assets/switch-off.svg"), url("../assets/switch-off.svg")); }
   switch:disabled {
     background-color: #22232e; }
   switch:backdrop {
@@ -4389,29 +4387,16 @@ switch {
     switch:backdrop:disabled {
       background-color: #22232e; }
   switch:active, switch:checked {
-    background-color: #50fa7a; }
-    switch:active:backdrop, switch:checked:backdrop {
-      background-color: #50fa7a; }
-      switch:active:backdrop slider:backdrop, switch:checked:backdrop slider:backdrop {
-        box-shadow: none;
-        background-color: rgba(40, 42, 54, 0.9);
-        border: none; }
+    background-image: -gtk-scaled(url("../assets/switch-on.svg"), url("../assets/switch-on.svg")); }
+    switch:active slider, switch:checked slider {
+      background-image: -gtk-scaled(url("../assets/switch-slider-on.svg"), url("../assets/switch-slider-on@2.png")); }
   switch slider {
-    padding: 1px;
-    min-width: 14px;
-    min-height: 14px;
-    border-radius: 100%;
-    transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    background-color: #282a36;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.2); }
-    switch slider:backdrop {
-      padding: 2px;
-      box-shadow: none;
-      background-color: #282a36; }
-  switch trough:active, switch trough:checked {
-    background-color: #ff79c6; }
-    switch trough:active:backdrop, switch trough:checked:backdrop {
-      background-color: rgba(255, 121, 198, 0.6); }
+    min-width: 1px;
+    min-height: 1px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: transparent;
+    background-image: -gtk-scaled(url("../assets/switch-slider-off.svg"), url("../assets/switch-slider-off@2.png")); }
 
 /************
  * Toolbars *
