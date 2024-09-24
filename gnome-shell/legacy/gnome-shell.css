@@ -33,8 +33,8 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .button:active {
-    color: rgba(255, 121, 198, 0.8);
-    background-color: rgba(40, 42, 54, 0.95);
+    color: #fefefe;
+    background-color: rgba(255, 121, 198, 0.8);
     border: 1px solid #1b1c24;
     text-shadow: none;
     icon-shadow: none; }
@@ -61,8 +61,8 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:active {
-    color: rgba(255, 121, 198, 0.8);
-    background-color: rgba(40, 42, 54, 0.95);
+    color: #fefefe;
+    background-color: rgba(255, 121, 198, 0.8);
     border: 1px solid #1b1c24;
     text-shadow: none;
     icon-shadow: none; }
@@ -1359,8 +1359,8 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
-    color: rgba(255, 121, 198, 0.8);
-    background-color: rgba(40, 42, 54, 0.95);
+    color: #fefefe;
+    background-color: rgba(255, 121, 198, 0.8);
     border: 1px solid #1b1c24;
     text-shadow: none;
     icon-shadow: none; }
@@ -1687,8 +1687,8 @@ StScrollBar {
     text-shadow: 0 1px black;
     icon-shadow: 0 1px black; }
   .keyboard-key:active {
-    color: rgba(255, 121, 198, 0.8);
-    background-color: rgba(40, 42, 54, 0.95);
+    color: #fefefe;
+    background-color: rgba(255, 121, 198, 0.8);
     border: 1px solid #1b1c24;
     text-shadow: none;
     icon-shadow: none; }
@@ -1778,7 +1778,7 @@ StScrollBar {
         text-shadow: 0 1px black;
         icon-shadow: 0 1px black; }
       .login-dialog .modal-dialog-button:default:active {
-        color: rgba(255, 121, 198, 0.8);
+        color: #fefefe;
         background-color: rgba(255, 121, 198, 0.8);
         border: 1px solid #1b1c24;
         text-shadow: none;
