@@ -21,7 +21,7 @@ stage {
   @include button(normal);
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
-  &:active { @include button(active); }
+  &:active, &:checked { @include button(active); }
   &:hover {
     @include button(hover);
   }
@@ -1330,7 +1330,7 @@ $slider_size: 16px;
 
 //close buttons
 
-.window-close {
+.window-close, %window-close-button {
   background-color: $main_dark;
   color: lighten($fg_color, 4%);
   border-radius: 30px * 0.5 + 3px * 2;
@@ -2351,3 +2351,41 @@ $slider_size: 16px;
 
 .quick-slider .icon-button:hover { @include button(hover); }
   
+
+// Screenshot UI
+
+.screenshot-ui-panel {
+  @extend %osd-panel;
+}
+
+.screenshot-ui-close-button {
+  @extend %window-close-button;
+}
+
+.screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+  @extend %button;
+  text-shadow: none;
+}
+
+.screenshot-ui-window-selector {
+  background-color: $bg_color;
+}
+
+.screenshot-ui-window-selector-window {
+  &:hover {
+    .screenshot-ui-window-selector-window-border {
+      border-color: darken($selected_bg_color, 15%);
+    }
+  }
+  &:checked {
+    .screenshot-ui-window-selector-window-border {
+      border-color: $selected_bg_color;
+      background-color: transparentize($selected_bg_color, 0.8);
+    }
+
+    .screenshot-ui-window-selector-check {
+      color: $bg_color;
+      background-color: $selected_bg_color;
+    }
+  }
+}
