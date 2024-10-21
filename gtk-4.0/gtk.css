@@ -5761,6 +5761,13 @@ headerbar .nautilus-window .path-bar-box .subtitle {
   color: #1e1f29;
   opacity: 1; }
 
+/******************************
+ * Gnome system monitor graph *
+******************************/
+#gnome-system-monitor .loadgraph {
+  background: #1e1f29;
+  color: #f8f8f2; }
+
 /********
  * Gala *
  *******/
