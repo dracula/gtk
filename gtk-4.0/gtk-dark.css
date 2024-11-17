@@ -4103,54 +4103,54 @@ treeview ~ scrollbar.vertical {
 /***********
  * Sidebar *
  ***********/
-.sidebar, .nautilus-window .navigation-sidebar {
+.sidebar, placessidebar {
   border-style: none;
   border-width: 0;
   background-color: #232530; }
-  .sidebar .frame, .nautilus-window .navigation-sidebar .frame {
+  .sidebar .frame, placessidebar .frame {
     border: none; }
-  stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl), .nautilus-window .navigation-sidebar:dir(ltr), .nautilus-window .navigation-sidebar.left, .nautilus-window .navigation-sidebar.left:dir(rtl) {
+  stacksidebar.sidebar:dir(ltr) list, stacksidebar.sidebar.left list, stacksidebar.sidebar.left:dir(rtl) list, .sidebar:dir(ltr), .sidebar.left, .sidebar.left:dir(rtl), placessidebar:dir(ltr), placessidebar.left, placessidebar.left:dir(rtl) {
     border-right: none;
     border-left-style: none; }
   stacksidebar.sidebar:dir(rtl) list
   .sidebar:dir(rtl), stacksidebar.sidebar.right list
   .sidebar:dir(rtl), .sidebar.right, stacksidebar.sidebar:dir(rtl) list
-  .nautilus-window .navigation-sidebar:dir(rtl), stacksidebar.sidebar.right list
-  .nautilus-window .navigation-sidebar:dir(rtl), .nautilus-window .navigation-sidebar.right {
+  placessidebar:dir(rtl), stacksidebar.sidebar.right list
+  placessidebar:dir(rtl), placessidebar.right {
     border-left: 1px solid rgba(25, 26, 34, 0.9);
     border-right-style: none; }
-  .sidebar:backdrop, .nautilus-window .navigation-sidebar:backdrop {
+  .sidebar:backdrop, .sidebar list:backdrop, placessidebar:backdrop, placessidebar list:backdrop {
     background-color: #242631;
     border-color: rgba(26, 27, 35, 0.91);
     transition: 200ms ease-out; }
-  .sidebar list, .nautilus-window .navigation-sidebar list {
+  .sidebar list, placessidebar list {
     background-color: #20212b; }
-  .sidebar row, .nautilus-window .navigation-sidebar row {
-    padding: 2px 12px; }
-    .sidebar row:selected, .nautilus-window .navigation-sidebar row:selected {
+  .sidebar row, placessidebar row {
+    padding: 8px 12px; }
+    .sidebar row:selected, placessidebar row:selected {
       background: rgba(189, 147, 249, 0.1);
       color: #bd93f9; }
-      .sidebar row:selected:backdrop, .nautilus-window .navigation-sidebar row:selected:backdrop {
+      .sidebar row:selected:backdrop, placessidebar row:selected:backdrop {
         background: rgba(189, 147, 249, 0.1); }
-        .sidebar row:selected:backdrop label, .nautilus-window .navigation-sidebar row:selected:backdrop label {
+        .sidebar row:selected:backdrop label, placessidebar row:selected:backdrop label {
           color: rgba(189, 147, 249, 0.4); }
-      .sidebar row:selected:hover, .nautilus-window .navigation-sidebar row:selected:hover {
+      .sidebar row:selected:hover, placessidebar row:selected:hover {
         background-color: rgba(189, 147, 249, 0.3); }
-      .sidebar row:selected label, .nautilus-window .navigation-sidebar row:selected label {
+      .sidebar row:selected label, placessidebar row:selected label {
         color: #bd93f9; }
-  .sidebar.source-list, .nautilus-window .navigation-sidebar.source-list {
+  .sidebar.source-list, placessidebar.source-list {
     background-color: #1e1f29;
     color: #F2EFEA;
     padding: 4px 0px; }
-    .sidebar.source-list.view:selected:active, iconview.sidebar.source-list:selected:active, .nautilus-window .navigation-sidebar.source-list.view:selected:active, .nautilus-window iconview.navigation-sidebar.source-list:selected:active {
+    .sidebar.source-list.view:selected:active, iconview.sidebar.source-list:selected:active, placessidebar.source-list.view:selected:active {
       box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
-    .sidebar.source-list.view:selected.has-open-popup, iconview.sidebar.source-list:selected.has-open-popup, .sidebar.source-list.view:selected:hover, iconview.sidebar.source-list:selected:hover, .nautilus-window .navigation-sidebar.source-list.view:selected.has-open-popup, .nautilus-window iconview.navigation-sidebar.source-list:selected.has-open-popup, .nautilus-window .navigation-sidebar.source-list.view:selected:hover, .nautilus-window iconview.navigation-sidebar.source-list:selected:hover {
+    .sidebar.source-list.view:selected.has-open-popup, iconview.sidebar.source-list:selected.has-open-popup, .sidebar.source-list.view:selected:hover, iconview.sidebar.source-list:selected:hover, placessidebar.source-list.view:selected.has-open-popup, placessidebar.source-list.view:selected:hover {
       background-color: rgba(189, 147, 249, 0.3); }
-    .sidebar.source-list.view:selected:backdrop, iconview.sidebar.source-list:selected:backdrop, .nautilus-window .navigation-sidebar.source-list.view:selected:backdrop, .nautilus-window iconview.navigation-sidebar.source-list:selected:backdrop {
+    .sidebar.source-list.view:selected:backdrop, iconview.sidebar.source-list:selected:backdrop, placessidebar.source-list.view:selected:backdrop {
       background-color: rgba(189, 147, 249, 0.4); }
-    .sidebar.source-list.view:hover, iconview.sidebar.source-list:hover, .sidebar.source-list.view iconview.source-list:hover, iconview.sidebar.source-list iconview.source-list:hover, .nautilus-window .navigation-sidebar.source-list.view:hover, .nautilus-window iconview.navigation-sidebar.source-list:hover, .nautilus-window .navigation-sidebar.source-list.view iconview.source-list:hover, .nautilus-window iconview.navigation-sidebar.source-list iconview.source-list:hover {
+    .sidebar.source-list.view:hover, iconview.sidebar.source-list:hover, .sidebar.source-list.view iconview.source-list:hover, iconview.sidebar.source-list iconview.source-list:hover, placessidebar.source-list.view:hover, placessidebar.source-list.view iconview.source-list:hover {
       background-color: rgba(40, 42, 54, 0.6); }
-  paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar, paned .nautilus-window .navigation-sidebar.left, paned .nautilus-window .navigation-sidebar.right, paned .nautilus-window .navigation-sidebar.left:dir(rtl), paned .nautilus-window .navigation-sidebar:dir(rtl), paned .nautilus-window .navigation-sidebar:dir(ltr), paned .nautilus-window .navigation-sidebar {
+  paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .sidebar:dir(rtl), paned .sidebar:dir(ltr), paned .sidebar, paned placessidebar.left, paned placessidebar.right, paned placessidebar.left:dir(rtl), paned placessidebar:dir(rtl), paned placessidebar:dir(ltr), paned placessidebar {
     border-style: none;
     border-color: rgba(25, 26, 34, 0.9); }
 
