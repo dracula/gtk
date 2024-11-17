@@ -27,3 +27,70 @@
     padding-right: 0;
   }
 }
+
+// Nautilus, filechooser(gnome 47) pathbar
+#NautilusPathBar {
+  background: transparent;
+
+  .dim-label { 
+    color: transparent; 
+    margin-right: -5px;
+  }
+
+  //Buttons before current path
+  button {
+    .horizontal  .dim-label { 
+      color: $headerbar_fg_color;
+      padding: 3px 12px;
+      margin: 0;
+    }
+    &:hover, &:focus {
+      .dim-label { color: $purple; }
+      background-color: transparent;
+      box-shadow: none;
+    }
+    &:active { background-color: transparent; }
+  }
+   // Home icon
+   button > .horizontal > image.dim-label { 
+    padding: 3px 0px 3px 12px; 
+    border-right: none;
+    margin-right: -6px;
+  }
+
+ // Reset path buttons appearance
+  button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+ // Selected dir
+  .current-dir  {
+    label { 
+      border-radius: 4px;
+      padding: 1px 12px;
+    }
+
+    label, image { 
+      @include button(active-header, transparent, $purple); 
+    }
+  }
+  
+  button.current-dir:only-child {
+    image {
+      margin-right: -6px;
+      padding: 0px 0px 0px 12px;
+      border-radius: 4px 0px 0px 4px;
+    }
+    label { border-radius:0px 4px 4px 0px; }
+  }
+}
+
+// search entry
+#NautilusQueryEditor > menubutton > button { 
+  &:hover, &:active, &:checked {
+    image { color: $selected_fg_color; }
+  }
+}
