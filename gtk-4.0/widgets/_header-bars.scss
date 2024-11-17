@@ -3,7 +3,7 @@
  ***************/
 %titlebar,
 headerbar {
-  padding: 0 13px;
+  padding: 0 6px;
   min-height: 34px;
   background: $headerbar_color;
   color: $headerbar_fg_color;
@@ -335,6 +335,6 @@ headerbar {
 }
 
 .nautilus-window .sidebar-pane .top-bar headerbar {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding-top: 2px;
+  padding-bottom: 2px;
 }

@@ -202,8 +202,7 @@ toast {
       color: #f8f8f2;
       outline-color: rgba(248, 248, 242, 0.3);
       background-color: #ff5555;
-      text-shadow: none;
-      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+      text-shadow: none; }
 
 /***************
  * Base States *
@@ -2126,7 +2125,7 @@ GraniteWidgetsWelcome {
  * Header bars *
  ***************/
 .titlebar:not(headerbar), .titlebar, headerbar {
-  padding: 0 13px;
+  padding: 0 6px;
   min-height: 34px;
   background: #15161c;
   color: #f8f8f2;
@@ -2530,8 +2529,8 @@ window.csd > .titlebar:not(headerbar) {
   background-color: #15161c; }
 
 .nautilus-window .sidebar-pane .top-bar headerbar {
-  padding-top: 4px;
-  padding-bottom: 4px; }
+  padding-top: 2px;
+  padding-bottom: 2px; }
 
 /**************
  * GtkInfoBar *
@@ -3184,6 +3183,70 @@ paned.vertical > separator {
 .path-bar button.slider-button {
   padding-left: 0;
   padding-right: 0; }
+
+#NautilusPathBar {
+  color: #f8f8f2;
+  border-radius: 4px;
+  text-shadow: none;
+  box-shadow: none;
+  border: 1px solid #181a21;
+  background: #232530; }
+  #NautilusPathBar .dim-label, #NautilusPathBar label.separator, #NautilusPathBar .titlebar .subtitle, .titlebar #NautilusPathBar .subtitle,
+  #NautilusPathBar headerbar .subtitle,
+  headerbar #NautilusPathBar .subtitle {
+    color: transparent;
+    margin-right: -5px; }
+  #NautilusPathBar button .horizontal > .dim-label, #NautilusPathBar button .horizontal > label.separator, #NautilusPathBar button .titlebar .horizontal > .subtitle, .titlebar #NautilusPathBar button .horizontal > .subtitle,
+  #NautilusPathBar button headerbar .horizontal > .subtitle,
+  headerbar #NautilusPathBar button .horizontal > .subtitle {
+    color: #f8f8f2;
+    padding: 3px 12px;
+    margin: 0;
+    border-right: 1px solid #181a21; }
+  #NautilusPathBar button:hover .dim-label, #NautilusPathBar button:hover label.separator, #NautilusPathBar button:hover .titlebar .subtitle, .titlebar #NautilusPathBar button:hover .subtitle,
+  #NautilusPathBar button:hover headerbar .subtitle,
+  headerbar #NautilusPathBar button:hover .subtitle, #NautilusPathBar button:focus .dim-label, #NautilusPathBar button:focus label.separator, #NautilusPathBar button:focus .titlebar .subtitle, .titlebar #NautilusPathBar button:focus .subtitle,
+  #NautilusPathBar button:focus headerbar .subtitle,
+  headerbar #NautilusPathBar button:focus .subtitle {
+    color: #fff;
+    text-shadow: none;
+    background-color: rgba(189, 147, 249, 0.2); }
+  #NautilusPathBar button > .horizontal > image.dim-label, #NautilusPathBar .titlebar button > .horizontal > image.subtitle, .titlebar #NautilusPathBar button > .horizontal > image.subtitle,
+  #NautilusPathBar headerbar button > .horizontal > image.subtitle,
+  headerbar #NautilusPathBar button > .horizontal > image.subtitle {
+    padding: 3px 0px 3px 12px;
+    border-right: none;
+    margin-right: -6px; }
+  #NautilusPathBar button {
+    background: transparent;
+    border: none;
+    margin: 0;
+    padding: 0; }
+  #NautilusPathBar .current-dir label {
+    padding: 1px 12px; }
+  #NautilusPathBar .current-dir label, #NautilusPathBar .current-dir image {
+    color: #fff;
+    outline-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(189, 147, 249, 0.2);
+    text-shadow: none; }
+  #NautilusPathBar button.current-dir:only-child image {
+    margin-right: -6px;
+    padding: 0px 0px 0px 12px;
+    border-radius: 4px 0px 0px 4px; }
+
+#NautilusQueryEditor {
+  margin-top: 6px; }
+  #NautilusQueryEditor #NautilusQueryEditorTag > button {
+    margin: 0; }
+  #NautilusQueryEditor > menubutton > button {
+    min-width: 16px;
+    min-height: 16px;
+    -gtk-icon-size: 12px;
+    padding: 0 4px; }
+    #NautilusQueryEditor > menubutton > button:hover image, #NautilusQueryEditor > menubutton > button:active image, #NautilusQueryEditor > menubutton > button:checked image {
+      color: #f8f8f2; }
+  #NautilusQueryEditor > text, #NautilusQueryEditor > image {
+    margin: 0; }
 
 /***************
  * Popovers   *
@@ -4044,54 +4107,55 @@ stacksidebar row {
 /*                  PLACESSIDEBAR                                  */
 /*******************************************************************/
 /*--*/
-placessidebar.sidebar, .nautilus-window .navigation-sidebar {
+placessidebar {
   background-color: transparent;
   background-image: linear-gradient(to right, #181a21 40px, #1d1e27 35px, #1d1e27 36px, #1d1e27 36px, #1d1e27 99%, #1d1e27 100%); }
-  placessidebar.sidebar row.sidebar-row.sidebar-row, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row {
-    margin: 0;
-    border-radius: 0;
+  placessidebar row {
     padding: 1px 11px; }
-    placessidebar.sidebar row.sidebar-row.sidebar-row label, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row label {
-      padding-left: 8px; }
-    placessidebar.sidebar row.sidebar-row.sidebar-row .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-row .sidebar-icon {
-      margin-left: -14px;
-      margin-right: 12px;
-      padding-left: 14px;
-      padding-right: 12px;
-      color: #98abb2; }
-  placessidebar.sidebar row.sidebar-row:hover, .nautilus-window .navigation-sidebar row.sidebar-row:hover {
-    background-image: linear-gradient(to right, #1f202a 40px, #2c2e3c 35px, #2c2e3c 36px, #2c2e3c 36px, #2c2e3c 99%, #2c2e3c 100%);
-    color: inherit; }
-  placessidebar.sidebar row.sidebar-row:selected, .nautilus-window .navigation-sidebar row.sidebar-row:selected {
-    background-color: transparent;
-    background-image: linear-gradient(to right, #0d0e13 40px, rgba(65, 67, 75, 0) 36px, rgba(13, 55, 224, 0) 97%); }
-    placessidebar.sidebar row.sidebar-row:selected, placessidebar.sidebar row.sidebar-row:selected label, .nautilus-window .navigation-sidebar row.sidebar-row:selected, .nautilus-window .navigation-sidebar row.sidebar-row:selected label {
-      color: #bd93f9; }
-    placessidebar.sidebar row.sidebar-row:selected:hover, .nautilus-window .navigation-sidebar row.sidebar-row:selected:hover {
-      color: #ffffff;
-      background-color: rgba(189, 147, 249, 0.1); }
-      placessidebar.sidebar row.sidebar-row:selected:hover .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row:selected:hover .sidebar-icon {
-        color: #ffffff; }
-    placessidebar.sidebar row.sidebar-row:selected:backdrop, .nautilus-window .navigation-sidebar row.sidebar-row:selected:backdrop {
-      color: rgba(189, 147, 249, 0.4);
-      background-color: transparent;
-      background-image: linear-gradient(to right, #0d0e13 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
-    placessidebar.sidebar row.sidebar-row:selected .sidebar-icon, .nautilus-window .navigation-sidebar row.sidebar-row:selected .sidebar-icon {
-      -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.8);
+    placessidebar row.sidebar-row.sidebar-row {
+      margin: 0;
+      border-radius: 0; }
+      placessidebar row.sidebar-row.sidebar-row label {
+        padding-left: 8px; }
+      placessidebar row.sidebar-row.sidebar-row .sidebar-icon {
+        margin-left: -14px;
+        margin-right: 12px;
+        padding-left: 14px;
+        padding-right: 12px;
+        color: #98abb2; }
+    placessidebar row.sidebar-row:hover {
+      background-image: linear-gradient(to right, #1f202a 40px, #2c2e3c 35px, #2c2e3c 36px, #2c2e3c 36px, #2c2e3c 99%, #2c2e3c 100%);
       color: inherit; }
-  placessidebar.sidebar row.sidebar-row.sidebar-new-bookmark-row, .nautilus-window .navigation-sidebar row.sidebar-row.sidebar-new-bookmark-row {
-    color: rgba(189, 147, 249, 0.5); }
-  placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled) {
-    box-shadow: inset 0 1px #50fa7a, inset 0 -1px #50fa7a; }
-    placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled), placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled) image, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled), .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled) label, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled) image {
-      color: #50fa7a; }
-    placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected {
-      background: #50fa7a; }
-      placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar.sidebar row.sidebar-row:drop(active):not(:disabled):selected image, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected label, .nautilus-window .navigation-sidebar row.sidebar-row:drop(active):not(:disabled):selected image {
-        color: #f8f8f2; }
-  placessidebar.sidebar list, .nautilus-window .navigation-sidebar list {
+    placessidebar row.sidebar-row:selected {
+      background-color: transparent;
+      background-image: linear-gradient(to right, #0d0e13 40px, rgba(65, 67, 75, 0) 36px, rgba(13, 55, 224, 0) 97%); }
+      placessidebar row.sidebar-row:selected, placessidebar row.sidebar-row:selected label {
+        color: #bd93f9; }
+      placessidebar row.sidebar-row:selected:hover {
+        color: #ffffff;
+        background-color: rgba(189, 147, 249, 0.1); }
+        placessidebar row.sidebar-row:selected:hover .sidebar-icon {
+          color: #ffffff; }
+      placessidebar row.sidebar-row:selected:backdrop {
+        color: rgba(189, 147, 249, 0.4);
+        background-color: transparent;
+        background-image: linear-gradient(to right, #0d0e13 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
+      placessidebar row.sidebar-row:selected .sidebar-icon {
+        -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.8);
+        color: inherit; }
+    placessidebar row.sidebar-row.sidebar-new-bookmark-row {
+      color: rgba(189, 147, 249, 0.5); }
+    placessidebar row.sidebar-row:drop(active):not(:disabled) {
+      box-shadow: inset 0 1px #50fa7a, inset 0 -1px #50fa7a; }
+      placessidebar row.sidebar-row:drop(active):not(:disabled), placessidebar row.sidebar-row:drop(active):not(:disabled) label, placessidebar row.sidebar-row:drop(active):not(:disabled) image {
+        color: #50fa7a; }
+      placessidebar row.sidebar-row:drop(active):not(:disabled):selected {
+        background: #50fa7a; }
+        placessidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar row.sidebar-row:drop(active):not(:disabled):selected image {
+          color: #f8f8f2; }
+  placessidebar list {
     background-color: transparent; }
-    placessidebar.sidebar list:backdrop, .nautilus-window .navigation-sidebar list:backdrop {
+    placessidebar list:backdrop {
       background-color: transparent; }
 
 .bottom-bar {
@@ -5546,72 +5610,6 @@ window.background.budgie-settings-window.csd > box.horizontal > stack > scrolled
     background-color: rgba(40, 42, 54, 0.5); }
     .nautilus-window .sidebar .list-row:hover:active {
       background-color: rgba(189, 147, 249, 0.4); }
-.nautilus-window #NautilusPathBar {
-  margin-top: 7px;
-  margin-bottom: 7px;
-  color: #f8f8f2;
-  border-radius: 4px;
-  text-shadow: none;
-  box-shadow: none;
-  border: 1px solid #181a21;
-  background: #232530; }
-  .nautilus-window #NautilusPathBar .dim-label, .nautilus-window #NautilusPathBar label.separator, .nautilus-window #NautilusPathBar .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar .subtitle,
-  .nautilus-window #NautilusPathBar headerbar .subtitle,
-  headerbar .nautilus-window #NautilusPathBar .subtitle {
-    color: transparent;
-    margin-right: -5px; }
-  .nautilus-window #NautilusPathBar button .horizontal > .dim-label, .nautilus-window #NautilusPathBar button .horizontal > label.separator, .nautilus-window #NautilusPathBar button .titlebar .horizontal > .subtitle, .titlebar .nautilus-window #NautilusPathBar button .horizontal > .subtitle,
-  .nautilus-window #NautilusPathBar button headerbar .horizontal > .subtitle,
-  headerbar .nautilus-window #NautilusPathBar button .horizontal > .subtitle {
-    color: #f8f8f2;
-    padding: 3px 12px;
-    margin: 0;
-    border-right: 1px solid #181a21; }
-  .nautilus-window #NautilusPathBar button:hover .dim-label, .nautilus-window #NautilusPathBar button:hover label.separator, .nautilus-window #NautilusPathBar button:hover .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar button:hover .subtitle,
-  .nautilus-window #NautilusPathBar button:hover headerbar .subtitle,
-  headerbar .nautilus-window #NautilusPathBar button:hover .subtitle, .nautilus-window #NautilusPathBar button:focus .dim-label, .nautilus-window #NautilusPathBar button:focus label.separator, .nautilus-window #NautilusPathBar button:focus .titlebar .subtitle, .titlebar .nautilus-window #NautilusPathBar button:focus .subtitle,
-  .nautilus-window #NautilusPathBar button:focus headerbar .subtitle,
-  headerbar .nautilus-window #NautilusPathBar button:focus .subtitle {
-    color: #fff;
-    text-shadow: none;
-    background-color: rgba(189, 147, 249, 0.2); }
-  .nautilus-window #NautilusPathBar button > .horizontal > image.dim-label, .nautilus-window #NautilusPathBar .titlebar button > .horizontal > image.subtitle, .titlebar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle,
-  .nautilus-window #NautilusPathBar headerbar button > .horizontal > image.subtitle,
-  headerbar .nautilus-window #NautilusPathBar button > .horizontal > image.subtitle {
-    padding: 3px 0px 3px 12px;
-    border-right: none;
-    margin-right: -6px; }
-  .nautilus-window #NautilusPathBar button {
-    background: transparent;
-    border: none;
-    margin: 0;
-    padding: 0; }
-  .nautilus-window #NautilusPathBar .current-dir label {
-    padding: 1px 12px; }
-  .nautilus-window #NautilusPathBar .current-dir label, .nautilus-window #NautilusPathBar .current-dir image {
-    color: #fff;
-    outline-color: rgba(255, 255, 255, 0.3);
-    background-color: rgba(189, 147, 249, 0.2);
-    text-shadow: none; }
-  .nautilus-window #NautilusPathBar button.current-dir:only-child image {
-    margin-right: -6px;
-    padding: 0px 0px 0px 12px;
-    border-radius: 4px 0px 0px 4px; }
-.nautilus-window #NautilusQueryEditor {
-  margin-top: 8px;
-  margin-bottom: 8px; }
-  .nautilus-window #NautilusQueryEditor #NautilusQueryEditorTag > button {
-    margin: 0; }
-  .nautilus-window #NautilusQueryEditor > menubutton > button {
-    min-width: 16px;
-    min-height: 16px;
-    margin: 0;
-    -gtk-icon-size: 12px;
-    padding: 0 4px; }
-    .nautilus-window #NautilusQueryEditor > menubutton > button:hover image, .nautilus-window #NautilusQueryEditor > menubutton > button:active image, .nautilus-window #NautilusQueryEditor > menubutton > button:checked image {
-      color: #f8f8f2; }
-  .nautilus-window #NautilusQueryEditor > text, .nautilus-window #NautilusQueryEditor > image {
-    margin: 0; }
 .nautilus-window notebook > stack:only-child {
   background-color: #282a36; }
   .nautilus-window notebook > stack:only-child:backdrop {
