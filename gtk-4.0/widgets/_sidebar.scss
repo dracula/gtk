@@ -1,7 +1,7 @@
 /***********
  * Sidebar *
  ***********/
-.sidebar,.nautilus-window .navigation-sidebar {
+.sidebar, placessidebar {
   border-style: none;
   border-width: 0;
   background-color: mix($bg_color, $base_color, 50%);
@@ -24,7 +24,7 @@
     border-right-style: none;
   }
 
-  &:backdrop {
+  &:backdrop, list:backdrop {
     background-color: $backdrop_sidebar_bg_color;
     border-color: $backdrop_borders_color;
     transition: $backdrop_transition;
@@ -32,7 +32,7 @@
 
   list { background-color: lighten($bg_color, 0.77%); }
   row{
-    padding: 2px 12px;
+    padding: 8px 12px;
     &:selected{
       &:backdrop{
         background: transparentize($backdrop_selected_bg_color, 0.4);
