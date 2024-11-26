@@ -1572,6 +1572,9 @@ StScrollBar {
       background-color: rgba(255, 121, 198, 0.8);
       color: #fefefe; }
 
+.notification-buttons-bin .notification-button {
+  border-radius: 10px !important; }
+
 .summary-source-counter {
   font-size: 10pt;
   font-weight: bold;
