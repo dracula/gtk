@@ -1798,6 +1798,11 @@ $slider_size: 16px;
       &:hover, &focus { background-color: $selected_bg_color; color: $selected_fg_color;}
     }
   }
+
+  .notification-buttons-bin .notification-button {
+    border-radius: 10px !important;
+  }
+
   .summary-source-counter {
     font-size: 10pt;
     font-weight: bold;
