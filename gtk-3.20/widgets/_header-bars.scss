@@ -293,7 +293,6 @@ headerbar {
 
   window:not(.tiled):not(.maximized) &:last-child { &:backdrop, & { border-top-right-radius: 4px; }}
 }
-window { border-radius: 6px; }
 
 .titlebar:not(headerbar) {
   window.csd > & {
