@@ -2565,6 +2565,8 @@ row.activatable:selected.has-open-popup, row.activatable:selected:hover {
   background-color: rgba(189, 147, 249, 0.3); }
 row.activatable:selected:backdrop {
   background-color: rgba(189, 147, 249, 0.4); }
+row.activatable .view, row.activatable iconview {
+  background-color: transparent; }
 
 columnview > listview > row {
   padding: 0; }
