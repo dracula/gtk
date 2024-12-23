@@ -40,15 +40,19 @@
     toolbar.primary-toolbar {
         margin-bottom: -1px;
         background: $headerbar_color;
-        button {
+        .path-bar button {
             @include button(normal-header);
-            min-height: 24px;
-            padding: 3px;
+            margin-right: -1px;
             &:hover,
             &:selected,
             &:active,
             &:checked { 
-                @include button(active, transparentize($selected_bg_color, 0.3), #fff); 
+                &, &:backdrop { @include button(active, $selected_bg_color, #fff); }
+            }
+            &:backdrop,
+            &:disabled,
+            &:backdrop:disabled {
+                @include button(backdrop-header, $main_dark_color, transparentize($headerbar_fg_color, 0.8));
             }
         }
     }

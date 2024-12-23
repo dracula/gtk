@@ -350,9 +350,9 @@ button {
   border: 1px solid #282a36; }
   notebook > header > tabs > arrow,
   button.flat {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -423,9 +423,9 @@ button {
   button.flat:backdrop,
   button.flat:disabled,
   button.flat:backdrop:disabled {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none; }
@@ -589,9 +589,9 @@ button.osd {
     -gtk-icon-shadow: none; }
   .app-notification button.flat, popover.background.touch-selection button.flat, popover.background.magnifier button.flat,
   .osd button.flat {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -621,9 +621,9 @@ button.osd {
       box-shadow: none; }
     .app-notification button.flat:backdrop, popover.background.touch-selection button.flat:backdrop, popover.background.magnifier button.flat:backdrop,
     .osd button.flat:backdrop {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #262833;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none; }
@@ -685,9 +685,9 @@ button.suggested-action {
         background-color: rgba(189, 147, 249, 0.5);
         text-shadow: none; }
   .selection-mode button.titlebutton:backdrop, .selection-mode button.titlebutton:disabled, .selection-mode button.titlebutton:backdrop:disabled, button.suggested-action.flat:backdrop, button.suggested-action.flat:disabled, button.suggested-action.flat:backdrop:disabled {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -792,9 +792,9 @@ button.destructive-action {
         background-color: rgba(189, 147, 249, 0.5);
         text-shadow: none; }
   button.destructive-action.flat:backdrop, button.destructive-action.flat:disabled, button.destructive-action.flat:backdrop:disabled {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -906,9 +906,9 @@ toolbar button:active {
   border: 1px solid #040406; }
 
 .inline-toolbar toolbutton > button {
+  border-color: transparent;
   background-color: transparent;
   background-image: none;
-  background-color: #262833;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none; }
@@ -2211,7 +2211,6 @@ GraniteWidgetsWelcome {
   .titlebar button,
   headerbar button {
     color: #f8f8f2;
-    border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #181a21;
@@ -2265,7 +2264,7 @@ GraniteWidgetsWelcome {
     headerbar button:disabled,
     headerbar button:backdrop:disabled {
       color: rgba(248, 248, 242, 0.2);
-      background-color: transparent;
+      background-color: #232530;
       border-radius: 0;
       text-shadow: none;
       box-shadow: none;
@@ -2527,7 +2526,6 @@ GraniteWidgetsWelcome {
     margin-top: 5px;
     margin-bottom: 5px;
     color: #f8f8f2;
-    border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #181a21;
@@ -2907,9 +2905,9 @@ menu, .menu, .context-menu {
     menu menuitem label:dir(rtl), menu menuitem label:dir(ltr), .menu menuitem label:dir(rtl), .menu menuitem label:dir(ltr), .context-menu menuitem label:dir(rtl), .context-menu menuitem label:dir(ltr) {
       color: inherit; }
   menu > arrow, .menu > arrow, .context-menu > arrow {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -3074,9 +3072,9 @@ notebook > header {
       border-color: transparent;
       box-shadow: none; }
     notebook > header > tabs > arrow:disabled {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #262833;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none; }
@@ -3824,49 +3822,49 @@ scrollbar {
     border-style: none;
     border-radius: 0;
     transition-property: min-height, min-width, color;
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
     color: #a1a1a2; }
     scrollbar button:hover {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #262833;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
       color: #cccdca; }
     scrollbar button:active, scrollbar button:checked {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #262833;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
       color: rgba(219, 195, 252, 0.5); }
     scrollbar button:disabled {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #262833;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
       color: rgba(161, 161, 162, 0.2); }
     scrollbar button:backdrop {
+      border-color: transparent;
       background-color: transparent;
       background-image: none;
-      background-color: #262833;
       box-shadow: inset 0 1px rgba(255, 255, 255, 0);
       text-shadow: none;
       -gtk-icon-shadow: none;
       color: #4a4b51; }
       scrollbar button:backdrop:disabled {
+        border-color: transparent;
         background-color: transparent;
         background-image: none;
-        background-color: #262833;
         box-shadow: inset 0 1px rgba(255, 255, 255, 0);
         text-shadow: none;
         -gtk-icon-shadow: none;
@@ -4049,9 +4047,9 @@ spinbutton:not(.vertical) {
       border-top-right-radius: 2px;
       border-bottom-right-radius: 2px; }
 .osd spinbutton:not(.vertical) button {
+  border-color: transparent;
   background-color: transparent;
   background-image: none;
-  background-color: #262833;
   box-shadow: inset 0 1px rgba(255, 255, 255, 0);
   text-shadow: none;
   -gtk-icon-shadow: none;
@@ -4064,9 +4062,9 @@ spinbutton:not(.vertical) {
   .osd spinbutton:not(.vertical) button:dir(rtl) {
     border-style: none solid none none; }
   .osd spinbutton:not(.vertical) button:hover {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -4076,9 +4074,9 @@ spinbutton:not(.vertical) {
     -gtk-icon-shadow: 0 1px black;
     box-shadow: none; }
   .osd spinbutton:not(.vertical) button:backdrop {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -4087,9 +4085,9 @@ spinbutton:not(.vertical) {
     -gtk-icon-shadow: none;
     box-shadow: none; }
   .osd spinbutton:not(.vertical) button:disabled {
+    border-color: transparent;
     background-color: transparent;
     background-image: none;
-    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -5977,20 +5975,24 @@ MsdOsdWindow.background.osd {
 .nemo-window toolbar.primary-toolbar {
   margin-bottom: -1px;
   background: #15161c; }
-  .nemo-window toolbar.primary-toolbar button {
+  .nemo-window toolbar.primary-toolbar .path-bar button {
     color: #f8f8f2;
-    border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #181a21;
     background: #232530;
-    min-height: 24px;
-    padding: 3px; }
-    .nemo-window toolbar.primary-toolbar button:hover, .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
+    margin-right: -1px; }
+    .nemo-window toolbar.primary-toolbar .path-bar button:hover, .nemo-window toolbar.primary-toolbar .path-bar button:hover:backdrop, .nemo-window toolbar.primary-toolbar .path-bar button:selected, .nemo-window toolbar.primary-toolbar .path-bar button:selected:backdrop, .nemo-window toolbar.primary-toolbar .path-bar button:active, .nemo-window toolbar.primary-toolbar .path-bar button:active:backdrop, .nemo-window toolbar.primary-toolbar .path-bar button:checked, .nemo-window toolbar.primary-toolbar .path-bar button:checked:backdrop {
       color: #fff;
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: rgba(189, 147, 249, 0.2);
+      background-color: rgba(189, 147, 249, 0.5);
       text-shadow: none; }
+    .nemo-window toolbar.primary-toolbar .path-bar button:backdrop, .nemo-window toolbar.primary-toolbar .path-bar button:disabled, .nemo-window toolbar.primary-toolbar .path-bar button:backdrop:disabled {
+      color: rgba(248, 248, 242, 0.2);
+      background-color: #232530;
+      border-radius: 0;
+      text-shadow: none;
+      box-shadow: none; }
 .nemo-window .nemo-inactive-pane .view:not(:selected), .nemo-window .nemo-inactive-pane iconview:not(:selected),
 .nemo-window .nemo-inactive-pane iconview {
   background-color: #1d1f27; }
@@ -6218,7 +6220,6 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
   .caja-navigation-window paned button.image-button,
   .caja-navigation-window paned .caja-pathbar button {
     color: #f8f8f2;
-    border-radius: 4px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #181a21;
