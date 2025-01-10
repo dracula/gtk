@@ -1,7 +1,7 @@
 /*********
  * Lists *
  *********/
-list, listview {
+list:not(.boxed-list-separate), listview {
   color: $text_color;
   background-color: $base_color;
   border-color: $borders_color;
@@ -47,6 +47,8 @@ row {
     }
 
     .view { background-color: transparent; }
+
+    &.button { @include button(normal); }
   }
 
   &:selected { @extend %selected_items; }
