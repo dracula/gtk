@@ -45,7 +45,7 @@
       margin: 0;
     }
     &:hover, &:focus {
-      .dim-label { color: $purple; }
+      .dim-label { color: $selected_bg_color; }
       background-color: transparent;
       box-shadow: none;
     }
@@ -74,7 +74,7 @@
     }
 
     label, image { 
-      @include button(active-header, transparent, $purple); 
+      @include button(active-header, transparent, $selected_bg_color); 
     }
   }
   
