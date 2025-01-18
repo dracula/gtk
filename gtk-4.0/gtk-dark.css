@@ -3337,7 +3337,7 @@ paned.vertical > separator {
     headerbar #NautilusPathBar button:hover .subtitle, #NautilusPathBar button:focus .dim-label, #NautilusPathBar button:focus label.separator, #NautilusPathBar button:focus .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) #NautilusPathBar button:focus .subtitle,
     #NautilusPathBar button:focus headerbar .subtitle,
     headerbar #NautilusPathBar button:focus .subtitle {
-      color: #bd93f9; }
+      color: #ff79c6; }
   #NautilusPathBar button:active {
     background-color: transparent; }
   #NautilusPathBar button > .horizontal > image.dim-label, #NautilusPathBar .titlebar:not(headerbar) button > .horizontal > image.subtitle, .titlebar:not(headerbar) #NautilusPathBar button > .horizontal > image.subtitle,
@@ -3355,7 +3355,7 @@ paned.vertical > separator {
     border-radius: 4px;
     padding: 1px 12px; }
   #NautilusPathBar .current-dir label, #NautilusPathBar .current-dir image {
-    color: #bd93f9;
+    color: #ff79c6;
     background-color: rgba(255, 121, 198, 0.1);
     border-radius: 7px;
     box-shadow: none;
