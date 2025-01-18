@@ -2575,10 +2575,8 @@ row.activatable .view, row.activatable iconview {
 row.activatable.button {
   font-weight: normal;
   color: #f8f8f2;
-  outline-color: rgba(248, 248, 242, 0.3);
-  background-color: #282a36;
-  text-shadow: none;
-  box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+  background-color: #272834;
+  text-shadow: none; }
 
 columnview > listview > row {
   padding: 0; }
