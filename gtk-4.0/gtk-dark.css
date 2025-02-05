@@ -2381,7 +2381,7 @@ window.csd > .titlebar:not(headerbar) {
   background-color: #15161c; }
 
 .raised.top-bar {
-  background-color: #1e1f29; }
+  background-color: #15161c; }
 
 /**************
  * GtkInfoBar *
@@ -4020,14 +4020,14 @@ placessidebar {
 
 .bottom-bar {
   background-color: #282a36; }
-  .bottom-bar button {
+  .bottom-bar button.toggle:not(.image-button) {
     background-color: transparent;
     background-image: none;
     background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none; }
-    .bottom-bar button .view, .bottom-bar button iconview {
+    .bottom-bar button.toggle:not(.image-button) .view, .bottom-bar button.toggle:not(.image-button) iconview {
       background-color: transparent; }
 
 /*****************
