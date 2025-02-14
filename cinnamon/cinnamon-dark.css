@@ -1660,26 +1660,26 @@ StScrollBar {
     background-color: #262833; }
 
 .dialog .dialog-button:default {
-  border: 1px solid rgba(189, 147, 249, 0.5);
+  border: 1px solid #ff79c6;
   color: #f8f8f2;
-  background-color: rgba(189, 147, 249, 0.5); }
+  background-color: #ff79c6; }
   .dialog .dialog-button:focus:default {
-    border: 1px solid rgba(189, 147, 249, 0.5);
+    border: 1px solid #ff79c6;
     color: #f8f8f2;
-    background-color: rgba(189, 147, 249, 0.5);
-    border: 1px solid rgba(233, 219, 253, 0.5); }
+    background-color: #ff79c6;
+    border: 1px solid #ffc6e7; }
   .dialog .dialog-button:hover:default {
-    border: 1px solid rgba(189, 147, 249, 0.5);
+    border: 1px solid #ff79c6;
     color: #f8f8f2;
-    background-color: rgba(219, 195, 252, 0.5); }
+    background-color: #ffacdc; }
   .dialog .dialog-button:active:default {
-    border: 1px solid rgba(189, 147, 249, 0.5);
+    border: 1px solid #ff79c6;
     color: #f8f8f2;
-    background-color: rgba(204, 171, 250, 0.5); }
+    background-color: #ff93d1; }
   .dialog .dialog-button:checked:default {
-    border: 1px solid rgba(189, 147, 249, 0.5);
+    border: 1px solid #ff79c6;
     color: #f8f8f2;
-    background-color: rgba(204, 171, 250, 0.5); }
+    background-color: #ff93d1; }
   .dialog .dialog-button:insensitive:default {
     border-color: rgba(25, 26, 34, 0.9);
     border: 1px solid #2c2f3c;
@@ -1837,7 +1837,7 @@ StScrollBar {
     min-width: 160px;
     -barlevel-height: 6px;
     -barlevel-background-color: #393c4d;
-    -barlevel-active-background-color: rgba(189, 147, 249, 0.5);
+    -barlevel-active-background-color: #ff79c6;
     -barlevel-amplify-color: #F27835;
     -barlevel-amplify-separator-width: 3px; }
     .media-keys-osd .level:ltr {
@@ -1867,7 +1867,7 @@ StScrollBar {
     margin: 15px;
     border-radius: 36px; }
     .workspace-switch-osd-indicator:active {
-      background-color: rgba(189, 147, 249, 0.5);
+      background-color: #ff79c6;
       padding: 6px;
       margin: 12px; }
 
