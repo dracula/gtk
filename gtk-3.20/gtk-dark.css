@@ -5750,7 +5750,7 @@ radiobutton.color-button:active > radio {
   color: white;
   border-radius: 0;
   border: none;
-  background-color: #1e1f29;
+  background-color: transparent;
   font-weight: normal; }
   .xfce4-panel.background button.flat:hover:not(.open_group) {
     border: none;
