@@ -1,40 +1,53 @@
 
 /* thunar */
+.thunar toolbar { background-color: $headerbar_color; }
+  
+/* buttons in toolbar */
+.thunar toolbar.horizontal button image {
+  -gtk-icon-transform: scale(0.72);
+}
+  
+/* path-bar of thunar */
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar,
 .thunar toolbar {
-    background-color: $headerbar_color; 
-  }
-  
-  /* buttons in toolbar */
-  .thunar toolbar.horizontal button image {
-    -gtk-icon-transform:scale(0.72);
-  }
-  
-  scrolledwindow.sidebar treeview.view, scrollbar.right {
-    background: $sidebar_bg_color;
-    padding: 2.5px 1.5px;
-    border: none;
+  .path-bar-button {
+    @include button(normal-header);
+    border-radius: 0;
+    border-right: 0.5px solid $borders_color;
     box-shadow: none;
-  }
-
-  scrolledwindow.standard-view scrollbar.right{
-    background-color: $base_color;
-  }
-  /* path-bar of thunar */
-  window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button, .thunar  scrolledwindow.sidebar treeview.view,  .thunar toolbar.horizontal button {
-    &:hover, &:checked, &:selected{ 
-        @include button(active-header, $tc: $purple);
-        font-weight: normal;
+    min-height: 20px;
+    padding: 3px 4px;
+    &:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
     }
 
-    &:checked:backdrop, &:selected:backdrop {
-        label { color: $backdrop_selected_bg_color; }
+    &:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      border-right-style: solid;
     }
+
+    &:only-child {
+      border-radius: 4px;
+      border-style: solid;
+    }
+    &:hover { color: $selected_bg_color; }
+    &:checked { @include button(active, transparentize($selected_bg_color, 0.3), #fff); }
   }
+  .toggle.path-bar-button:hover {
+    @include button(active, transparentize($selected_bg_color, 0.3), #fff);
+  }
+}
   
-  window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button {
-    background: none;
-    outline: none;
-    border: none;
+/* thunar sidepane */
+.thunar scrolledwindow.sidebar treeview.view {
+  background: $_sidebar_color;
+  padding: 1.5px; 
+  &:hover, &:selected {
+    background: transparentize($selected_bg_color, 0.3);
+    color: $selected_fg_color;
+    border-radius: 0;
     box-shadow: none;
   }
-  
+}
