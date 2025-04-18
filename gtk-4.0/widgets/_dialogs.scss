@@ -25,26 +25,10 @@
     }
 
     border-radius: 10px;
-
-    .dialog-action-area button, .response-area button {
-      padding: 7px 11px; // labels are not vertically centered on message dialog, this is a workaround
-      border-radius: 0;
-      color: $fg_color;
-      box-shadow: none;
-      border: none;
-
-      &:not(.destructive-action):hover {
-        background-color: $selected_bg_color;
-        color: $selected_fg_color;
-      }
-      &.destructive-action, &.suggested-action{
-        color:white;
-      }
-    }
   }
 }
 
-.messagedialog .message-area {
+.messagedialog .message-area, .messagedialog .response-area,  .dialog  .dialog-action-area {
   padding: 26px;
 }
 
