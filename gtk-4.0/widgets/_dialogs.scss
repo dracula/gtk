@@ -28,10 +28,13 @@
   }
 }
 
-.messagedialog .message-area, .messagedialog .response-area,  .dialog  .dialog-action-area {
+.messagedialog .message-area,
+.messagedialog .response-area,
+.dialog .dialog-action-area,
+.alert.floating .response-area,
+.alert.floating .body-scrolled-window {
   padding: 26px;
 }
-
 filechooser {
   .dialog-action-box {
     border-top: 1px solid $borders_color;
