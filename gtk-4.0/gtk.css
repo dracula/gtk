@@ -3088,12 +3088,24 @@ paned.vertical > separator {
   headerbar #NautilusPathBar button > .horizontal > image.subtitle {
     padding: 3px 0px 3px 12px;
     border-right: none;
-    margin-right: -6px; }
+    margin-right: -6px;
+    border-radius: 6px 0px 0px 6px; }
   #NautilusPathBar button {
     background: transparent;
     border: none;
     margin: 0;
     padding: 0; }
+  #NautilusPathBar .flat.popup {
+    margin: 0; }
+    #NautilusPathBar .flat.popup button {
+      padding: 4px 6px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px; }
+      #NautilusPathBar .flat.popup button:hover, #NautilusPathBar .flat.popup button:active, #NautilusPathBar .flat.popup button:checked {
+        color: #fff;
+        outline-color: rgba(255, 255, 255, 0.3);
+        background-color: rgba(189, 147, 249, 0.2);
+        text-shadow: none; }
   #NautilusPathBar .current-dir label {
     padding: 1px 12px; }
   #NautilusPathBar .current-dir label, #NautilusPathBar .current-dir image {

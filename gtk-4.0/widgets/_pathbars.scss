@@ -55,6 +55,7 @@
     padding: 3px 0px 3px 12px; 
     border-right: none;
     margin-right: -6px;
+    border-radius: 6px 0px 0px 6px;
   }
 
   // Reset path buttons appearance
@@ -63,6 +64,19 @@
     border: none;
     margin: 0;
     padding: 0;
+  }
+
+  // Current directory options button
+  .flat.popup {
+    margin: 0;
+    button {
+      padding: 4px 6px;
+      border-top-left-radius: 0px;
+      border-bottom-left-radius: 0px;
+      &:hover, &:active, &:checked {
+        @include button(active, transparentize($selected_bg_color, 0.3), #fff);
+      }
+    }
   }
 
   // Selected dir
