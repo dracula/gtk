@@ -114,6 +114,7 @@ placessidebar {
     padding: 1px 11px;
     label { padding-left: 8px; }
     
+    &.sidebar-row:selected:backdrop { background-color: transparentize($selected_bg_color, 0.9); }
     &.sidebar-new-bookmark-row { color: $selected_bg_color; }
 
     &:drop(active):not(:disabled) {
