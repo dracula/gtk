@@ -1095,6 +1095,15 @@ notebook button, list button, popover button {
 notebook .linked > button, list .linked > button, popover .linked > button {
   box-shadow: none; }
 
+toggle-group {
+  padding: 3px; }
+  toggle-group toggle {
+    padding: 0 4px; }
+    toggle-group toggle:checked {
+      background-color: #ff79c6; }
+      toggle-group toggle:checked, toggle-group toggle:checked label {
+        color: #f8f8f2; }
+
 /************
  * Calendar *
  ***********/
