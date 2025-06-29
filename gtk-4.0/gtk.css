@@ -2989,8 +2989,18 @@ tabbar:backdrop .box > .end-action {
   filter: opacity(1); }
 tabbar tabbox {
   background-color: #1e1f29;
-  padding: 0px;
+  padding: 4px;
   color: #f8f8f2; }
+  tabbar tabbox > tab button.flat,
+  tabbar tabbox > tabboxchild > tab button.flat {
+    padding: 0;
+    margin: 4px;
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 10px; }
+    tabbar tabbox > tab button.flat:hover,
+    tabbar tabbox > tabboxchild > tab button.flat:hover {
+      background-color: #494c62; }
   tabbar tabbox > tab:checked, tabbar tabbox > tab:selected,
   tabbar tabbox > tabboxchild > tab:checked,
   tabbar tabbox > tabboxchild > tab:selected {
