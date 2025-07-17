@@ -1083,9 +1083,9 @@ modelbutton.flat arrow {
   modelbutton.flat arrow.right {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
 
-button.color {
+button.color, button.accent-button {
   padding: 4px; }
-  button.color colorswatch:only-child, button.color colorswatch:only-child overlay {
+  button.color colorswatch:only-child, button.color colorswatch:only-child overlay, button.accent-button colorswatch:only-child, button.accent-button colorswatch:only-child overlay {
     border-radius: 0; }
 
 notebook button, list button, popover button {
@@ -1103,6 +1103,21 @@ toggle-group {
       background-color: rgba(189, 147, 249, 0.5); }
       toggle-group toggle:checked, toggle-group toggle:checked label {
         color: #f8f8f2; }
+
+button.accent-button, button.accent-button:backdrop {
+  min-height: 24px;
+  min-width: 24px;
+  padding: 5px;
+  border-radius: 100%;
+  background: var(--accent-bg-color);
+  outline: none;
+  background-clip: content-box;
+  box-shadow: none;
+  border: none; }
+button.accent-button:hover {
+  box-shadow: 0 0 0 3px #333545; }
+button.accent-button:checked, button.accent-button:checked:backdrop {
+  box-shadow: 0 0 0 3px var(--accent-bg-color); }
 
 /************
  * Calendar *
