@@ -2484,9 +2484,9 @@ banner revealer widget {
   padding: 5px;
   color: #f8f8f2; }
   banner revealer widget button.suggested-action {
-    border-color: transparent;
     background-color: transparent;
     background-image: none;
+    background-color: #262833;
     box-shadow: inset 0 1px rgba(255, 255, 255, 0);
     text-shadow: none;
     -gtk-icon-shadow: none;
@@ -2495,8 +2495,7 @@ banner revealer widget {
       color: #f8f8f2;
       outline-color: rgba(248, 248, 242, 0.3);
       background-color: rgba(0, 0, 0, 0.7);
-      text-shadow: none;
-      box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1); }
+      text-shadow: none; }
 
 levelbar.horizontal trough > block {
   min-height: 5px;
@@ -6274,7 +6273,7 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
     filter: brightness(86%); }
   .colorpad:checked {
     filter: brightness(100%);
-    box-shadow: 0px 0px 0px 1.5px #ff79c6, inset 0px -3px 0px 0px @colorpad_fg_color; }
+    box-shadow: 0px 0px 0px 1.5px rgba(189, 147, 249, 0.5), inset 0px -3px 0px 0px @colorpad_fg_color; }
 
 .colorsetter {
   color: colorsetter_fg_color; }
