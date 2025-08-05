@@ -6658,7 +6658,7 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
     filter: brightness(86%); }
   .colorpad:checked {
     filter: brightness(100%);
-    box-shadow: 0px 0px 0px 1.5px #ff79c6, inset 0px -3px 0px 0px @colorpad_fg_color; }
+    box-shadow: 0px 0px 0px 1.5px rgba(189, 147, 249, 0.5), inset 0px -3px 0px 0px @colorpad_fg_color; }
 
 .colorsetter {
   color: colorsetter_fg_color; }
