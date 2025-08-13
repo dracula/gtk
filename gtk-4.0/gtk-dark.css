@@ -67,6 +67,7 @@ read if you used those and something break with a version upgrade you're on your
 @define-color wm_button_active_color_b shade(#1e1f29, 0.89);
 @define-color wm_button_active_color_c shade(#1e1f29, 0.9);
 @define-color content_view_bg #282a36;
+@define-color text_view_bg #282a36;
 @define-color budgie_tasklist_indicator_color rgba(189, 147, 249, 0.5);
 @define-color budgie_tasklist_indicator_color_active rgba(189, 147, 249, 0.5);
 @define-color placeholder_text_color #cfcfcd;
