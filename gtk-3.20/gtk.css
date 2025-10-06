@@ -2479,6 +2479,19 @@ GraniteWidgetsWelcome {
       .titlebar .path-bar-box headerbar button:checked:backdrop label,
       headerbar .path-bar-box button:checked:backdrop label {
         color: rgba(248, 248, 242, 0.5); }
+  .titlebar .linked > button:active:backdrop,
+  .titlebar .linked > button:checked:backdrop,
+  headerbar .linked > button:active:backdrop,
+  headerbar .linked > button:checked:backdrop {
+    color: rgba(189, 147, 249, 0.4); }
+    .titlebar .linked > button:active:backdrop label,
+    .titlebar .linked > button:checked:backdrop label,
+    headerbar .linked > button:active:backdrop label,
+    headerbar .linked > button:checked:backdrop label {
+      color: rgba(189, 147, 249, 0.4); }
+  .titlebar .linked:not(.vertical) > entry + button,
+  headerbar .linked:not(.vertical) > entry + button {
+    border-radius: 0 3px 3px 0px; }
   .titlebar .path-bar-box .dim-label, .titlebar .path-bar-box label.separator, .titlebar .path-bar-box .subtitle,
   headerbar .path-bar-box .dim-label,
   headerbar .path-bar-box label.separator,
