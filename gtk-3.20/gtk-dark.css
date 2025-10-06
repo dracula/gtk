@@ -2445,6 +2445,9 @@ GraniteWidgetsWelcome {
     headerbar .linked > button:active:backdrop label,
     headerbar .linked > button:checked:backdrop label {
       color: rgba(189, 147, 249, 0.4); }
+  .titlebar:not(headerbar) .linked:not(.vertical) > entry + button,
+  headerbar .linked:not(.vertical) > entry + button {
+    border-radius: 0 3px 3px 0px; }
   .selection-mode.titlebar:not(headerbar),
   headerbar.selection-mode {
     color: #f8f8f2;
