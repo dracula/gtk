@@ -4316,17 +4316,17 @@ placessidebar row {
       placessidebar row:drop(active):not(:disabled):selected, placessidebar row:drop(active):not(:disabled):selected label, placessidebar row:drop(active):not(:disabled):selected image {
         color: #f8f8f2; }
 
-.sidebar-pane .bottom-bar {
+.sidebar-pane, .sidebar-pane .bottom-bar {
   background-color: #20212b; }
-  .sidebar-pane .bottom-bar button {
-    border-color: transparent;
-    background-color: transparent;
-    background-image: none;
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0);
-    text-shadow: none;
-    -gtk-icon-shadow: none; }
-    .sidebar-pane .bottom-bar button .view, .sidebar-pane .bottom-bar button iconview {
-      background-color: transparent; }
+.sidebar-pane .bottom-bar button {
+  border-color: transparent;
+  background-color: transparent;
+  background-image: none;
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0);
+  text-shadow: none;
+  -gtk-icon-shadow: none; }
+  .sidebar-pane .bottom-bar button .view, .sidebar-pane .bottom-bar button iconview {
+    background-color: transparent; }
 
 /*****************
  * GtkSpinButton *
@@ -5916,9 +5916,6 @@ headerbar .nautilus-window .path-bar-box .subtitle {
 .color-light.timed label, .color-light .event-popover label {
   color: #f8f8f2;
   opacity: 1; }
-.color-light label {
-  color: #1e1f29;
-  opacity: 1; }
 
 /******************************
  * Gnome system monitor graph *
@@ -5930,8 +5927,6 @@ headerbar .nautilus-window .path-bar-box .subtitle {
 /*******************
  * Calendar sidebar *
 ********************/
-datechooser, datechooser:backdrop {
-  background-color: #1e1f29; }
 datechooser .circular.day.text-button {
   padding: 6px;
   border-radius: 50%;
@@ -5949,15 +5944,29 @@ datechooser .circular.day.text-button {
     text-shadow: none;
     box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.1), inset 0px -1px 0px 0px rgba(0, 0, 0, 0.1);
     font-weight: bold; }
+datechooser .weekday, datechooser .weeknum {
+  color: #8b8c8e; }
+datechooser .weeknum {
+  background-color: #313342; }
+datechooser .current-week {
+  background-color: rgba(139, 140, 142, 0.1); }
 
 agenda-view list.background {
   padding: 8px; }
-  agenda-view list.background, agenda-view list.background:backdrop {
-    background-color: #1e1f29; }
   agenda-view list.background .caption-heading, agenda-view list.background .dim-label.no-events, agenda-view list.background label.no-events.separator, agenda-view list.background .titlebar:not(headerbar) .no-events.subtitle, .titlebar:not(headerbar) agenda-view list.background .no-events.subtitle,
   agenda-view list.background headerbar .no-events.subtitle,
   headerbar agenda-view list.background .no-events.subtitle {
     color: #f8f8f2; }
+
+datechooser, datechooser:backdrop,
+agenda-view list.background,
+agenda-view list.background:backdrop,
+.calendar-list,
+.calendar-list:backdrop {
+  background-color: #1e1f29; }
+
+popover datechooser {
+  background-color: transparent; }
 
 /********
  * Gala *
