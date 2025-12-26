@@ -322,7 +322,7 @@ window.assistant.csd .sidebar {
 window.assistant .sidebar label {
   padding: 6px 12px; }
 window.assistant .sidebar label.highlight {
-  background-color: rgba(189, 147, 249, 0.5);
+  background-color: #ff79c6;
   color: #f8f8f2; }
 
 window.aboutdialog image.large-icons {
