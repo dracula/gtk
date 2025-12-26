@@ -311,18 +311,22 @@ headerbar .subtitle {
   opacity: 0.55;
   text-shadow: none; }
 
-assistant .sidebar {
+window.assistant .sidebar {
   background-color: #282a36;
   border-top: 1px solid rgba(25, 26, 34, 0.9); }
-  assistant .sidebar:backdrop {
+  window.assistant .sidebar:backdrop {
     background-color: #2a2c39;
     border-color: rgba(26, 27, 35, 0.91); }
-assistant.csd .sidebar {
+window.assistant.csd .sidebar {
   border-top-style: none; }
-assistant .sidebar label {
+window.assistant .sidebar label {
   padding: 6px 12px; }
-assistant .sidebar label.highlight {
-  background-color: #4a4a51; }
+window.assistant .sidebar label.highlight {
+  background-color: rgba(189, 147, 249, 0.5);
+  color: #f8f8f2; }
+
+window.aboutdialog image.large-icons {
+  -gtk-icon-size: 128px; }
 
 .app-notification,
 .app-notification.frame, .osd .scale-popup, .osd popover.background > arrow,
@@ -3108,28 +3112,6 @@ menuitem radio {
 .scale-popup button:hover {
   background-color: rgba(248, 248, 242, 0.1);
   border-radius: 5px; }
-
-/************
-* Assistant *
-*************/
-assistant {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px; }
-  assistant .sidebar {
-    background-color: #282a36;
-    border-top: 1px solid rgba(25, 26, 34, 0.9);
-    border-bottom-left-radius: 4px; }
-    assistant .sidebar:backdrop {
-      background-color: #2a2c39;
-      border-color: rgba(26, 27, 35, 0.91); }
-  assistant.csd .sidebar {
-    border-top-style: none; }
-  assistant .sidebar GtkLabel,
-  assistant .sidebar label {
-    padding: 6px 12px; }
-  assistant .sidebar GtkLabel.highlight,
-  assistant .sidebar label.highlight {
-    background-color: #4a4a51; }
 
 /*************
  * Notebooks *
