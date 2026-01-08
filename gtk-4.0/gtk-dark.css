@@ -4840,17 +4840,27 @@ windowcontrols button.close {
   background-image: -gtk-scaled(url("../assets/close.png"), url("../assets/close@2.png")); }
   windowcontrols button.close:hover, windowcontrols button.close:active {
     background-image: -gtk-scaled(url("../assets/close_prelight.png"), url("../assets/close_prelight@2.png")); }
+  windowcontrols button.close:backdrop:hover {
+    background-image: -gtk-scaled(url("../assets/close_unfocused_prelight.png"), url("../assets/close_unfocused_prelight@2.png"));}
 windowcontrols button.maximize {
   background-image: -gtk-scaled(url("../assets/maximize.png"), url("../assets/maximize@2.png")); }
   windowcontrols button.maximize:hover, windowcontrols button.maximize:active {
     background-image: -gtk-scaled(url("../assets/maximize_prelight.png"), url("../assets/maximize_prelight@2.png")); }
+  windowcontrols button.maximize:backdrop:hover {
+    background-image: -gtk-scaled(url("../assets/maximize_unfocused_prelight.png"), url("../assets/maximize_unfocused_prelight@2.png"));}
 windowcontrols button.minimize {
   background-image: -gtk-scaled(url("../assets/min.png"), url("../assets/min@2.png")); }
   windowcontrols button.minimize:hover, windowcontrols button.minimize:active {
     background-image: -gtk-scaled(url("../assets/min_prelight.png"), url("../assets/min_prelight@2.png")); }
+  windowcontrols button.minimize:backdrop:hover {
+    background-image: -gtk-scaled(url("../assets/min_unfocused_prelight.png"), url("../assets/min_unfocused_prelight@2.png"));}
 windowcontrols button:backdrop {
   -gtk-icon-shadow: none;
   background-image: -gtk-scaled(url("../assets/close_unfocused.png"), url("../assets/close_unfocused@2.png")); }
+.fullscreen headerbar windowcontrols button.maximize:backdrop:hover, .maximized headerbar windowcontrols button.maximize:backdrop:hover {
+  background-image: -gtk-scaled(url("../assets/restore_unfocused_prelight.png"), url("../assets/restore_unfocused_prelight@2.png")); }
+.fullscreen headerbar windowcontrols button.maximize:hover, .maximized headerbar windowcontrols button.maximize:hover {
+  background-image: -gtk-scaled(url("../assets/restore_prelight.png"), url("../assets/restore_prelight@2.png")); }
 
 headerbar.selection-mode button.titlebutton,
 .titlebar.selection-mode button.titlebutton {
