@@ -31,33 +31,6 @@ headerbar {
  
   entry { min-height: 24px;}  
   
-  button {
-    @include button(normal-header);
-    &:hover,
-    &:active,
-    &:checked {
-      @include button(active, $selected_bg_color, #fff);
-    }
-
-    &:backdrop,
-    &:disabled,
-    &:backdrop:disabled {
-      @include button(backdrop-header,red,transparentize($fg_color,0.8));
-      background-image: linear-gradient(to bottom, $main_dark_color, $main_dark_color);
-      border: 1px solid $borders_color;
-      border-radius: 6px;
-    }
-
-    &:backdrop {
-      &:hover,
-      &:active,
-      &:checked {
-      background-color: transparent;
-      color: $selected_bg_color;
-      box-shadow: none;
-      }
-    }
-  }
   %linked-header {
     border-radius: 0;
     border-right-style: none;
@@ -190,7 +163,8 @@ headerbar {
   menubutton > button,
   spinbutton > button,
   splitbutton > button,
-  splitbutton > menubutton {
+  splitbutton > menubutton,
+  entry > menubutton {
     margin-top: 0px;
     margin-bottom: 0px;
   }
