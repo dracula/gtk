@@ -4038,48 +4038,41 @@ stacksidebar row {
 placessidebar {
   background-color: transparent;
   background-image: linear-gradient(to right, #181a21 40px, #1d1e27 35px, #1d1e27 36px, #1d1e27 36px, #1d1e27 99%, #1d1e27 100%); }
-  placessidebar row {
-    padding: 1px 11px; }
-    placessidebar row.sidebar-row.sidebar-row {
-      margin: 0;
-      border-radius: 0; }
-      placessidebar row.sidebar-row.sidebar-row label {
-        padding-left: 8px; }
-      placessidebar row.sidebar-row.sidebar-row .sidebar-icon {
-        margin-left: -14px;
-        margin-right: 12px;
-        padding-left: 14px;
-        padding-right: 12px;
-        color: #98abb2; }
-    placessidebar row.sidebar-row:hover {
+  placessidebar row.activatable {
+    padding: 1px 11px;
+    margin: 0;
+    border-radius: 0; }
+    placessidebar row.activatable label {
+      padding-left: 20px; }
+    placessidebar row.activatable:hover {
       background-image: linear-gradient(to right, #1f202a 40px, #2c2e3c 35px, #2c2e3c 36px, #2c2e3c 36px, #2c2e3c 99%, #2c2e3c 100%);
       color: inherit; }
-    placessidebar row.sidebar-row:selected {
+    placessidebar row.activatable:selected {
       background-color: transparent;
       background-image: linear-gradient(to right, #0d0e13 40px, rgba(65, 67, 75, 0) 36px, rgba(13, 55, 224, 0) 97%); }
-      placessidebar row.sidebar-row:selected, placessidebar row.sidebar-row:selected label {
+      placessidebar row.activatable:selected, placessidebar row.activatable:selected label {
         color: #bd93f9; }
-      placessidebar row.sidebar-row:selected:hover {
+      placessidebar row.activatable:selected:hover {
         color: #ffffff;
         background-color: rgba(189, 147, 249, 0.1); }
-        placessidebar row.sidebar-row:selected:hover .sidebar-icon {
+        placessidebar row.activatable:selected:hover .sidebar-icon {
           color: #ffffff; }
-      placessidebar row.sidebar-row:selected:backdrop {
+      placessidebar row.activatable:selected:backdrop {
         color: rgba(189, 147, 249, 0.4);
         background-color: transparent;
         background-image: linear-gradient(to right, #0d0e13 40px, rgba(65, 67, 75, 0) 36px, rgba(65, 67, 75, 0) 97%); }
-      placessidebar row.sidebar-row:selected .sidebar-icon {
+      placessidebar row.activatable:selected .sidebar-icon {
         -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.8);
         color: inherit; }
-    placessidebar row.sidebar-row.sidebar-new-bookmark-row {
+    placessidebar row.activatable.sidebar-new-bookmark-row {
       color: rgba(189, 147, 249, 0.5); }
-    placessidebar row.sidebar-row:drop(active):not(:disabled) {
+    placessidebar row.activatable:drop(active):not(:disabled) {
       box-shadow: inset 0 1px #50fa7a, inset 0 -1px #50fa7a; }
-      placessidebar row.sidebar-row:drop(active):not(:disabled), placessidebar row.sidebar-row:drop(active):not(:disabled) label, placessidebar row.sidebar-row:drop(active):not(:disabled) image {
+      placessidebar row.activatable:drop(active):not(:disabled), placessidebar row.activatable:drop(active):not(:disabled) label, placessidebar row.activatable:drop(active):not(:disabled) image {
         color: #50fa7a; }
-      placessidebar row.sidebar-row:drop(active):not(:disabled):selected {
+      placessidebar row.activatable:drop(active):not(:disabled):selected {
         background: #50fa7a; }
-        placessidebar row.sidebar-row:drop(active):not(:disabled):selected, placessidebar row.sidebar-row:drop(active):not(:disabled):selected label, placessidebar row.sidebar-row:drop(active):not(:disabled):selected image {
+        placessidebar row.activatable:drop(active):not(:disabled):selected, placessidebar row.activatable:drop(active):not(:disabled):selected label, placessidebar row.activatable:drop(active):not(:disabled):selected image {
           color: #f8f8f2; }
   placessidebar list {
     background-color: transparent; }
