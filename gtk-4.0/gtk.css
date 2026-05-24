@@ -6738,3 +6738,56 @@ window.thunar toolbar > toolitem > widget > widget.linked.path-bar > button.path
   padding: 10px; }
 
 /*# sourceMappingURL=gtk.css.map */
+
+
+/* Gear icon button and other icon-only buttons in rows */
+row > button,
+row > button.image-button,
+row > menubutton > button {
+  color:            #f8f8f2;
+  background-color: transparent;
+  border:           none;
+  box-shadow:       none;
+}
+
+row > button:hover,
+row > menubutton > button:hover {
+  color:            #bd93f9;
+  background-color: rgba(98, 114, 164, 0.2);
+  border-radius:    6px;
+}
+
+/* The toggle/switch inside an extension row */
+row switch {
+  background-color: #44475a;
+  color:            #f8f8f2;
+  border:           1px solid #6272a4;
+  border-radius:    99px;
+  min-width:        50px;
+  min-height:       24px;
+}
+
+row switch:checked {
+  background-color: #bd93f9;
+  border-color:     #bd93f9;
+  color:            #282a36;
+}
+
+row switch slider {
+  background-color: #f8f8f2;
+  border-radius:    50%;
+  min-width:        18px;
+  min-height:       18px;
+  margin:           3px;
+  box-shadow:       0 1px 3px rgba(0,0,0,0.4);
+}
+
+row switch:checked slider {
+  background-color: #282a36;
+}
+
+/* Error/warning indicator icons in extension rows (the ⊘ icon) */
+row .error-icon,
+row image.error {
+  color: #ff5555;
+}

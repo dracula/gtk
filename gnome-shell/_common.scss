@@ -149,14 +149,27 @@ $slider_size: 16px;
 .toggle-switch {
   width: 65px;
   height: 22px;
-  background-color: transparent !important;
-  background-size: contain;
-  //Gnome 3.32//
-  background-image: url("assets/toggle-off.svg");
-  &:checked { background-image: url("assets/toggle-on.svg"); }
-  .handle {
-    background: none !important;
-    box-shadow: none !important;
+  background-color: mix($fg_color, $bg_color, 20%);
+  border-radius: 11px;
+  border: 1px solid $borders_color;
+  transition-duration: 200ms;
+
+  &:checked {
+    background-color: $purple;
+    border-color: $purple;
+  }
+
+  &:hover {
+    background-color: mix($fg_color, $bg_color, 35%);
+  }
+
+  .toggle-switch-handle, .handle {
+    width: 18px;
+    height: 18px;
+    background-color: $fg_color;
+    border-radius: 9px;
+    margin: 2px;
+    transition-duration: 200ms;
   }
 }
 
@@ -2271,12 +2284,31 @@ $slider_size: 16px;
 // Gnome 43 quick settings menu
 
   .quick-settings {
-    padding: 14px;
-    border-radius: 12px;
-  
-    .icon-button, .button {
-      color: $fg_color;
-      padding: 6px*1.75;
+  padding: 14px;
+  border-radius: 12px;
+
+  .icon-button, .button {
+    color: $fg_color;
+    background-color: darken($bg_color, 3%);
+    border: 1px solid $borders_color;
+    padding: 6px * 1.75;
+
+    &:hover {
+      color: $selected_bg_color;
+      border-color: $selected_bg_color;
+      background-color: transparent;
+    }
+
+    &:active, &:checked {
+      color: $selected_fg_color;
+      background-color: $selected_bg_color;
+      border-color: $selected_bg_color;
+    }
+
+    &:insensitive {
+      color: transparentize($fg_color, 0.5);
+      border-color: transparentize($borders_color, 0.5);
+      }
     }
   }
   
@@ -2284,6 +2316,7 @@ $slider_size: 16px;
   
   .quick-toggle {
     border-radius: 99px;
+    color: $fg_color;
   
     &:checked { 
       @include button(active, transparentize($selected_bg_color, 0.35));
