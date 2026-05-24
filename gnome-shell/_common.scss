@@ -167,9 +167,10 @@ $slider_size: 16px;
     width: 18px;
     height: 18px;
     background-color: $fg_color;
-    border-radius: 9px;
+    border-radius: 50%;
     margin: 2px;
     transition-duration: 200ms;
+
   }
 }
 
@@ -2304,13 +2305,8 @@ $slider_size: 16px;
       background-color: $selected_bg_color;
       border-color: $selected_bg_color;
     }
-
-    &:insensitive {
-      color: transparentize($fg_color, 0.5);
-      border-color: transparentize($borders_color, 0.5);
-      }
-    }
   }
+}
   
   $base_padding: 6px;
   
